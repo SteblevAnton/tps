@@ -48,4 +48,5 @@
     <languageCode>ru</languageCode>
   </languages>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <constants>Constant.cbr_Константа</constants>
 </mdclass:Configuration>
