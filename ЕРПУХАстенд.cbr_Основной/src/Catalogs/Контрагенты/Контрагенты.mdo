@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="37a61a2a-b4db-4650-b1ed-0dc913bc3a89" extendedConfigurationObject="4259c461-12b1-4f3e-8283-5927c75afdb6">
+  <producedTypes>
+    <objectType typeId="f430bf8a-56e2-4157-9bec-a632866dff1b" valueTypeId="5708aa6b-8823-4c01-a5d1-9dc894e0675b"/>
+    <refType typeId="35718dab-276d-4724-8d62-3581b06b4e90" valueTypeId="111cd5ef-e88b-4b7d-b4bc-329825ee15af"/>
+    <selectionType typeId="c3e26355-6a8d-46ea-be9a-b1778132a7ea" valueTypeId="69c2fa20-9172-494a-89b6-60c234c5f4ee"/>
+    <listType typeId="51aceedc-f43f-4e2a-8d1b-486a19ad772e" valueTypeId="6813fc26-15f8-4983-98ec-6ea76b4cb00f"/>
+    <managerType typeId="1428e2f7-f05a-44c9-83e6-7e252e7f3b2f" valueTypeId="d3342b3b-1db9-47de-a1da-8cadaa56de89"/>
+  </producedTypes>
+  <name>Контрагенты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="bdc9528b-ab50-4757-b7bf-89ef964ff951">
+    <name>cbr_ОтрасльКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
