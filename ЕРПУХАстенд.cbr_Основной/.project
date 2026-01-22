@@ -15,4 +15,11 @@
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>com._1c.g5.v8.dt.core.V8ExtensionNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>backup.xml</name>
+			<type>1</type>
+			<location>D:/r.shmelev/Бекапы/зкп 19/backup.txt</location>
+		</link>
+	</linkedResources>
 </projectDescription>

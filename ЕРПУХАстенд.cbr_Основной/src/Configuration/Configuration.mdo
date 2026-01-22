@@ -47,6 +47,25 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
+  <styleItems>StyleItem.ПоясняющийТекст</styleItems>
+  <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
+  <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
+  <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
+  <commonPictures>CommonPicture.Приоритеты</commonPictures>
+  <commonPictures>CommonPicture.Развернуть</commonPictures>
+  <commonPictures>CommonPicture.РасчетПоФормуле</commonPictures>
+  <commonPictures>CommonPicture.Свернуть</commonPictures>
+  <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
+  <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
-  <constants>Constant.cbr_Константа</constants>
+  <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
+  <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
+  <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Приоритеты</catalogs>
+  <enums>Enum.СпособыФормированияСегментов</enums>
+  <enums>Enum.ТипыОбеспечения</enums>
+  <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
 </mdclass:Configuration>
