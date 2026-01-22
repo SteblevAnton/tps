@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3a17ba93-b461-4c46-a876-b4bf056c0ba8" extendedConfigurationObject="9e4f3ca4-37d8-11e3-8b99-0800278af313">
+  <producedTypes>
+    <objectType typeId="6ae91492-3b4b-4ed4-bf47-852ea2329429" valueTypeId="0321cd85-44d6-40c0-88e0-b6c3b7fed5f9"/>
+    <refType typeId="7b3de279-ceb1-4f14-9cc3-8cab54517564" valueTypeId="a44699b1-8ab6-4ab0-9c68-d86205df22bb"/>
+    <selectionType typeId="c760a66f-1c46-4b3c-b745-3cc0300f7758" valueTypeId="5e0ea6f7-b90a-449b-a53f-01b78aebf732"/>
+    <listType typeId="ff10b5e7-3fc1-48a9-b0c5-d298873bc8dc" valueTypeId="c1883d43-fb93-430c-838d-d2aa67a194e8"/>
+    <managerType typeId="83fc8d5c-ff14-4261-ae9d-dc4762ea08ce" valueTypeId="0318e783-b4e4-41ff-a52c-5fa6b7bae191"/>
+  </producedTypes>
+  <name>Приоритеты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="302a774a-6c5c-4ac1-b40c-604cd26fc5c7" extendedConfigurationObject="efd247ac-3aed-11e3-1d8c-0800278af313">
+    <name>ФормаВыбора</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Catalog>
