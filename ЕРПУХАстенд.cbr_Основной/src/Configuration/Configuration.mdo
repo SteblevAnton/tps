@@ -48,5 +48,6 @@
     <languageCode>ru</languageCode>
   </languages>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
 </mdclass:Configuration>

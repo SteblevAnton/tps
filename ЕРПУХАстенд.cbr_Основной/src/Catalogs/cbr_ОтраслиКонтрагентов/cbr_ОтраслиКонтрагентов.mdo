@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fd66e14-9d66-4819-9438-8a665f06fb35">
+  <producedTypes>
+    <objectType typeId="a172b4cf-2874-44d2-a6af-40dcedb611b3" valueTypeId="4a2e241f-b3bf-4bf4-8416-60210741caee"/>
+    <refType typeId="f068f6b6-6cec-4efa-9d44-00eda380795e" valueTypeId="af172e3a-d9bc-4b82-a550-6aa81adab6ac"/>
+    <selectionType typeId="c9e3e7c9-53cc-4a32-9aa9-a3bc9b71d041" valueTypeId="9ed33030-dfbf-4144-a9a5-0a849b7cf318"/>
+    <listType typeId="1e8f7c79-624f-4386-a6d5-ff4ca82e213d" valueTypeId="0e0ad71e-e191-4998-bb17-b65c08c7b5cd"/>
+    <managerType typeId="d1b57952-750d-48d9-8cf1-2ff439f5a780" valueTypeId="b3f77fb2-10ee-4aa0-8d45-28d055b3ee80"/>
+  </producedTypes>
+  <name>cbr_ОтраслиКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отрасли контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.cbr_ОтраслиКонтрагентов.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.cbr_ОтраслиКонтрагентов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.cbr_ОтраслиКонтрагентов.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e56ae7a6-edd6-4936-8fc2-36ccc2f65da9">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5057ea9c-5c83-4a31-bd48-1eb1b8cb9925">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fc20844d-cbee-4721-b621-77433b5a269d">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
