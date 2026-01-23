@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c4c08d6f-84e5-4db1-8916-a2b167261993" extendedConfigurationObject="bf75bcc5-82ee-4bd0-89e1-420b42c99454">
+  <producedTypes>
+    <objectType typeId="684a6379-790a-4ac8-84c8-570e8dc14866" valueTypeId="2739902f-600c-4f95-b744-81f696c0cb2d"/>
+    <refType typeId="a8606730-3b96-4114-a8cd-92bbbb0cffe0" valueTypeId="43fdec37-c0de-4575-a931-60aaed510e41"/>
+    <selectionType typeId="84e8034e-1801-4edc-bc79-391d5f5d8c06" valueTypeId="2bd6d284-bc32-4dfd-8a5c-25091fbd6533"/>
+    <listType typeId="131b8dd4-6a11-4e0e-adc7-fc109f29855e" valueTypeId="68b5783d-fcdb-4beb-bf12-84c629edbc36"/>
+    <managerType typeId="1288a78b-1d9a-4c28-ae75-47bf33235f7c" valueTypeId="d36dec27-e433-42ba-b4e3-4805f3211ee3"/>
+  </producedTypes>
+  <name>Партнеры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <defaultChoiceForm>Extended</defaultChoiceForm>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+  <attributes uuid="82086810-6ec6-4c05-a320-5593bca3b466">
+    <name>cbr_ОтрасльКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отрасль контрагента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_ОтраслиКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="62025f9b-4fb1-4837-858d-f9a494f793eb" extendedConfigurationObject="0a9b29ca-f68a-4d5c-8ba0-9a2fb079ab7c">
+    <name>ФормаЭлементаРеквизитыКонтрагента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Catalog>
