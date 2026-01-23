@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f5e2ea6a-916a-4645-8a09-28cac5724c25" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
+  <producedTypes>
+    <objectType typeId="50b9a38c-dd22-40cc-a535-bb9592b8da56" valueTypeId="efbdf159-f193-4755-a810-2b564f6a2559"/>
+    <refType typeId="81095d7c-0965-49ea-92b9-4f5a9f41fde5" valueTypeId="1e7579eb-0928-4c1c-9f51-95724b336fed"/>
+    <selectionType typeId="c1555aa6-6c72-4e3f-a422-5cd708533dda" valueTypeId="07452fab-c710-48f3-9e47-5e04296cc202"/>
+    <listType typeId="201a52e9-a69e-4983-b570-7588732f4f56" valueTypeId="4f16d753-a160-4205-a21d-cb612eb9d97d"/>
+    <managerType typeId="5c112b93-2ce1-427f-afef-c079187002f2" valueTypeId="1892a901-c5bb-4b5c-aa6d-fae3d38a1f14"/>
+  </producedTypes>
+  <name>ЗаказКлиента</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="31a008e1-daa5-4e28-8e14-9f6de4c33307">
+    <name>cbr_Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="1ee8c750-5aa7-4694-9d2d-e4d9d35dcd8f" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>
