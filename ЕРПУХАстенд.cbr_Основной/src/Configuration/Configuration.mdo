@@ -64,6 +64,7 @@
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.ТипыОбеспечения</enums>

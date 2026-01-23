@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="a04651ad-2269-42c2-b89f-12bf5cbb58a3" extendedConfigurationObject="fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
+  <producedTypes>
+    <objectType typeId="2826b4d0-a458-4cd9-a417-b9a219462cd3" valueTypeId="c13226ed-39ce-4028-ac24-2bbf9e66230d"/>
+    <refType typeId="28a7f15f-de50-49e9-b58a-fe15044a3d5a" valueTypeId="a49c83dc-f00f-42fd-beba-b1159630ebf7"/>
+    <selectionType typeId="3de9e289-06ff-4288-858b-fec5bed84c5c" valueTypeId="15e75837-771f-49ee-a3e7-05582f737a1f"/>
+    <listType typeId="a9e149ac-0905-4f04-83b9-f5ac8dcd9634" valueTypeId="1cc51378-067f-4dbc-a429-cb0c9f8c631e"/>
+    <managerType typeId="2be6ae14-6ce3-49c1-8725-874589189576" valueTypeId="ff49efec-f444-46fc-8ed5-fab59092a478"/>
+  </producedTypes>
+  <name>Номенклатура</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+  <attributes uuid="475f737c-8c9f-412b-85e3-a576fa74aff3">
+    <name>cbr_ЭтоТендер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это тендер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
