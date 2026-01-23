@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b3e0ceea-a482-462c-8649-2611c807299a" extendedConfigurationObject="879216cd-58f8-4ae5-b494-20f33e3f24f9">
+  <producedTypes>
+    <refType typeId="87a21e08-823c-45c9-a314-d3622c9ec506" valueTypeId="3a6256bf-d030-441d-a33d-82e954f3f138"/>
+    <listType typeId="ef253a74-5866-4b88-a02c-aea81a9117ab" valueTypeId="76091140-76d5-4d41-8a00-98e365c93981"/>
+    <managerType typeId="38018019-6115-4916-98ba-1e28ddfe8091" valueTypeId="64153fcb-fb6a-42e7-b633-58fd9fc09d84"/>
+  </producedTypes>
+  <name>МетодыОбеспеченияПотребностей</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Enum>

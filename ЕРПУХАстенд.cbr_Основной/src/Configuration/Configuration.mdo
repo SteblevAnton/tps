@@ -63,9 +63,34 @@
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <definedTypes>DefinedType.Артикул</definedTypes>
+  <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
+  <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
+  <definedTypes>DefinedType.Цена</definedTypes>
+  <catalogs>Catalog.Валюты</catalogs>
+  <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
+  <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.Лоты</catalogs>
+  <catalogs>Catalog.МестаПоставки</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.Периоды</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
+  <catalogs>Catalog.СоглашенияСПоставщиками</catalogs>
+  <catalogs>Catalog.СпособыОбеспеченияПотребностей</catalogs>
+  <catalogs>Catalog.СтруктураПредприятия</catalogs>
+  <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <documents>Document.ЗаданиеНаПеревозку</documents>
+  <documents>Document.ЗаказНаПроизводство2_2</documents>
+  <documents>Document.ЗаказПоставщику</documents>
+  <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
+  <enums>Enum.ТипыИзмеряемыхВеличин</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
+  <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
 </mdclass:Configuration>
