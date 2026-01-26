@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="942fda2d-78e0-4a27-8c31-bc05b06b1c21">
+  <name>П3_ДобавлениеИзменениеДокументаСпециальныеТребования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение документа Специальные требования (П3)</value>
+  </synonym>
+  <comment>// Османов Н.М. 20.01.2025</comment>
+</mdclass:Role>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="54151364-c80f-4ffd-b7c0-23be6ca12ba0" extendedConfigurationObject="82a9837b-7b1d-4fc6-af27-c44d94d33978">
+  <producedTypes>
+    <refType typeId="9ad4fe51-f5d9-4ebc-917e-c4911a5127f4" valueTypeId="4b8af255-94be-4cfe-aafd-e24cc095c4e9"/>
+    <listType typeId="afd6f564-7615-4bdd-953b-145d2ba47719" valueTypeId="69a8dd04-4358-441e-abe5-a322169b3fa0"/>
+    <managerType typeId="aa5dd401-8d25-496e-a723-3945e1300880" valueTypeId="8dffa132-831e-495e-acba-409cdeb46a3f"/>
+  </producedTypes>
+  <name>ЕдиницыИзмеренияВремени</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="48895534-957c-4212-b77c-7158a1c003c9" extendedConfigurationObject="cbac971a-3f11-4ad9-b6a5-c277a81a09a5">
+    <name>Минута</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="19485efb-ad99-4a36-91dd-90d59b37cf90" extendedConfigurationObject="796e1ded-b7bf-4be7-95cc-7c10ac2d3477">
+    <name>Час</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="b3fcfd21-dd3a-4085-b8c4-9ee0a0a6541d" extendedConfigurationObject="4c7d001f-8b9f-401f-a7ce-7dbada4983bf">
+    <name>День</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="aa65a3a9-be55-4776-b4a3-65e409b81a33" extendedConfigurationObject="c11d4773-bff4-4f05-aae7-8a5621a6f2c7">
+    <name>Секунда</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="a84c8c3c-bc54-49ba-ad76-b407067c65f6" extendedConfigurationObject="5d91c395-769c-40e2-b17b-b0428d0689fe">
+    <name>Сутки</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

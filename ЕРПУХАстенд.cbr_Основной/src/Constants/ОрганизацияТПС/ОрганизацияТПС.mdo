@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bc89bf2-a3bc-409c-a578-4c190e22ab79">
+  <producedTypes>
+    <managerType typeId="4462a9f3-c596-4064-b253-9391ab0bb3a5" valueTypeId="e60727aa-922e-4529-9719-8830373261d9"/>
+    <valueManagerType typeId="8b64fb80-5437-45ee-a4e5-6c61401864e6" valueTypeId="638646df-7360-4388-bd81-b30030ac73ee"/>
+    <valueKeyType typeId="3ca29783-807b-48f9-a045-63fec313c5a2" valueTypeId="aa77af61-88c6-4415-848c-e5554cf68d70"/>
+  </producedTypes>
+  <name>ОрганизацияТПС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организация ТПС</value>
+  </synonym>
+  <comment>// Османов Н.М. 11.09.2024</comment>
+  <type>
+    <types>CatalogRef.Организации</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

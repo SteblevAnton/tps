@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="4222633c-c381-4c87-9b75-e9413d13161a" extendedConfigurationObject="555d6846-e773-489b-bd3c-89b1f2072899">
+  <producedTypes>
+    <refType typeId="2add68f1-76bf-440f-a283-c043924509ff" valueTypeId="c94c1f09-b0fc-42ea-858f-e297067bd442"/>
+    <listType typeId="3e44e015-538d-47fc-aee8-9a793336d271" valueTypeId="e66f2b2d-5898-4f22-b57b-856049498fd5"/>
+    <managerType typeId="a36e3ffe-4842-48d3-b545-02a1e9c201c3" valueTypeId="b444f7b5-df2a-430b-aa0f-b879f50fc22f"/>
+  </producedTypes>
+  <name>СтатусыЗаказовНаПроизводство2_2</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="26b9e2e3-a76f-4c24-abed-7a0d31a2fb0f" extendedConfigurationObject="f552acdf-34c7-46f3-8d72-fc207a70ea04">
+    <name>Формируется</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="858b0c3a-f4f1-4fa6-b407-efe246bafc05">
+    <name>АктуализацияСпецификаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуализация спецификаций</value>
+    </synonym>
+    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
+  </enumValues>
+  <enumValues uuid="9243a2a0-6a97-45e7-8cb6-e748c4070207">
+    <name>СогласованиеСпецтребований</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование спецтребований</value>
+    </synonym>
+    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
+  </enumValues>
+  <enumValues uuid="890d5021-aed5-4d3d-80f9-9029d22052f4">
+    <name>Разработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разработка</value>
+    </synonym>
+    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
+  </enumValues>
+  <enumValues uuid="124d22a7-4bd5-42ce-8924-d7d034876e69" extendedConfigurationObject="c3e0c47c-9d7b-4349-82a5-35dfcec47e59">
+    <name>КПроизводству</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="8bfe89f5-ba98-4faf-b7c0-3160f8c138e2">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
+  </enumValues>
+  <enumValues uuid="8d5157e7-9573-453c-84f8-267209e91c46">
+    <name>ПередачаНаСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача на склад</value>
+    </synonym>
+    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
+  </enumValues>
+  <enumValues uuid="a4c76fa9-9e3c-4e83-bbc3-3a8b954827e6" extendedConfigurationObject="7cac9ffb-82fe-4e2c-8db3-94162621dc09">
+    <name>Закрыт</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

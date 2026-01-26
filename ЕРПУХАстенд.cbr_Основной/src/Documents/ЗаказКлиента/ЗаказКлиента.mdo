@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="4a894272-5728-4909-b35f-b1f29bc0d6b5" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
+  <producedTypes>
+    <objectType typeId="d5b8cfda-4ed8-4c00-bee6-e443a64b761b" valueTypeId="1b6ac663-c815-4b8f-88c7-4abed7d1f3d1"/>
+    <refType typeId="56256c1a-750e-483d-86ba-37336dbd4d66" valueTypeId="5354ebdc-fa0d-4162-b21b-c1ee0d2b36ec"/>
+    <selectionType typeId="067216bc-dfa4-486a-8d8f-4abd4caae485" valueTypeId="e9d5b8bf-8e67-4f3e-8937-6b1ea5fdfd23"/>
+    <listType typeId="7e4ed1b0-15e7-496f-acc6-900a9747d547" valueTypeId="0948d3fe-6fe1-458a-9603-afd7d954f1fe"/>
+    <managerType typeId="42de2064-4aab-4d20-a0a3-286d648cc60a" valueTypeId="92e7a47f-b603-4c2d-a398-a3b5a0ffb3b1"/>
+  </producedTypes>
+  <name>ЗаказКлиента</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Document>

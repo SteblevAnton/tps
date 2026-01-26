@@ -47,25 +47,147 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
+  <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
+  <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет</styleItems>
+  <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет82</styleItems>
+  <styleItems>StyleItem.ЖирныйШрифтБЭД</styleItems>
+  <styleItems>StyleItem.ИтогиФон</styleItems>
+  <styleItems>StyleItem.ИтогиФонГруппы</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
+  <styleItems>StyleItem.СерыйЦветТекста1</styleItems>
+  <styleItems>StyleItem.СобытиеОтказ</styleItems>
   <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
+  <styleItems>StyleItem.ФонУправляющегоПоля</styleItems>
+  <styleItems>StyleItem.ЦветТекстаЗаголовокОтчетаВТакси</styleItems>
+  <styleItems>StyleItem.ЦветТекстаЗапрошеноКоммерческиеПредложения</styleItems>
+  <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
+  <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <commonPictures>CommonPicture.RFID</commonPictures>
+  <commonPictures>CommonPicture.RFIDКоллекция</commonPictures>
+  <commonPictures>CommonPicture.ВидыНавигацииПоВзаимодействиямОтДопРеквизитовСведений</commonPictures>
+  <commonPictures>CommonPicture.ВидыНавигацииПоВзаимодействиямОтКатегорий</commonPictures>
+  <commonPictures>CommonPicture.Внимание16</commonPictures>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
+  <commonPictures>CommonPicture.ВУпаковочныйЛист</commonPictures>
+  <commonPictures>CommonPicture.ВыполненоСОшибками</commonPictures>
+  <commonPictures>CommonPicture.ВыполненоУспешно</commonPictures>
+  <commonPictures>CommonPicture.ДваФлажкаУТ</commonPictures>
+  <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
+  <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
+  <commonPictures>CommonPicture.ЗагрузкаИзФайлаКоммерческиеПредложения</commonPictures>
+  <commonPictures>CommonPicture.ЗаказНаПроизводствоВыполнен</commonPictures>
+  <commonPictures>CommonPicture.ЗакрытыеЗаказыНаПроизводство</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияВажностьПроблемВеденияУчета</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияКритическийПуть</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияНастройкиОтправкиЭДО</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияПиктограммСостоянияОперацийЭтапаПроизводства</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияПиктограммФайлов</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияПиктограммыТренда</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияРучноеРазмещениеВГрафике</commonPictures>
+  <commonPictures>CommonPicture.Комментарий</commonPictures>
   <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
+  <commonPictures>CommonPicture.КрасныйЖелтыйСерыйТреугольник</commonPictures>
+  <commonPictures>CommonPicture.Набор</commonPictures>
+  <commonPictures>CommonPicture.Наборы</commonPictures>
+  <commonPictures>CommonPicture.НарушенаДатаПотребности</commonPictures>
+  <commonPictures>CommonPicture.НеВыполнено</commonPictures>
+  <commonPictures>CommonPicture.ОбеспечениеЦеховыхКладовыхМатериалами</commonPictures>
+  <commonPictures>CommonPicture.ОбновитьФайлИзФайлаНаДиске</commonPictures>
+  <commonPictures>CommonPicture.Отчеты</commonPictures>
+  <commonPictures>CommonPicture.ОчередьЗаказовСостояниеВыпуска</commonPictures>
+  <commonPictures>CommonPicture.ОчередьЗаказовСостояниеЭтаповИГрафика</commonPictures>
+  <commonPictures>CommonPicture.ПерейтиВправо</commonPictures>
+  <commonPictures>CommonPicture.ПиктограммыЭлементов</commonPictures>
+  <commonPictures>CommonPicture.ПодписанЗашифрованЗаголовок</commonPictures>
+  <commonPictures>CommonPicture.ПодписанЗашифрованСостояния</commonPictures>
+  <commonPictures>CommonPicture.Предупреждение</commonPictures>
+  <commonPictures>CommonPicture.ПредыдущиеЭтапы</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
+  <commonPictures>CommonPicture.ПроизводственнаяОперация</commonPictures>
+  <commonPictures>CommonPicture.Пустая</commonPictures>
   <commonPictures>CommonPicture.Развернуть</commonPictures>
   <commonPictures>CommonPicture.РасчетПоФормуле</commonPictures>
+  <commonPictures>CommonPicture.РедактироватьФайл</commonPictures>
+  <commonPictures>CommonPicture.РучнаяКорректировка</commonPictures>
   <commonPictures>CommonPicture.Свернуть</commonPictures>
+  <commonPictures>CommonPicture.СерииНоменклатурыКолонкаСтатусов</commonPictures>
+  <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
+  <commonPictures>CommonPicture.СоздатьЭлементСпискаЗаполненныйАвтоматически</commonPictures>
+  <commonPictures>CommonPicture.СостояниеПроверкиКонтрагента</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
+  <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
+  <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяЗаполнитьПоОперациям</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяНазначитьОперации</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяОбеспечение</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяОтметитьГотовностьКРаботеКлючевогоРЦ</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяОтметитьЗавершениеРаботыКлючевогоРЦ</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяОтметитьНачалоВыполнения</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяПередатьКВыполнению</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяПланированиеГрафика</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяПроверитьЭтапы</commonPictures>
+  <commonPictures>CommonPicture.ТребуетсяСформироватьЭтапы</commonPictures>
+  <commonPictures>CommonPicture.УведомлениеСервиса</commonPictures>
+  <commonPictures>CommonPicture.ФормированиеЗаказовНаПроизводство</commonPictures>
+  <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
+  <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
+  <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
+  <roles>Role.П3_ЧтениеДокументаСпециальныеТребования</roles>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
+  <commonModules>CommonModule.НоменклатураСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
+  <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
+  <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
+  <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
+  <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <commonCommands>CommonCommand.СостояниеОбеспеченияСпискаЗаказов</commonCommands>
+  <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПлану</commonCommands>
+  <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
+  <constants>Constant.ОрганизацияТПС</constants>
+  <catalogs>Catalog.ДействияПроизводства</catalogs>
+  <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.ПартииПроизводства</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.РабочиеЦентры</catalogs>
+  <catalogs>Catalog.РесурсныеСпецификации</catalogs>
+  <catalogs>Catalog.СерииНоменклатуры</catalogs>
+  <catalogs>Catalog.СтадииЗагрузки</catalogs>
+  <catalogs>Catalog.СтруктураПредприятия</catalogs>
+  <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <catalogs>Catalog.ЭтапыПроизводства</catalogs>
+  <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ЗаказНаПроизводство2_2</documents>
+  <documents>Document.СпециальныеТребования</documents>
+  <documents>Document.ЭтапПроизводства2_2</documents>
+  <enums>Enum.ВариантыНазначенияСпецификации</enums>
+  <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
+  <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
+  <enums>Enum.ЕдиницыИзмеренияВремени</enums>
+  <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
+  <enums>Enum.СтатусыЗаказовНаПроизводство2_2</enums>
+  <enums>Enum.СтатусыСпецификаций</enums>
+  <enums>Enum.СтатусыЭтаповПроизводства2_2</enums>
+  <enums>Enum.ТипыДействий</enums>
+  <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
+  <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
+  <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
+  <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
 </mdclass:Configuration>
