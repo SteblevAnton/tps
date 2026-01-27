@@ -65,6 +65,7 @@
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <documents>Document.ПриобретениеТоваровУслуг</documents>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
