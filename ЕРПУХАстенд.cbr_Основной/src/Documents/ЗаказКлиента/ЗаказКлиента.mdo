@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="9e18b06d-249f-4cc1-89a5-b6e1caee4625" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
+  <producedTypes>
+    <objectType typeId="5c4dc95c-832d-4cc8-b8ea-fc435e3f3380" valueTypeId="4b6ab5ef-75ab-40cf-8476-816b49f965fe"/>
+    <refType typeId="91963c1b-a99f-4b58-a4ee-7e12b98987ac" valueTypeId="faba15c1-7735-4f5a-976c-7890746e0cf2"/>
+    <selectionType typeId="4b2f142f-07db-4814-91ff-d1486d9c8c3c" valueTypeId="1563af9b-5880-4baa-a59a-0c091245a59c"/>
+    <listType typeId="2e42a03c-e273-4666-8224-875ebca43074" valueTypeId="70796b27-be44-4c96-8368-25064cfb7b0d"/>
+    <managerType typeId="74797c52-4ffc-47de-b2ce-f7595e814315" valueTypeId="7700c038-384f-41ce-a9cb-fc63fca62057"/>
+  </producedTypes>
+  <name>ЗаказКлиента</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="da719c98-5721-494f-b4a6-4d148ef3073a">
+    <name>cbr_ТранспортныйТариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортный тариф, за 1 кг</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 22.01.2026 ПР17</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="41455e7b-a757-4cab-b077-8551b900ca46">
+    <name>cbr_СтоимостьДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 22.01.2026 ПР17</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="43610a7e-c9b7-4579-8c04-76f7935753df">
+    <name>cbr_СтоимостьДоставкиБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки без НДС</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 22.01.2026 ПР17</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

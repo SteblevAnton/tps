@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="078c85e9-6e59-4fad-89bc-edc9fe40d78f" extendedConfigurationObject="0fa4fd69-7e8f-4d18-9801-9fa74f7d2d1c">
+  <producedTypes>
+    <refType typeId="d8143efc-bee4-473e-9d18-5331ed8ddf9e" valueTypeId="4c4b6783-c18e-4e32-9a5f-423a3f154160"/>
+    <listType typeId="dc237c07-f125-4407-8ace-7e69048f3ce3" valueTypeId="908ecf3b-2342-4b8c-a1cb-fc5954d596da"/>
+    <managerType typeId="a0cfc1f4-2508-4842-8480-a13b61aa9623" valueTypeId="a3d4c270-7bb2-4598-8126-a9d13f4e0cb0"/>
+  </producedTypes>
+  <name>СостоянияСогласования</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="320949c5-2810-4219-beef-848ec43e702a" extendedConfigurationObject="c5228853-6ea7-4bea-a690-e6d6e91352fe">
+    <name>Черновик</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

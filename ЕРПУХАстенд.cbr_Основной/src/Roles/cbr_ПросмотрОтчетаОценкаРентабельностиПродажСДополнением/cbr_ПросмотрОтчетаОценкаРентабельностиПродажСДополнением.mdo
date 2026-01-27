@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="673e137f-6805-47bb-98de-732de59614e6">
+  <name>cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр отчета Оценка рентабельности продаж (АВ+ТУ) (П3)</value>
+  </synonym>
+  <comment>//++ БаженоваЕО 26.01.2026 ПР17</comment>
+</mdclass:Role>

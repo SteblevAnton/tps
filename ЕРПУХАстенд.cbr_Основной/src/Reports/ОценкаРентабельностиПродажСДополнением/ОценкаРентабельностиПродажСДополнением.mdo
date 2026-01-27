@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="656337bf-1338-47eb-81d3-d2013ef17922">
+  <producedTypes>
+    <objectType typeId="0c755f5e-c5cc-4e34-86c0-2869f7c6e745" valueTypeId="21738e67-d19b-4516-b0c1-5ee147f14be1"/>
+    <managerType typeId="5c6711b9-2c02-469e-b24a-41e8ab75b622" valueTypeId="cdc33412-8f02-4b94-a051-306e1de145c8"/>
+  </producedTypes>
+  <name>ОценкаРентабельностиПродажСДополнением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка рентабельности продаж (АВ+ТУ)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Sales profitability assessment (2.5)</value>
+  </synonym>
+  <comment>//++ БаженоваЕО 26.01.2026 ПР17</comment>
+  <mainDataCompositionSchema>Report.ОценкаРентабельностиПродажСДополнением.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="2b46e2a0-5029-4ec2-af53-9c801bed5a8c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

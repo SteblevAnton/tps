@@ -47,5 +47,38 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.Продажи</subsystems>
+  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
+  <commonModules>CommonModule.ВариантыОтчетовУТПереопределяемый</commonModules>
+  <commonModules>CommonModule.ЗаказКлиентаЛокализация</commonModules>
+  <commonModules>CommonModule.КоммерческиеПредложенияДокументыУТ</commonModules>
+  <definedTypes>DefinedType.КурсВалюты</definedTypes>
+  <definedTypes>DefinedType.ОбъектыДляСогласования</definedTypes>
+  <catalogs>Catalog.Валюты</catalogs>
+  <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.ЗоныДоставки</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
+  <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <documents>Document.БазовыеУсловияАгентскогоВознагражения</documents>
+  <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.КоммерческоеПредложениеКлиенту</documents>
+  <documents>Document.ТранспортныеТарифы</documents>
+  <documents>Document.УсловияАгентскогоВознагражения</documents>
+  <enums>Enum.СостоянияСогласования</enums>
+  <enums>Enum.СтоимостьТоваровПриОценкеРентабельностиПродажи</enums>
+  <enums>Enum.ТипыНоменклатуры</enums>
+  <reports>Report.ОценкаРентабельностиПродажСДополнением</reports>
+  <informationRegisters>InformationRegister.БазовыеУсловияАгентскогоВознаграждения</informationRegisters>
+  <informationRegisters>InformationRegister.ОтносительныеКурсыВалют</informationRegisters>
+  <informationRegisters>InformationRegister.РегистрСостоянийОбъектов</informationRegisters>
+  <informationRegisters>InformationRegister.ТранспортныеТарифы</informationRegisters>
+  <informationRegisters>InformationRegister.УсловияАгентскогоВознаграждения</informationRegisters>
 </mdclass:Configuration>
