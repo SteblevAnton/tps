@@ -3175,9 +3175,7 @@ Goods consumption rate is calculated according to the consumption statistics.</v
                 <key>en</key>
                 <value>Supply from stock</value>
               </presentation>
-              <value xsi:type="core:ReferenceValue">
-                <value>Enum.ОбеспечениеЗаказовПриПоддержанииЗапаса.EnumValue.ЗаСчетЗапасов</value>
-              </value>
+              <value xsi:type="core:ReferenceValue"/>
             </choiceList>
             <choiceList>
               <presentation>
@@ -3188,9 +3186,7 @@ Goods consumption rate is calculated according to the consumption statistics.</v
                 <key>en</key>
                 <value>Supply regardless of inventory level control</value>
               </presentation>
-              <value xsi:type="core:ReferenceValue">
-                <value>Enum.ОбеспечениеЗаказовПриПоддержанииЗапаса.EnumValue.НезависимоОтЗапасов</value>
-              </value>
+              <value xsi:type="core:ReferenceValue"/>
             </choiceList>
           </extInfo>
         </items>

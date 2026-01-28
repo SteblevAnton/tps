@@ -19377,6 +19377,843 @@ strategy</value>
     <main>true</main>
     <additionalColumns>
       <tablePath xsi:type="form:DataPath">
+        <segments>Объект.ЗаказыКОбеспечению</segments>
+      </tablePath>
+      <columns>
+        <name>Артикул</name>
+        <title>
+          <key>ru</key>
+          <value>Артикул</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Item ID</value>
+        </title>
+        <id>1</id>
+        <valueType>
+          <types>DefinedType.Артикул</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Код</name>
+        <title>
+          <key>ru</key>
+          <value>Код</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Code</value>
+        </title>
+        <id>2</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers>
+            <length>11</length>
+          </stringQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>КартинкаПриоритета</name>
+        <title>
+          <key>ru</key>
+          <value>Картинка приоритета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Priority picture</value>
+        </title>
+        <id>3</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>1</precision>
+            <nonNegative>true</nonNegative>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>КалендарьСклада</name>
+        <title>
+          <key>ru</key>
+          <value>Календарь склада</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Warehouse calendar</value>
+        </title>
+        <id>4</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>КалендарьПредприятия</name>
+        <title>
+          <key>ru</key>
+          <value>Календарь предприятия</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Enterprise calendar</value>
+        </title>
+        <id>5</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОшибкаНеЗаполненКалендарьСклада</name>
+        <title>
+          <key>ru</key>
+          <value>Ошибка не заполнен календарь склада</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>An error occurred as the warehouse calendar is not populated</value>
+        </title>
+        <id>6</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОшибкаНеЗаполненКалендарьПредприятия</name>
+        <title>
+          <key>ru</key>
+          <value>Ошибка не заполнен календарь предприятия</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>An error occurred as the enterprise calendar is not populated</value>
+        </title>
+        <id>7</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Вес</name>
+        <title>
+          <key>ru</key>
+          <value>Вес</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Weight</value>
+        </title>
+        <id>8</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>15</precision>
+            <scale>6</scale>
+            <nonNegative>true</nonNegative>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ТипОбеспечения</name>
+        <title>
+          <key>ru</key>
+          <value>Тип обеспечения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Supply source type</value>
+        </title>
+        <id>9</id>
+        <valueType>
+          <types>EnumRef.ТипыОбеспечения</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ИсточникОбеспечения</name>
+        <title>
+          <key>ru</key>
+          <value>Источник обеспечения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Source of supply</value>
+        </title>
+        <id>10</id>
+        <valueType>
+          <types>CatalogRef.СтруктураПредприятия</types>
+          <types>CatalogRef.Склады</types>
+          <types>CatalogRef.Партнеры</types>
+          <types>String</types>
+          <stringQualifiers>
+            <length>50</length>
+          </stringQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ДатаПоставки</name>
+        <title>
+          <key>ru</key>
+          <value>Дата поставки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Delivery date from</value>
+        </title>
+        <id>11</id>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers>
+            <dateFractions>Date</dateFractions>
+          </dateQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ЕдиницаИзмерения</name>
+        <title>
+          <key>ru</key>
+          <value>Единица измерения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Unit of measure</value>
+        </title>
+        <id>12</id>
+        <valueType>
+          <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОбеспечиваемыйПериод</name>
+        <title>
+          <key>ru</key>
+          <value>Обеспечиваемый период</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Covered period</value>
+        </title>
+        <id>13</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>5</precision>
+            <nonNegative>true</nonNegative>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ВидЦены</name>
+        <title>
+          <key>ru</key>
+          <value>Вид цены</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Price type</value>
+        </title>
+        <id>14</id>
+        <valueType>
+          <types>CatalogRef.ВидыЦенПоставщиков</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ВалютаСоглашения</name>
+        <title>
+          <key>ru</key>
+          <value>Валюта соглашения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Agreement currency</value>
+        </title>
+        <id>15</id>
+        <valueType>
+          <types>CatalogRef.Валюты</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ЦенаВВалютеСоглашения</name>
+        <title>
+          <key>ru</key>
+          <value>Цена в валюте соглашения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Price in the currency of agreement</value>
+        </title>
+        <id>16</id>
+        <valueType>
+          <types>DefinedType.Цена</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ЦенаВВалютеУправленческогоУчета</name>
+        <title>
+          <key>ru</key>
+          <value>Цена в валюте управленческого учета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Price in the currency of management accounting</value>
+        </title>
+        <id>17</id>
+        <valueType>
+          <types>DefinedType.Цена</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ИсточникОбеспеченияТолькоПросмотр</name>
+        <title>
+          <key>ru</key>
+          <value>Источник обеспечения только просмотр</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Source of supply view only</value>
+        </title>
+        <id>18</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>УдовлетворяетОтбору</name>
+        <title>
+          <key>ru</key>
+          <value>Удовлетворяет отбору</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Satisfies the filter</value>
+        </title>
+        <id>19</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>КЗаказуРекомендуется</name>
+        <title>
+          <key>ru</key>
+          <value>К заказу рекомендуется</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Recommended to order</value>
+        </title>
+        <id>20</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>15</precision>
+            <scale>3</scale>
+            <nonNegative>true</nonNegative>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>СпособОбеспечения</name>
+        <title>
+          <key>ru</key>
+          <value>Способ обеспечения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Procurement strategy</value>
+        </title>
+        <id>21</id>
+        <valueType>
+          <types>CatalogRef.СпособыОбеспеченияПотребностей</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>СуммаУпрУчет</name>
+        <title>
+          <key>ru</key>
+          <value>Сумма упр учет</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Amount, manag.</value>
+        </title>
+        <id>22</id>
+        <valueType>
+          <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>СуммаВалютаСоглашения</name>
+        <title>
+          <key>ru</key>
+          <value>Сумма валюта соглашения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Agreement currency amount</value>
+        </title>
+        <id>23</id>
+        <valueType>
+          <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОбщийВес</name>
+        <title>
+          <key>ru</key>
+          <value>Общий вес</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Total weight</value>
+        </title>
+        <id>24</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>15</precision>
+            <scale>3</scale>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>КоличествоСтарое</name>
+        <title>
+          <key>ru</key>
+          <value>Количество старое</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Quantity old</value>
+        </title>
+        <id>25</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>15</precision>
+            <scale>3</scale>
+            <nonNegative>true</nonNegative>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Соглашение</name>
+        <title>
+          <key>ru</key>
+          <value>Соглашение</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Terms of purchase</value>
+        </title>
+        <id>26</id>
+        <valueType>
+          <types>CatalogRef.СоглашенияСПоставщиками</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>СрокПоставки</name>
+        <title>
+          <key>ru</key>
+          <value>Срок поставки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Delivery period</value>
+        </title>
+        <id>27</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>5</precision>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ЭтоРабота</name>
+        <title>
+          <key>ru</key>
+          <value>Это работа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>This is work</value>
+        </title>
+        <id>28</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ДатаБлижайшейПоставкиПоГрафику</name>
+        <title>
+          <key>ru</key>
+          <value>Дата ближайшей поставки по графику</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>The earliest delivery date on schedule</value>
+        </title>
+        <id>29</id>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers>
+            <dateFractions>Date</dateFractions>
+          </dateQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Получатель</name>
+        <title>
+          <key>ru</key>
+          <value>Получатель</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Recipient</value>
+        </title>
+        <id>30</id>
+        <valueType>
+          <types>CatalogRef.СтруктураПредприятия</types>
+          <types>CatalogRef.Склады</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ИспользоватьУпаковки</name>
+        <title>
+          <key>ru</key>
+          <value>Использовать упаковки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Use packaging units</value>
+        </title>
+        <id>31</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ПеремещениеРазрешено</name>
+        <title>
+          <key>ru</key>
+          <value>Перемещение разрешено</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Transfer is allowed</value>
+        </title>
+        <id>32</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>СкладОтгрузкиЗаказа</name>
+        <title>
+          <key>ru</key>
+          <value>Склад отгрузки заказа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Origin warehouse</value>
+        </title>
+        <id>34</id>
+        <valueType>
+          <types>CatalogRef.Склады</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ДатаОтгрузкиЗаказа</name>
+        <title>
+          <key>ru</key>
+          <value>Дата отгрузки заказа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Order shipment date</value>
+        </title>
+        <id>35</id>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers>
+            <dateFractions>Date</dateFractions>
+          </dateQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>МинимальнаяПартияПоставки</name>
+        <title>
+          <key>ru</key>
+          <value>Минимальная партия поставки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Minimum delivery lot</value>
+        </title>
+        <id>121</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>15</precision>
+            <scale>3</scale>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>МинимальнаяСуммаЗаказа</name>
+        <title>
+          <key>ru</key>
+          <value>Минимальная сумма заказа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Minimum order amount</value>
+        </title>
+        <id>122</id>
+        <valueType>
+          <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>НеОкруглятьПередСозданиемЗаказа</name>
+        <title>
+          <key>ru</key>
+          <value>Не округлять перед созданием заказа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Do not round before creating order</value>
+        </title>
+        <id>123</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+    </additionalColumns>
+    <additionalColumns>
+      <tablePath xsi:type="form:DataPath">
         <segments>Объект.СпособыОбеспечения</segments>
       </tablePath>
       <columns>
@@ -19648,9 +20485,9 @@ strategy</value>
         <id>10</id>
         <valueType>
           <types>CatalogRef.СтруктураПредприятия</types>
+          <types>CatalogRef.Склады</types>
           <types>CatalogRef.Партнеры</types>
           <types>String</types>
-          <types>CatalogRef.Склады</types>
           <stringQualifiers>
             <length>20</length>
           </stringQualifiers>
@@ -20315,843 +21152,6 @@ strategy</value>
         </edit>
       </columns>
     </additionalColumns>
-    <additionalColumns>
-      <tablePath xsi:type="form:DataPath">
-        <segments>Объект.ЗаказыКОбеспечению</segments>
-      </tablePath>
-      <columns>
-        <name>Артикул</name>
-        <title>
-          <key>ru</key>
-          <value>Артикул</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Item ID</value>
-        </title>
-        <id>1</id>
-        <valueType>
-          <types>DefinedType.Артикул</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>Код</name>
-        <title>
-          <key>ru</key>
-          <value>Код</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Code</value>
-        </title>
-        <id>2</id>
-        <valueType>
-          <types>String</types>
-          <stringQualifiers>
-            <length>11</length>
-          </stringQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>КартинкаПриоритета</name>
-        <title>
-          <key>ru</key>
-          <value>Картинка приоритета</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Priority picture</value>
-        </title>
-        <id>3</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>1</precision>
-            <nonNegative>true</nonNegative>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>КалендарьСклада</name>
-        <title>
-          <key>ru</key>
-          <value>Календарь склада</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Warehouse calendar</value>
-        </title>
-        <id>4</id>
-        <valueType>
-          <types>String</types>
-          <stringQualifiers/>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>КалендарьПредприятия</name>
-        <title>
-          <key>ru</key>
-          <value>Календарь предприятия</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Enterprise calendar</value>
-        </title>
-        <id>5</id>
-        <valueType>
-          <types>String</types>
-          <stringQualifiers/>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ОшибкаНеЗаполненКалендарьСклада</name>
-        <title>
-          <key>ru</key>
-          <value>Ошибка не заполнен календарь склада</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>An error occurred as the warehouse calendar is not populated</value>
-        </title>
-        <id>6</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ОшибкаНеЗаполненКалендарьПредприятия</name>
-        <title>
-          <key>ru</key>
-          <value>Ошибка не заполнен календарь предприятия</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>An error occurred as the enterprise calendar is not populated</value>
-        </title>
-        <id>7</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>Вес</name>
-        <title>
-          <key>ru</key>
-          <value>Вес</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Weight</value>
-        </title>
-        <id>8</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>15</precision>
-            <scale>6</scale>
-            <nonNegative>true</nonNegative>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ТипОбеспечения</name>
-        <title>
-          <key>ru</key>
-          <value>Тип обеспечения</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Supply source type</value>
-        </title>
-        <id>9</id>
-        <valueType>
-          <types>EnumRef.ТипыОбеспечения</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ИсточникОбеспечения</name>
-        <title>
-          <key>ru</key>
-          <value>Источник обеспечения</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Source of supply</value>
-        </title>
-        <id>10</id>
-        <valueType>
-          <types>CatalogRef.СтруктураПредприятия</types>
-          <types>CatalogRef.Партнеры</types>
-          <types>String</types>
-          <types>CatalogRef.Склады</types>
-          <stringQualifiers>
-            <length>50</length>
-          </stringQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ДатаПоставки</name>
-        <title>
-          <key>ru</key>
-          <value>Дата поставки</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Delivery date from</value>
-        </title>
-        <id>11</id>
-        <valueType>
-          <types>Date</types>
-          <dateQualifiers>
-            <dateFractions>Date</dateFractions>
-          </dateQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ЕдиницаИзмерения</name>
-        <title>
-          <key>ru</key>
-          <value>Единица измерения</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Unit of measure</value>
-        </title>
-        <id>12</id>
-        <valueType>
-          <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ОбеспечиваемыйПериод</name>
-        <title>
-          <key>ru</key>
-          <value>Обеспечиваемый период</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Covered period</value>
-        </title>
-        <id>13</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>5</precision>
-            <nonNegative>true</nonNegative>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ВидЦены</name>
-        <title>
-          <key>ru</key>
-          <value>Вид цены</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Price type</value>
-        </title>
-        <id>14</id>
-        <valueType>
-          <types>CatalogRef.ВидыЦенПоставщиков</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ВалютаСоглашения</name>
-        <title>
-          <key>ru</key>
-          <value>Валюта соглашения</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Agreement currency</value>
-        </title>
-        <id>15</id>
-        <valueType>
-          <types>CatalogRef.Валюты</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ЦенаВВалютеСоглашения</name>
-        <title>
-          <key>ru</key>
-          <value>Цена в валюте соглашения</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Price in the currency of agreement</value>
-        </title>
-        <id>16</id>
-        <valueType>
-          <types>DefinedType.Цена</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ЦенаВВалютеУправленческогоУчета</name>
-        <title>
-          <key>ru</key>
-          <value>Цена в валюте управленческого учета</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Price in the currency of management accounting</value>
-        </title>
-        <id>17</id>
-        <valueType>
-          <types>DefinedType.Цена</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ИсточникОбеспеченияТолькоПросмотр</name>
-        <title>
-          <key>ru</key>
-          <value>Источник обеспечения только просмотр</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Source of supply view only</value>
-        </title>
-        <id>18</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>УдовлетворяетОтбору</name>
-        <title>
-          <key>ru</key>
-          <value>Удовлетворяет отбору</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Satisfies the filter</value>
-        </title>
-        <id>19</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>КЗаказуРекомендуется</name>
-        <title>
-          <key>ru</key>
-          <value>К заказу рекомендуется</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Recommended to order</value>
-        </title>
-        <id>20</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>15</precision>
-            <scale>3</scale>
-            <nonNegative>true</nonNegative>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>СпособОбеспечения</name>
-        <title>
-          <key>ru</key>
-          <value>Способ обеспечения</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Procurement strategy</value>
-        </title>
-        <id>21</id>
-        <valueType>
-          <types>CatalogRef.СпособыОбеспеченияПотребностей</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>СуммаУпрУчет</name>
-        <title>
-          <key>ru</key>
-          <value>Сумма упр учет</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Amount, manag.</value>
-        </title>
-        <id>22</id>
-        <valueType>
-          <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>СуммаВалютаСоглашения</name>
-        <title>
-          <key>ru</key>
-          <value>Сумма валюта соглашения</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Agreement currency amount</value>
-        </title>
-        <id>23</id>
-        <valueType>
-          <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ОбщийВес</name>
-        <title>
-          <key>ru</key>
-          <value>Общий вес</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Total weight</value>
-        </title>
-        <id>24</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>15</precision>
-            <scale>3</scale>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>КоличествоСтарое</name>
-        <title>
-          <key>ru</key>
-          <value>Количество старое</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Quantity old</value>
-        </title>
-        <id>25</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>15</precision>
-            <scale>3</scale>
-            <nonNegative>true</nonNegative>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>Соглашение</name>
-        <title>
-          <key>ru</key>
-          <value>Соглашение</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Terms of purchase</value>
-        </title>
-        <id>26</id>
-        <valueType>
-          <types>CatalogRef.СоглашенияСПоставщиками</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>СрокПоставки</name>
-        <title>
-          <key>ru</key>
-          <value>Срок поставки</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Delivery period</value>
-        </title>
-        <id>27</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>5</precision>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ЭтоРабота</name>
-        <title>
-          <key>ru</key>
-          <value>Это работа</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>This is work</value>
-        </title>
-        <id>28</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ДатаБлижайшейПоставкиПоГрафику</name>
-        <title>
-          <key>ru</key>
-          <value>Дата ближайшей поставки по графику</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>The earliest delivery date on schedule</value>
-        </title>
-        <id>29</id>
-        <valueType>
-          <types>Date</types>
-          <dateQualifiers>
-            <dateFractions>Date</dateFractions>
-          </dateQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>Получатель</name>
-        <title>
-          <key>ru</key>
-          <value>Получатель</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Recipient</value>
-        </title>
-        <id>30</id>
-        <valueType>
-          <types>CatalogRef.СтруктураПредприятия</types>
-          <types>CatalogRef.Склады</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ИспользоватьУпаковки</name>
-        <title>
-          <key>ru</key>
-          <value>Использовать упаковки</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Use packaging units</value>
-        </title>
-        <id>31</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ПеремещениеРазрешено</name>
-        <title>
-          <key>ru</key>
-          <value>Перемещение разрешено</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Transfer is allowed</value>
-        </title>
-        <id>32</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>СкладОтгрузкиЗаказа</name>
-        <title>
-          <key>ru</key>
-          <value>Склад отгрузки заказа</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Origin warehouse</value>
-        </title>
-        <id>34</id>
-        <valueType>
-          <types>CatalogRef.Склады</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>ДатаОтгрузкиЗаказа</name>
-        <title>
-          <key>ru</key>
-          <value>Дата отгрузки заказа</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Order shipment date</value>
-        </title>
-        <id>35</id>
-        <valueType>
-          <types>Date</types>
-          <dateQualifiers>
-            <dateFractions>Date</dateFractions>
-          </dateQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>МинимальнаяПартияПоставки</name>
-        <title>
-          <key>ru</key>
-          <value>Минимальная партия поставки</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Minimum delivery lot</value>
-        </title>
-        <id>121</id>
-        <valueType>
-          <types>Number</types>
-          <numberQualifiers>
-            <precision>15</precision>
-            <scale>3</scale>
-          </numberQualifiers>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>МинимальнаяСуммаЗаказа</name>
-        <title>
-          <key>ru</key>
-          <value>Минимальная сумма заказа</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Minimum order amount</value>
-        </title>
-        <id>122</id>
-        <valueType>
-          <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-      <columns>
-        <name>НеОкруглятьПередСозданиемЗаказа</name>
-        <title>
-          <key>ru</key>
-          <value>Не округлять перед созданием заказа</value>
-        </title>
-        <title>
-          <key>en</key>
-          <value>Do not round before creating order</value>
-        </title>
-        <id>123</id>
-        <valueType>
-          <types>Boolean</types>
-        </valueType>
-        <view>
-          <common>true</common>
-        </view>
-        <edit>
-          <common>true</common>
-        </edit>
-      </columns>
-    </additionalColumns>
   </attributes>
   <attributes>
     <name>КомпоновщикНастроекДляОтборов</name>
@@ -21206,8 +21206,8 @@ strategy</value>
       </title>
       <id>1</id>
       <valueType>
-        <types>DocumentRef.ЗаказПоставщику</types>
         <types>DocumentRef.ЗаказНаПроизводство2_2</types>
+        <types>DocumentRef.ЗаказПоставщику</types>
       </valueType>
       <view>
         <common>true</common>
@@ -21229,8 +21229,8 @@ strategy</value>
       <id>2</id>
       <valueType>
         <types>CatalogRef.СтруктураПредприятия</types>
-        <types>CatalogRef.Партнеры</types>
         <types>CatalogRef.Склады</types>
+        <types>CatalogRef.Партнеры</types>
       </valueType>
       <view>
         <common>true</common>
@@ -21542,8 +21542,8 @@ strategy</value>
     <id>24</id>
     <valueType>
       <types>CatalogRef.СтруктураПредприятия</types>
-      <types>CatalogRef.Партнеры</types>
       <types>CatalogRef.Склады</types>
+      <types>CatalogRef.Партнеры</types>
     </valueType>
     <view>
       <common>true</common>
@@ -23245,9 +23245,9 @@ strategy</value>
       <id>104</id>
       <valueType>
         <types>CatalogRef.СтруктураПредприятия</types>
+        <types>CatalogRef.Склады</types>
         <types>CatalogRef.Партнеры</types>
         <types>String</types>
-        <types>CatalogRef.Склады</types>
         <stringQualifiers>
           <length>20</length>
         </stringQualifiers>
@@ -23698,8 +23698,8 @@ strategy</value>
       </title>
       <id>1</id>
       <valueType>
-        <types>DocumentRef.ЗаказПоставщику</types>
         <types>DocumentRef.ЗаданиеНаПеревозку</types>
+        <types>DocumentRef.ЗаказПоставщику</types>
       </valueType>
       <view>
         <common>true</common>

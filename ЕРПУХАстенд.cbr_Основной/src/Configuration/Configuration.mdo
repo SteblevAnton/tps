@@ -62,6 +62,7 @@
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
+  <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
