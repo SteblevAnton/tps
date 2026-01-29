@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="5edad59b-2c69-4708-9854-634f62ef87a2" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
+  <producedTypes>
+    <objectType typeId="af242adf-78fe-49db-8c45-c1a3d0d6440e" valueTypeId="dc162514-eed7-43b7-951b-db80e8866952"/>
+    <refType typeId="5fae6c6b-5088-4122-bacf-172c1cc3fa4f" valueTypeId="0588b355-0f76-45ee-94ed-5509168f2f99"/>
+    <selectionType typeId="345a09e7-47e9-4d6f-bc94-7c46a8d11d91" valueTypeId="009a5265-c1b0-44a7-94f9-53a383fb7284"/>
+    <listType typeId="2ec9d88a-5423-41c3-873a-a4d360bd9f27" valueTypeId="e4de48df-22ea-413e-9705-1b02472579e3"/>
+    <managerType typeId="0b62c99c-20ce-4734-a6c9-521549166a8e" valueTypeId="bf58dab5-c20d-46c3-b6f4-eca5da223632"/>
+  </producedTypes>
+  <name>ЗаказКлиента</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="c9ea31c6-f69b-46f9-bbdb-61e1c5e106c5">
+    <name>cbr_ТранспортныйТариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортный тариф за 1 кг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb8182fe-96d8-44e9-afb5-aa79e12fa332">
+    <name>cbr_СтоимостьДоставкиСНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки С НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="765f4e49-798b-4f2d-aeb1-5947ade7ad63">
+    <name>cbr_СтоимостьДоставкиБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки без НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="464b9963-9af0-4b96-adc7-829f07f623c8" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>
