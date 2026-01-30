@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="63f036ce-c442-4a31-8eff-e134e59f15cb" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
+  <producedTypes>
+    <objectType typeId="d2666d4a-0f75-4740-a5c5-c9f03fce603c" valueTypeId="ff9625ae-1431-44b9-9b91-64c0c18188ec"/>
+    <refType typeId="5ec42ab3-23f8-40cf-9171-066f4a843d4f" valueTypeId="ec976f15-2877-4361-99e1-644c1fbfbf10"/>
+    <selectionType typeId="672cca51-b2ed-4949-9bd6-128efab6f9fd" valueTypeId="c7ff3b8c-c842-4feb-9e9d-df479fded421"/>
+    <listType typeId="0b0c0909-a3c0-404c-933f-5e7747b4466c" valueTypeId="32d5fd5d-c0ac-46a6-92e8-59b40656316d"/>
+    <managerType typeId="ea9fe497-64fe-45aa-a811-2144234d86c3" valueTypeId="0f3acd46-8cbb-4768-a133-3f65f0c17522"/>
+  </producedTypes>
+  <name>ЗаказКлиента</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="18fb473b-9317-47f2-a972-a79aaae94aeb">
+    <name>cbr_ПересечениеМенеджеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересечение менеджеров</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 27.01.2026 ПРД.18</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="963f08b3-a4e3-44c1-aa7a-7110538f17d0" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="0fcf512b-d5d1-49c2-8307-d64942d3c207">
+    <producedTypes>
+      <objectType typeId="ca2d35db-025e-4500-bacb-9a6f20321eb3" valueTypeId="84bff047-ac49-45d0-b5ab-984e9d8abcd8"/>
+      <rowType typeId="00ea6136-086f-46dc-ad83-d490187c0686" valueTypeId="b88a960d-d8e6-4158-a017-274d1c1c1f31"/>
+    </producedTypes>
+    <name>cbr_ТЧПересечениеМенеджеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересечение менеджеров</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 27.01.2026 ПРД.18</comment>
+    <attributes uuid="3a0b7a0b-80d2-4e47-aaae-3adbbe57b534">
+      <name>ФизическоеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Физическое лицо</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aac58806-76aa-4773-9bc2-298844b9c7b5">
+      <name>Процент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>
