@@ -50,14 +50,29 @@
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
+  <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
+  <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
+  <styleItems>StyleItem.ИтогиФон</styleItems>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
+  <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
+  <commonPictures>CommonPicture.ЛоготипОсновнойСервисДоставки</commonPictures>
+  <commonPictures>CommonPicture.Набор</commonPictures>
+  <commonPictures>CommonPicture.Наборы</commonPictures>
+  <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
+  <commonPictures>CommonPicture.Отчеты</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
   <commonPictures>CommonPicture.Развернуть</commonPictures>
   <commonPictures>CommonPicture.РасчетПоФормуле</commonPictures>
   <commonPictures>CommonPicture.Свернуть</commonPictures>
+  <commonPictures>CommonPicture.СерииНоменклатурыКолонкаСтатусов</commonPictures>
+  <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
+  <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
@@ -65,7 +80,15 @@
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
+  <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
+  <documents>Document.ЗаказКлиента</documents>
+  <enums>Enum.ВариантыОбеспечения</enums>
+  <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
+  <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
+  <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
 </mdclass:Configuration>
