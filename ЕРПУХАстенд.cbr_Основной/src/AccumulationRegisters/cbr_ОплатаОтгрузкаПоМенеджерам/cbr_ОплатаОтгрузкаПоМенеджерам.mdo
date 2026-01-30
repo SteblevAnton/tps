@@ -68,7 +68,7 @@
     <name>ЗаказКлиента</name>
     <synonym>
       <key>ru</key>
-      <value>Документ «Заказ клиента»</value>
+      <value>Заказ клиента</value>
     </synonym>
     <type>
       <types>DocumentRef.ЗаказКлиента</types>
