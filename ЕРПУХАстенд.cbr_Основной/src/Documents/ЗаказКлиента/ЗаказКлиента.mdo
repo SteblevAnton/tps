@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="63f036ce-c442-4a31-8eff-e134e59f15cb" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="48638333-2689-44d2-98c9-0e8a45d897db" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
   <producedTypes>
-    <objectType typeId="d2666d4a-0f75-4740-a5c5-c9f03fce603c" valueTypeId="ff9625ae-1431-44b9-9b91-64c0c18188ec"/>
-    <refType typeId="5ec42ab3-23f8-40cf-9171-066f4a843d4f" valueTypeId="ec976f15-2877-4361-99e1-644c1fbfbf10"/>
-    <selectionType typeId="672cca51-b2ed-4949-9bd6-128efab6f9fd" valueTypeId="c7ff3b8c-c842-4feb-9e9d-df479fded421"/>
-    <listType typeId="0b0c0909-a3c0-404c-933f-5e7747b4466c" valueTypeId="32d5fd5d-c0ac-46a6-92e8-59b40656316d"/>
-    <managerType typeId="ea9fe497-64fe-45aa-a811-2144234d86c3" valueTypeId="0f3acd46-8cbb-4768-a133-3f65f0c17522"/>
+    <objectType typeId="9fe7371d-872b-4c0c-a4e4-2008c269affe" valueTypeId="b01ced2e-5648-475d-b403-afe89d205a2b"/>
+    <refType typeId="c35a6ed7-88ad-453f-a897-78210e418701" valueTypeId="dac66ae2-d69e-4993-93b8-b2ec5b000ba0"/>
+    <selectionType typeId="dab7ea60-199c-4a13-8de7-0fc175d952e2" valueTypeId="d7cd8ead-e388-4cac-81e2-f27c689d51ca"/>
+    <listType typeId="b2d9c635-d567-4e80-9cf2-26ecb299d18b" valueTypeId="4748d3e0-cae0-429a-993e-c47c7e2d3f6f"/>
+    <managerType typeId="b2cff8c9-3fe3-4f98-bffa-d4998b5a70e7" valueTypeId="20fa8925-ef91-4616-8f5c-9dd50dcda79b"/>
   </producedTypes>
   <name>ЗаказКлиента</name>
   <objectBelonging>Adopted</objectBelonging>
@@ -29,7 +29,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="963f08b3-a4e3-44c1-aa7a-7110538f17d0" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
+  <forms uuid="3b83bc6c-e487-4a00-94b1-476310514985" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:BasicFormExtension">

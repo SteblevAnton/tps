@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f6947edd-c7d6-4a71-bec3-f19c321dc83e" extendedConfigurationObject="f059f96f-49ef-4ffe-9d56-771832f636a0">
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="70634772-7996-4905-a28e-947d39a39ca7" extendedConfigurationObject="f059f96f-49ef-4ffe-9d56-771832f636a0">
   <producedTypes>
-    <refType typeId="bc7e616d-86a6-46e2-9836-d6fc3ff50feb" valueTypeId="2358042e-2d39-4a1f-aa9a-0239ad8225cf"/>
-    <listType typeId="edcbfb9c-d9c6-4f53-8265-e0de9fff1727" valueTypeId="6959a464-2bb5-4137-9103-9c4bd3af4e38"/>
-    <managerType typeId="10cc1d34-9668-4daa-9750-6d6c861129ae" valueTypeId="8ac3ab7f-5f28-422f-86d9-c6ac5efac28e"/>
+    <refType typeId="78c4a872-8cb0-4b4a-a1d7-365f00711dcb" valueTypeId="fb2843f4-c34a-45e9-b079-5b51e534d396"/>
+    <listType typeId="f87ba5c6-8c86-427c-aae6-b8ee2ef77f79" valueTypeId="d51e2a72-a558-40b4-955d-06423dce2265"/>
+    <managerType typeId="2415e3f8-7992-4bc9-9f97-92f3472d59b9" valueTypeId="53331720-41fb-44fb-99d1-8deb2266e4cd"/>
   </producedTypes>
   <name>СтатусыДействияВидовЦен</name>
   <objectBelonging>Adopted</objectBelonging>
@@ -11,7 +11,7 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
-  <enumValues uuid="cf8390dc-1196-46ab-91a3-1777cdee10b1" extendedConfigurationObject="8310e76c-109d-4afc-a081-1e46eec439c9">
+  <enumValues uuid="16018ac4-f0e7-4605-8100-20add05561a5" extendedConfigurationObject="8310e76c-109d-4afc-a081-1e46eec439c9">
     <name>Действует</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
