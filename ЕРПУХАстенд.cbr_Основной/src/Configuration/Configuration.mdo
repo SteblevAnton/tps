@@ -47,13 +47,13 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
-  <styleItems>StyleItem.ПоясняющийТекст</styleItems>
-  <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
-  <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
-  <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
-  <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ИтогиФон</styleItems>
+  <styleItems>StyleItem.ПоясняющийТекст</styleItems>
+  <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
+  <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
+  <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
+  <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
