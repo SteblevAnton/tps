@@ -13,6 +13,63 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="c9ea31c6-f69b-46f9-bbdb-61e1c5e106c5">
+    <name>cbr_ТранспортныйТариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортный тариф за 1 кг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb8182fe-96d8-44e9-afb5-aa79e12fa332">
+    <name>cbr_СтоимостьДоставкиСНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки С НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="765f4e49-798b-4f2d-aeb1-5947ade7ad63">
+    <name>cbr_СтоимостьДоставкиБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки без НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="3ba684e4-3f1a-4589-84ba-1008c5c44123">
     <name>cbr_ДокументыДляВодителя</name>
     <synonym>
