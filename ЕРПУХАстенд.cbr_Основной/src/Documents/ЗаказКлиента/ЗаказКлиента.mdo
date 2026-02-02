@@ -73,6 +73,7 @@
         <numberQualifiers>
           <precision>5</precision>
           <scale>2</scale>
+          <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
