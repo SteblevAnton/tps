@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="48638333-2689-44d2-98c9-0e8a45d897db" extendedConfigurationObject="1ceef4a2-6b58-45a0-8a75-bb6e3004590f">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c68ed530-0adc-420d-80b6-f7c717929742" extendedConfigurationObject="2bb5c12e-1217-4c8d-ae01-3a6253cfe429">
   <producedTypes>
-    <objectType typeId="9fe7371d-872b-4c0c-a4e4-2008c269affe" valueTypeId="b01ced2e-5648-475d-b403-afe89d205a2b"/>
-    <refType typeId="c35a6ed7-88ad-453f-a897-78210e418701" valueTypeId="dac66ae2-d69e-4993-93b8-b2ec5b000ba0"/>
-    <selectionType typeId="dab7ea60-199c-4a13-8de7-0fc175d952e2" valueTypeId="d7cd8ead-e388-4cac-81e2-f27c689d51ca"/>
-    <listType typeId="b2d9c635-d567-4e80-9cf2-26ecb299d18b" valueTypeId="4748d3e0-cae0-429a-993e-c47c7e2d3f6f"/>
-    <managerType typeId="b2cff8c9-3fe3-4f98-bffa-d4998b5a70e7" valueTypeId="20fa8925-ef91-4616-8f5c-9dd50dcda79b"/>
+    <objectType typeId="dfa6910e-558b-430e-828a-05ffa0cb8234" valueTypeId="bc3d3078-004a-414d-94e4-3171ada6b8a9"/>
+    <refType typeId="b37e32fe-6534-4486-b5e2-1cef8c3eaf79" valueTypeId="db0c794b-e229-4d46-8601-26c9d3930e58"/>
+    <selectionType typeId="75ebb2d8-7bb5-4729-a3d1-2c4cc2023cf2" valueTypeId="080c8496-0658-40e9-b6ba-9de15942d08a"/>
+    <listType typeId="adfe4e56-301e-4d76-a0bc-29e03eabd918" valueTypeId="c97a0d8c-e4f0-4538-9514-07fc70860931"/>
+    <managerType typeId="4a032b1a-d929-48a6-980e-23c2b33447d4" valueTypeId="4de492e7-4799-45c3-afa3-108359d5a204"/>
   </producedTypes>
-  <name>ЗаказКлиента</name>
+  <name>СоглашенияСКлиентами</name>
   <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:DocumentExtension">
+  <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
-  <attributes uuid="3ba684e4-3f1a-4589-84ba-1008c5c44123">
+  <attributes uuid="0a512219-0059-42b5-901e-e7b84251070c">
     <name>cbr_ДокументыДляВодителя</name>
     <synonym>
       <key>ru</key>
@@ -32,7 +32,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="808fd547-7812-4607-a48a-099fdc1b598d">
+  <attributes uuid="74c6a118-9486-49c2-be9e-416fc73b3027">
     <name>cbr_ТаможенноеСопровождение</name>
     <synonym>
       <key>ru</key>
@@ -51,7 +51,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="8ac22b78-4e0e-4aad-b449-1ab3aafe4eab">
+  <attributes uuid="3ba73dba-711b-413a-b555-409c119533e2">
     <name>cbr_УсловияДоставки</name>
     <synonym>
       <key>ru</key>
@@ -70,7 +70,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="db825029-ec5b-432c-9ca9-f8e758c0e9a1">
+  <attributes uuid="d5ebf7e2-5c03-474d-85a2-fef71a2bafc2">
     <name>cbr_ТребованияКУпаковке</name>
     <synonym>
       <key>ru</key>
@@ -89,7 +89,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="6d02864f-f537-49fa-b94b-6874414da559">
+  <attributes uuid="05fb6436-90dc-4d49-ae59-399394637074">
     <name>cbr_ТребованияКЭтикетке</name>
     <synonym>
       <key>ru</key>
@@ -108,7 +108,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2870269f-be4c-450d-97db-c9a806b0f90d">
+  <attributes uuid="19951bc6-8d4c-45d2-892b-cfdf2df36d87">
     <name>cbr_ТребованиеККомплектации</name>
     <synonym>
       <key>ru</key>
@@ -127,7 +127,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2d0260ac-4572-44f8-9891-6671306a065c">
+  <attributes uuid="553a2d48-eb03-41b6-9d46-add03cd1b46d">
     <name>cbr_НеБолееДатыПроизводства</name>
     <synonym>
       <key>ru</key>
@@ -146,7 +146,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="8a9406bb-cb39-4eb0-880f-2869c4b50ba4">
+  <attributes uuid="7f1c6f9b-3368-4a2a-8ca0-18c4c870b72e">
     <name>cbr_ДопустимыйОстатокГСХНеМенееПроцент</name>
     <synonym>
       <key>ru</key>
@@ -165,7 +165,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="33f1a877-79ab-4dfe-9f8b-a368704ef2ba">
+  <attributes uuid="ca69e863-dad4-405e-942c-b2cbf12a0211">
     <name>cbr_ДопустимыйОстатокГСХНеМенееМес</name>
     <synonym>
       <key>ru</key>
@@ -184,7 +184,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="5a0eab3c-7c96-48d8-82c8-936353a7eb38">
+  <attributes uuid="c7b5c21e-c3d7-407b-a687-845085646797">
     <name>cbr_ПрочиеТребования</name>
     <synonym>
       <key>ru</key>
@@ -203,73 +203,4 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="18fb473b-9317-47f2-a972-a79aaae94aeb">
-    <name>cbr_ПересечениеМенеджеров</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пересечение менеджеров</value>
-    </synonym>
-    <comment>//++ БаженоваЕО 27.01.2026 ПРД.18</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="3b83bc6c-e487-4a00-94b1-476310514985" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
-    <name>ФормаДокумента</name>
-    <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFormExtension">
-      <extendedConfigurationObject>Checked</extendedConfigurationObject>
-      <form>Extended</form>
-    </extension>
-  </forms>
-  <tabularSections uuid="0fcf512b-d5d1-49c2-8307-d64942d3c207">
-    <producedTypes>
-      <objectType typeId="ca2d35db-025e-4500-bacb-9a6f20321eb3" valueTypeId="84bff047-ac49-45d0-b5ab-984e9d8abcd8"/>
-      <rowType typeId="00ea6136-086f-46dc-ad83-d490187c0686" valueTypeId="b88a960d-d8e6-4158-a017-274d1c1c1f31"/>
-    </producedTypes>
-    <name>cbr_ТЧПересечениеМенеджеров</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пересечение менеджеров</value>
-    </synonym>
-    <comment>//++ БаженоваЕО 27.01.2026 ПРД.18</comment>
-    <attributes uuid="3a0b7a0b-80d2-4e47-aaae-3adbbe57b534">
-      <name>ФизическоеЛицо</name>
-      <synonym>
-        <key>ru</key>
-        <value>Физическое лицо</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ФизическиеЛица</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="aac58806-76aa-4773-9bc2-298844b9c7b5">
-      <name>Процент</name>
-      <synonym>
-        <key>ru</key>
-        <value>Процент</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>5</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <lineNumberLength>9</lineNumberLength>
-  </tabularSections>
-</mdclass:Document>
+</mdclass:Catalog>
