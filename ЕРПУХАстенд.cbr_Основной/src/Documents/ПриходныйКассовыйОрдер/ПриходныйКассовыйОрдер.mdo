@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b05389f1-9cf3-45d1-805a-6aae8c27119b" extendedConfigurationObject="e16b931a-86b3-413f-a330-7b6f835e2da7">
+  <producedTypes>
+    <objectType typeId="4785cb5a-504e-40be-b701-ef3930bfefcb" valueTypeId="9ecb2a69-b727-427a-974e-17905eaa102b"/>
+    <refType typeId="fbbe6c0f-41e0-4733-94ec-f8fba581d934" valueTypeId="a4737adf-06c9-4a57-b016-f584827a8f89"/>
+    <selectionType typeId="f3e64ebc-5297-4a3f-9387-7e7685799484" valueTypeId="ee945a8d-a711-4ae2-bbfc-bd12e14d0f47"/>
+    <listType typeId="910a5e95-b1c7-48df-9c5c-97b400c0d70d" valueTypeId="59c18acb-2788-45b5-b8c0-87a783bbc9ba"/>
+    <managerType typeId="e1e23e40-a7d5-45a4-89dd-bd74859ceebb" valueTypeId="f6b51c97-dc20-4220-838d-b1ab26c2daa5"/>
+  </producedTypes>
+  <name>ПриходныйКассовыйОрдер</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</registerRecords>
+</mdclass:Document>

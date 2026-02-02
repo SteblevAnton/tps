@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9798a7b6-e525-45ac-9e8c-fd96b19f29b2">
+  <producedTypes>
+    <selectionType typeId="4529f55c-cf93-4e86-b975-9de07ede43ef" valueTypeId="e725f1b2-08a3-415b-8827-fd366c40bee3"/>
+    <listType typeId="4414f813-f605-4ab5-adb3-4dd3811da623" valueTypeId="deadefd6-3a81-4881-add3-48f14812e845"/>
+    <managerType typeId="26812fbb-3e24-4b1d-8723-f81837f384d0" valueTypeId="77f94bc7-7aa2-41f1-9f68-0d6b606c03a6"/>
+    <recordSetType typeId="c25b521a-7fa1-4271-95a0-afe2baacb71a" valueTypeId="a778ecd1-0cca-492b-b0e4-b434c12cf338"/>
+    <recordKeyType typeId="de6452e3-42ef-46dd-a893-13925d4aba24" valueTypeId="9de37f35-65a1-4918-a761-5f8e9eb7599a"/>
+    <recordType typeId="dc352aa5-3e55-4c92-a23b-0ed84357fd2f" valueTypeId="95dd52ab-229b-4e47-9583-634f5c1e1e3c"/>
+  </producedTypes>
+  <name>cbr_ОплатаОтгрузкаПоМенеджерам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата/Отгрузка по менеджерам</value>
+  </synonym>
+  <comment>//++ БаженоваЕО 30.01.2026 ПРД.18</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5515f589-8706-49d1-8722-9e2930c29c5a">
+    <name>СуммаОтгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма отгружено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f849f1e5-2dd1-427b-8687-8819ad86e781">
+    <name>СуммаОплачено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма оплачено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="d37f9cb2-e07b-4936-b564-34bb3fd27d6f">
+    <name>РеализацияТоваровУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация товаров и услуг</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f08cd034-a9a1-4bfa-a7ce-e1888ab2e63b">
+    <name>ЗаказКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ клиента</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказКлиента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4fcbf053-4901-4d4d-949f-bbf8980a33e8">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="46e7f930-a64b-4afd-9bfa-fe76fd1c9243">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

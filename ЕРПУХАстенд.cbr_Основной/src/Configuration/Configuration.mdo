@@ -80,10 +80,16 @@
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
+  <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.ФизическиеЛица</catalogs>
   <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
+  <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.РеализацияТоваровУслуг</documents>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
@@ -91,4 +97,5 @@
   <enums>Enum.ТипыОбеспечения</enums>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
+  <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
 </mdclass:Configuration>

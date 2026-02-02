@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3a003ec-eaf9-40cf-9d56-2ac45c6a335d">
+  <name>cbr_УправлениеПодписками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление подписками</value>
+  </synonym>
+  <comment>//++ БаженоваЕО 30.01.2026 ПРД.18</comment>
+  <server>true</server>
+</mdclass:CommonModule>

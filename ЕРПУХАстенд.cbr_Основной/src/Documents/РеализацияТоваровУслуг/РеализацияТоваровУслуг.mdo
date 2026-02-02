@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="47acf542-fcbc-482f-b18a-f4888153173a" extendedConfigurationObject="8eac9a31-ed8b-4965-85f9-086b89e1764b">
+  <producedTypes>
+    <objectType typeId="68cfc9c3-0664-4ed4-a313-b65bc55c530b" valueTypeId="5887c0af-5c7f-496f-a174-f94b424917ad"/>
+    <refType typeId="0925881f-8dc1-4022-968f-f41437549bf1" valueTypeId="a6de9784-50aa-4b2e-a229-d45f50b93c40"/>
+    <selectionType typeId="62e99a36-970a-4b39-8683-b6b4c07396c8" valueTypeId="c32a9924-9b82-4cd3-9c36-38e5feec53c3"/>
+    <listType typeId="a87d1051-b263-4434-9ff4-cc28e3e1c5b2" valueTypeId="1f230486-ba5d-4235-9175-1cabdbec0f05"/>
+    <managerType typeId="1f908e48-381b-4f6e-b372-5ce7eca1aab3" valueTypeId="c8cadafd-3584-49df-9c3e-950f8106cb2d"/>
+  </producedTypes>
+  <name>РеализацияТоваровУслуг</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</registerRecords>
+  <tabularSections uuid="0ef7c182-0279-40d9-91db-64b7826ebc30">
+    <producedTypes>
+      <objectType typeId="dd653a09-0155-4ca3-8a1e-8119e58ac739" valueTypeId="e7a81bd7-01f1-4627-b1d1-8b7791cf1976"/>
+      <rowType typeId="fb9a050f-316b-48d1-a241-c89c608def33" valueTypeId="fe059593-fcb7-479b-92e2-f916947792fd"/>
+    </producedTypes>
+    <name>cbr_ТЧПересечениеМенеджеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересечение менеджеров</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 27.01.2026 ПРД.18</comment>
+    <attributes uuid="f11fe27e-67cd-42a9-a0c8-b69fca58737c">
+      <name>ФизическоеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Физическое лицо</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9006f795-fafa-42bd-97c5-03bc3e13aa6e">
+      <name>Процент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>
