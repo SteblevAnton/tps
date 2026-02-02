@@ -54,6 +54,7 @@
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <commonPictures>CommonPicture.ВниманиеКрасный</commonPictures>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
@@ -66,6 +67,7 @@
   <commonPictures>CommonPicture.НоменклатураПродаваемаяСовместно</commonPictures>
   <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
+  <commonPictures>CommonPicture.ПревышениеЗаказа</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
   <commonPictures>CommonPicture.ПрочиеПользовательскиеНастройки</commonPictures>
   <commonPictures>CommonPicture.Развернуть</commonPictures>
@@ -75,6 +77,7 @@
   <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
   <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
+  <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
@@ -94,12 +97,15 @@
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
+  <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
+  <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыОбеспечения</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
+  <enums>Enum.ХозяйственныеОперации</enums>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>

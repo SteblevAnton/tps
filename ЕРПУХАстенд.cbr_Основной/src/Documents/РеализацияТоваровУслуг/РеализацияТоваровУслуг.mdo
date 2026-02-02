@@ -15,6 +15,14 @@
   </extension>
   <useStandardCommands>true</useStandardCommands>
   <registerRecords>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</registerRecords>
+  <forms uuid="7a429cc3-3082-4ff6-bc37-ced78a8dee8c" extendedConfigurationObject="7ab41590-caae-4a1c-b94a-51c1e4c36a9c">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
   <tabularSections uuid="0ef7c182-0279-40d9-91db-64b7826ebc30">
     <producedTypes>
       <objectType typeId="dd653a09-0155-4ca3-8a1e-8119e58ac739" valueTypeId="e7a81bd7-01f1-4627-b1d1-8b7791cf1976"/>
@@ -51,6 +59,7 @@
         <numberQualifiers>
           <precision>5</precision>
           <scale>2</scale>
+          <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
