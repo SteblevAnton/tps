@@ -47,9 +47,27 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
+  <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
+  <styleItems>StyleItem.ИтогиФон</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
+  <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
+  <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.ЛоготипОсновнойСервисДоставки</commonPictures>
+  <commonPictures>CommonPicture.Набор</commonPictures>
+  <commonPictures>CommonPicture.Наборы</commonPictures>
+  <commonPictures>CommonPicture.Номенклатура</commonPictures>
+  <commonPictures>CommonPicture.НоменклатураПродаваемаяСовместно</commonPictures>
+  <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
+  <commonPictures>CommonPicture.Отчеты</commonPictures>
+  <commonPictures>CommonPicture.ПрочиеПользовательскиеНастройки</commonPictures>
+  <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
+  <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
+  <commonPictures>CommonPicture.ФильтрПоСвойствам</commonPictures>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
   <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
@@ -65,7 +83,12 @@
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <documents>Document.ЗаказКлиента</documents>
+  <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.ТипыОбеспечения</enums>
+  <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.ТипыНалогообложенияНДС</enums>
+  <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
 </mdclass:Configuration>
