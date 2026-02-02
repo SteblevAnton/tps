@@ -88,8 +88,9 @@
       <type>
         <types>Number</types>
         <numberQualifiers>
-          <precision>13</precision>
-          <scale>2</scale>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
@@ -120,11 +121,7 @@
       </synonym>
       <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
       <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>13</precision>
-          <scale>2</scale>
-        </numberQualifiers>
+        <types>DefinedType.Цена</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -141,7 +138,7 @@
       <type>
         <types>Number</types>
         <numberQualifiers>
-          <precision>3</precision>
+          <precision>5</precision>
           <scale>2</scale>
         </numberQualifiers>
       </type>
@@ -158,11 +155,7 @@
       </synonym>
       <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
       <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>13</precision>
-          <scale>2</scale>
-        </numberQualifiers>
+        <types>DefinedType.ДенежнаяСуммаЛюбогоЗнака</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -196,11 +189,7 @@
       </synonym>
       <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
       <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>13</precision>
-          <scale>2</scale>
-        </numberQualifiers>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -249,6 +238,7 @@
         <key>ru</key>
         <value>Характеристики используются</value>
       </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
       <type>
         <types>Boolean</types>
       </type>

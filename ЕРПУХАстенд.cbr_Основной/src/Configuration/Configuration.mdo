@@ -69,6 +69,9 @@
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
+  <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
+  <definedTypes>DefinedType.Цена</definedTypes>
   <catalogs>Catalog.ВидыЦен</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
@@ -77,9 +80,12 @@
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <documents>Document.ЗаказКлиента</documents>
+  <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
+  <enums>Enum.ВидыДвиженияНакопления</enums>
   <enums>Enum.ПорядокРасчетов</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
+  <informationRegisters>InformationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</informationRegisters>
 </mdclass:Configuration>

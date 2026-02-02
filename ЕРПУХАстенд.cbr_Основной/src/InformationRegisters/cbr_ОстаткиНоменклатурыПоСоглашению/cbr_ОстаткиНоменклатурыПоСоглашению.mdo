@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4df06aaf-3c77-4ad3-a99b-2f53cd991f47">
+  <producedTypes>
+    <selectionType typeId="289938ef-1477-491e-8e80-6cf516438836" valueTypeId="33f21489-dfc3-4200-ac5d-ebc95bbe5119"/>
+    <listType typeId="cd1ebbce-68ef-4bc9-8e9a-ca8f686b9c63" valueTypeId="175303e2-0a7e-43ec-b77a-86038005a396"/>
+    <managerType typeId="e2a8a17b-37d3-4e58-9bf9-c595c815a827" valueTypeId="5f263d1c-6400-4b05-8866-6267652ab36c"/>
+    <recordSetType typeId="81b9388a-8507-4e32-8940-f37dc318c71e" valueTypeId="c1734228-416c-4dbe-9da5-725977d86f75"/>
+    <recordKeyType typeId="b2f78c28-852b-4153-a8c2-136f464e1800" valueTypeId="f5958e04-120c-4f9e-8d64-4f6f48c942da"/>
+    <recordType typeId="320b1bc0-5ec3-4c83-9c40-dfdb9d22e6a5" valueTypeId="1c26b57e-186c-4913-9bd4-8cc7bf61b616"/>
+    <recordManagerType typeId="09a7be9f-f2d8-4236-9bf3-8b82a4776bbf" valueTypeId="586183e0-a791-4b0d-96b9-367d3f6b2740"/>
+  </producedTypes>
+  <name>cbr_ОстаткиНоменклатурыПоСоглашению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки номенклатуры по соглашению</value>
+  </synonym>
+  <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="34137156-8808-4b52-8bae-157a3fd8e0cb">
+    <name>Количетсво</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количетсво</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="16702102-d284-4b4a-a305-ef120affbf7a">
+    <name>ВидДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид движения</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>EnumRef.cbr_ВидыДвиженияСоглашенияСКлиентами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="50fe132c-ea48-4b31-a6e6-26cc0c1e6b5a">
+    <name>Соглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соглашение</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>CatalogRef.СоглашенияСКлиентами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fc7a3fd6-d353-462d-bc5e-e52b0b590410">
+    <name>ЗаказКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ клиента</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>DocumentRef.ЗаказКлиента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fe055e6c-356d-4fee-a1d8-dc46d1a02ab4">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="73b49d68-c765-44bd-b2e2-317a2c40aba1">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5fbd7692-507a-4465-82ad-5a39df3bf18a">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
