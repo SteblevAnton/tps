@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="7d2b45c0-04e8-4cd7-9ad1-c19e307bec32" extendedConfigurationObject="6e636a63-6f2c-4a16-84b3-965cd15539fe">
+  <producedTypes>
+    <objectType typeId="effd2216-2691-426c-ac13-776dc58ae6cc" valueTypeId="62e2085a-21e0-4101-89d6-e09a56bd8817"/>
+    <refType typeId="34a71e0b-b9a7-4d4b-891c-4ed6391be71f" valueTypeId="f9aee3ec-1983-4f0f-92cd-b26b1fcede01"/>
+    <selectionType typeId="183f2423-e646-461d-8190-6c19d0e3e9b0" valueTypeId="05adfd47-c134-493b-9caa-ed43b1c498a9"/>
+    <listType typeId="95e264a7-8482-4e1e-80f7-32dd18f87eb4" valueTypeId="0d8c9a4b-650b-42fe-8b0a-cf45b6ebc29d"/>
+    <managerType typeId="8ceabd1c-152f-4ad1-8b80-06e58ec9d91b" valueTypeId="b741169f-e905-41d1-af31-cfbd9f503087"/>
+  </producedTypes>
+  <name>СпособыОбеспеченияПотребностей</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="4748bd31-8c7a-4aba-86c6-52a5726045e5">
+    <name>cbr_ПроцентКЗакупке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент к закупке</value>
+    </synonym>
+    <comment>//ШмелевР ЗКП.2</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
