@@ -104,9 +104,9 @@
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
-  <enums>Enum.ВариантыОтправкиЭлектронногоЧекаПокупателю</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыОбеспечения</enums>
+  <enums>Enum.ВариантыОтправкиЭлектронногоЧекаПокупателю</enums>
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
