@@ -88,7 +88,9 @@
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
+  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
   <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
