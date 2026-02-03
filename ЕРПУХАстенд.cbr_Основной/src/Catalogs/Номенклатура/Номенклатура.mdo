@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="58aa3f60-54e2-43b9-8ed7-d60c5bbc7712" extendedConfigurationObject="fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="58aa3f60-54e2-43b9-8ed7-d60c5bbc7712" extendedConfigurationObject="fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
   <producedTypes>
     <objectType typeId="32df58e7-11f5-4c41-8bd6-a6e9991ca623" valueTypeId="d1550758-b59b-4203-9d42-77ab22a7d9c9"/>
     <refType typeId="0ccf4ad3-1638-4bb8-9820-766f146a2360" valueTypeId="dbce6aa7-4ab1-4050-96a0-35dea3787373"/>
@@ -14,4 +14,19 @@
   </extension>
   <useStandardCommands>true</useStandardCommands>
   <checkUnique>true</checkUnique>
+  <attributes uuid="475f737c-8c9f-412b-85e3-a576fa74aff3">
+    <name>cbr_ЭтоТендер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это тендер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>
