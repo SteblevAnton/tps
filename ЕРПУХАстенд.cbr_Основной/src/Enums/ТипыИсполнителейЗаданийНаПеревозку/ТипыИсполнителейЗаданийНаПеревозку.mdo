@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="81c929ea-5beb-4187-b02d-6a096d80c1c6" extendedConfigurationObject="fb378302-d95b-4135-bffd-6239a0199221">
+  <producedTypes>
+    <refType typeId="204a95a9-2899-4099-adfd-e4d8f4cfc20a" valueTypeId="3cba5099-3082-42b6-a05a-2ea49c3c35df"/>
+    <listType typeId="16c0c04c-f3e4-486f-86c5-c4b7aaf74040" valueTypeId="ae840e6b-b645-451f-88e8-95ae9bd844dd"/>
+    <managerType typeId="a88cab9e-7344-4114-97fe-5a659582e1a9" valueTypeId="8df1e640-ccd2-4b90-b94f-59f45e1d1fe8"/>
+  </producedTypes>
+  <name>ТипыИсполнителейЗаданийНаПеревозку</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="b3e8b838-5465-4f41-acdd-c8411b2daec7">
+    <name>cbr_НеУчаствуемВДоставке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не участвуем в доставке</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 02.02.2026 СКЛ.4</comment>
+  </enumValues>
+</mdclass:Enum>

@@ -84,18 +84,29 @@
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
+  <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <documents>Document.ЗаданиеНаПеревозку</documents>
   <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ЗаказПоставщику</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
+  <enums>Enum.ВидыДоставки</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.СтатусыЗаданийНаПеревозку</enums>
+  <enums>Enum.ТипыИсполнителейЗаданийНаПеревозку</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
+  <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</accumulationRegisters>
 </mdclass:Configuration>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f598ba5a-cadb-4664-9ed3-6112d99a6f24" extendedConfigurationObject="a6417505-8d0f-4026-af9c-dc1b21acaa57">
+  <producedTypes>
+    <refType typeId="1a93e9b4-7b01-4b4a-8b36-7bdca09ee5a9" valueTypeId="59142c42-ff9d-4389-865f-948eaacb80cd"/>
+    <listType typeId="f58e7c30-6cf6-4d5d-aa56-38f0613d3d6e" valueTypeId="506f259a-e032-481d-8811-217778391ba0"/>
+    <managerType typeId="2d96dd4d-889c-4e07-8316-8217cb032fa0" valueTypeId="1d8ee980-5718-4c4e-91be-e7c6f85c240b"/>
+  </producedTypes>
+  <name>СтатусыЗаданийНаПеревозку</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Enum>

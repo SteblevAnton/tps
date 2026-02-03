@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="208c2f7f-4aa2-4c5e-8496-8eb0d264f8bb" extendedConfigurationObject="d371a3f9-8a6a-4f41-8820-d9a12b2d57af">
+  <producedTypes>
+    <objectType typeId="bbe557ff-1c0d-4b59-807e-a07a78dc5c94" valueTypeId="77ea8fcd-6434-40c3-a07b-28049142512b"/>
+    <refType typeId="e9a31f1a-0c9f-427c-8c5d-2a7788c37302" valueTypeId="3cbf8daf-2fcf-4531-8b55-0f84fabdbbee"/>
+    <selectionType typeId="dafb54ba-8839-4cc5-ab7d-f0cc1c465afe" valueTypeId="62dc9c87-fbcb-4a37-b32d-bf2d9564b250"/>
+    <listType typeId="8f84d48c-58d1-4c07-9d17-9c3173821ef8" valueTypeId="c0c5bc6f-dffc-4d54-9216-d4c2d316ba54"/>
+    <managerType typeId="f8cfe4f1-9bb1-4706-9e2b-a8dc39539025" valueTypeId="503be382-a05c-4dc9-8fd7-a0fd4e2ca998"/>
+  </producedTypes>
+  <name>ЗаданиеНаПеревозку</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</registerRecords>
+</mdclass:Document>

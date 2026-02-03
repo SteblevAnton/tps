@@ -13,6 +13,7 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</registerRecords>
   <attributes uuid="18fb473b-9317-47f2-a972-a79aaae94aeb">
     <name>cbr_ПересечениеМенеджеров</name>
     <synonym>
