@@ -54,6 +54,9 @@
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <commonPictures>CommonPicture.Внимание16</commonPictures>
+  <commonPictures>CommonPicture.ВниманиеКрасный</commonPictures>
+  <commonPictures>CommonPicture.ВниманиеСерый</commonPictures>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
@@ -62,27 +65,58 @@
   <commonPictures>CommonPicture.ЛоготипОсновнойСервисДоставки</commonPictures>
   <commonPictures>CommonPicture.Набор</commonPictures>
   <commonPictures>CommonPicture.Наборы</commonPictures>
+  <commonPictures>CommonPicture.Номенклатура</commonPictures>
+  <commonPictures>CommonPicture.НоменклатураПродаваемаяСовместно</commonPictures>
   <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
+  <commonPictures>CommonPicture.ОтгрузкаРазрешена</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
+  <commonPictures>CommonPicture.ПревышениеЗаказа</commonPictures>
+  <commonPictures>CommonPicture.Предупреждение</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
+  <commonPictures>CommonPicture.ПрочиеПользовательскиеНастройки</commonPictures>
   <commonPictures>CommonPicture.Развернуть</commonPictures>
   <commonPictures>CommonPicture.РасчетПоФормуле</commonPictures>
   <commonPictures>CommonPicture.Свернуть</commonPictures>
+  <commonPictures>CommonPicture.СерииНоменклатурыКолонкаСтатусов</commonPictures>
   <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
+  <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
+  <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
+  <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
+  <commonPictures>CommonPicture.ФильтрПоСвойствам</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
+  <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
+  <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
+  <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
+  <catalogs>Catalog.ФизическиеЛица</catalogs>
   <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
+  <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.РеализацияТоваровУслуг</documents>
+  <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
+  <enums>Enum.ВариантыОбеспечения</enums>
+  <enums>Enum.ВариантыОтправкиЭлектронногоЧекаПокупателю</enums>
+  <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
+  <enums>Enum.ХозяйственныеОперации</enums>
+  <enums>Enum.ЮрФизЛицо</enums>
+  <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
+  <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
+  <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
 </mdclass:Configuration>

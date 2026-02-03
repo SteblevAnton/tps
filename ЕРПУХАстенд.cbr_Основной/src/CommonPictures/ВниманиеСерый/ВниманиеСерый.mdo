@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f18d57ec-8164-4e2b-92fa-03879d0607b5" extendedConfigurationObject="1a4a264c-25fe-432e-8ad1-acf7657cec0f">
+  <name>ВниманиеСерый</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CommonPictureExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+</mdclass:CommonPicture>
