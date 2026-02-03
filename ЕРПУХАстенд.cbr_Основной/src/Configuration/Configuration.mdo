@@ -88,14 +88,19 @@
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
+  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
+  <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
+  <enums>Enum.ВариантыОбеспечения</enums>
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
@@ -103,6 +108,7 @@
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
+  <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>

@@ -13,6 +13,253 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="c9ea31c6-f69b-46f9-bbdb-61e1c5e106c5">
+    <name>cbr_ТранспортныйТариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортный тариф за 1 кг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb8182fe-96d8-44e9-afb5-aa79e12fa332">
+    <name>cbr_СтоимостьДоставкиСНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки С НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="765f4e49-798b-4f2d-aeb1-5947ade7ad63">
+    <name>cbr_СтоимостьДоставкиБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки без НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3ba684e4-3f1a-4589-84ba-1008c5c44123">
+    <name>cbr_ДокументыДляВодителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы для водителя</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="808fd547-7812-4607-a48a-099fdc1b598d">
+    <name>cbr_ТаможенноеСопровождение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таможенное сопровождение</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8ac22b78-4e0e-4aad-b449-1ab3aafe4eab">
+    <name>cbr_УсловияДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия доставки</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="db825029-ec5b-432c-9ca9-f8e758c0e9a1">
+    <name>cbr_ТребованияКУпаковке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования к упаковке</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6d02864f-f537-49fa-b94b-6874414da559">
+    <name>cbr_ТребованияКЭтикетке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования к этикетке</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2870269f-be4c-450d-97db-c9a806b0f90d">
+    <name>cbr_ТребованиеККомплектации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования к комплектации</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2d0260ac-4572-44f8-9891-6671306a065c">
+    <name>cbr_НеБолееДатыПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не более чем от даты производства, мес.</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a9406bb-cb39-4eb0-880f-2869c4b50ba4">
+    <name>cbr_ДопустимыйОстатокГСХНеМенееПроцент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый остаток ГСХ не менее, %</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="33f1a877-79ab-4dfe-9f8b-a368704ef2ba">
+    <name>cbr_ДопустимыйОстатокГСХНеМенееМес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый остаток ГСХ не менее, мес</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a0eab3c-7c96-48d8-82c8-936353a7eb38">
+    <name>cbr_ПрочиеТребования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие требования</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="18fb473b-9317-47f2-a972-a79aaae94aeb">
     <name>cbr_ПересечениеМенеджеров</name>
     <synonym>
@@ -82,5 +329,34 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <tabularSections uuid="21dcf87f-125b-4f9b-a356-eb155b96eb87" extendedConfigurationObject="7b526229-3286-418a-920a-ff15a9b3ec48">
+    <producedTypes>
+      <objectType typeId="11de76a9-b7c2-4b59-8237-88bbac8884bf" valueTypeId="caa2223a-5452-4445-9e49-bafed298dcd4"/>
+      <rowType typeId="53a9fea7-c959-4e35-b2fe-b851b2dbca84" valueTypeId="aad05e3c-2d93-49e9-a6eb-4f40ce2794fd"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="eb025320-daeb-447b-aac6-6e9bb87452fe">
+      <name>cbr_ЦенаСоСкидкой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена со скидкой</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
 </mdclass:Document>
