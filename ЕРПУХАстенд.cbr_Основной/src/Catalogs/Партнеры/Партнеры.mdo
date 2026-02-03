@@ -50,4 +50,12 @@
       <form>Extended</form>
     </extension>
   </forms>
+  <forms uuid="57a28eb6-190f-4d14-8aa7-b4c3782b7d35" extendedConfigurationObject="b4002c68-cca5-4482-a584-50584971fb06">
+    <name>ПомощникНового</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Catalog>

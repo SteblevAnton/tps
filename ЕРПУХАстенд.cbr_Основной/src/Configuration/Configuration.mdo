@@ -49,6 +49,7 @@
   </languages>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ИтогиФон</styleItems>
+  <styleItems>StyleItem.ПолеСОшибкойФон</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
