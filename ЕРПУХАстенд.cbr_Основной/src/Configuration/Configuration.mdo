@@ -98,21 +98,21 @@
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
   <definedTypes>DefinedType.Цена</definedTypes>
+  <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Лоты</catalogs>
   <catalogs>Catalog.МестаПоставки</catalogs>
-  <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
-  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Партнеры</catalogs>
   <catalogs>Catalog.Периоды</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
-  <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.Склады</catalogs>
+  <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.СоглашенияСПоставщиками</catalogs>
   <catalogs>Catalog.СпособыОбеспеченияПотребностей</catalogs>
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
@@ -120,28 +120,28 @@
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <documents>Document.ЗаданиеНаПеревозку</documents>
+  <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
-  <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
-  <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыОбеспечения</enums>
   <enums>Enum.ВариантыОтправкиЭлектронногоЧекаПокупателю</enums>
   <enums>Enum.ВариантыОформленияПродажи</enums>
+  <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
-  <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыИзмеряемыхВеличин</enums>
+  <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
-  <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
+  <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
 </mdclass:Configuration>
