@@ -95,6 +95,7 @@
   <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
+  <documents>Document.ВзаимозачетЗадолженности</documents>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>

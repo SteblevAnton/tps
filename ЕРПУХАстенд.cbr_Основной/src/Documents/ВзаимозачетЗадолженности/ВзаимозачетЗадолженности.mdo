@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="9c474f2c-1acd-4692-b2e1-085c99ff0c3a" extendedConfigurationObject="e607e7b9-ef7c-448d-84b9-25ad0192be1d">
+  <producedTypes>
+    <objectType typeId="21f83f89-13b4-4b73-8eff-44e4ef0a50d3" valueTypeId="2a28172f-d253-4729-897f-00c785dc3841"/>
+    <refType typeId="6b73d5f2-9a1e-4e4e-ba09-7073a76a1d9f" valueTypeId="c4f97907-5932-4ae6-ac60-f0eed348d202"/>
+    <selectionType typeId="ab8f610f-df1a-4be0-b380-0a26c76fe7bc" valueTypeId="8b0890a0-5baf-4b43-9835-5e60c55d7d56"/>
+    <listType typeId="89cdaf3e-e195-4267-8e85-05535290bf01" valueTypeId="5fbbf90e-0458-413d-a4aa-f88fd3fdb5fb"/>
+    <managerType typeId="30070f17-b3e3-49e6-bfbe-e654b5c687b8" valueTypeId="e13a90e7-ac9a-44a9-b545-3f31f8d155d7"/>
+  </producedTypes>
+  <name>ВзаимозачетЗадолженности</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</registerRecords>
+</mdclass:Document>
