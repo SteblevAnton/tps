@@ -11,6 +11,7 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
     <defaultChoiceForm>Extended</defaultChoiceForm>
   </extension>
   <useStandardCommands>true</useStandardCommands>
@@ -29,6 +30,19 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e29a353b-a514-44d3-a3c5-6167d0b394be" extendedConfigurationObject="2e4e19e3-f318-469a-8bd1-9678b54892a1">
+    <name>Клиент</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
   </attributes>
   <forms uuid="62025f9b-4fb1-4837-858d-f9a494f793eb" extendedConfigurationObject="0a9b29ca-f68a-4d5c-8ba0-9a2fb079ab7c">
     <name>ФормаЭлементаРеквизитыКонтрагента</name>
