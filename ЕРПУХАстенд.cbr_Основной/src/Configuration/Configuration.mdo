@@ -50,18 +50,8 @@
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
-  <commonPictures>CommonPicture.Внимание16</commonPictures>
-  <commonPictures>CommonPicture.ВниманиеКрасный</commonPictures>
-  <commonPictures>CommonPicture.ВниманиеСерый</commonPictures>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
-  <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
-  <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
-  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
-  <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
-  <commonPictures>CommonPicture.ОтгрузкаРазрешена</commonPictures>
-  <commonPictures>CommonPicture.Отчеты</commonPictures>
-  <commonPictures>CommonPicture.Предупреждение</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
   <commonPictures>CommonPicture.Развернуть</commonPictures>
   <commonPictures>CommonPicture.РасчетПоФормуле</commonPictures>
