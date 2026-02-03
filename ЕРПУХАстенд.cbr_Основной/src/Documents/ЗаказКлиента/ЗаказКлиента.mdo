@@ -330,4 +330,33 @@
     </attributes>
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
+  <tabularSections uuid="21dcf87f-125b-4f9b-a356-eb155b96eb87" extendedConfigurationObject="7b526229-3286-418a-920a-ff15a9b3ec48">
+    <producedTypes>
+      <objectType typeId="11de76a9-b7c2-4b59-8237-88bbac8884bf" valueTypeId="caa2223a-5452-4445-9e49-bafed298dcd4"/>
+      <rowType typeId="53a9fea7-c959-4e35-b2fe-b851b2dbca84" valueTypeId="aad05e3c-2d93-49e9-a6eb-4f40ce2794fd"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="eb025320-daeb-447b-aac6-6e9bb87452fe">
+      <name>cbr_ЦенаСоСкидкой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена со скидкой</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>
