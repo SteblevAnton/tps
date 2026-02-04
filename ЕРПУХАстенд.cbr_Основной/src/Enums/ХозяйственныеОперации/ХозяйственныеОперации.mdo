@@ -60,4 +60,25 @@
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
+  <enumValues uuid="11ee7c89-a56c-49ab-b701-54d20433a9d8" extendedConfigurationObject="af539695-7bf1-4480-85fa-d029bcbfda95">
+    <name>ПередачаНаХранениеСПравомПродажи</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="dd1e19a3-d86d-45fc-bb2c-d64f29f3c3ec" extendedConfigurationObject="5cb9669e-543b-4d33-b9a2-c6dc788de898">
+    <name>ПоставкаПодПринципала</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="74e27f36-51a9-4fd8-808f-4c9add78aace" extendedConfigurationObject="10db127e-a377-4878-8ead-955d0ff48e4d">
+    <name>ПоступлениеОплатыОтКлиента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
 </mdclass:Enum>

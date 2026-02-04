@@ -128,6 +128,7 @@
   <commonPictures>CommonPicture.СоздатьЭлементСпискаЗаполненныйАвтоматически</commonPictures>
   <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СостояниеПроверкиКонтрагента</commonPictures>
+  <commonPictures>CommonPicture.СостояниеСкидкиНаценки</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
   <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
@@ -175,6 +176,7 @@
   <constants>Constant.ОрганизацияТПС</constants>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
+  <catalogs>Catalog.ВидыЦен</catalogs>
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
   <catalogs>Catalog.ДействияПроизводства</catalogs>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
@@ -202,6 +204,7 @@
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
+  <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
@@ -221,6 +224,7 @@
   <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
+  <enums>Enum.ПорядокРасчетов</enums>
   <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
