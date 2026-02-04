@@ -52,8 +52,8 @@
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет82</styleItems>
   <styleItems>StyleItem.ЖирныйШрифтБЭД</styleItems>
   <styleItems>StyleItem.ИтогиФон</styleItems>
-  <styleItems>StyleItem.ПолеСОшибкойФон</styleItems>
   <styleItems>StyleItem.ИтогиФонГруппы</styleItems>
+  <styleItems>StyleItem.ПолеСОшибкойФон</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.СерыйЦветТекста1</styleItems>
   <styleItems>StyleItem.СобытиеОтказ</styleItems>
@@ -92,31 +92,31 @@
   <commonPictures>CommonPicture.КоллекцияРучноеРазмещениеВГрафике</commonPictures>
   <commonPictures>CommonPicture.Комментарий</commonPictures>
   <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
-  <commonPictures>CommonPicture.ЛоготипОсновнойСервисДоставки</commonPictures>
   <commonPictures>CommonPicture.КрасныйЖелтыйСерыйТреугольник</commonPictures>
+  <commonPictures>CommonPicture.ЛоготипОсновнойСервисДоставки</commonPictures>
   <commonPictures>CommonPicture.Набор</commonPictures>
   <commonPictures>CommonPicture.Наборы</commonPictures>
-  <commonPictures>CommonPicture.Номенклатура</commonPictures>
-  <commonPictures>CommonPicture.НоменклатураПродаваемаяСовместно</commonPictures>
-  <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
-  <commonPictures>CommonPicture.ОтгрузкаРазрешена</commonPictures>
   <commonPictures>CommonPicture.НарушенаДатаПотребности</commonPictures>
   <commonPictures>CommonPicture.НеВыполнено</commonPictures>
+  <commonPictures>CommonPicture.Номенклатура</commonPictures>
+  <commonPictures>CommonPicture.НоменклатураПродаваемаяСовместно</commonPictures>
   <commonPictures>CommonPicture.ОбеспечениеЦеховыхКладовыхМатериалами</commonPictures>
   <commonPictures>CommonPicture.ОбновитьФайлИзФайлаНаДиске</commonPictures>
+  <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
+  <commonPictures>CommonPicture.ОтгрузкаРазрешена</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
-  <commonPictures>CommonPicture.ПревышениеЗаказа</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеВыпуска</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеЭтаповИГрафика</commonPictures>
   <commonPictures>CommonPicture.ПерейтиВправо</commonPictures>
   <commonPictures>CommonPicture.ПиктограммыЭлементов</commonPictures>
   <commonPictures>CommonPicture.ПодписанЗашифрованЗаголовок</commonPictures>
   <commonPictures>CommonPicture.ПодписанЗашифрованСостояния</commonPictures>
+  <commonPictures>CommonPicture.ПревышениеЗаказа</commonPictures>
   <commonPictures>CommonPicture.Предупреждение</commonPictures>
   <commonPictures>CommonPicture.ПредыдущиеЭтапы</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
-  <commonPictures>CommonPicture.ПрочиеПользовательскиеНастройки</commonPictures>
   <commonPictures>CommonPicture.ПроизводственнаяОперация</commonPictures>
+  <commonPictures>CommonPicture.ПрочиеПользовательскиеНастройки</commonPictures>
   <commonPictures>CommonPicture.Пустая</commonPictures>
   <commonPictures>CommonPicture.Развернуть</commonPictures>
   <commonPictures>CommonPicture.РасчетПоФормуле</commonPictures>
@@ -125,8 +125,8 @@
   <commonPictures>CommonPicture.Свернуть</commonPictures>
   <commonPictures>CommonPicture.СерииНоменклатурыКолонкаСтатусов</commonPictures>
   <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
-  <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СоздатьЭлементСпискаЗаполненныйАвтоматически</commonPictures>
+  <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СостояниеПроверкиКонтрагента</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
   <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
@@ -134,7 +134,6 @@
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
-  <commonPictures>CommonPicture.ФильтрПоСвойствам</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяЗаполнитьПоОперациям</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяНазначитьОперации</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяОбеспечение</commonPictures>
@@ -146,6 +145,7 @@
   <commonPictures>CommonPicture.ТребуетсяПроверитьЭтапы</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяСформироватьЭтапы</commonPictures>
   <commonPictures>CommonPicture.УведомлениеСервиса</commonPictures>
+  <commonPictures>CommonPicture.ФильтрПоСвойствам</commonPictures>
   <commonPictures>CommonPicture.ФормированиеЗаказовНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
@@ -156,8 +156,8 @@
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
-  <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
+  <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
@@ -173,10 +173,10 @@
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПлану</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
   <constants>Constant.ОрганизацияТПС</constants>
-  <catalogs>Catalog.ДействияПроизводства</catalogs>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
+  <catalogs>Catalog.ДействияПроизводства</catalogs>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Лоты</catalogs>
@@ -184,18 +184,18 @@
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.ПартииПроизводства</catalogs>
   <catalogs>Catalog.Партнеры</catalogs>
   <catalogs>Catalog.Периоды</catalogs>
-  <catalogs>Catalog.ПартииПроизводства</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.РабочиеЦентры</catalogs>
+  <catalogs>Catalog.РесурсныеСпецификации</catalogs>
+  <catalogs>Catalog.СерииНоменклатуры</catalogs>
   <catalogs>Catalog.Склады</catalogs>
   <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.СоглашенияСПоставщиками</catalogs>
   <catalogs>Catalog.СпособыОбеспеченияПотребностей</catalogs>
-  <catalogs>Catalog.РабочиеЦентры</catalogs>
-  <catalogs>Catalog.РесурсныеСпецификации</catalogs>
-  <catalogs>Catalog.СерииНоменклатуры</catalogs>
   <catalogs>Catalog.СтадииЗагрузки</catalogs>
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
@@ -212,29 +212,29 @@
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
-  <enums>Enum.ВариантыНазначенияСпецификации</enums>
-  <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
-  <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
-  <enums>Enum.ЕдиницыИзмеренияВремени</enums>
-  <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
+  <enums>Enum.ВариантыНазначенияСпецификации</enums>
   <enums>Enum.ВариантыОбеспечения</enums>
   <enums>Enum.ВариантыОтправкиЭлектронногоЧекаПокупателю</enums>
   <enums>Enum.ВариантыОформленияПродажи</enums>
+  <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
+  <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
+  <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
+  <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
-  <enums>Enum.ТипыИзмеряемыхВеличин</enums>
   <enums>Enum.СтатусыЗаказовНаПроизводство2_2</enums>
   <enums>Enum.СтатусыСпецификаций</enums>
   <enums>Enum.СтатусыЭтаповПроизводства2_2</enums>
   <enums>Enum.ТипыДействий</enums>
+  <enums>Enum.ТипыИзмеряемыхВеличин</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
+  <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
-  <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
