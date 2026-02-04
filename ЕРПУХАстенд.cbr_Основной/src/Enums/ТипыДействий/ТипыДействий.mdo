@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c1280a9-c8e8-4933-b356-ef9064d4b004">
+  <producedTypes>
+    <refType typeId="af9950da-7488-4e4a-a7cf-4f1d821cf0db" valueTypeId="25e1196c-bca2-456b-af7d-b67597581259"/>
+    <listType typeId="9f3f0abb-e12e-4e2b-bdc6-d32a73bab53a" valueTypeId="be727d27-de4d-4d15-9fcb-1f573e86710b"/>
+    <managerType typeId="08a9eb53-a474-4e88-9bdb-1918d431cd6c" valueTypeId="ab76b2a7-ef6b-4c2c-8a44-c5b0d700ef02"/>
+  </producedTypes>
+  <name>ТипыДействий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы действий</value>
+  </synonym>
+  <comment>// Османов Н.М. 21.11.2023 ЧТЗ №Действия в производстве</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="eab3800c-b431-4687-8620-510cb7495431">
+    <name>ВнесениеМатериала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внесение материала</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="36004dab-04f8-4384-b10c-09fe69a92d71">
+    <name>ВнесениеПоказателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внесение показателя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54678424-3a5f-43ad-bc4a-9c80dd69165e">
+    <name>ВыпускПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выпуск продукции</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="679c9159-8479-4285-aad2-dad32e9e17b1">
+    <name>Обработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="23587c6f-e9d5-4b15-8854-84ca6f143bf4">
+    <name>ОтборПробы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор пробы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a9f08c4d-2a29-4730-9e0b-3267c2e0b6f0">
+    <name>РегистрацияСерии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация серии</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

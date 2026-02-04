@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64353aa1-3101-447a-8cd8-9bc65c9b9cd5">
+  <producedTypes>
+    <selectionType typeId="fb48b6f4-b7c1-4509-bae3-ec77982cb6ea" valueTypeId="2acd05bb-0859-43b6-8240-bb515e2792ab"/>
+    <listType typeId="f601d654-1541-43bb-8ef9-276245bbd91a" valueTypeId="af221539-b0a3-46ec-80c7-fa1251d63a3a"/>
+    <managerType typeId="ebd2d184-705d-4aae-b393-48a4c29af72f" valueTypeId="0e8d0048-b5b1-41e0-93aa-6f48eb5a9aa3"/>
+    <recordSetType typeId="ec2c106f-5293-4376-a883-4ae22e8600f0" valueTypeId="ca3ff23d-0cb3-40be-b9d7-333f46652fb1"/>
+    <recordKeyType typeId="45c578fb-0029-4bac-aee1-fd492771b7ce" valueTypeId="e7bb0cc6-dc82-495c-a36c-4cd8912adcf3"/>
+    <recordType typeId="f8aa2df1-e519-42fe-af62-474c76898b36" valueTypeId="c992a5a0-52b7-4c33-b1fe-0a6341ddb3f6"/>
+    <recordManagerType typeId="cef40b33-0545-43e0-a4fc-2ab43c40a211" valueTypeId="3db2140c-2a37-4794-b67d-48158430ce79"/>
+  </producedTypes>
+  <name>НормыТехнологическихПотерьИВремениИзготовления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы технологических потерь и времени изготовления</value>
+  </synonym>
+  <comment>// Османов Н.М. 14.12.2023 Задача ЕРП Учёт технологических потерь</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="50303103-c75f-4077-ace8-604abff70d32">
+    <name>НормаТехнологическихПотерь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма технологических потерь, % </value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8804455f-4701-41b0-9865-b53cd2ed79ad">
+    <name>НормаВремениИзготовления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма времени изготовления, ч</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3becfeb5-5abe-4c41-8313-bbf29aa70b21">
+    <name>ГруппаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6888c296-115e-4c1c-80b9-27d140e502cf">
+    <name>МинимальныйОбъем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальный объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="213d49fa-2958-4d7f-86c7-d0525b0193da">
+    <name>МаксимальныйОбъем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальный объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbfd9a1e-5a7e-4f8e-87e9-e41720e8dfa6">
+  <name>ПроведениеСпециальныеТребования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проведение специальные требования</value>
+  </synonym>
+  <comment>// Османов Н.М. 19.01.2025</comment>
+  <server>true</server>
+</mdclass:CommonModule>

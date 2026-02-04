@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="944c9cc4-8734-4106-aaf3-afb3e82b2fea" extendedConfigurationObject="60cb790c-6343-42b4-a5c8-7dde6ca9ae85">
+  <producedTypes>
+    <objectType typeId="7cda1788-c8d7-461e-a171-159218ceddef" valueTypeId="60f4a53c-634a-473e-ab2a-a4a200df09e5"/>
+    <refType typeId="c033844a-188c-4c24-b9eb-a7974dcf03a6" valueTypeId="e1e2d5ac-054d-4d0b-ae49-1fc0bdd50524"/>
+    <selectionType typeId="30a7346e-c29c-462f-aa4b-8d2598e79601" valueTypeId="871ce91c-24a0-4b88-b35d-b7d9d5c57b69"/>
+    <listType typeId="2c7b52a7-cc56-491e-800a-9f6f3b1799d2" valueTypeId="e5dcfd57-5dc8-4d89-b358-a1fa404296fe"/>
+    <managerType typeId="d2a3848a-9904-40fb-9146-0b959f5bde3e" valueTypeId="40eefe8c-34f3-4ece-b5d3-d9f5315c9772"/>
+  </producedTypes>
+  <name>РабочиеЦентры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Catalog>

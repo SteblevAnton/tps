@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="1d237e35-07d7-485a-8037-f5d9fc1a5a28" extendedConfigurationObject="780d50e9-8963-4bce-8bbd-757fcba51735">
+  <producedTypes>
+    <refType typeId="82a6209c-3bb7-40b6-a681-33627582459b" valueTypeId="b8f48b32-4688-4aaf-8099-ce1f1baaf231"/>
+    <listType typeId="2f1145a3-3cbe-4b04-a9fe-87bf891436f8" valueTypeId="4b434dd9-297c-4910-a4e1-0f830132a059"/>
+    <managerType typeId="58b366c9-68c5-4327-a0f4-b0765955bb48" valueTypeId="d529cefb-cfdd-495c-a48d-da4195e01ae3"/>
+  </producedTypes>
+  <name>ВариантыПечатиМаршрутнойКартыНаПродукцию</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="046cf446-02a5-4264-8a76-cb34e358e6dc" extendedConfigurationObject="77d354dd-e834-4be8-bce5-1864d40cad0d">
+    <name>ПоЭтапам</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="8be3ecf9-f64a-401e-8fd6-19211e4311e2" extendedConfigurationObject="b8e52448-0d27-4506-baac-037e125283c4">
+    <name>ПоМаршрутнымКартам</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>
