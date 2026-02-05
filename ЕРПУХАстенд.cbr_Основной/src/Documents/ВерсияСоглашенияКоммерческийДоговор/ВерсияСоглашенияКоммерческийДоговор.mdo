@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d5c63c9f-5521-4edc-a2b9-980f583e6761" extendedConfigurationObject="6f86c206-9db7-48b7-b4ae-bd0b6755cf42">
+  <producedTypes>
+    <objectType typeId="86ed2112-b93f-444b-8124-d32bd666ea13" valueTypeId="e739191b-4f8f-4e4c-8889-81d2aac9554b"/>
+    <refType typeId="9d8dc48a-1d00-4d46-bc34-682391401bd3" valueTypeId="e8c1c3f6-2d32-4f7d-9d5e-1c750aeed232"/>
+    <selectionType typeId="4f487ac0-5f2e-4188-873f-bced236823ac" valueTypeId="813db739-a22b-4903-a8bb-fd9929f22628"/>
+    <listType typeId="845dcdc7-dc27-4dbf-b93e-7c1094294301" valueTypeId="9ae7ab07-50c8-4c4e-a3be-bead8fc7f4c9"/>
+    <managerType typeId="f3c55d0d-1f65-454a-9f34-f281e13f9de4" valueTypeId="74be7fb0-79bc-4265-ab98-3e65d7dead3b"/>
+  </producedTypes>
+  <name>ВерсияСоглашенияКоммерческийДоговор</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Document>

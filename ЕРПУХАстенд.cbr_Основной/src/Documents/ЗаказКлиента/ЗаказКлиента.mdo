@@ -294,6 +294,22 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="243c2a29-b050-4614-b8f3-aa54222eb161">
+    <name>cbr_АгентскоеВознаграждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Агентское вознаграждение</value>
+    </synonym>
+    <comment>//++ Тусеев ПРД12</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="3b83bc6c-e487-4a00-94b1-476310514985" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -376,5 +392,64 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+  </tabularSections>
+  <tabularSections uuid="c4a4a276-af88-4415-877d-7f262176b85c">
+    <producedTypes>
+      <objectType typeId="7d360446-b66f-404b-872a-5d1eba4c322b" valueTypeId="1b2f2f46-c194-4090-9690-518ca4b41765"/>
+      <rowType typeId="6f4d7bcc-5456-418e-8fd4-d94b1f3496d9" valueTypeId="380d2685-fe98-4f03-b29a-d7c9fe10c89b"/>
+    </producedTypes>
+    <name>cbr_АгентскиеВознаграждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Агентские вознаграждения</value>
+    </synonym>
+    <comment>//++ Тусеев ПРД12</comment>
+    <attributes uuid="5644e993-e546-475e-8711-ace3a118dd34">
+      <name>Агент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Агент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="58669140-a931-4e2f-987b-3ba594ecb8f7">
+      <name>ДоговорАгента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор агента</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ВерсияСоглашенияКоммерческийДоговор</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7dcd5efb-38e1-45ab-a1da-a11e739e4eca">
+      <name>СтавкаАВ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка АВ, %</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
   </tabularSections>
 </mdclass:Document>
