@@ -211,6 +211,7 @@
   <documents>Document.ЗаказПоставщику</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
+  <documents>Document.ПриобретениеУслугПрочихАктивов</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
@@ -246,4 +247,5 @@
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СтатьиРасходов</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

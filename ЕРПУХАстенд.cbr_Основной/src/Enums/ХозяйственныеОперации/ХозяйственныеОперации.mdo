@@ -81,4 +81,18 @@
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
+  <enumValues uuid="b40e3938-59ec-4523-b908-84f01f70c4b7" extendedConfigurationObject="6982524e-4873-4f26-b5f2-355851663d52">
+    <name>ЗакупкаУПоставщика</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="9bf5920a-574d-4cf6-ad50-7e9907828e01" extendedConfigurationObject="0eec1c7a-4e84-488a-a0de-5ddf74b27a9c">
+    <name>ЗакупкаЧерезПодотчетноеЛицо</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
 </mdclass:Enum>
