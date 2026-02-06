@@ -83,6 +83,7 @@
   <commonPictures>CommonPicture.ЗакрытыеЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.КартинкаСтрокиСпискаДокументов</commonPictures>
   <commonPictures>CommonPicture.КоллекцияВажностьПроблемВеденияУчета</commonPictures>
   <commonPictures>CommonPicture.КоллекцияКритическийПуть</commonPictures>
   <commonPictures>CommonPicture.КоллекцияНастройкиОтправкиЭДО</commonPictures>
@@ -126,12 +127,14 @@
   <commonPictures>CommonPicture.СерииНоменклатурыКолонкаСтатусов</commonPictures>
   <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
   <commonPictures>CommonPicture.СоздатьЭлементСпискаЗаполненныйАвтоматически</commonPictures>
+  <commonPictures>CommonPicture.СортироватьСтрокиПоУбыванию</commonPictures>
   <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СостояниеПроверкиКонтрагента</commonPictures>
   <commonPictures>CommonPicture.СостояниеСкидкиНаценки</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
   <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
+  <commonPictures>CommonPicture.СтатусВыполненияБолее33Процентов</commonPictures>
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
@@ -146,11 +149,13 @@
   <commonPictures>CommonPicture.ТребуетсяПроверитьЭтапы</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяСформироватьЭтапы</commonPictures>
   <commonPictures>CommonPicture.УведомлениеСервиса</commonPictures>
+  <commonPictures>CommonPicture.УдалитьИнформация</commonPictures>
   <commonPictures>CommonPicture.ФильтрПоСвойствам</commonPictures>
   <commonPictures>CommonPicture.ФормированиеЗаказовНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
+  <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.П3_ЧтениеДокументаСпециальныеТребования</roles>
@@ -165,6 +170,7 @@
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
@@ -243,6 +249,7 @@
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
+  <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>

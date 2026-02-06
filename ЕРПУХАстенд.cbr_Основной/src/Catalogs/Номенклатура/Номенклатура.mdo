@@ -29,4 +29,20 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="003200ea-9136-4fa2-9e7e-a8744a07b09a">
+    <name>cbr_Округление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Округление</value>
+    </synonym>
+    <comment>// cbr-georglarkov 05.02.2026 ПРЗ.24</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>
