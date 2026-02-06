@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="de853eaa-37ac-4a18-95a3-5b1c6749d900" extendedConfigurationObject="d70f1181-cad2-40a4-ae6c-5ac9e69830c2">
+  <producedTypes>
+    <objectType typeId="4db20b7e-4819-4787-8b5f-1fce643751c3" valueTypeId="36fb1ab2-0710-49f3-91f1-6a6d5e052a81"/>
+    <managerType typeId="51c8bae0-296d-47b2-bd5a-6ba2b46814d8" valueTypeId="c068cf4c-dd6c-4ca7-bdf4-9acb472d65cf"/>
+  </producedTypes>
+  <name>ФормированиеЭтаповПроизводства</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DataProcessorExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:DataProcessor>
