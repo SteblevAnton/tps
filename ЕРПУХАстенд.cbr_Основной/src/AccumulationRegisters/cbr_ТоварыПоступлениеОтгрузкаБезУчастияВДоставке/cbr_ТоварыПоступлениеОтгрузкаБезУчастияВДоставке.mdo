@@ -112,7 +112,7 @@
       <value>Серия</value>
     </synonym>
     <type>
-      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.СерииНоменклатуры</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

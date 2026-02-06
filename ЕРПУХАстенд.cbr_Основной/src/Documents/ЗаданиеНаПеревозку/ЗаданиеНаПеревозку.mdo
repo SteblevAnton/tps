@@ -14,4 +14,12 @@
   </extension>
   <useStandardCommands>true</useStandardCommands>
   <registerRecords>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</registerRecords>
+  <forms uuid="02ffe690-f0ac-40b1-bdb8-75bca0101892" extendedConfigurationObject="2d7bd583-5ecf-4d62-87ae-3cb6ac4ef969">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Document>

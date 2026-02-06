@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af8c2d4c-1e71-4066-bec5-a204e2a8cf64">
+  <name>cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавить движенияcbr товары поступление отгрузка без участия в доставке</value>
+  </synonym>
+  <comment>//++ БаженоваЕО 02.02.2026 СКЛ.4</comment>
+  <source>
+    <types>DocumentObject.ЗаказПоставщику</types>
+    <types>DocumentObject.ЗаказКлиента</types>
+    <types>DocumentObject.ЗаданиеНаПеревозку</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.cbr_УправлениеПодписками.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставкеОбработкаПроведения</handler>
+</mdclass:EventSubscription>

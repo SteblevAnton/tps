@@ -19,4 +19,18 @@
     </synonym>
     <comment>//++ БаженоваЕО 02.02.2026 СКЛ.4</comment>
   </enumValues>
+  <enumValues uuid="585507c6-62bf-4aa6-801d-3696bc60995b" extendedConfigurationObject="a8905e3a-939f-4248-8255-c2c1f39d3143">
+    <name>НашаТранспортнаяСлужба</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="fc9cc7f1-0ba7-4a4d-8554-fe8ae788fc3a" extendedConfigurationObject="d5f011ed-9752-4da4-989a-fbf936cffbff">
+    <name>Перевозчик</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
 </mdclass:Enum>

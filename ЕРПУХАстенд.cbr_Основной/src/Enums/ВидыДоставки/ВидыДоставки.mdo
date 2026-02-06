@@ -11,4 +11,18 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="d910c0e5-4011-407a-b7ff-daa2fdf8e69c" extendedConfigurationObject="5d97dd16-48c2-4724-8773-9b2adf8c2fa5">
+    <name>СоСклада</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="a1375dc7-984d-4e90-96f6-64e58295088d" extendedConfigurationObject="7d4255ab-af6b-402e-a3ad-e6d0703bb735">
+    <name>НаСклад</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
 </mdclass:Enum>

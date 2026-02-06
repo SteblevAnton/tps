@@ -99,6 +99,30 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="1014dd51-bced-4194-b72a-8bd27a8283b0">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЗаданийНаПеревозку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ed90a5db-7c5c-44c0-bc4b-a1b19f871fcf">
+    <name>УчитываяОтгруженные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывая отгруженные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <forms uuid="93d43749-355d-4d91-8202-802c7cbfa4dd">
     <name>Форма</name>
     <synonym>
