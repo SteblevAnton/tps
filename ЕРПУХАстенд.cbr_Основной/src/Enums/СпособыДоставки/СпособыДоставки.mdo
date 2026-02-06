@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6826d8a3-e9d9-4ca8-825f-0b8b72d7e1bd" extendedConfigurationObject="e84f811f-b8c6-4c9c-9e98-f10ab90f1702">
+  <producedTypes>
+    <refType typeId="214c247a-d0bd-41bb-8d88-992aa54d982a" valueTypeId="38ecee9b-929a-4c59-a933-b7100ed9b9be"/>
+    <listType typeId="9ce7d8d1-dffc-4b5c-ac71-59ff5b699234" valueTypeId="f3eb1015-6728-4996-b36c-8afafc92a673"/>
+    <managerType typeId="3e9c0934-7f76-4f0c-8fe0-36dc9445e38e" valueTypeId="46b7bdff-2c2b-4095-9885-c8c6764bde86"/>
+  </producedTypes>
+  <name>СпособыДоставки</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="e27638ef-e9ac-4849-8d61-a32fbeba4f36" extendedConfigurationObject="f442a653-b32b-4be9-9b5e-4a5abb206d85">
+    <name>Самовывоз</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="7dab6dcc-cc10-41a1-9a90-c28b740230d9" extendedConfigurationObject="3c09e30d-ef7d-4e10-9b7e-c3d470857e36">
+    <name>ДоКлиента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="5fb533d9-70c2-4e58-aa0b-31f7d238ca88" extendedConfigurationObject="066e8fb0-3813-4481-b4bf-edfafab4aed9">
+    <name>СиламиПеревозчикаПоАдресу</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="987c5400-2af4-468b-81ae-4aa7fdcfe2b5" extendedConfigurationObject="b983ffd7-6fee-4341-823c-bc970e783c64">
+    <name>СиламиПеревозчика</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="f532a620-e39d-4af9-9d9a-886cc2250965" extendedConfigurationObject="c07693f6-6c15-46b9-8ea5-6560cf995152">
+    <name>КПолучателюОпределяетСлужбаДоставки</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

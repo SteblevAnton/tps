@@ -11,6 +11,29 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</registerRecords>
+  <attributes uuid="bb1c5153-5007-4ecf-896b-762f6cfddbfd" extendedConfigurationObject="3c728d38-3039-41f6-b288-2b92f32630c3">
+    <name>Соглашение</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.СоглашенияСКлиентами</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <forms uuid="7655d113-33bc-485f-84e8-e0fa78c5f855" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Document>

@@ -48,23 +48,32 @@
     <languageCode>ru</languageCode>
   </languages>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
+  <styleItems>StyleItem.ИтогиФон</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
+  <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
+  <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
+  <commonPictures>CommonPicture.ЛоготипОсновнойСервисДоставки</commonPictures>
+  <commonPictures>CommonPicture.Набор</commonPictures>
+  <commonPictures>CommonPicture.Наборы</commonPictures>
+  <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
   <commonPictures>CommonPicture.Приоритеты</commonPictures>
   <commonPictures>CommonPicture.Развернуть</commonPictures>
   <commonPictures>CommonPicture.РасчетПоФормуле</commonPictures>
   <commonPictures>CommonPicture.Свернуть</commonPictures>
+  <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
   <commonPictures>CommonPicture.СостояниеСкидкиНаценки</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
+  <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
@@ -79,13 +88,18 @@
   <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ЗаказКлиента</documents>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.ВидыДвиженияНакопления</enums>
   <enums>Enum.ПорядокРасчетов</enums>
+  <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
+  <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
-  <informationRegisters>InformationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ОстаткиНоменклатурыПоСоглашениюСведений</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
 </mdclass:Configuration>

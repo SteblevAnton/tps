@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="053b85ba-b9a8-4e1c-8236-6ba23f94c928">
+  <producedTypes>
+    <objectType typeId="df6e9260-d60c-439a-808a-5bb335f3ab12" valueTypeId="7d03342b-e850-4aab-9f97-c7c9e45fac87"/>
+    <refType typeId="7a6d0f01-d8bf-4e01-b3b0-563d9955fe86" valueTypeId="393cb487-76b6-4cae-91f1-57d517d436b3"/>
+    <selectionType typeId="372b53ab-5a63-4610-98c9-98fc4fffbb9d" valueTypeId="957c01f3-823a-437f-ae64-7f5d271b6348"/>
+    <listType typeId="fdb21a57-b2b9-4605-afe5-6a8ecc978fc3" valueTypeId="ce705881-603f-4f28-b950-f587edafc059"/>
+    <managerType typeId="c7ee3ef8-b6ef-4d4f-9f7f-65c050c3eac3" valueTypeId="7c5afc4a-f66b-4132-8486-5b38621a4ce5"/>
+  </producedTypes>
+  <name>cbr_ОперацияСоглашения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операция соглашения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.cbr_ОперацияСоглашения.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="81eb15c5-2667-4942-9963-902856ad8777">
+    <name>Соглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соглашение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СоглашенияСКлиентами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b615fed7-6138-4390-8adb-d3227958aef2">
+    <name>Действие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.cbr_ВидыДвиженияСоглашенияСКлиентами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1f3fa493-7624-445e-9f71-ab1092e5b6cb">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="0e832ca3-d4bc-46cf-ac57-9441c546903b">
+    <producedTypes>
+      <objectType typeId="75ed1bdc-2bf7-4b6a-877b-e508493ad981" valueTypeId="cdedd102-5f32-4e73-957b-486d88d00e98"/>
+      <rowType typeId="62bebb4e-b03a-4d5d-9e35-4631a4dba3b6" valueTypeId="02714df5-a7a3-4dc1-9f90-6450b26751de"/>
+    </producedTypes>
+    <name>СписокНоменклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список номенклатура</value>
+    </synonym>
+    <attributes uuid="8635419d-29b6-45ad-b21f-d2cacd6342e4">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="46d798a7-5484-47aa-923d-2ee6db4d5419">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Номенклатура</name>
+        <field>Document.cbr_ОперацияСоглашения.TabularSection.СписокНоменклатура.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5be8cd2c-b588-4534-b284-9def8589a353">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

@@ -9,7 +9,7 @@
     <recordType typeId="320b1bc0-5ec3-4c83-9c40-dfdb9d22e6a5" valueTypeId="1c26b57e-186c-4913-9bd4-8cc7bf61b616"/>
     <recordManagerType typeId="09a7be9f-f2d8-4236-9bf3-8b82a4776bbf" valueTypeId="586183e0-a791-4b0d-96b9-367d3f6b2740"/>
   </producedTypes>
-  <name>cbr_ОстаткиНоменклатурыПоСоглашению</name>
+  <name>cbr_ОстаткиНоменклатурыПоСоглашениюСведений</name>
   <synonym>
     <key>ru</key>
     <value>Остатки номенклатуры по соглашению</value>
@@ -19,10 +19,10 @@
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="34137156-8808-4b52-8bae-157a3fd8e0cb">
-    <name>Количетсво</name>
+    <name>Количество</name>
     <synonym>
       <key>ru</key>
-      <value>Количетсво</value>
+      <value>Количество</value>
     </synonym>
     <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
@@ -38,23 +38,22 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <dimensions uuid="16702102-d284-4b4a-a305-ef120affbf7a">
-    <name>ВидДвижения</name>
+  <attributes uuid="0fb1bc51-f630-4269-9eb8-5412a0aeaab9">
+    <name>ЗаказКлиента</name>
     <synonym>
       <key>ru</key>
-      <value>Вид движения</value>
+      <value>Заказ клиента</value>
     </synonym>
     <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
-      <types>EnumRef.cbr_ВидыДвиженияСоглашенияСКлиентами</types>
+      <types>DocumentRef.ЗаказКлиента</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <mainFilter>true</mainFilter>
-  </dimensions>
+  </attributes>
   <dimensions uuid="50fe132c-ea48-4b31-a6e6-26cc0c1e6b5a">
     <name>Соглашение</name>
     <synonym>
@@ -73,23 +72,6 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <dimensions uuid="fc7a3fd6-d353-462d-bc5e-e52b0b590410">
-    <name>ЗаказКлиента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заказ клиента</value>
-    </synonym>
-    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
-    <type>
-      <types>DocumentRef.ЗаказКлиента</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <mainFilter>true</mainFilter>
-  </dimensions>
   <dimensions uuid="fe055e6c-356d-4fee-a1d8-dc46d1a02ab4">
     <name>Номенклатура</name>
     <synonym>
@@ -102,6 +84,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -124,6 +107,24 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <dimensions uuid="16702102-d284-4b4a-a305-ef120affbf7a">
+    <name>ВидДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид движения</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>EnumRef.cbr_ВидыДвиженияСоглашенияСКлиентами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
   <dimensions uuid="5fbd7692-507a-4465-82ad-5a39df3bf18a">
     <name>ЕдиницаИзмерения</name>
     <synonym>
@@ -140,5 +141,41 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7fc1024f-04e0-49af-8147-9ce8c9f6c22b">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="db340d93-aa34-4190-a748-2e239ce1a550">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
   </dimensions>
 </mdclass:InformationRegister>
