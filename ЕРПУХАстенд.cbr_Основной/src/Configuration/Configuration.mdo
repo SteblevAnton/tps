@@ -166,9 +166,6 @@
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
-  <commonModules>CommonModule.ПроведениеДокументов</commonModules>
-  <commonModules>CommonModule.ПроведениеДокументовЛокализация</commonModules>
-  <commonModules>CommonModule.ПроведениеДокументовПереопределяемый</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
