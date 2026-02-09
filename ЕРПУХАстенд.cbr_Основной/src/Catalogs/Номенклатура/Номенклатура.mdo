@@ -45,4 +45,32 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="944a7f5f-0327-4597-a568-9fb5bb99a430">
+    <name>cbr_ОптимальнаяПартияЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оптимальная партия заказа</value>
+    </synonym>
+    <comment>//++ ШмелевР  06.02.2026 ЗКП.1</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <templates uuid="7399a2b8-6292-487b-b136-c4902ce70a85" extendedConfigurationObject="a7ec4d48-b007-42a5-acba-65783990e319">
+    <name>ПФ_MXL_КарточкаНоменклатуры</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicTemplateExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <template>Extended</template>
+    </extension>
+  </templates>
 </mdclass:Catalog>
