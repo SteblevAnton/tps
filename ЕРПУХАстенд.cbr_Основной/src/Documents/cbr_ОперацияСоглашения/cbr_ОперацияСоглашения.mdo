@@ -31,6 +31,7 @@
       <key>ru</key>
       <value>Соглашение</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>CatalogRef.СоглашенияСКлиентами</types>
     </type>
@@ -46,6 +47,7 @@
       <key>ru</key>
       <value>Действие</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>EnumRef.cbr_ВидыДвиженияСоглашенияСКлиентами</types>
     </type>
@@ -61,6 +63,7 @@
       <key>ru</key>
       <value>Дата окончания</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>Date</types>
       <dateQualifiers>
@@ -83,6 +86,7 @@
       <key>ru</key>
       <value>Список номенклатура</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <attributes uuid="8635419d-29b6-45ad-b21f-d2cacd6342e4">
       <name>Номенклатура</name>
       <synonym>

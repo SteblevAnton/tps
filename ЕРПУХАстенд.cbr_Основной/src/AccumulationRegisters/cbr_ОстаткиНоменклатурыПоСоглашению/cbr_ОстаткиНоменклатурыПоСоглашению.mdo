@@ -13,6 +13,7 @@
     <key>ru</key>
     <value>Остатки номенклатуры по соглашению</value>
   </synonym>
+  <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
   <useStandardCommands>true</useStandardCommands>
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSplitting>true</enableTotalsSplitting>
@@ -22,6 +23,7 @@
       <key>ru</key>
       <value>Количество</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>Number</types>
       <numberQualifiers>
@@ -39,6 +41,7 @@
       <key>ru</key>
       <value>Соглашение</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>CatalogRef.СоглашенияСКлиентами</types>
     </type>
@@ -54,6 +57,7 @@
       <key>ru</key>
       <value>Номенклатура</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>CatalogRef.Номенклатура</types>
     </type>
@@ -69,6 +73,7 @@
       <key>ru</key>
       <value>Характеристика</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>CatalogRef.ХарактеристикиНоменклатуры</types>
     </type>
@@ -83,6 +88,7 @@
       <key>ru</key>
       <value>Дата начала</value>
     </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
     <type>
       <types>Date</types>
       <dateQualifiers>

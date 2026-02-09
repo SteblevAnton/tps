@@ -102,6 +102,5 @@
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
-  <informationRegisters>InformationRegister.cbr_ОстаткиНоменклатурыПоСоглашениюСведений</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
 </mdclass:Configuration>
