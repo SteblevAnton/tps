@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="bb776e06-172e-4a3e-ae0b-9012b410633d" extendedConfigurationObject="da7fc7cf-6b6a-4973-8c31-71b8f0009fcb">
+  <producedTypes>
+    <refType typeId="2c0c5011-039e-4715-811b-91555720b075" valueTypeId="abfe1207-34bc-40f3-aace-0dc1e5e03b75"/>
+    <listType typeId="63a6f83f-05c4-4d19-9eb5-cb583b4a5ac1" valueTypeId="aa6b36d3-693b-4dc6-b963-5e6666ef7361"/>
+    <managerType typeId="f146c330-6760-4d96-bc6a-ae4489c1b9ba" valueTypeId="849ee730-1896-4f63-8d35-17c28693af41"/>
+  </producedTypes>
+  <name>ПорядокРаботыВидовРабочихЦентров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Enum>

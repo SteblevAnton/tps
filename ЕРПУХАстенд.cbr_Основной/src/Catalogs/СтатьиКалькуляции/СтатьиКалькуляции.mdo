@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="1a6b90bc-83e8-444f-bb66-5ce91d4bfbc5" extendedConfigurationObject="7d570377-df59-48e4-a335-2901c46f4d1c">
+  <producedTypes>
+    <objectType typeId="5decca48-d9c5-4f58-b883-98a86e9af78d" valueTypeId="a95cc718-022d-45d2-92d2-1b412a94c513"/>
+    <refType typeId="d3c8b09c-ec67-45a3-9901-c13f56cbd034" valueTypeId="c429eb44-96b6-4728-82b3-be9bb6a6bb85"/>
+    <selectionType typeId="cdb37b2c-4b86-4874-ae0a-6995f6b1409a" valueTypeId="7aa93436-d88b-4da5-a5c9-429eb90f5fb5"/>
+    <listType typeId="436d0432-c52f-4625-a865-d9454d3c8d30" valueTypeId="378db783-a07d-4d27-bfa4-7d3e40c2041a"/>
+    <managerType typeId="1aa5ad27-0950-4b35-b4a9-ec7155a7fad9" valueTypeId="fe8cde04-e48b-4b0c-837b-07053fcd857d"/>
+  </producedTypes>
+  <name>СтатьиКалькуляции</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Catalog>

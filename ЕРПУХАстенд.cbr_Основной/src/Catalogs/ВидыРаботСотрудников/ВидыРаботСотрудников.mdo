@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e368aa72-bf28-4b9c-b619-fd71042439a1" extendedConfigurationObject="8e7414a0-5f25-4f08-9ab1-0f79bfd7777e">
+  <producedTypes>
+    <objectType typeId="c6384afc-adb5-4278-bd28-20c44a85e184" valueTypeId="6ff9e081-1967-4908-8739-1c402a654d91"/>
+    <refType typeId="aa9aabb2-5c15-49aa-b33f-4fd3c00f8fb3" valueTypeId="02ab9036-de1f-4e1e-ad81-2472634afce6"/>
+    <selectionType typeId="98d447a6-5949-4085-81b6-499a1134b8cd" valueTypeId="0c59e2fd-1e43-4053-bdc7-7343dc9fb39c"/>
+    <listType typeId="24b69cbf-209b-4f41-a910-7cc54757413e" valueTypeId="d147a402-bc07-4961-98a5-2a0dc856463e"/>
+    <managerType typeId="af347a60-83ed-42e8-b4d7-e3afe34e0c0e" valueTypeId="43c2a233-8c62-4810-91c5-a8308ab054c2"/>
+  </producedTypes>
+  <name>ВидыРаботСотрудников</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+  <attributes uuid="5b2fc0c8-fb49-47e2-8857-77f5fb4da642" extendedConfigurationObject="c7bf35cc-66d1-40cf-abba-009c3628f444">
+    <name>ЕдиницаИзмерения</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.УпаковкиЕдиницыИзмерения</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+</mdclass:Catalog>

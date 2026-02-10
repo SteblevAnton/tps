@@ -11,4 +11,11 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="e89981aa-bfdd-422b-9b23-95f1267dba6d">
+    <name>cbr_НаКонтроле</name>
+    <synonym>
+      <key>ru</key>
+      <value>На контроле</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

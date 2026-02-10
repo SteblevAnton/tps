@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b0832798-ee07-4458-af44-5ae32b3b3464" extendedConfigurationObject="f3ad2ba6-1cd0-452b-b213-bdcf8be0e821">
+  <producedTypes>
+    <managerType typeId="6d78c3de-1596-4100-8596-70724874013e" valueTypeId="ab830920-bb48-4fd8-8c80-b4efdf862c83"/>
+    <valueManagerType typeId="38cb8b30-f443-42b4-ab24-5b9c89fbb0a7" valueTypeId="4199a9ae-dfae-42e7-a56c-695b377f6cca"/>
+    <valueKeyType typeId="3ecfb8a2-4e50-439b-b7a7-395e592c753d" valueTypeId="005e5efb-4db3-4bbc-9c6f-63ee43298168"/>
+  </producedTypes>
+  <name>ИспользоватьРеглУчет</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConstantExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <typeExtension>
+      <types>
+        <state>Checked</state>
+        <type>Boolean</type>
+      </types>
+    </typeExtension>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Constant>

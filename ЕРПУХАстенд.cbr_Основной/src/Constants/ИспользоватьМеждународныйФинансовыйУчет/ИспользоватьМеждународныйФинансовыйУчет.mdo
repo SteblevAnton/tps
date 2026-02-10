@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="9e361bf4-9040-457e-ad2e-0ea4e9d9c484" extendedConfigurationObject="3c908e44-6fb5-496d-a2e8-56e9feb96376">
+  <producedTypes>
+    <managerType typeId="ca0eef9b-fcbb-49d0-9d05-e5cff75e937d" valueTypeId="b72538a0-d3a0-4768-ad76-8100390c4ab5"/>
+    <valueManagerType typeId="a81e20d6-5f30-4bf8-9a60-c2775ebcf7f8" valueTypeId="fa5f365f-76bb-4769-8e64-6d277b7658c5"/>
+    <valueKeyType typeId="fcab23ef-4e4c-4a30-a27a-70d6328bc882" valueTypeId="432f5de7-e404-4007-9b99-a569267adc1a"/>
+  </producedTypes>
+  <name>ИспользоватьМеждународныйФинансовыйУчет</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConstantExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <typeExtension>
+      <types>
+        <state>Checked</state>
+        <type>Boolean</type>
+      </types>
+    </typeExtension>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Constant>

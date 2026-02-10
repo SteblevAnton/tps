@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6f3d03b9-7a02-410f-b775-b615d01f39a6" extendedConfigurationObject="2f53eb3f-a2a2-487a-9f22-3c1273cadd00">
+  <producedTypes>
+    <managerType typeId="e4d103d0-dc19-4c94-975d-83c0d28aea05" valueTypeId="dc3e3628-8aa3-43a2-a96a-125eb5f25dfb"/>
+    <valueManagerType typeId="379e1ecd-d9e1-4861-9919-6263d9f906a7" valueTypeId="9e9da4a7-5712-4608-b60c-c0e861f34b59"/>
+    <valueKeyType typeId="69dab2f4-1b09-4583-9190-0cf28d5dfc12" valueTypeId="5557944c-7705-4658-b4c7-8264b93462c1"/>
+  </producedTypes>
+  <name>ИспользоватьПроизводствоИзДавальческогоСырья</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConstantExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <typeExtension>
+      <types>
+        <state>Checked</state>
+        <type>Boolean</type>
+      </types>
+    </typeExtension>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Constant>

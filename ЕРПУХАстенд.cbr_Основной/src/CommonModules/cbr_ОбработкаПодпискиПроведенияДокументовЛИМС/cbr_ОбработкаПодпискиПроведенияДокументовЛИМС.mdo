@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="499062e6-8027-4407-b243-db6aa20e74f0">
+  <name>cbr_ОбработкаПодпискиПроведенияДокументовЛИМС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка подписки проведения документов ЛИМС</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

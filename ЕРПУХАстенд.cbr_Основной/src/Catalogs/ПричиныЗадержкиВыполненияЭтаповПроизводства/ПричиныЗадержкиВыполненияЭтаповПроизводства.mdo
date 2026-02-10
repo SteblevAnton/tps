@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f1547291-a738-4007-be76-9c0502fab124" extendedConfigurationObject="7ad13eee-5b78-429b-8434-4984848d7f20">
+  <producedTypes>
+    <objectType typeId="3a6f4c37-b6cd-42da-b3ff-754a92608d72" valueTypeId="333696ed-1baf-4f3a-b6f8-6f6341390091"/>
+    <refType typeId="07a8ef8c-5d18-4857-9373-1511f8726896" valueTypeId="bc37d76e-9e86-42be-bddf-4b65d459a524"/>
+    <selectionType typeId="26d8c86d-76e4-42ac-873a-bacbde20a8b2" valueTypeId="4466a0b9-2b8b-4992-baea-3b8fbb1df6b0"/>
+    <listType typeId="62350603-5f89-4b18-bf80-d16c8c01226d" valueTypeId="a28b6271-d264-47a5-9866-7b2488c84f3b"/>
+    <managerType typeId="ecf73281-6265-4edd-a766-c239f5244636" valueTypeId="b5171cdc-1fde-46b2-93f6-d97772fb09a4"/>
+  </producedTypes>
+  <name>ПричиныЗадержкиВыполненияЭтаповПроизводства</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Catalog>
