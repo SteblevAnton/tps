@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="befe2326-24c6-4d12-aba1-48bee741eb0d" extendedConfigurationObject="230a6ae3-26a0-482d-9db1-731b340642bf">
+  <name>УправлениеОчередьюЗаказовНаПроизводство</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:BasicCommandExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <group>Checked</group>
+    <commandParameterTypeExtension/>
+    <commandModule>Extended</commandModule>
+  </extension>
+  <group>NavigationPanelImportant</group>
+</mdclass:CommonCommand>

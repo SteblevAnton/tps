@@ -179,9 +179,11 @@
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
   <definedTypes>DefinedType.Цена</definedTypes>
   <commonCommands>CommonCommand.СостояниеОбеспеченияСпискаЗаказов</commonCommands>
+  <commonCommands>CommonCommand.УправлениеОчередьюЗаказовНаПроизводство</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПлану</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
   <constants>Constant.ОрганизацияТПС</constants>
+  <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВидыЦен</catalogs>
