@@ -155,9 +155,9 @@
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
+  <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
-  <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.П3_ЧтениеДокументаСпециальныеТребования</roles>
