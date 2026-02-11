@@ -250,7 +250,6 @@
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
-  <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
