@@ -36,4 +36,15 @@
       <form>Extended</form>
     </extension>
   </forms>
+  <tabularSections uuid="302a8bc6-b2b8-4780-8eab-3612f3c6358e" extendedConfigurationObject="7b526229-3286-418a-920a-ff15a9b3ec48">
+    <producedTypes>
+      <objectType typeId="acced706-eafa-4df0-88df-13659c8ff32b" valueTypeId="15281c77-008e-4b44-9f58-2db1ca28aa03"/>
+      <rowType typeId="3f5ee6a1-8fee-47f2-83fb-6159883838b7" valueTypeId="deec9ed6-5ca2-4a2d-a852-8a448e831395"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </tabularSections>
 </mdclass:Document>
