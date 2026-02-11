@@ -205,14 +205,17 @@
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
+  <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.ОтборРазмещениеТоваров</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.ПриобретениеУслугПрочихАктивов</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.РасходныйОрдерНаТовары</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
@@ -231,6 +234,7 @@
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
   <enums>Enum.СтатусыЗаказовНаПроизводство2_2</enums>
+  <enums>Enum.СтатусыРасходныхОрдеров</enums>
   <enums>Enum.СтатусыСпецификаций</enums>
   <enums>Enum.СтатусыЭтаповПроизводства2_2</enums>
   <enums>Enum.ТипыДействий</enums>
