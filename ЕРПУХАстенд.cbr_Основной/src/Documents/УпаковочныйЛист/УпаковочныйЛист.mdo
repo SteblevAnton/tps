@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="29c2ea5a-f047-48d8-908c-8d66e20235b1" extendedConfigurationObject="0b5dd848-f150-4ea5-a88e-a87ad708a9b9">
+  <producedTypes>
+    <objectType typeId="852420cc-6f0a-4031-adae-03ea2637a20d" valueTypeId="f0daf400-5bc7-43ac-9086-ff726a8b08bb"/>
+    <refType typeId="7ad85669-e4d6-4421-ab67-2ce4cf127137" valueTypeId="ee992dd5-aa9d-4242-8549-5a6b6dcdc315"/>
+    <selectionType typeId="587ec756-03fa-45a0-a30a-2b982664903c" valueTypeId="9506b0e8-684e-4704-a55d-55988e17cc4e"/>
+    <listType typeId="2c7ed2fb-f3a9-4367-bfe6-c83f40c9b7a3" valueTypeId="ba0fd8c0-1df7-4f90-bcca-7e5ff3edca17"/>
+    <managerType typeId="72dd41e6-5544-4615-a666-349b3e077727" valueTypeId="b9932171-9a49-46d7-8c0e-2457a445092f"/>
+  </producedTypes>
+  <name>УпаковочныйЛист</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="ff9796d6-a6ff-4d81-a9db-f345464792b0">
+    <name>cbr_КоличествоПаллет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество паллет</value>
+    </synonym>
+    <comment>//cbr-larkovgeorg 10.02.2026 СКЛ.12</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ea581f0a-8573-4608-ba74-132a08a5373e" extendedConfigurationObject="2c5d3d37-c238-4dcb-8be9-1b2136f6f9b3">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="057a664c-26d0-458e-a50f-090dd9d8ad4e" extendedConfigurationObject="137118f7-2a9a-4617-98b9-d1d8ca93edf4">
+    <producedTypes>
+      <objectType typeId="f2db87d2-f736-4ac4-9951-6c0b88ebcf10" valueTypeId="4a172395-4579-40e6-9a2c-d4b2de2dcfe6"/>
+      <rowType typeId="392f34c3-6ab0-462c-99b1-1b37b1440973" valueTypeId="3f4eab7b-bc4a-4cee-a12b-991b58cf9315"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="163b05a2-114b-44f7-b4ea-3845db08508a">
+      <name>cbr_НомерПаллета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер паллета</value>
+      </synonym>
+      <comment>//cbr-larkovgeorg 10.02.2026 СКЛ.12</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="32f8a3ac-1af6-4b80-9f5f-61ca1e660b13">
+      <name>cbr_Уровень</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уровень</value>
+      </synonym>
+      <comment>//cbr-larkovgeorg 10.02.2026 СКЛ.12</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

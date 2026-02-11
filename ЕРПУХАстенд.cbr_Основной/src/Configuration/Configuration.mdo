@@ -221,6 +221,7 @@
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
+  <documents>Document.УпаковочныйЛист</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыНазначенияСпецификации</enums>
@@ -229,6 +230,7 @@
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
   <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
+  <enums>Enum.ВидыУпаковочныхЛистов</enums>
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ПорядокРасчетов</enums>
@@ -244,6 +246,7 @@
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
+  <enums>Enum.ТипыУпаковокНоменклатуры</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
