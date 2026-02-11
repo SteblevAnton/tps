@@ -189,6 +189,7 @@
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Лоты</catalogs>
   <catalogs>Catalog.МестаПоставки</catalogs>
+  <catalogs>Catalog.НаборыУпаковок</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Организации</catalogs>

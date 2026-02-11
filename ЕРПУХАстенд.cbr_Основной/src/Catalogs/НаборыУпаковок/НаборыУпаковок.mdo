@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="258eab52-2ccb-485e-94ab-7116aaf12d83" extendedConfigurationObject="f1d6c7cd-7eba-4e2f-b881-f9d5227cbcd0">
+  <producedTypes>
+    <objectType typeId="1038ed0f-24b7-4078-b6a1-95549d0e7406" valueTypeId="6a0a6b99-4e76-4625-867e-20fc21a1ed98"/>
+    <refType typeId="db9639ce-846b-4e07-9bbd-25d027de2c31" valueTypeId="4639c954-960f-4bb7-96dd-77e0f57ed0ee"/>
+    <selectionType typeId="7e9e417f-a213-4763-90d3-6503036ba4c6" valueTypeId="825eb74c-7930-4efc-8e09-28556b997588"/>
+    <listType typeId="d1a396a8-b780-4914-a35d-81e7cf62fd7e" valueTypeId="870cd91b-88be-4299-b4c0-dbc9dc6abf7e"/>
+    <managerType typeId="e7a3b476-4b4b-42ea-b8d0-2f82f5b2ba4d" valueTypeId="3f4254cb-3221-49ea-a2ee-f4aef58c51c3"/>
+  </producedTypes>
+  <name>НаборыУпаковок</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <codeLength>Checked</codeLength>
+    <codeAllowedLength>Checked</codeAllowedLength>
+    <descriptionLength>Checked</descriptionLength>
+    <codeType>Checked</codeType>
+    <predefined>Checked</predefined>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <predefined>
+    <items id="95d1033b-483e-4a3f-ab8a-46edaa8abe79">
+      <name>cbr_Паллеты</name>
+      <description>Паллеты</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="9103df59-d105-488e-8ff8-e309cf0576a8">
+      <name>БазовыеЕдиницыИзмерения</name>
+      <description>Базовые единицы измерения</description>
+      <extension xsi:type="mdclassExtension:PredefinedItemExtension">
+        <state>AdoptedCheck</state>
+      </extension>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c647bc21-58fc-411b-8f8c-5cc830995c85">
+      <name>ИндивидуальныйДляНоменклатуры</name>
+      <description>Индивидуальный набор для номенклатуры</description>
+      <extension xsi:type="mdclassExtension:PredefinedItemExtension">
+        <state>AdoptedCheck</state>
+      </extension>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+</mdclass:Catalog>
