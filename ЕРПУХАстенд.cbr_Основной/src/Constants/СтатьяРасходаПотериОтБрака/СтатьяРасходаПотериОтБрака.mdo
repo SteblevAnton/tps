@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3cf44281-27a6-4582-8ca9-5faebdbd07be">
+  <producedTypes>
+    <managerType typeId="2a463fcf-5486-4c9b-95b7-4bf48a3b61b4" valueTypeId="860fc915-cf08-4007-9315-badc73782d46"/>
+    <valueManagerType typeId="aa59049f-21df-4cb9-9f0e-70cb9305fec9" valueTypeId="f182e1cf-b242-4cb4-a00e-97e2d1db7e67"/>
+    <valueKeyType typeId="db7f9caa-19b3-4b32-b465-ecf430777a98" valueTypeId="1dc332ec-74ce-4b1a-9346-cfb328661669"/>
+  </producedTypes>
+  <name>СтатьяРасходаПотериОтБрака</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статья расхода &quot;Потери от брака&quot;</value>
+  </synonym>
+  <comment>// Османов Н.М. 24.04.2025</comment>
+  <type>
+    <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
