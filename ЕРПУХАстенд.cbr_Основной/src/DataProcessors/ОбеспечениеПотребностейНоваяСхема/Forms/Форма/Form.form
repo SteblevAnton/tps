@@ -6231,6 +6231,39 @@
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
+                  <name>ЗаказыКОбеспечениюcbr_НеПоддерживаетсяОстаток</name>
+                  <id>5183</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.ЗаказыКОбеспечению.cbr_НеПоддерживаетсяОстаток</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>ЗаказыКОбеспечениюcbr_НеПоддерживаетсяОстатокРасширеннаяПодсказка</name>
+                    <id>5185</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ЗаказыКОбеспечениюcbr_НеПоддерживаетсяОстатокКонтекстноеМеню</name>
+                    <id>5184</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>CheckBoxField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+                </items>
+                <items xsi:type="form:FormField">
                   <name>СпособОбеспеченияЗаказы</name>
                   <id>4354</id>
                   <visible>true</visible>
