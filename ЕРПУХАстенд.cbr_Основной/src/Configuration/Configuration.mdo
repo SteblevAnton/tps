@@ -227,6 +227,7 @@
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.cbr_ВидыПалет</enums>
+  <enums>Enum.cbr_Статусы</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыНазначенияСпецификации</enums>
   <enums>Enum.ВариантыОбеспечения</enums>
@@ -251,6 +252,7 @@
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
+  <dataProcessors>DataProcessor.cbr_РеестрТМЦ</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>

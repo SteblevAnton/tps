@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a473a57d-980f-42b4-8615-f6fe0d87552b">
+  <producedTypes>
+    <refType typeId="8fcb9425-dcf6-43c9-8513-99f265c10a57" valueTypeId="4b998640-3fe5-4cc4-99a9-76b642a83945"/>
+    <listType typeId="2da39c1e-1f93-4673-a49a-e1df74c2b53a" valueTypeId="b8d38c54-c169-429a-a0e1-0682554d4505"/>
+    <managerType typeId="d2673284-c05d-479d-9997-b2c393b103cc" valueTypeId="f851897b-6609-43f5-a98e-5fa808dceaad"/>
+  </producedTypes>
+  <name>cbr_Статусы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы</value>
+  </synonym>
+  <comment>//++ ШмелевР 02.02.2026 ЗКП.16</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9ffdb7a3-f161-494b-a209-96b1f4c9f486">
+    <name>ОК</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОК</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="248ce6b8-648d-40b1-a678-fd93b03b4908">
+    <name>Внимание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внимание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="25824dc9-f9d7-4e39-a518-40ffc7e55e42">
+    <name>СрочнаяРаспродажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срочная распродажа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4b0dc10d-42b0-4e7c-bd6f-256a5268b4cf">
+    <name>Неликвид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неликвид</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
