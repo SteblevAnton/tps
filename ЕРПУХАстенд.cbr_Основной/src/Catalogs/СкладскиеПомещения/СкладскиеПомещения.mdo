@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="2cea9f80-10ce-44e6-aed6-df59ab0f49f2" extendedConfigurationObject="d185d3dc-369f-4bdf-962e-8954f89dadce">
+  <producedTypes>
+    <objectType typeId="fd707c6c-02b0-4e8e-93f9-e305c66990f1" valueTypeId="ac2cf232-204d-4e2d-9117-246a33ce5201"/>
+    <refType typeId="5a874f96-a0a5-4f4e-b997-050b17c27e07" valueTypeId="26b05260-aecf-4bc8-aa05-dba580e836c8"/>
+    <selectionType typeId="2f5645b9-dfbf-4452-a9d5-445338c1b0cb" valueTypeId="7ebb1d1e-d9ba-4db4-91b3-6036243acd2a"/>
+    <listType typeId="5e2ffb06-e23d-40a5-9f33-b576a15cf1c3" valueTypeId="024d20f3-dab3-40c3-adb9-b1e088fe58b3"/>
+    <managerType typeId="e32b771f-45a2-47a9-b156-02945cf99821" valueTypeId="ff87d1a0-7508-4ce7-9a18-41b2808bb572"/>
+  </producedTypes>
+  <name>СкладскиеПомещения</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Catalog>

@@ -162,6 +162,7 @@
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
+  <commonModules>CommonModule.ДвижениеПродукцииИМатериаловЛокализация</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
@@ -191,6 +192,7 @@
   <catalogs>Catalog.МестаПоставки</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.ОбластиХранения</catalogs>
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.ПартииПроизводства</catalogs>
   <catalogs>Catalog.Партнеры</catalogs>
@@ -200,6 +202,8 @@
   <catalogs>Catalog.РабочиеЦентры</catalogs>
   <catalogs>Catalog.РесурсныеСпецификации</catalogs>
   <catalogs>Catalog.СерииНоменклатуры</catalogs>
+  <catalogs>Catalog.СкладскиеГруппыНоменклатуры</catalogs>
+  <catalogs>Catalog.СкладскиеПомещения</catalogs>
   <catalogs>Catalog.Склады</catalogs>
   <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.СоглашенияСПоставщиками</catalogs>
@@ -211,6 +215,7 @@
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
+  <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
@@ -251,6 +256,7 @@
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
+  <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СтатьиРасходов</chartsOfCharacteristicTypes>

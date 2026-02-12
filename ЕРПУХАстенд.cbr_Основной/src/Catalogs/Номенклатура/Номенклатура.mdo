@@ -65,6 +65,19 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="217b6f86-9310-4fa0-aee8-319c6773407d" extendedConfigurationObject="44605785-ef13-458d-a2e3-d834ef2acd32">
+    <name>СкладскаяГруппа</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.СкладскиеГруппыНоменклатуры</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
   <templates uuid="7399a2b8-6292-487b-b136-c4902ce70a85" extendedConfigurationObject="a7ec4d48-b007-42a5-acba-65783990e319">
     <name>ПФ_MXL_КарточкаНоменклатуры</name>
     <objectBelonging>Adopted</objectBelonging>

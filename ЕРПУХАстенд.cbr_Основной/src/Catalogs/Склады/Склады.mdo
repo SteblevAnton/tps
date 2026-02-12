@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0eaab1a3-00da-44a8-b167-040acfe88042" extendedConfigurationObject="07b3c407-9a3a-4f94-b798-226c96d66840">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0eaab1a3-00da-44a8-b167-040acfe88042" extendedConfigurationObject="07b3c407-9a3a-4f94-b798-226c96d66840">
   <producedTypes>
     <objectType typeId="2c02a339-f2ae-4bf9-a6a4-d35a24c5311a" valueTypeId="23f7c22c-a235-4b51-acac-d31ca6b941cc"/>
     <refType typeId="05eaa6e1-bca2-4fe4-8b12-fc546e206406" valueTypeId="d0ecf832-036f-4a08-932b-99b5dbfd4ca9"/>
@@ -13,4 +13,19 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="767b3c49-a68f-486c-ba83-9bc59c114be5">
+    <name>cbr_СкладГотовойПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад готовой продукции</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>
