@@ -303,6 +303,16 @@
       <form>Extended</form>
     </extension>
   </forms>
+  <forms uuid="ad8701bc-f881-4588-aadc-adfa25cfac02">
+    <name>cbr_ФормаПодбораЭтапов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор этапов</value>
+    </synonym>
+    <comment>//++АшаеваАН 10.02.26 ПРЗ.13</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="fdf3a48d-5885-4a04-b864-8d141407fc70">
     <producedTypes>
       <objectType typeId="200e3836-900d-4cdc-bcd6-0bd30a4dc3c8" valueTypeId="081ab2de-039b-4430-918b-7634478fd9c5"/>

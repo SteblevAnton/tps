@@ -1975,6 +1975,9 @@
               <groupHorizontalAlign>Right</groupHorizontalAlign>
               <groupVerticalAlign>Center</groupVerticalAlign>
               <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>StdPicture.InputFieldClear</picture>
+                </picture>
                 <hyperlink>true</hyperlink>
               </extInfo>
             </items>
@@ -6264,6 +6267,9 @@
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
         <showTitle>true</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>Объект.ОбеспечениеМатериаламиИРаботами.RowsCount</segments>
+        </titleDataPath>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -9103,6 +9109,9 @@
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
         <showTitle>true</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>КоличествоСтрокРасхода</segments>
+        </titleDataPath>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -13969,6 +13978,9 @@
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
         <showTitle>true</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>КоличествоСтрокВыходныеИзделия</segments>
+        </titleDataPath>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -15127,6 +15139,9 @@
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
         <showTitle>true</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>Объект.Трудозатраты.RowsCount</segments>
+        </titleDataPath>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -15227,7 +15242,7 @@
             <choiceParameterLinks>
               <name>Отбор.Подразделение</name>
               <datapath xsi:type="form:DataPath">
-                <segments>1/0:9e76279a-4f34-44a9-b997-752bfa2a4a30</segments>
+                <segments>Объект.Подразделение</segments>
               </datapath>
             </choiceParameterLinks>
             <choiceParameters>
@@ -15280,7 +15295,7 @@
             <choiceParameterLinks>
               <name>Отбор.Владелец</name>
               <datapath xsi:type="form:DataPath">
-                <segments>512:02023637-7868-4a5f-8576-835a76e0c9ba/1</segments>
+                <segments>Items.ВидыРабочихЦентров.CurrentData.ВидРабочегоЦентра</segments>
               </datapath>
             </choiceParameterLinks>
             <dropListWidth>3</dropListWidth>
@@ -16534,6 +16549,9 @@
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
         <showTitle>true</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>ВидыРабочихЦентровКоличество</segments>
+        </titleDataPath>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
