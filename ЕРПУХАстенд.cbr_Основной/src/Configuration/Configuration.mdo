@@ -94,6 +94,7 @@
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
+  <definedTypes>DefinedType.РаспоряжениеНаДоставку</definedTypes>
   <commonCommands>CommonCommand.Напомнить</commonCommands>
   <commonCommands>CommonCommand.СоздатьЗаметкуПоПредмету</commonCommands>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
@@ -125,6 +126,7 @@
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
+  <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</accumulationRegisters>
 </mdclass:Configuration>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="4c558275-07e7-40bb-a155-24292ee86aee" extendedConfigurationObject="ef3c28e2-206b-4c58-9fa8-6705b366034e">
+  <producedTypes>
+    <selectionType typeId="c7997840-df76-4da8-b54b-03104361b87b" valueTypeId="dd791f65-ac6e-4100-b518-ea8a864e7868"/>
+    <listType typeId="7ffefae0-98a8-4023-a92f-dcef40ea2b2c" valueTypeId="867ab4f8-0233-48c5-b078-fa464589b0ce"/>
+    <managerType typeId="10434b27-c07b-4be4-86f1-97330a51c6d0" valueTypeId="b7c1cb0a-668b-4ee9-9b3c-5d65530cd394"/>
+    <recordSetType typeId="d44da455-e06a-4ba3-bbad-f5d9299dc526" valueTypeId="92d3ee96-eab5-4fe1-8867-5ef888bdfc8b"/>
+    <recordKeyType typeId="0a934f0f-2ccd-4a79-a50c-09ae291a6677" valueTypeId="ad71c91f-237c-4ff4-8f00-d91c0294ebed"/>
+    <recordType typeId="d1b5c823-a5cb-4c4c-86da-693d22f14091" valueTypeId="c91eab88-117f-499a-810e-51e416a26b0a"/>
+    <recordManagerType typeId="70254dc2-b799-499c-87bd-efc18862d4bb" valueTypeId="4dc64d9d-28ca-4375-b933-47afd445db25"/>
+  </producedTypes>
+  <name>ТоварыКДоставке</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:InformationRegister>
