@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cef251d0-c2e4-44d3-a536-693fd6782347">
+  <producedTypes>
+    <refType typeId="53e4abed-ea2e-4d05-8a3a-5f045f2871d3" valueTypeId="66ca10a0-35ca-431c-be3f-c243963f86f4"/>
+    <listType typeId="b1f383e1-13c7-4a93-b72a-1464de628957" valueTypeId="7b5067a1-bf9c-4461-b8e4-15aee650dac2"/>
+    <managerType typeId="92acbb6c-7298-48c6-8c8e-8049332e3e91" valueTypeId="261fba82-19d6-4d7e-af38-0cbcabb406c2"/>
+  </producedTypes>
+  <name>cbr_ВидыПалет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды палет</value>
+  </synonym>
+  <comment>// Zhiend 09.02.2026 СКЛ17</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d7df64ab-6f35-479c-8721-efcf956eb4fd">
+    <name>Килограмм</name>
+    <synonym>
+      <key>ru</key>
+      <value>кг</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="adcdde79-bb3a-4587-82c6-9ed246ae7552">
+    <name>Гофрокороб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гофрокороб</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bdb6a322-14aa-470c-aa64-f7a3e2115184">
+    <name>Паллета800на1200</name>
+    <synonym>
+      <key>ru</key>
+      <value>Паллета 800 на 1200</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9ea2c7d6-2144-4151-a304-2ff496db9753">
+    <name>Паллета1200на1200</name>
+    <synonym>
+      <key>ru</key>
+      <value>Паллета 1200 на 1200</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

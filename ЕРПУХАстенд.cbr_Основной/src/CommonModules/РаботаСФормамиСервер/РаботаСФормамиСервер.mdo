@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da5b3562-7a0a-4418-9e97-deece591ad89">
+  <name>РаботаСФормамиСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с формами сервер</value>
+  </synonym>
+  <comment>// Османов Н.М. 21.11.2023 ЧТЗ №Действия в производстве</comment>
+  <server>true</server>
+</mdclass:CommonModule>

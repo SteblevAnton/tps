@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="68201f68-2e64-4426-844d-d77c990d842d" extendedConfigurationObject="21895752-24ac-4d5e-a4e1-d350a6d1d68d">
+  <producedTypes>
+    <objectType typeId="9063edbd-c505-49ec-85c2-8c3f49718a32" valueTypeId="10fa3205-269c-451f-891c-4a7420450f4b"/>
+    <refType typeId="f2ecec88-a6e4-4713-ac4f-dd2917fa3183" valueTypeId="31fb6bab-55f2-48a4-aa5b-896edee25d11"/>
+    <selectionType typeId="f132439e-5f97-46c5-97e4-78b790531f43" valueTypeId="abcd6392-c217-4101-a079-e83dac669ceb"/>
+    <listType typeId="d689431f-d560-40e1-ad44-db4da96e8bca" valueTypeId="6fbb02de-41e8-4acf-b6da-45360d84bf06"/>
+    <managerType typeId="47fa861f-f883-4919-9a8c-c2b4280723ce" valueTypeId="7ea308ae-3b74-4103-9f58-b7f23aeaa630"/>
+    <containerType typeId="862649e7-d7f5-4f7b-912f-01f862e75d09" valueTypeId="b6c89862-ae8e-4f92-a841-849cadc4602b"/>
+  </producedTypes>
+  <name>СтатьиРасходов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ChartOfCharacteristicTypesExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <typeExtension/>
+    <codeLength>Checked</codeLength>
+    <codeAllowedLength>Checked</codeAllowedLength>
+    <predefined>Checked</predefined>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <codeLength>9</codeLength>
+  <predefined>
+    <items id="30bb457d-f1ba-49e3-9e5b-e1a19bf46051">
+      <name>cbr_26ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
+      <description></description>
+      <code>000000001</code>
+      <type/>
+    </items>
+    <items id="0c126395-7346-415f-83c4-6e3409927d4f">
+      <name>cbr_44ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
+      <description></description>
+      <code>000000003</code>
+      <type/>
+    </items>
+    <items id="6dbf4bde-9c33-4720-845b-3a317d16e066">
+      <name>cbr_ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
+      <description></description>
+      <code>000000002</code>
+      <type/>
+    </items>
+  </predefined>
+</mdclass:ChartOfCharacteristicTypes>

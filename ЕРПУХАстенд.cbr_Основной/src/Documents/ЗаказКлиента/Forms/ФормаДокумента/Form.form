@@ -8619,6 +8619,11 @@ details</value>
                 <userVisible>
                   <common>true</common>
                 </userVisible>
+                <handlers xsi:type="form:EventHandlerExtension">
+                  <event>OnChange</event>
+                  <name>cbr_МенеджерПриИзмененииПосле</name>
+                  <callType>After</callType>
+                </handlers>
                 <extendedTooltip>
                   <name>МенеджерРасширеннаяПодсказка</name>
                   <id>1281</id>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04c4ce4f-731c-4a5c-b161-96b9011411e8">
+  <name>П3_ЧтениеДокументаСпециальныеТребования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение документа специальные требования (П3)</value>
+  </synonym>
+  <comment>// Османов Н.М. 20.01.2025</comment>
+</mdclass:Role>

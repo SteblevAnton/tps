@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d8df5139-d2ba-4b83-9879-d6471d1e67ba" extendedConfigurationObject="5a8b11e6-8638-458b-b52c-cc33fe97d255">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="fc3e33a5-8a55-40bd-b25d-2bc3492bdc00" extendedConfigurationObject="5a8b11e6-8638-458b-b52c-cc33fe97d255">
   <producedTypes>
-    <objectType typeId="84477d4f-630e-46f4-9e43-11f2ae06e8d1" valueTypeId="83753d3c-27d3-4a69-b2b2-67853139079f"/>
-    <refType typeId="c9a73543-1063-4438-9503-1c1cd3497dc1" valueTypeId="aecfd370-4baf-436e-b30b-2dc3d9835db5"/>
-    <selectionType typeId="69741523-8d75-48db-b329-9f3409085c8a" valueTypeId="0bc3af40-d70f-447b-a65c-926873d82548"/>
-    <listType typeId="67e879e3-0e71-4a66-abb0-3941da568a55" valueTypeId="944865d5-f962-4257-b882-445066981934"/>
-    <managerType typeId="51ceb851-3908-4d48-8f54-0b70a42886d8" valueTypeId="578ea932-9ff2-4bd1-bf5e-ce51180f5574"/>
+    <objectType typeId="d4be0cbd-92f8-4ce3-ab3c-205fdc3ce677" valueTypeId="d3ba0ecf-ff6b-4e9c-80fe-3b0977b909bc"/>
+    <refType typeId="c469c727-9196-4928-b393-8376c2b2a581" valueTypeId="114532f2-341a-4e59-8fed-bf81efcf3a40"/>
+    <selectionType typeId="988b36cf-34b4-4e31-bedb-998e9a5cc511" valueTypeId="f79a211e-22f2-4bb6-97b4-e658ad303646"/>
+    <listType typeId="31c66b79-b0fa-473e-9fc2-b69ef670d08c" valueTypeId="27f23178-5e6e-4cd6-a1d9-801ed4a56838"/>
+    <managerType typeId="25c054da-77ae-4203-8e15-c927dfe3dfb5" valueTypeId="5e82cc22-6623-467f-84c8-a82969b78df4"/>
   </producedTypes>
   <name>ХарактеристикиНоменклатуры</name>
   <objectBelonging>Adopted</objectBelonging>

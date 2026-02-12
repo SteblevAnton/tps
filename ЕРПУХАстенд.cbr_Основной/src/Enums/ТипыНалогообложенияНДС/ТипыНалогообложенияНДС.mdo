@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="8974c5f4-0480-40ba-9492-207ce6010713" extendedConfigurationObject="492f859c-898a-4672-ab31-9d0ca13acabc">
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="41fe6a43-a23e-4d30-ad33-aa2f4e34bacc" extendedConfigurationObject="492f859c-898a-4672-ab31-9d0ca13acabc">
   <producedTypes>
-    <refType typeId="88936b03-6be2-4660-b429-4deca5a5328f" valueTypeId="8417b748-48dd-4852-bec6-cd450229e4d9"/>
-    <listType typeId="735bef20-adf5-41ad-8db9-d9eaaf64839b" valueTypeId="2b3727a3-2b65-4be4-a5c9-8abd769c2dfa"/>
-    <managerType typeId="cca79128-5eaa-4446-9d6f-799e156dc311" valueTypeId="efdb37e0-140a-4450-b304-9ed69b4e6e75"/>
+    <refType typeId="77b939f7-7324-4afc-96f5-cb33690cc068" valueTypeId="fe6b94f1-95c6-44c8-a8a0-aebe6dea21ac"/>
+    <listType typeId="49afc97b-005c-4665-945d-fe406f0afc08" valueTypeId="35bcafb9-9aad-4f49-980e-05ca99dd7c38"/>
+    <managerType typeId="06aa8e82-4f2f-40f3-8913-ac50ef47774e" valueTypeId="a8001c81-6d88-465b-8208-5a7b8a8dd80a"/>
   </producedTypes>
   <name>ТипыНалогообложенияНДС</name>
   <objectBelonging>Adopted</objectBelonging>
@@ -11,28 +11,28 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
-  <enumValues uuid="da705fab-509e-4f14-9b5b-f6cd8917e034" extendedConfigurationObject="507f3953-94e1-46ef-8c8d-0688fd890a1d">
+  <enumValues uuid="45ae09a2-0836-4277-9ae6-eac85c210581" extendedConfigurationObject="507f3953-94e1-46ef-8c8d-0688fd890a1d">
     <name>ПродажаОблагаетсяНДС</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
-  <enumValues uuid="311582ab-4d62-4c8b-a8d2-1ba9f521c001" extendedConfigurationObject="5df46640-a48c-42a3-84ec-3c9f97ce2844">
+  <enumValues uuid="04d9ec23-d56e-43dc-bde4-542febcace15" extendedConfigurationObject="5df46640-a48c-42a3-84ec-3c9f97ce2844">
     <name>ПродажаНеОблагаетсяНДС</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
-  <enumValues uuid="8e64a635-47db-4d47-ab1d-58229b6e5e5a" extendedConfigurationObject="9f70eac4-2b8c-4400-9fb7-f3d4230ad33e">
+  <enumValues uuid="bb559556-11c9-4e50-b5bd-5c815d030a44" extendedConfigurationObject="9f70eac4-2b8c-4400-9fb7-f3d4230ad33e">
     <name>ПродажаНаЭкспорт</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
-  <enumValues uuid="5dee8e2d-3b4f-4f6c-8ab4-5a17712e0d38" extendedConfigurationObject="1270ac55-6965-4dae-b63b-1266cf1cca2a">
+  <enumValues uuid="ead66a96-7cbc-4cad-ac5d-8457a3418f63" extendedConfigurationObject="1270ac55-6965-4dae-b63b-1266cf1cca2a">
     <name>ПродажаОблагаетсяЕНВД</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:MdObjectExtension">

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="a25f372f-8040-431f-9baa-07efdbcf17b5" extendedConfigurationObject="4259c461-12b1-4f3e-8283-5927c75afdb6">
+  <producedTypes>
+    <objectType typeId="48e9ba99-824a-4480-ac80-40cf7c9c9747" valueTypeId="9ce02697-f3de-428e-afb9-efe536e02ac8"/>
+    <refType typeId="4e379abc-57fd-404d-b72d-2b2e10fa59dd" valueTypeId="d0e508f7-fb51-4c04-a15f-cdf35146cd41"/>
+    <selectionType typeId="8b37f9ea-9d20-4455-995a-93de0f78137b" valueTypeId="48510f56-cfd3-404e-84eb-b0ebf8a3082a"/>
+    <listType typeId="bdd2cbb0-0b0b-42f6-9949-c2998f3ccbb6" valueTypeId="6c47a45d-67ba-435d-a5a6-a5acb43d8663"/>
+    <managerType typeId="dcb58277-12fe-49ee-9d74-bac4b75c8f2c" valueTypeId="a898d5c9-7eed-4bd7-81ed-ed0210b153d1"/>
+  </producedTypes>
+  <name>Контрагенты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="e68c709d-86bb-4c57-8439-f617b638303d">
+    <name>cbr_КодFO</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код FO</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e6f461e-707c-4b7b-8733-4391e0872d08">
+    <name>cbr_КодBitrix</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код bitrix</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

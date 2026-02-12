@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42903c4a-7f8c-4758-b505-75eedf5a6f46">
+  <name>cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление изменение регистра номенклатура в палетах</value>
+  </synonym>
+  <comment>// Zhiend 09.02.2026 СКЛ17</comment>
+</mdclass:Role>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="1a27155b-eb05-4d1b-8771-60d16f6adbf5" extendedConfigurationObject="37a7f30a-b679-4465-91fb-c63c1884f78d">
+<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="fbfef649-aa68-48cf-81aa-cd976a2193fd" extendedConfigurationObject="37a7f30a-b679-4465-91fb-c63c1884f78d">
   <producedTypes>
-    <containerType typeId="970be9c9-717f-40a5-ab55-a9581ec8a5c8" valueTypeId="423158e9-8e25-4cb8-9a0b-a40c406d8f16"/>
+    <containerType typeId="8e471aed-d78a-4fb9-a265-8070edc9841f" valueTypeId="531e1287-0a00-4477-9cd7-9a0676c099d3"/>
   </producedTypes>
   <name>Цена</name>
   <objectBelonging>Adopted</objectBelonging>

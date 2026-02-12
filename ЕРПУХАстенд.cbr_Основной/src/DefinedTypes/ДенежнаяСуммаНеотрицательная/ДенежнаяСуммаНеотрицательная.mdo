@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6734a0be-0894-48c2-9476-ec2f5dc1c204" extendedConfigurationObject="0b05e754-f64b-4976-b0f1-12c84b509997">
+<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="ae348a5d-6571-4171-85f2-e76af7e661c4" extendedConfigurationObject="0b05e754-f64b-4976-b0f1-12c84b509997">
   <producedTypes>
-    <containerType typeId="5fe5ad14-3e83-436e-959d-6fdf830f691f" valueTypeId="7a19d286-24e5-4965-a2b9-49769626a873"/>
+    <containerType typeId="d72a4ce1-01cb-41b3-b47c-1dbc7f245e1d" valueTypeId="54749b8f-aa5b-4afe-8ad5-19bc0c2d9d8f"/>
   </producedTypes>
   <name>ДенежнаяСуммаНеотрицательная</name>
   <objectBelonging>Adopted</objectBelonging>

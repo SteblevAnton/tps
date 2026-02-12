@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b5cf93d2-c69a-4875-9fe1-205da37610a3" extendedConfigurationObject="c9cda7a7-da6f-4830-800a-70e77e3f6e9d">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="da8ccdc2-016f-4cdf-b021-afc5df4da5c8" extendedConfigurationObject="c9cda7a7-da6f-4830-800a-70e77e3f6e9d">
   <producedTypes>
-    <objectType typeId="63bbfaca-9072-4d92-b26c-20aa817a4a10" valueTypeId="79bfb665-8e74-4223-938f-4dad723ffaec"/>
-    <refType typeId="639886ec-95d5-46e6-b1cb-36177c1010cd" valueTypeId="a6e0146d-3c79-42aa-ba51-c23d33bb9e80"/>
-    <selectionType typeId="9e8281dd-0e25-4d21-b569-3ba5073b014c" valueTypeId="e694f3df-0c66-4337-abc5-19fe2acbe517"/>
-    <listType typeId="ec7b98f6-5671-458c-a2fb-3631e67ddb77" valueTypeId="6580ad7c-84af-4c11-ba4d-827f48b117db"/>
-    <managerType typeId="a119dbe2-7b97-499c-a4f0-b03e012832f0" valueTypeId="46d5c90b-0577-4aff-bc2d-d53e09769d9f"/>
+    <objectType typeId="803e531d-8a1e-4e2a-910f-1de6d89ed98e" valueTypeId="cacd3c57-615c-4c55-8d6c-d2761703b817"/>
+    <refType typeId="82ed0514-bc27-4f56-9109-9440d17c3ab8" valueTypeId="0a9f9c84-ffcb-4e6c-89ab-84e80d2575e9"/>
+    <selectionType typeId="b006832f-b0e2-41c3-b30b-01c4e0520944" valueTypeId="117c996a-32bd-4aa9-b57e-738b77aa951f"/>
+    <listType typeId="8c1c0ad0-1fd8-4f80-9690-079a413ae334" valueTypeId="5476846b-1ebc-4f2d-b92e-96f6eeb26d5a"/>
+    <managerType typeId="db0744e2-bdc3-49a6-ae40-0955a373c600" valueTypeId="70c1ee0e-ef8a-4417-aaec-02e85adb3a38"/>
   </producedTypes>
   <name>УпаковкиЕдиницыИзмерения</name>
   <objectBelonging>Adopted</objectBelonging>
@@ -13,4 +13,12 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <forms uuid="59a6027b-89f5-4668-afe8-a77f93118d75" extendedConfigurationObject="8427345f-19e4-4b63-b05a-3ac7a3b477f0">
+    <name>ФормаВыбораИзДокументов</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Catalog>

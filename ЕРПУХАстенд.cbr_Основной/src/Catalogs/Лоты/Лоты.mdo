@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="51500828-1ac2-452a-89fc-37d057c54fbd" extendedConfigurationObject="cc0dd031-a0e2-4b88-abf1-5ab5416b13bc">
+  <producedTypes>
+    <objectType typeId="52d23fba-cb8a-47f1-a4b4-e99f1a704f42" valueTypeId="d6dc045a-036e-402b-9d1a-31741f85e968"/>
+    <refType typeId="9d1dcea9-b039-474f-a79a-edaaeab0a5a1" valueTypeId="69f0195d-9279-4886-84ce-ad91355f80d0"/>
+    <selectionType typeId="8d1cb2a8-182f-4476-bae1-4f3f6bbbb859" valueTypeId="26cffe10-f3d6-4eca-ab19-9e7141026df4"/>
+    <listType typeId="1cab87ca-4262-48ba-97c2-2b1dd7520bc9" valueTypeId="bcbc2d1d-e397-4699-b68d-f408b9fdd02e"/>
+    <managerType typeId="4ce1afbb-9367-4bd5-a1a0-acdfe162bcee" valueTypeId="997b2497-b28d-4386-b350-d2e92dfcf822"/>
+  </producedTypes>
+  <name>Лоты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+</mdclass:Catalog>

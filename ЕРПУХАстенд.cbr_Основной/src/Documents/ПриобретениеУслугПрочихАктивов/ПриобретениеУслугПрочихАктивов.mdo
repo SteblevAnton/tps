@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="fa08e5a0-c2a4-4279-9eb7-89bdee162c7e" extendedConfigurationObject="0026ae83-2895-428e-ac15-82af36e86bb9">
+  <producedTypes>
+    <objectType typeId="c3dbcf66-d676-4d1e-856d-e116540ba6ba" valueTypeId="b53c0ff7-fb8b-480b-9c67-436adb81f51c"/>
+    <refType typeId="9861fe85-a7c5-4493-a64f-f81f99a3aff6" valueTypeId="88fa4713-2c29-4462-81d1-5d2db21302bd"/>
+    <selectionType typeId="3097e093-aece-496f-8b08-3a18fad27315" valueTypeId="1a77bf7b-aa19-429e-bb31-bdd2dfb02ff1"/>
+    <listType typeId="b02bcfda-460d-4fcf-b0ed-332f4c338197" valueTypeId="8028095f-0a1b-4a06-a702-ce50b3dacaf5"/>
+    <managerType typeId="394508a9-6a7a-4a1b-85c2-8703882b3e05" valueTypeId="a9b294ea-4bfd-4f81-9068-5f22b6fca7c6"/>
+  </producedTypes>
+  <name>ПриобретениеУслугПрочихАктивов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="adb89313-6ca3-4b47-a198-46748b72ba38">
+    <name>cbr_ЗаданиеНаПеревозку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задание на перевозку</value>
+    </synonym>
+    <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+    <type>
+      <types>DocumentRef.ЗаданиеНаПеревозку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4f58c2a3-9086-4879-bcb8-8f0c776f1355">
+    <name>cbr_Транспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспорт</value>
+    </synonym>
+    <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="621b5607-89ed-4521-b9b2-c42cef4d5aed">
+    <name>cbr_Марка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Марка</value>
+    </synonym>
+    <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="07a6aeb3-d09f-4802-bb2d-15c0c00aec8e">
+    <name>cbr_НомерМашины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер машины</value>
+    </synonym>
+    <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb8a426b-3226-4160-bfbf-c3b1dc8ffab4">
+    <name>cbr_НомерПрицепа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер прицепа</value>
+    </synonym>
+    <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c814109b-8a3d-40f8-bf3f-aa3d0296b4e3">
+    <name>cbr_НомерЗаявкиПоДаннымПеревозчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер заявки по данным перевозчика</value>
+    </synonym>
+    <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ddcf948b-0366-45ec-8198-a31e8211d7db">
+    <name>cbr_НомерПеревозкиAtrucks</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер перевозки atrucks</value>
+    </synonym>
+    <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="06188d58-e00d-4895-87a0-dd88b25c5290" extendedConfigurationObject="b8c1c101-1fcf-48a5-8cf1-7611edbb7e88">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>

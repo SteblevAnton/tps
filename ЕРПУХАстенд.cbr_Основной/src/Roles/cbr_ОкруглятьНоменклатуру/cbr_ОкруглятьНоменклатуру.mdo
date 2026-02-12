@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29a5beb9-f2da-40dd-84bc-d0eb8c50c5e3">
+  <name>cbr_ОкруглятьНоменклатуру</name>
+  <synonym>
+    <key>ru</key>
+    <value>Округлять номенклатуру</value>
+  </synonym>
+  <comment>// cbr-georglarkov 05.02.2026 ПРЗ.24</comment>
+</mdclass:Role>

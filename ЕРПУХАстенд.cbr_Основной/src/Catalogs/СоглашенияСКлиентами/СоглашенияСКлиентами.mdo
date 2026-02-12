@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="48c2ab2e-b120-41a8-b888-4881c35d8115" extendedConfigurationObject="2bb5c12e-1217-4c8d-ae01-3a6253cfe429">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c68ed530-0adc-420d-80b6-f7c717929742" extendedConfigurationObject="2bb5c12e-1217-4c8d-ae01-3a6253cfe429">
   <producedTypes>
-    <objectType typeId="d706248a-ec03-499a-be09-e7e39fe5c866" valueTypeId="925259d2-ede5-44a4-a89e-8ce52450ceb8"/>
-    <refType typeId="6d4e4b37-bb07-4efa-bd36-cd7df2a3347b" valueTypeId="0d2acc0d-dc2b-489f-8200-5e983d61aa6c"/>
-    <selectionType typeId="bc6f8eb6-6b15-4211-88ab-b42091723006" valueTypeId="2ab21399-641c-4957-851e-b3a72e26c34d"/>
-    <listType typeId="ef136c58-9e2e-4eab-9933-5b0ee5ba3f92" valueTypeId="f3b399f9-5213-48ac-a965-10edda7867c6"/>
-    <managerType typeId="6c50b84c-10c3-4380-8a05-449106463d4b" valueTypeId="c7f36d42-cf6f-468d-9728-03bab57bf830"/>
+    <objectType typeId="dfa6910e-558b-430e-828a-05ffa0cb8234" valueTypeId="bc3d3078-004a-414d-94e4-3171ada6b8a9"/>
+    <refType typeId="b37e32fe-6534-4486-b5e2-1cef8c3eaf79" valueTypeId="db0c794b-e229-4d46-8601-26c9d3930e58"/>
+    <selectionType typeId="75ebb2d8-7bb5-4729-a3d1-2c4cc2023cf2" valueTypeId="080c8496-0658-40e9-b6ba-9de15942d08a"/>
+    <listType typeId="adfe4e56-301e-4d76-a0bc-29e03eabd918" valueTypeId="c97a0d8c-e4f0-4538-9514-07fc70860931"/>
+    <managerType typeId="4a032b1a-d929-48a6-980e-23c2b33447d4" valueTypeId="4de492e7-4799-45c3-afa3-108359d5a204"/>
   </producedTypes>
   <name>СоглашенияСКлиентами</name>
   <objectBelonging>Adopted</objectBelonging>
@@ -14,6 +14,289 @@
     <objectModule>Extended</objectModule>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="c51d7fde-c5b7-4e22-b1ca-38c47b22d017">
+    <name>cbr_Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a512219-0059-42b5-901e-e7b84251070c">
+    <name>cbr_ДокументыДляВодителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы для водителя</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="74c6a118-9486-49c2-be9e-416fc73b3027">
+    <name>cbr_ТаможенноеСопровождение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таможенное сопровождение</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3ba73dba-711b-413a-b555-409c119533e2">
+    <name>cbr_УсловияДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия доставки</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5ebf7e2-5c03-474d-85a2-fef71a2bafc2">
+    <name>cbr_ТребованияКУпаковке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования к упаковке</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="05fb6436-90dc-4d49-ae59-399394637074">
+    <name>cbr_ТребованияКЭтикетке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования к этикетке</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="19951bc6-8d4c-45d2-892b-cfdf2df36d87">
+    <name>cbr_ТребованиеККомплектации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования к комплектации</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="553a2d48-eb03-41b6-9d46-add03cd1b46d">
+    <name>cbr_НеБолееДатыПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не более чем от даты производства, мес.</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7f1c6f9b-3368-4a2a-8ca0-18c4c870b72e">
+    <name>cbr_ДопустимыйОстатокГСХНеМенееПроцент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый остаток ГСХ не менее, %</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ca69e863-dad4-405e-942c-b2cbf12a0211">
+    <name>cbr_ДопустимыйОстатокГСХНеМенееМес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый остаток ГСХ не менее, мес</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c7b5c21e-c3d7-407b-a687-845085646797">
+    <name>cbr_ПрочиеТребования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие требования</value>
+    </synonym>
+    <comment>//++АшаеваАН 29.01.26 ПРД.5</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f649ae3-7d9f-4a7d-a06a-6857e8e1cecd">
+    <name>cbr_АгентскоеВознаграждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Агентское вознаграждение</value>
+    </synonym>
+    <comment>//++ Тусеев ПРД12</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="d1cd6e31-35b5-4e9b-8435-b8fa605cd047">
+    <producedTypes>
+      <objectType typeId="b91972f4-9acc-403e-9b49-d2f7f3841c8d" valueTypeId="7448e6d3-f0c1-4c1c-8b04-a6d06316fa36"/>
+      <rowType typeId="1a08b120-b7f4-4261-b6db-04bf48ad2b33" valueTypeId="736ac268-cd2d-4b6d-9d81-a186da9cdaa6"/>
+    </producedTypes>
+    <name>cbr_АгентскиеВознаграждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Агентские вознаграждения</value>
+    </synonym>
+    <comment>//++ Тусеев ПРД12</comment>
+    <attributes uuid="be155072-7a9e-4633-8b84-3b62510fe181">
+      <name>Агент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Агент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="57b98a1e-5662-480c-b785-b018a8cc38a5">
+      <name>ДоговорАгента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор агента</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ВерсияСоглашенияКоммерческийДоговор</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d49546a9-68cf-42a3-bfde-f360d4410ad3">
+      <name>СтавкаАВ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка АВ, %</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
   <tabularSections uuid="bd1a30ba-2a82-4e4b-8290-ea46df05aaf2">
     <producedTypes>
       <objectType typeId="3631c01f-b103-4747-a59d-6256f9ce5e06" valueTypeId="f4f339d5-d0df-4586-a852-7aa4e1ed0135"/>
@@ -251,7 +534,7 @@
     </attributes>
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
-  <forms uuid="f26b1c04-8ed5-4e1f-9135-66af74e29bc9" extendedConfigurationObject="3f101e93-3776-4bf7-b27a-5bfa29a31646">
+  <forms uuid="38ab3791-df34-4dbe-bc9c-39b6a5c440ad" extendedConfigurationObject="3f101e93-3776-4bf7-b27a-5bfa29a31646">
     <name>ФормаЭлемента</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:BasicFormExtension">

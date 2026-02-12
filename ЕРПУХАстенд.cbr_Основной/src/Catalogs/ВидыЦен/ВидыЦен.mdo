@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="256b61b3-d2c5-46af-8ba7-03b3ad7652a7" extendedConfigurationObject="1a6593e1-d0c4-428d-af64-b1161601c46b">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="be3167b9-5497-4640-afd6-9eaf68f2b348" extendedConfigurationObject="1a6593e1-d0c4-428d-af64-b1161601c46b">
   <producedTypes>
-    <objectType typeId="ab326c17-c35a-4275-8923-7b54469a0180" valueTypeId="6deccaa6-69c2-418a-9cf6-5c18ecfc0a93"/>
-    <refType typeId="96239116-6d81-40f0-bc12-a7b2b9d922fb" valueTypeId="c684c923-3dba-4ba5-b7a9-15dfda00130b"/>
-    <selectionType typeId="b8850890-b3c4-4de5-a9ff-0d6cc25cf84e" valueTypeId="918c65d8-fd8b-42da-a3f4-b13f2fc20ede"/>
-    <listType typeId="453d3966-5780-4c12-b4d5-8595257aa56c" valueTypeId="cf31887f-0659-482a-8c23-af9ab306cab1"/>
-    <managerType typeId="4f95f98a-7847-4575-8443-c4adb19e323a" valueTypeId="0669a337-17da-47ca-90b0-ebca61e15668"/>
+    <objectType typeId="15e6dbd5-69a8-4e2f-be39-d3585072f7f6" valueTypeId="f9ee5ac8-4672-411c-a4fd-807a57ef9a95"/>
+    <refType typeId="c6cbfeb7-6a20-4ad0-a614-3b240446f497" valueTypeId="627ad4a6-c157-4350-ae5d-cff7e80e8f2a"/>
+    <selectionType typeId="0bfac1bb-ea86-4e64-a944-44cfe17e14d7" valueTypeId="0838de99-a2b3-4b42-b515-b5eb61bb9cfe"/>
+    <listType typeId="e948ee72-b165-4141-ba07-476aa0e6151a" valueTypeId="15e5aa47-d518-4484-ac61-f40f57cf1790"/>
+    <managerType typeId="74195fbc-bc3f-434d-b0c2-c8980e25f626" valueTypeId="4a32818d-108a-471e-9011-9212d5ae07f0"/>
   </producedTypes>
   <name>ВидыЦен</name>
   <objectBelonging>Adopted</objectBelonging>
@@ -13,7 +13,7 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
   <useStandardCommands>true</useStandardCommands>
-  <forms uuid="3571f48c-a338-4168-8c46-f7f2aa3b23e7" extendedConfigurationObject="6bcf0889-7c2a-4efb-8d96-f93dff711b82">
+  <forms uuid="d94b9fed-57c9-425b-9782-72b388736f8f" extendedConfigurationObject="6bcf0889-7c2a-4efb-8d96-f93dff711b82">
     <name>ФормаВыбора</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:BasicFormExtension">
