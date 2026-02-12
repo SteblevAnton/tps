@@ -18367,6 +18367,11 @@ to products</value>
     <name>cbr_ПриСозданииНаСервереПосле</name>
     <callType>After</callType>
   </handlers>
+  <handlers xsi:type="form:EventHandlerExtension">
+    <event>OnOpen</event>
+    <name>cbr_ПриОткрытииПосле</name>
+    <callType>After</callType>
+  </handlers>
   <excludedCommands>Copy</excludedCommands>
   <excludedCommands>Post</excludedCommands>
   <excludedCommands>PostAndClose</excludedCommands>

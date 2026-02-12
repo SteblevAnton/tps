@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8bc333b-4cfa-455c-8113-c34bb7af6705">
+  <name>cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписка на проведения документов для отлова ЛИМС</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.cbr_ОбработкаПодпискиПроведенияДокументовЛИМС.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМСОбработкаПроведения</handler>
+</mdclass:EventSubscription>

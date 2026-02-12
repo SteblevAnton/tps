@@ -161,6 +161,7 @@
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.П3_ЧтениеДокументаСпециальныеТребования</roles>
+  <commonModules>CommonModule.cbr_ОбработкаПодпискиПроведенияДокументовЛИМС</commonModules>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
@@ -174,6 +175,7 @@
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>

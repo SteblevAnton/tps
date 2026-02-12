@@ -287,6 +287,55 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="a7ce3e67-210f-47ce-b1d1-a5717d505cb0">
+    <name>cbr_СтатусДоКонтроля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус до контроля</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЭтаповПроизводства2_2</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4ead8ebe-2bf1-471f-81eb-60b2fe884e60">
+    <name>cbr_ДатаДокументКотнроля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документ котнроля</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e28382c7-1773-4a99-b9ea-c5abee4afecb">
+    <name>cbr_ВремяКонтроля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время контроля</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="93c6411c-8fe7-43c6-91dd-4f2d26dc976a" extendedConfigurationObject="e695ca3f-99a4-4bf5-b023-d59954427845">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>
