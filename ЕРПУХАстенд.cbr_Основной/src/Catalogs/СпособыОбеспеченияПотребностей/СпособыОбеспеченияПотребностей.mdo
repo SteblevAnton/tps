@@ -23,7 +23,7 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>3</precision>
+        <precision>5</precision>
         <scale>2</scale>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
