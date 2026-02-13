@@ -161,6 +161,7 @@
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.П3_ЧтениеДокументаСпециальныеТребования</roles>
+  <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.cbr_ОбработкаПодпискиПроведенияДокументовЛИМС</commonModules>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
@@ -186,6 +187,7 @@
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
   <constants>Constant.ОрганизацияТПС</constants>
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
+  <commonForms>CommonForm.СвязанныеДокументы</commonForms>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВидыЦен</catalogs>
