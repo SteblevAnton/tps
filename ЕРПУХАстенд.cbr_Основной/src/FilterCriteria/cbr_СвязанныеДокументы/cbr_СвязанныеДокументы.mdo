@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44262a43-3069-49f2-8adb-05f85dc7e501">
+  <producedTypes>
+    <listType typeId="35df855b-473b-4168-883b-95f4138a8167" valueTypeId="ea1b0c65-7cf7-4e4c-b924-2f70c477ef07"/>
+    <managerType typeId="5ebdf687-b3a8-49eb-9199-6d96c75dfaea" valueTypeId="f7916de3-53fa-4ed9-bd73-dd08896eae03"/>
+  </producedTypes>
+  <name>cbr_СвязанныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные документы</value>
+  </synonym>
+  <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
+  <type>
+    <types>DocumentRef.ЗаданиеНаПеревозку</types>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <content>Document.ПриобретениеУслугПрочихАктивов.Attribute.cbr_ЗаданиеНаПеревозку</content>
+</mdclass:FilterCriterion>
