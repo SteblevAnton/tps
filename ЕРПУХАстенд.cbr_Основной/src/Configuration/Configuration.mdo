@@ -156,8 +156,8 @@
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
   <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
-  <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
+  <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
@@ -219,10 +219,10 @@
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
+  <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
   <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
-  <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
@@ -235,6 +235,7 @@
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
+  <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыНазначенияСпецификации</enums>
@@ -243,10 +244,9 @@
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
   <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
+  <enums>Enum.ВидыДвиженияНакопления</enums>
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
-  <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
-  <enums>Enum.ВидыДвиженияНакопления</enums>
   <enums>Enum.ПорядокРасчетов</enums>
   <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
   <enums>Enum.СпособыДоставки</enums>
