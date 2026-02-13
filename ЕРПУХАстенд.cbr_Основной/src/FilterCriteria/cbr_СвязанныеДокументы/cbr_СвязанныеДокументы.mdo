@@ -11,8 +11,8 @@
   </synonym>
   <comment>//++АшаеваАН 03.02.26 СКЛ.9</comment>
   <type>
+    <types>DocumentRef.ЗаданиеНаПеревозку</types>
     <types>String</types>
-    <types>DocumentRef.ПриобретениеТоваровУслуг</types>
     <stringQualifiers>
       <length>10</length>
     </stringQualifiers>
