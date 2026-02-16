@@ -164,17 +164,21 @@
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
+  <commonModules>CommonModule.cbr_УправлениеРегламентнымиЗаданиями</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
+  <commonModules>CommonModule.ПриобретениеТоваровУслугЛокализация</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыКПеремещению</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
+  <scheduledJobs>ScheduledJob.cbr_ФормированиеДокументовПеремещенияНаОснованииПТУ</scheduledJobs>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
@@ -223,9 +227,11 @@
   <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
   <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ЗаказНаПеремещение</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
   <documents>Document.ОтборРазмещениеТоваров</documents>
+  <documents>Document.ПеремещениеТоваров</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.ПриобретениеУслугПрочихАктивов</documents>
@@ -270,5 +276,6 @@
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ТоварыКПеремещению</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СтатьиРасходов</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

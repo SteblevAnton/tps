@@ -94,4 +94,18 @@
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
+  <enumValues uuid="e6d56fd3-ea39-4078-9f6a-5f7709a8c5ad" extendedConfigurationObject="1dfdfca3-6595-4afd-a12f-88601fce8c82">
+    <name>ПеремещениеТоваров</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="68923c49-5fc8-4cb6-88c0-352ebd49fa4e" extendedConfigurationObject="f225cb28-e5ab-48fc-80a6-180753692cee">
+    <name>ПеремещениеТоваровМеждуФилиалами</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
 </mdclass:Enum>

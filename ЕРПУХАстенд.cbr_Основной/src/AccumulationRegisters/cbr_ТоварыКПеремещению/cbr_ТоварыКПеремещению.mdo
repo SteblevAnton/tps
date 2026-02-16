@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d653aabd-ff00-42dc-8641-8026557b3cdf">
+  <producedTypes>
+    <selectionType typeId="d3c2ca2b-fd06-488a-aa9d-421ea1882d1f" valueTypeId="9115109e-9eec-4375-853e-c29daa393db4"/>
+    <listType typeId="0148d940-31cd-4cad-ac0f-45ae7731c6b8" valueTypeId="9d28d490-7499-4d99-82bf-02b22fa6a4d5"/>
+    <managerType typeId="ed2a400b-867c-43a7-b7e4-8259646e530e" valueTypeId="ea652090-d181-4592-8055-6ce353038330"/>
+    <recordSetType typeId="eee6008c-9254-42f2-8963-d0918b85a477" valueTypeId="aa84064e-73ed-4567-bad8-60e86aa74722"/>
+    <recordKeyType typeId="b8b86e34-f50e-425c-84b1-632a4acd7147" valueTypeId="0526216d-d70d-4f66-a91c-c68936e09fdb"/>
+    <recordType typeId="13b8e540-a295-4f7d-903c-9db60ec1d595" valueTypeId="518c682b-bc43-41a6-84a9-5cc15320c4da"/>
+  </producedTypes>
+  <name>cbr_ТоварыКПеремещению</name>
+  <synonym>
+    <key>ru</key>
+    <value>(cbr) Товары к перемещению</value>
+  </synonym>
+  <comment>//++АшаеваАН 13.02.26 СКЛ.3</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="a9bd5486-da13-4d96-aae1-9d40b35a492e">
+    <name>КоличествоКПеремещению</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество к перемещению</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="22ef67df-7e2c-4cd4-a7f8-d3c72b5833e1">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="77211196-f669-49d3-917d-3b5257109b09">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="75be9a2d-fd25-4a9b-8be1-f4e8d456ff5d">
+    <name>ПТУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПТУ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПриобретениеТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
