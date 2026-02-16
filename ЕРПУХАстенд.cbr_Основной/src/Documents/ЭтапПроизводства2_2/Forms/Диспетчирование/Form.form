@@ -4499,7 +4499,11 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ТребуетсяПроверитьЭтапы</picture>
+                </picture>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -4613,7 +4617,11 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+                <extInfo xsi:type="form:PictureDecorationExtInfo">
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.ТребуетсяПередатьКВыполнению</picture>
+                  </picture>
+                </extInfo>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4724,7 +4732,11 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+                <extInfo xsi:type="form:PictureDecorationExtInfo">
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.ПредыдущиеЭтапы</picture>
+                  </picture>
+                </extInfo>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4835,7 +4847,11 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+                <extInfo xsi:type="form:PictureDecorationExtInfo">
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.ТребуетсяОтметитьНачалоВыполнения</picture>
+                  </picture>
+                </extInfo>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4946,7 +4962,11 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+                <extInfo xsi:type="form:PictureDecorationExtInfo">
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.ТребуетсяОтметитьГотовностьКРаботеКлючевогоРЦ</picture>
+                  </picture>
+                </extInfo>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -5057,7 +5077,11 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+                <extInfo xsi:type="form:PictureDecorationExtInfo">
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.ТребуетсяОтметитьЗавершениеРаботыКлючевогоРЦ</picture>
+                  </picture>
+                </extInfo>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -5276,7 +5300,11 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ТребуетсяПланированиеГрафика</picture>
+                </picture>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5388,7 +5416,11 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ТребуетсяНазначитьОперации</picture>
+                </picture>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5501,7 +5533,11 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ТребуетсяЗаполнитьПоОперациям</picture>
+                </picture>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5612,7 +5648,11 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.НарушенаДатаПотребности</picture>
+                </picture>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5724,7 +5764,11 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ЭтапНаКритическомПути</picture>
+                </picture>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5835,7 +5879,11 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ЭтапЗадерживаетЗаказ</picture>
+                </picture>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
