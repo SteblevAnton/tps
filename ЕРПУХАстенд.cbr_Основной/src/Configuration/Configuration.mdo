@@ -252,6 +252,7 @@
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.СтатусыЗаказовКлиентов</enums>
   <enums>Enum.СтатусыЗаказовНаПроизводство2_2</enums>
   <enums>Enum.СтатусыРасходныхОрдеров</enums>
   <enums>Enum.СтатусыСпецификаций</enums>

@@ -11,6 +11,7 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
   </extension>
   <useStandardCommands>true</useStandardCommands>
   <registerRecords>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</registerRecords>
@@ -320,6 +321,19 @@
         <types>
           <state>Checked</state>
           <type>CatalogRef.СоглашенияСКлиентами</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="9927dedf-db3c-4f0f-8b00-4fe41cd2e9d8" extendedConfigurationObject="a8d06692-73f7-469f-a6a7-388a13d421d2">
+    <name>Статус</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.СтатусыЗаказовКлиентов</type>
         </types>
       </typeExtension>
     </extension>
