@@ -126,7 +126,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.Обновить</commandName>
+      <commandName>0</commandName>
       <representation>PictureAndText</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -160,7 +160,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.ВывестиДляТекущего</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -188,7 +188,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Item.ТаблицаОтчета.StandardCommand.Find</commandName>
+        <commandName>0</commandName>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <placementArea>UserCmds</placementArea>
@@ -213,7 +213,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Item.ТаблицаОтчета.StandardCommand.FindNext</commandName>
+        <commandName>0</commandName>
         <representation>Picture</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -280,7 +280,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.Провести</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -313,7 +313,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ОтменитьПроведение</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -373,7 +373,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Command.ИзменитьПометкуУдаления</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>

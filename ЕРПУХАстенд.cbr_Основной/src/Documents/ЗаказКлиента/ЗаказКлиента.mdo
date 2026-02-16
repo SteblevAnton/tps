@@ -11,8 +11,9 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="31a008e1-daa5-4e28-8e14-9f6de4c33307">
     <name>cbr_Проект</name>
     <synonym>
@@ -329,12 +330,19 @@
       <value>Пересечение менеджеров</value>
     </synonym>
     <comment>//++ БаженоваЕО 27.01.2026 ПРД.18</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
     <attributes uuid="3a0b7a0b-80d2-4e47-aaae-3adbbe57b534">
       <name>ФизическоеЛицо</name>
       <synonym>
         <key>ru</key>
         <value>Физическое лицо</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>CatalogRef.ФизическиеЛица</types>
       </type>
@@ -349,6 +357,10 @@
         <key>ru</key>
         <value>Процент</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>Number</types>
         <numberQualifiers>
@@ -380,6 +392,10 @@
         <key>ru</key>
         <value>Цена со скидкой</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>Number</types>
         <numberQualifiers>
@@ -404,12 +420,19 @@
       <value>Агентские вознаграждения</value>
     </synonym>
     <comment>//++ Тусеев ПРД12</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
     <attributes uuid="5644e993-e546-475e-8711-ace3a118dd34">
       <name>Агент</name>
       <synonym>
         <key>ru</key>
         <value>Агент</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>CatalogRef.Контрагенты</types>
       </type>
@@ -424,6 +447,10 @@
         <key>ru</key>
         <value>Договор агента</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>DocumentRef.ВерсияСоглашенияКоммерческийДоговор</types>
       </type>
@@ -438,6 +465,10 @@
         <key>ru</key>
         <value>Ставка АВ, %</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>Number</types>
         <numberQualifiers>

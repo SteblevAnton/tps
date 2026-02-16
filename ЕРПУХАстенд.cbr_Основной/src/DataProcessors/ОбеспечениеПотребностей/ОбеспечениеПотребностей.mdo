@@ -11,7 +11,6 @@
     <objectModule>Extended</objectModule>
     <managerModule>Extended</managerModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <tabularSections uuid="ec93edd2-48ee-4d89-b249-904cd1db656e" extendedConfigurationObject="c3e2104e-dc66-4fed-ac03-b7cd7488e67a">
     <producedTypes>
       <objectType typeId="d9cfd66f-c3fa-4856-b7b1-30f324fd22bd" valueTypeId="7dd24943-5ade-4808-959f-8e091ceada3b"/>
@@ -34,6 +33,7 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
   <forms uuid="94a07803-9de3-48e0-9d22-08769f1a1f4e" extendedConfigurationObject="18fa19f8-3643-4df5-8ad2-f72e0f8cbba4">

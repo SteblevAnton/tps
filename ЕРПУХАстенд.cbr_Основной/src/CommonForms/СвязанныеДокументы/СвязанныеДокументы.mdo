@@ -6,5 +6,4 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
     <form>Extended</form>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
 </mdclass:CommonForm>

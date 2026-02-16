@@ -19627,9 +19627,9 @@ strategy</value>
         </title>
         <id>10</id>
         <valueType>
+          <types>CatalogRef.Партнеры</types>
           <types>CatalogRef.СтруктураПредприятия</types>
           <types>CatalogRef.Склады</types>
-          <types>CatalogRef.Партнеры</types>
           <types>String</types>
           <stringQualifiers>
             <length>50</length>
@@ -20517,9 +20517,9 @@ strategy</value>
         </title>
         <id>10</id>
         <valueType>
+          <types>CatalogRef.Партнеры</types>
           <types>CatalogRef.СтруктураПредприятия</types>
           <types>CatalogRef.Склады</types>
-          <types>CatalogRef.Партнеры</types>
           <types>String</types>
           <stringQualifiers>
             <length>20</length>
@@ -21261,9 +21261,9 @@ strategy</value>
       </title>
       <id>2</id>
       <valueType>
+        <types>CatalogRef.Партнеры</types>
         <types>CatalogRef.СтруктураПредприятия</types>
         <types>CatalogRef.Склады</types>
-        <types>CatalogRef.Партнеры</types>
       </valueType>
       <view>
         <common>true</common>
@@ -21574,9 +21574,9 @@ strategy</value>
     </title>
     <id>24</id>
     <valueType>
+      <types>CatalogRef.Партнеры</types>
       <types>CatalogRef.СтруктураПредприятия</types>
       <types>CatalogRef.Склады</types>
-      <types>CatalogRef.Партнеры</types>
     </valueType>
     <view>
       <common>true</common>
@@ -23277,9 +23277,9 @@ strategy</value>
       </title>
       <id>104</id>
       <valueType>
+        <types>CatalogRef.Партнеры</types>
         <types>CatalogRef.СтруктураПредприятия</types>
         <types>CatalogRef.Склады</types>
-        <types>CatalogRef.Партнеры</types>
         <types>String</types>
         <stringQualifiers>
           <length>20</length>

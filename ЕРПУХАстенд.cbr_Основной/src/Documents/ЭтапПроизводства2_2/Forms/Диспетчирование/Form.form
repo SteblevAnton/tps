@@ -478,7 +478,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ИзменитьЭтап</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -504,7 +504,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ИзменитьЦепочкуЭтапов</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -530,7 +530,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.РазделитьПартию</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -556,7 +556,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ИзменитьВыделенные</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -610,7 +610,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.РедактироватьТехпроцесс</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -636,7 +636,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ЗаменитьТехпроцесс</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -881,7 +881,32 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ПланироватьЗаказ</commandName>
+            <commandName>0</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ПланироватьВыбранные</name>
+            <id>1446</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ПланироватьВыбранныеРасширеннаяПодсказка</name>
+              <id>1447</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -934,7 +959,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ПередатьКВыполнению</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -959,7 +984,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ОтметитьНачалоВыполнения</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -984,7 +1009,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ОтметитьВыполненным</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1037,7 +1062,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.РазделитьПартию</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1063,7 +1088,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ОтразитьБрак</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1089,7 +1114,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.СократитьПартию</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1115,7 +1140,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ИзменитьПартию</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1141,7 +1166,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ПерезаполнитьПартию</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1195,7 +1220,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.РазделитьЭтап</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1247,7 +1272,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ОткрытьВыполнениеОпераций</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1308,7 +1333,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ОтгрузитьЗаказ</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1333,7 +1358,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.РезервироватьЗаказ</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1358,7 +1383,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.РезервироватьПоМереПоступленияЗаказ</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1383,7 +1408,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.КОбеспечениюЗаказ</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1408,7 +1433,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.НеОбеспечиватьЗаказ</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1489,7 +1514,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ПоказатьВсеЭтапы</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1514,7 +1539,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ПоказатьЭтапИСмежныеЭтапы</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1539,7 +1564,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ПоказатьПредшественников</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1564,7 +1589,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ПоказатьПоследователей</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1620,7 +1645,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьОтборыПоДаннымЭтапа</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1646,7 +1671,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.СнятьОтборыПоДаннымЭтапа</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1733,7 +1758,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.УкомплектованностьЭтапа</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1919,7 +1944,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.StandardCommand.ShowMultipleSelection</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1944,7 +1969,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.StandardCommand.CustomizeForm</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -2024,7 +2049,7 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>Form.Command.ОбновитьСписок</commandName>
+      <commandName>0</commandName>
       <representation>Picture</representation>
       <width>3</width>
       <autoMaxWidth>true</autoMaxWidth>
@@ -2051,7 +2076,7 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>Form.StandardCommand.Help</commandName>
+      <commandName>0</commandName>
       <representation>Picture</representation>
       <width>3</width>
       <autoMaxWidth>true</autoMaxWidth>
@@ -2148,7 +2173,6 @@
           <common>true</common>
         </userVisible>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Change</excludedCommands>
         <items xsi:type="form:FormGroup">
           <name>СписокЭтаповГруппаИндикаторы</name>
           <id>818</id>
@@ -3800,7 +3824,32 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ПланироватьЗаказ</commandName>
+              <commandName>0</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
+            <items xsi:type="form:Button">
+              <name>КонтекстноеМенюПланироватьВыбранные</name>
+              <id>1465</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>КонтекстноеМенюПланироватьВыбранныеРасширеннаяПодсказка</name>
+                <id>1466</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3853,7 +3902,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ПередатьКВыполнению</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3878,7 +3927,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ОтметитьНачалоВыполнения</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3903,7 +3952,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ОтметитьВыполненным</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3956,7 +4005,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьЭтап</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3981,7 +4030,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьЦепочкуЭтапов</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4006,7 +4055,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4059,7 +4108,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.РазделитьПартию</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4084,7 +4133,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ОтразитьБрак</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4109,7 +4158,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьПартию</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4162,7 +4211,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.РедактироватьТехпроцесс</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4187,7 +4236,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ЗаменитьТехпроцесс</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4450,11 +4499,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.ТребуетсяПроверитьЭтапы</picture>
-                </picture>
-              </extInfo>
+              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -4568,11 +4613,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo">
-                  <picture xsi:type="core:PictureRef">
-                    <picture>CommonPicture.ТребуетсяПередатьКВыполнению</picture>
-                  </picture>
-                </extInfo>
+                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4683,11 +4724,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo">
-                  <picture xsi:type="core:PictureRef">
-                    <picture>CommonPicture.ПредыдущиеЭтапы</picture>
-                  </picture>
-                </extInfo>
+                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4798,11 +4835,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo">
-                  <picture xsi:type="core:PictureRef">
-                    <picture>CommonPicture.ТребуетсяОтметитьНачалоВыполнения</picture>
-                  </picture>
-                </extInfo>
+                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4913,11 +4946,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo">
-                  <picture xsi:type="core:PictureRef">
-                    <picture>CommonPicture.ТребуетсяОтметитьГотовностьКРаботеКлючевогоРЦ</picture>
-                  </picture>
-                </extInfo>
+                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -5028,11 +5057,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:PictureDecorationExtInfo">
-                  <picture xsi:type="core:PictureRef">
-                    <picture>CommonPicture.ТребуетсяОтметитьЗавершениеРаботыКлючевогоРЦ</picture>
-                  </picture>
-                </extInfo>
+                <extInfo xsi:type="form:PictureDecorationExtInfo"/>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -5251,11 +5276,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.ТребуетсяПланированиеГрафика</picture>
-                </picture>
-              </extInfo>
+              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5367,11 +5388,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.ТребуетсяНазначитьОперации</picture>
-                </picture>
-              </extInfo>
+              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5484,11 +5501,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.ТребуетсяЗаполнитьПоОперациям</picture>
-                </picture>
-              </extInfo>
+              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5599,11 +5612,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.НарушенаДатаПотребности</picture>
-                </picture>
-              </extInfo>
+              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5715,11 +5724,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.ЭтапНаКритическомПути</picture>
-                </picture>
-              </extInfo>
+              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5830,11 +5835,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.ЭтапЗадерживаетЗаказ</picture>
-                </picture>
-              </extInfo>
+              <extInfo xsi:type="form:PictureDecorationExtInfo"/>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5952,7 +5953,7 @@
               </extInfo>
             </extendedTooltip>
             <type>Hyperlink</type>
-            <commandName>Form.Command.СвернутьДопПанель</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -5977,7 +5978,7 @@
               </extInfo>
             </extendedTooltip>
             <type>Hyperlink</type>
-            <commandName>Form.Command.РазвернутьДопПанель</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -6118,7 +6119,6 @@
     <name>cbr_ПриСозданииНаСервереПосле</name>
     <callType>After</callType>
   </handlers>
-  <excludedCommands>Refresh</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>

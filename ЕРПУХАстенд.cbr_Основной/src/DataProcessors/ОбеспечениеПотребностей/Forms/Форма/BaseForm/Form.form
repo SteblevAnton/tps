@@ -269,7 +269,6 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
-                <choiceForm>Catalog.Назначения.Form.ФормаВыбораБезОтбораПоНоменклатуре</choiceForm>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -859,9 +858,6 @@
               <common>true</common>
             </userVisible>
             <titleLocation>None</titleLocation>
-            <excludedCommands>HierarchicalList</excludedCommands>
-            <excludedCommands>List</excludedCommands>
-            <excludedCommands>Tree</excludedCommands>
             <items xsi:type="form:FormField">
               <name>ПроизвольныеОтборыЭлементыИспользование</name>
               <id>4934</id>
@@ -1475,7 +1471,7 @@
             </extInfo>
           </extendedTooltip>
           <type>Hyperlink</type>
-          <commandName>Form.Command.НастроитьПоддержаниеЗапаса</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1501,7 +1497,7 @@
             </extInfo>
           </extendedTooltip>
           <type>Hyperlink</type>
-          <commandName>Form.Command.НастроитьРасчетСтатистикиПотребления</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1565,7 +1561,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Далее</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1590,7 +1586,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.StandardCommand.Close</commandName>
+            <commandName>0</commandName>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
@@ -1713,7 +1709,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.УстановитьФлажкиВТаблицеСпособовОбеспечения</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1741,7 +1737,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.СнятьФлажкиВТаблицеСпособовОбеспечения</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1772,7 +1768,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ЗаполнитьКЗаказуТоварыДостигшиеТочкиЗаказаДляВыделенныхСтрок</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1797,7 +1793,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ЗаполнитьКЗаказуТоварыВсеДляВыделенныхСтрок</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2411,7 +2407,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Назад</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2467,7 +2463,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Далее</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2492,7 +2488,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.StandardCommand.Close</commandName>
+            <commandName>0</commandName>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
@@ -2617,7 +2613,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ОтметитьКЗаказуЗапасы</commandName>
+              <commandName>0</commandName>
               <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2643,7 +2639,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.СнятьОтметкуЗапасы</commandName>
+              <commandName>0</commandName>
               <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2672,7 +2668,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьПоставщика</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2697,7 +2693,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьСклад</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2722,7 +2718,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьПодразделение</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2755,7 +2751,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьДатуПоставки</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2990,7 +2986,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ПоказатьСкрытьПанельРекомендаций</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3015,7 +3011,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.Запасы.StandardCommand.Find</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3041,7 +3037,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.Запасы.StandardCommand.CancelSearch</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3067,7 +3063,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.Запасы.StandardCommand.SortListAsc</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3092,7 +3088,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.Запасы.StandardCommand.SortListDesc</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3180,7 +3176,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ОтметитьКЗаказуЗаказы</commandName>
+              <commandName>0</commandName>
               <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3206,7 +3202,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.СнятьОтметкуЗаказы</commandName>
+              <commandName>0</commandName>
               <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3235,7 +3231,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьПоставщика</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3260,7 +3256,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьСклад</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3285,7 +3281,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьПодразделение</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3318,7 +3314,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Command.ЗаполнитьДатуПоставки</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3430,7 +3426,6 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
-                <choiceForm>Catalog.Приоритеты.Form.ФормаВыбора</choiceForm>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -3683,7 +3678,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ПоказатьСкрытьПанельРекомендаций</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3708,7 +3703,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.ЗаказыКОбеспечению.StandardCommand.Find</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3734,7 +3729,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.ЗаказыКОбеспечению.StandardCommand.CancelSearch</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3760,7 +3755,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.ЗаказыКОбеспечению.StandardCommand.SortListAsc</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3785,7 +3780,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.ЗаказыКОбеспечению.StandardCommand.SortListDesc</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4726,13 +4721,6 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
-                    <choiceParameterLinks>
-                      <name>Отбор.ТипОбеспечения</name>
-                      <changeMode>DontChange</changeMode>
-                      <datapath xsi:type="form:DataPath">
-                        <segments>ДоступныеТипыОбеспеченияДляВыбора</segments>
-                      </datapath>
-                    </choiceParameterLinks>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -5708,13 +5696,6 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
-                    <choiceParameterLinks>
-                      <name>Отбор.ТипОбеспечения</name>
-                      <changeMode>DontChange</changeMode>
-                      <datapath xsi:type="form:DataPath">
-                        <segments>ДоступныеТипыОбеспеченияДляВыбора</segments>
-                      </datapath>
-                    </choiceParameterLinks>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -6456,11 +6437,7 @@
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>CommonPicture.РасчетПоФормуле</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ДоТочкиЗаказа1</name>
@@ -6757,11 +6734,7 @@
                         <height>1</height>
                         <autoMaxHeight>true</autoMaxHeight>
                         <verticalStretch>false</verticalStretch>
-                        <extInfo xsi:type="form:PictureDecorationExtInfo">
-                          <picture xsi:type="core:PictureRef">
-                            <picture>CommonPicture.РасчетПоФормуле</picture>
-                          </picture>
-                        </extInfo>
+                        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                       </items>
                       <visible>true</visible>
                       <enabled>true</enabled>
@@ -6835,11 +6808,7 @@
                         <height>1</height>
                         <autoMaxHeight>true</autoMaxHeight>
                         <verticalStretch>false</verticalStretch>
-                        <extInfo xsi:type="form:PictureDecorationExtInfo">
-                          <picture xsi:type="core:PictureRef">
-                            <picture>CommonPicture.РасчетПоФормуле</picture>
-                          </picture>
-                        </extInfo>
+                        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                       </items>
                       <visible>true</visible>
                       <enabled>true</enabled>
@@ -7045,11 +7014,7 @@
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>StdPicture.Information</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ТекстРекомендацииЗаказать1</name>
@@ -7828,11 +7793,7 @@ x [ Average daily consumption ]</value>
                     <height>1</height>
                     <autoMaxHeight>true</autoMaxHeight>
                     <verticalStretch>false</verticalStretch>
-                    <extInfo xsi:type="form:PictureDecorationExtInfo">
-                      <picture xsi:type="core:PictureRef">
-                        <picture>CommonPicture.РасчетПоФормуле</picture>
-                      </picture>
-                    </extInfo>
+                    <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                   </items>
                   <items xsi:type="form:FormField">
                     <name>МинимальныйЗапас4</name>
@@ -8062,11 +8023,7 @@ x [ Average daily consumption ]</value>
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>CommonPicture.РасчетПоФормуле</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ДоТочкиЗаказа4</name>
@@ -8293,11 +8250,7 @@ x [ Average daily consumption ]
                         <height>1</height>
                         <autoMaxHeight>true</autoMaxHeight>
                         <verticalStretch>false</verticalStretch>
-                        <extInfo xsi:type="form:PictureDecorationExtInfo">
-                          <picture xsi:type="core:PictureRef">
-                            <picture>CommonPicture.РасчетПоФормуле</picture>
-                          </picture>
-                        </extInfo>
+                        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                       </items>
                       <items xsi:type="form:FormField">
                         <name>МаксимальныйЗаказ4</name>
@@ -8499,11 +8452,7 @@ x [ Average daily consumption ]
                             <height>1</height>
                             <autoMaxHeight>true</autoMaxHeight>
                             <verticalStretch>false</verticalStretch>
-                            <extInfo xsi:type="form:PictureDecorationExtInfo">
-                              <picture xsi:type="core:PictureRef">
-                                <picture>CommonPicture.РасчетПоФормуле</picture>
-                              </picture>
-                            </extInfo>
+                            <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                           </items>
                           <visible>true</visible>
                           <enabled>true</enabled>
@@ -8579,11 +8528,7 @@ x [ Average daily consumption ]
                             <height>1</height>
                             <autoMaxHeight>true</autoMaxHeight>
                             <verticalStretch>false</verticalStretch>
-                            <extInfo xsi:type="form:PictureDecorationExtInfo">
-                              <picture xsi:type="core:PictureRef">
-                                <picture>CommonPicture.РасчетПоФормуле</picture>
-                              </picture>
-                            </extInfo>
+                            <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                           </items>
                           <visible>true</visible>
                           <enabled>true</enabled>
@@ -8806,11 +8751,7 @@ x [ Average daily consumption ]
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>StdPicture.Information</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ТекстРекомендацииЗаказать4</name>
@@ -9414,11 +9355,7 @@ x [ Average daily consumption ]</value>
                     <height>1</height>
                     <autoMaxHeight>true</autoMaxHeight>
                     <verticalStretch>false</verticalStretch>
-                    <extInfo xsi:type="form:PictureDecorationExtInfo">
-                      <picture xsi:type="core:PictureRef">
-                        <picture>CommonPicture.РасчетПоФормуле</picture>
-                      </picture>
-                    </extInfo>
+                    <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                   </items>
                   <items xsi:type="form:FormField">
                     <name>МинимальныйЗапас3</name>
@@ -9648,11 +9585,7 @@ x [ Average daily consumption ]</value>
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>CommonPicture.РасчетПоФормуле</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ДоТочкиЗаказа3</name>
@@ -9873,11 +9806,7 @@ x [ Average daily consumption ]</value>
                     <height>1</height>
                     <autoMaxHeight>true</autoMaxHeight>
                     <verticalStretch>false</verticalStretch>
-                    <extInfo xsi:type="form:PictureDecorationExtInfo">
-                      <picture xsi:type="core:PictureRef">
-                        <picture>CommonPicture.РасчетПоФормуле</picture>
-                      </picture>
-                    </extInfo>
+                    <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                   </items>
                   <items xsi:type="form:FormField">
                     <name>МаксимальныйЗаказ3</name>
@@ -10081,11 +10010,7 @@ x [ Average daily consumption ]</value>
                         <height>1</height>
                         <autoMaxHeight>true</autoMaxHeight>
                         <verticalStretch>false</verticalStretch>
-                        <extInfo xsi:type="form:PictureDecorationExtInfo">
-                          <picture xsi:type="core:PictureRef">
-                            <picture>CommonPicture.РасчетПоФормуле</picture>
-                          </picture>
-                        </extInfo>
+                        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                       </items>
                       <visible>true</visible>
                       <enabled>true</enabled>
@@ -10161,11 +10086,7 @@ x [ Average daily consumption ]</value>
                         <height>1</height>
                         <autoMaxHeight>true</autoMaxHeight>
                         <verticalStretch>false</verticalStretch>
-                        <extInfo xsi:type="form:PictureDecorationExtInfo">
-                          <picture xsi:type="core:PictureRef">
-                            <picture>CommonPicture.РасчетПоФормуле</picture>
-                          </picture>
-                        </extInfo>
+                        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                       </items>
                       <visible>true</visible>
                       <enabled>true</enabled>
@@ -10378,11 +10299,7 @@ x [ Average daily consumption ]</value>
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>StdPicture.Information</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ТекстРекомендацииЗаказать3</name>
@@ -11083,11 +11000,7 @@ x [ Average daily consumption ]</value>
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>CommonPicture.РасчетПоФормуле</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ДоТочкиЗаказа2</name>
@@ -11376,11 +11289,7 @@ x [ Average daily consumption ]</value>
                         <height>1</height>
                         <autoMaxHeight>true</autoMaxHeight>
                         <verticalStretch>false</verticalStretch>
-                        <extInfo xsi:type="form:PictureDecorationExtInfo">
-                          <picture xsi:type="core:PictureRef">
-                            <picture>CommonPicture.РасчетПоФормуле</picture>
-                          </picture>
-                        </extInfo>
+                        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                       </items>
                       <visible>true</visible>
                       <enabled>true</enabled>
@@ -11454,11 +11363,7 @@ x [ Average daily consumption ]</value>
                         <height>1</height>
                         <autoMaxHeight>true</autoMaxHeight>
                         <verticalStretch>false</verticalStretch>
-                        <extInfo xsi:type="form:PictureDecorationExtInfo">
-                          <picture xsi:type="core:PictureRef">
-                            <picture>CommonPicture.РасчетПоФормуле</picture>
-                          </picture>
-                        </extInfo>
+                        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                       </items>
                       <visible>true</visible>
                       <enabled>true</enabled>
@@ -11664,11 +11569,7 @@ x [ Average daily consumption ]</value>
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>StdPicture.Information</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ТекстРекомендацииЗаказать2</name>
@@ -12227,11 +12128,7 @@ x [ Average daily consumption ]</value>
                     <height>1</height>
                     <autoMaxHeight>true</autoMaxHeight>
                     <verticalStretch>false</verticalStretch>
-                    <extInfo xsi:type="form:PictureDecorationExtInfo">
-                      <picture xsi:type="core:PictureRef">
-                        <picture>CommonPicture.РасчетПоФормуле</picture>
-                      </picture>
-                    </extInfo>
+                    <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                   </items>
                   <items xsi:type="form:FormField">
                     <name>КЗаказу7</name>
@@ -12388,11 +12285,7 @@ x [ Average daily consumption ]</value>
                       <height>1</height>
                       <autoMaxHeight>true</autoMaxHeight>
                       <verticalStretch>false</verticalStretch>
-                      <extInfo xsi:type="form:PictureDecorationExtInfo">
-                        <picture xsi:type="core:PictureRef">
-                          <picture>StdPicture.Information</picture>
-                        </picture>
-                      </extInfo>
+                      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
                     </items>
                     <items xsi:type="form:FormField">
                       <name>ТекстРекомендацииЗаказать7</name>
@@ -13204,7 +13097,7 @@ x [ Average daily consumption ]</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Назад</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -13260,7 +13153,7 @@ x [ Average daily consumption ]</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Далее</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -13285,7 +13178,7 @@ x [ Average daily consumption ]</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.StandardCommand.Close</commandName>
+            <commandName>0</commandName>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
@@ -13392,15 +13285,6 @@ x [ Average daily consumption ]</value>
           <common>true</common>
         </userVisible>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Add</excludedCommands>
-        <excludedCommands>Change</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
-        <excludedCommands>Delete</excludedCommands>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>ShowRowRearrangement</excludedCommands>
-        <excludedCommands>SortListAsc</excludedCommands>
-        <excludedCommands>SortListDesc</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ПредварительныйПросмотрПредупреждение</name>
           <id>5042</id>
@@ -13538,12 +13422,6 @@ supply</value>
             <quickChoice>false</quickChoice>
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
-            <choiceParameterLinks>
-              <name>Отбор.Партнер</name>
-              <datapath xsi:type="form:DataPath">
-                <segments>Items.ПредварительныйПросмотр.CurrentData.ИсточникОбеспечения</segments>
-              </datapath>
-            </choiceParameterLinks>
             <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
           </extInfo>
         </items>
@@ -13595,13 +13473,6 @@ strategy</value>
             <quickChoice>false</quickChoice>
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
-            <choiceParameterLinks>
-              <name>Отбор.ТипОбеспечения</name>
-              <changeMode>DontChange</changeMode>
-              <datapath xsi:type="form:DataPath">
-                <segments>ДоступныеТипыОбеспеченияДляВыбора</segments>
-              </datapath>
-            </choiceParameterLinks>
             <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
           </extInfo>
         </items>
@@ -14140,7 +14011,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.РазвернутьСтроки</commandName>
+            <commandName>0</commandName>
             <representation>Picture</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -14168,7 +14039,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.СвернутьСтроки</commandName>
+            <commandName>0</commandName>
             <representation>Picture</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -14207,7 +14078,7 @@ strategy</value>
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьСклад</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -14240,7 +14111,7 @@ strategy</value>
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьСпособОбеспечения</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -14427,9 +14298,6 @@ strategy</value>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <extInfo xsi:type="form:PictureDecorationExtInfo">
-                <picture xsi:type="core:PictureRef">
-                  <picture>CommonPicture.СтрелкаВправо</picture>
-                </picture>
                 <hyperlink>true</hyperlink>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
@@ -14944,7 +14812,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Назад</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -15009,7 +14877,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Далее</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <defaultButton>true</defaultButton>
             <autoMaxWidth>true</autoMaxWidth>
@@ -15035,7 +14903,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.StandardCommand.Close</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -15165,7 +15033,7 @@ strategy</value>
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ОбновитьСписокСформированныхЗаказов</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -15193,7 +15061,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ЗаказПоставщикуПодтвержден</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -15218,7 +15086,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ЗаказПереработчикуКИсполнению</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -15243,7 +15111,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ЗаказНаПроизводствоКПроизводству</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -15332,14 +15200,6 @@ strategy</value>
           <common>true</common>
         </userVisible>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Add</excludedCommands>
-        <excludedCommands>Change</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
-        <excludedCommands>CopyToClipboard</excludedCommands>
-        <excludedCommands>Delete</excludedCommands>
-        <excludedCommands>EndEdit</excludedCommands>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
         <items xsi:type="form:FormField">
           <name>СтандартнаяКартинка</name>
           <id>898</id>
@@ -15804,7 +15664,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.Назад</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -15860,7 +15720,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ПродолжитьСДругимиОтборами</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -15885,7 +15745,7 @@ strategy</value>
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.StandardCommand.Close</commandName>
+            <commandName>0</commandName>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>

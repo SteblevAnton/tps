@@ -12,7 +12,6 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="c51d7fde-c5b7-4e22-b1ca-38c47b22d017">
     <name>cbr_Проект</name>
     <synonym>
@@ -254,6 +253,10 @@
         <key>ru</key>
         <value>Агент</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>CatalogRef.Контрагенты</types>
       </type>
@@ -268,6 +271,10 @@
         <key>ru</key>
         <value>Договор агента</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>DocumentRef.ВерсияСоглашенияКоммерческийДоговор</types>
       </type>
@@ -282,6 +289,10 @@
         <key>ru</key>
         <value>Ставка АВ, %</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>Number</types>
         <numberQualifiers>

@@ -10,7 +10,6 @@
   <extension xsi:type="mdclassExtension:EnumExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <enumValues uuid="48895534-957c-4212-b77c-7158a1c003c9" extendedConfigurationObject="cbac971a-3f11-4ad9-b6a5-c277a81a09a5">
     <name>Минута</name>
     <objectBelonging>Adopted</objectBelonging>

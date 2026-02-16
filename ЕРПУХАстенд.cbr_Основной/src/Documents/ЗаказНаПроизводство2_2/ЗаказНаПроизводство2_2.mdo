@@ -11,8 +11,9 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="784ed5e6-0c18-4a0f-b833-5b0a01816835">
     <name>ГосЗаказ</name>
     <synonym>

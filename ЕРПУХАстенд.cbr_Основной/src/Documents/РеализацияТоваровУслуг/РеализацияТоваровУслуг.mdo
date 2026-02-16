@@ -13,7 +13,6 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
     <objectModule>Extended</objectModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <registerRecords>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</registerRecords>
   <forms uuid="7a429cc3-3082-4ff6-bc37-ced78a8dee8c" extendedConfigurationObject="7ab41590-caae-4a1c-b94a-51c1e4c36a9c">
     <name>ФормаДокумента</name>
@@ -34,12 +33,19 @@
       <value>Пересечение менеджеров</value>
     </synonym>
     <comment>//++ БаженоваЕО 27.01.2026 ПРД.18</comment>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
     <attributes uuid="f11fe27e-67cd-42a9-a0c8-b69fca58737c">
       <name>ФизическоеЛицо</name>
       <synonym>
         <key>ru</key>
         <value>Физическое лицо</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>CatalogRef.ФизическиеЛица</types>
       </type>
@@ -54,6 +60,10 @@
         <key>ru</key>
         <value>Процент</value>
       </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
       <type>
         <types>Number</types>
         <numberQualifiers>

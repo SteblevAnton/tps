@@ -11,8 +11,9 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <tabularSections uuid="f30a9fe6-68b1-4780-a497-555ac364dc6a" extendedConfigurationObject="6cc3a6d7-54b4-4e21-af19-24297ed6494a">
     <producedTypes>
       <objectType typeId="07b3e213-9e7d-40c8-9769-807361060b18" valueTypeId="4c54e8ca-3f8a-404c-970d-4579900f314f"/>

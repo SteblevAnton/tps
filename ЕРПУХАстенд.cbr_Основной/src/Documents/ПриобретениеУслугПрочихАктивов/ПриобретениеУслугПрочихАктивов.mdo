@@ -13,7 +13,6 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
     <objectModule>Extended</objectModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="adb89313-6ca3-4b47-a198-46748b72ba38">
     <name>cbr_ЗаданиеНаПеревозку</name>
     <synonym>

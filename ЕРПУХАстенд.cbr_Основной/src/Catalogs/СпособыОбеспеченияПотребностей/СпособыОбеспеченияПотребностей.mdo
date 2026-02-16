@@ -12,7 +12,6 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="4748bd31-8c7a-4aba-86c6-52a5726045e5">
     <name>cbr_ПроцентКЗакупке</name>
     <synonym>

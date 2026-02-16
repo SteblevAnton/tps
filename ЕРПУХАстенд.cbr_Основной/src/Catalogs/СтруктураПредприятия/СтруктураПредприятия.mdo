@@ -16,14 +16,11 @@
     <codeType>Checked</codeType>
     <predefined>Extended</predefined>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <codeLength>9</codeLength>
   <codeType>String</codeType>
-  <checkUnique>true</checkUnique>
   <predefined>
     <items id="9c9ba617-eb1f-4d3e-86a2-78f14892193a">
       <name>ТПСОтделЛогистикиИВЭД</name>
-      <description></description>
       <code xsi:type="core:StringValue">
         <value>000000001</value>
       </code>

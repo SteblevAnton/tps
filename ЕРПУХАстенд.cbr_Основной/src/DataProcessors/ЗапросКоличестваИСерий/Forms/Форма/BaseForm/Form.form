@@ -291,13 +291,6 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
-                <choiceForm>Catalog.УпаковкиЕдиницыИзмерения.Form.ФормаВыбораИзДокументов</choiceForm>
-                <choiceParameterLinks>
-                  <name>Номенклатура</name>
-                  <datapath xsi:type="form:DataPath">
-                    <segments>ТекущаяНоменклатура</segments>
-                  </datapath>
-                </choiceParameterLinks>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -566,7 +559,7 @@
                 </extInfo>
               </extendedTooltip>
               <type>Hyperlink</type>
-              <commandName>Form.Command.Округлить</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <width>7</width>
               <autoMaxWidth>true</autoMaxWidth>
@@ -2033,7 +2026,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.КУказаниюСерий</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2119,16 +2112,6 @@
         </userVisible>
         <skipOnInput>true</skipOnInput>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Add</excludedCommands>
-        <excludedCommands>Change</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
-        <excludedCommands>Delete</excludedCommands>
-        <excludedCommands>EndEdit</excludedCommands>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>ShowRowRearrangement</excludedCommands>
-        <excludedCommands>SortListAsc</excludedCommands>
-        <excludedCommands>SortListDesc</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ТоварыСклад</name>
           <id>614</id>
@@ -2827,7 +2810,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.РаспределитьОстаток</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2852,7 +2835,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.ЗаполнитьПоFEFO</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2909,7 +2892,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.КВыборуДействий</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -4496,11 +4479,7 @@
         <autoMaxWidth>true</autoMaxWidth>
         <height>1</height>
         <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:PictureDecorationExtInfo">
-          <picture xsi:type="core:PictureRef">
-            <picture>StdPicture.Information</picture>
-          </picture>
-        </extInfo>
+        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
       </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаИнформация</name>
@@ -4678,7 +4657,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ОК</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <defaultButton>true</defaultButton>
           <autoMaxWidth>true</autoMaxWidth>
@@ -4705,7 +4684,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.Отмена</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -4730,7 +4709,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.StandardCommand.CustomizeForm</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>

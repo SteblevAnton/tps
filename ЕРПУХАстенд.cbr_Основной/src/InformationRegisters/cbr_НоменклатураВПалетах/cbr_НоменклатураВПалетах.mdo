@@ -37,7 +37,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:NumberValue">
-      <value>0.000</value>
+      <value>0</value>
     </fillValue>
   </resources>
   <dimensions uuid="f14a6782-5478-487b-b951-a991e8b5042e">

@@ -25,7 +25,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Command.ПеренестиВДокумент</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <defaultButton>true</defaultButton>
         <autoMaxWidth>true</autoMaxWidth>
@@ -91,7 +91,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.СоздатьНовуюНоменклатуру</commandName>
+            <commandName>0</commandName>
             <representation>PictureAndText</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -184,7 +184,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Command.СоздатьНовуюХарактеристику</commandName>
+            <commandName>0</commandName>
             <representation>PictureAndText</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -345,7 +345,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьТекущийЭлементСтрокаПоиска</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -371,7 +371,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьТекущийЭлементНавигация</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -397,7 +397,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьТекущийЭлементСписокТоваров</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -423,7 +423,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьТекущийЭлементКорзина</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -489,7 +489,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ИзменитьНеЗапрашиватьКоличество</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -524,7 +524,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ИзменитьЗапрашиватьКоличество</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -559,7 +559,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ИзменитьЗапрашиватьКоличествоИЦену</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -585,7 +585,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.НастроитьПоиск</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -728,7 +728,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.ОткрытьКарточкуТовара</commandName>
+                  <commandName>0</commandName>
                   <representation>PictureAndText</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -756,7 +756,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ТоварыДругогоКачества</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -781,7 +781,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.НоменклатураСАналогичнымиСвойствами</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -958,18 +958,6 @@
               </userVisible>
               <skipOnInput>false</skipOnInput>
               <titleLocation>None</titleLocation>
-              <excludedCommands>Change</excludedCommands>
-              <excludedCommands>DynamicListStandardSettings</excludedCommands>
-              <excludedCommands>FindByCurrentValue</excludedCommands>
-              <excludedCommands>HierarchicalList</excludedCommands>
-              <excludedCommands>LevelDown</excludedCommands>
-              <excludedCommands>LevelUp</excludedCommands>
-              <excludedCommands>List</excludedCommands>
-              <excludedCommands>LoadDynamicListSettings</excludedCommands>
-              <excludedCommands>OutputList</excludedCommands>
-              <excludedCommands>Refresh</excludedCommands>
-              <excludedCommands>SaveDynamicListSettings</excludedCommands>
-              <excludedCommands>Tree</excludedCommands>
               <items xsi:type="form:FormField">
                 <name>СписокСтандартныйПоискНоменклатураНаименование</name>
                 <id>533</id>
@@ -1459,7 +1447,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.ЦеныНоменклатуры</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -1487,7 +1475,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.НоменклатураСАналогичнымиСвойствами</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -1512,7 +1500,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ТоварыДругогоКачества</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -1537,7 +1525,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.СоставНабора</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -1590,7 +1578,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Item.СписокСтандартныйПоискНоменклатура.StandardCommand.CopyToClipboard</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -1615,7 +1603,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ИзменитьНоменклатуру</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -1760,7 +1748,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.ПодборПерейтиКСпискуНоменклатурыСтандартныйПоиск</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -1909,13 +1897,6 @@
               </userVisible>
               <skipOnInput>false</skipOnInput>
               <titleLocation>None</titleLocation>
-              <excludedCommands>Change</excludedCommands>
-              <excludedCommands>DynamicListStandardSettings</excludedCommands>
-              <excludedCommands>FindByCurrentValue</excludedCommands>
-              <excludedCommands>LoadDynamicListSettings</excludedCommands>
-              <excludedCommands>OutputList</excludedCommands>
-              <excludedCommands>Refresh</excludedCommands>
-              <excludedCommands>SaveDynamicListSettings</excludedCommands>
               <items xsi:type="form:FormField">
                 <name>СписокСтандартныйПоискХарактеристикиНоменклатура</name>
                 <id>239</id>
@@ -2357,7 +2338,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.ЦеныНоменклатуры</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -2385,7 +2366,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Item.СписокСтандартныйПоискХарактеристики.StandardCommand.CopyToClipboard</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -2460,7 +2441,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.СоставНабора</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -2664,7 +2645,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.Найти</commandName>
+                  <commandName>0</commandName>
                   <representation>Picture</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -2690,7 +2671,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.СписокРасширенныйПоискНоменклатура.StandardCommand.ListSettings</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -2727,7 +2708,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ОткрытьКарточкуТовара</commandName>
+                    <commandName>0</commandName>
                     <representation>PictureAndText</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -2780,7 +2761,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ТоварыДругогоКачества</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -2805,7 +2786,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.НоменклатураСАналогичнымиСвойствами</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -2920,15 +2901,6 @@
               </userVisible>
               <skipOnInput>false</skipOnInput>
               <titleLocation>None</titleLocation>
-              <excludedCommands>CancelSearch</excludedCommands>
-              <excludedCommands>Change</excludedCommands>
-              <excludedCommands>Find</excludedCommands>
-              <excludedCommands>HierarchicalList</excludedCommands>
-              <excludedCommands>LevelDown</excludedCommands>
-              <excludedCommands>LevelUp</excludedCommands>
-              <excludedCommands>List</excludedCommands>
-              <excludedCommands>MoveItem</excludedCommands>
-              <excludedCommands>Tree</excludedCommands>
               <items xsi:type="form:FormField">
                 <name>СписокРасширенныйПоискНоменклатураНаименование</name>
                 <id>735</id>
@@ -3424,7 +3396,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.ЦеныНоменклатуры</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -3452,7 +3424,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ТоварыДругогоКачества</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -3477,7 +3449,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.НоменклатураСАналогичнымиСвойствами</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -3502,7 +3474,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.СоставНабора</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -3555,7 +3527,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Item.СписокРасширенныйПоискНоменклатура.StandardCommand.CopyToClipboard</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -3580,7 +3552,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ИзменитьНоменклатуру</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -3605,7 +3577,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Item.СписокРасширенныйПоискНоменклатура.StandardCommand.Refresh</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -3835,7 +3807,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.Найти</commandName>
+                  <commandName>0</commandName>
                   <representation>Picture</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -3861,7 +3833,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.СписокРасширенныйПоискХарактеристики.StandardCommand.ListSettings</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -3891,7 +3863,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ПодборПерейтиКСпискуНоменклатурыРасширенныйПоиск</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -4000,15 +3972,6 @@
               </userVisible>
               <skipOnInput>false</skipOnInput>
               <titleLocation>None</titleLocation>
-              <excludedCommands>CancelSearch</excludedCommands>
-              <excludedCommands>Change</excludedCommands>
-              <excludedCommands>DynamicListStandardSettings</excludedCommands>
-              <excludedCommands>Find</excludedCommands>
-              <excludedCommands>FindByCurrentValue</excludedCommands>
-              <excludedCommands>LoadDynamicListSettings</excludedCommands>
-              <excludedCommands>OutputList</excludedCommands>
-              <excludedCommands>Refresh</excludedCommands>
-              <excludedCommands>SaveDynamicListSettings</excludedCommands>
               <items xsi:type="form:FormField">
                 <name>СписокРасширенныйПоискХарактеристикиНоменклатура</name>
                 <id>714</id>
@@ -4456,7 +4419,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.ЦеныНоменклатуры</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -4484,7 +4447,7 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Item.СписокРасширенныйПоискХарактеристики.StandardCommand.CopyToClipboard</commandName>
+                    <commandName>0</commandName>
                     <representation>Auto</representation>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -4559,7 +4522,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Command.СоставНабора</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -5125,7 +5088,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.СброситьОтборыПоСвойствам</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5161,7 +5124,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Item.ВидыНоменклатуры.StandardCommand.Create</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5194,7 +5157,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Item.ВидыНоменклатуры.StandardCommand.CreateFolder</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5250,7 +5213,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.ИерархияНоменклатуры.StandardCommand.CreateFolder</commandName>
+              <commandName>0</commandName>
               <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5275,7 +5238,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВариантНавигации</commandName>
+              <commandName>0</commandName>
               <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5368,19 +5331,6 @@
                 <common>true</common>
               </userVisible>
               <titleLocation>None</titleLocation>
-              <excludedCommands>CancelSearch</excludedCommands>
-              <excludedCommands>CopyToClipboard</excludedCommands>
-              <excludedCommands>Delete</excludedCommands>
-              <excludedCommands>Find</excludedCommands>
-              <excludedCommands>HierarchicalList</excludedCommands>
-              <excludedCommands>LevelDown</excludedCommands>
-              <excludedCommands>LevelUp</excludedCommands>
-              <excludedCommands>List</excludedCommands>
-              <excludedCommands>ListSettings</excludedCommands>
-              <excludedCommands>MoveItem</excludedCommands>
-              <excludedCommands>OutputList</excludedCommands>
-              <excludedCommands>Refresh</excludedCommands>
-              <excludedCommands>Tree</excludedCommands>
               <items xsi:type="form:FormField">
                 <name>ИерархияНоменклатурыНаименование</name>
                 <id>1153</id>
@@ -5522,7 +5472,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ИерархияНоменклатуры.StandardCommand.CreateFolder</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -5547,7 +5497,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ИерархияНоменклатуры.StandardCommand.Change</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -5572,7 +5522,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ИерархияНоменклатуры.StandardCommand.Copy</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -5597,7 +5547,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ИерархияНоменклатуры.StandardCommand.SetDeletionMark</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -5726,20 +5676,6 @@
                 <common>true</common>
               </userVisible>
               <titleLocation>None</titleLocation>
-              <excludedCommands>CancelSearch</excludedCommands>
-              <excludedCommands>CopyToClipboard</excludedCommands>
-              <excludedCommands>Delete</excludedCommands>
-              <excludedCommands>DynamicListStandardSettings</excludedCommands>
-              <excludedCommands>Find</excludedCommands>
-              <excludedCommands>FindByCurrentValue</excludedCommands>
-              <excludedCommands>HierarchicalList</excludedCommands>
-              <excludedCommands>List</excludedCommands>
-              <excludedCommands>ListSettings</excludedCommands>
-              <excludedCommands>LoadDynamicListSettings</excludedCommands>
-              <excludedCommands>OutputList</excludedCommands>
-              <excludedCommands>Refresh</excludedCommands>
-              <excludedCommands>SaveDynamicListSettings</excludedCommands>
-              <excludedCommands>Tree</excludedCommands>
               <items xsi:type="form:FormField">
                 <name>ВидыНоменклатурыНаименование</name>
                 <id>1132</id>
@@ -5920,7 +5856,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ВидыНоменклатуры.StandardCommand.Create</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -5953,7 +5889,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ВидыНоменклатуры.StandardCommand.CreateFolder</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -5978,7 +5914,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ВидыНоменклатуры.StandardCommand.Change</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -6003,7 +5939,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ВидыНоменклатуры.StandardCommand.Copy</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -6028,7 +5964,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.ВидыНоменклатуры.StandardCommand.SetDeletionMark</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -6113,21 +6049,6 @@
                 <common>true</common>
               </userVisible>
               <titleLocation>None</titleLocation>
-              <excludedCommands>Add</excludedCommands>
-              <excludedCommands>Change</excludedCommands>
-              <excludedCommands>Copy</excludedCommands>
-              <excludedCommands>CopyToClipboard</excludedCommands>
-              <excludedCommands>Delete</excludedCommands>
-              <excludedCommands>EndEdit</excludedCommands>
-              <excludedCommands>HierarchicalList</excludedCommands>
-              <excludedCommands>List</excludedCommands>
-              <excludedCommands>MoveDown</excludedCommands>
-              <excludedCommands>MoveUp</excludedCommands>
-              <excludedCommands>OutputList</excludedCommands>
-              <excludedCommands>SelectAll</excludedCommands>
-              <excludedCommands>SortListAsc</excludedCommands>
-              <excludedCommands>SortListDesc</excludedCommands>
-              <excludedCommands>Tree</excludedCommands>
               <items xsi:type="form:FormGroup">
                 <name>ДеревоОтборовГруппаПредставление</name>
                 <id>512</id>
@@ -6434,20 +6355,6 @@
                 <common>true</common>
               </userVisible>
               <titleLocation>None</titleLocation>
-              <excludedCommands>Add</excludedCommands>
-              <excludedCommands>CancelSearch</excludedCommands>
-              <excludedCommands>Change</excludedCommands>
-              <excludedCommands>Copy</excludedCommands>
-              <excludedCommands>CopyToClipboard</excludedCommands>
-              <excludedCommands>Delete</excludedCommands>
-              <excludedCommands>EndEdit</excludedCommands>
-              <excludedCommands>Find</excludedCommands>
-              <excludedCommands>MoveDown</excludedCommands>
-              <excludedCommands>MoveUp</excludedCommands>
-              <excludedCommands>OutputList</excludedCommands>
-              <excludedCommands>SelectAll</excludedCommands>
-              <excludedCommands>SortListAsc</excludedCommands>
-              <excludedCommands>SortListDesc</excludedCommands>
               <items xsi:type="form:FormGroup">
                 <name>ТаблицаНоменклатураПродаваемаяСовместноПредпосылкаГруппа1</name>
                 <id>629</id>
@@ -6765,20 +6672,6 @@
                 <common>true</common>
               </userVisible>
               <titleLocation>None</titleLocation>
-              <excludedCommands>Add</excludedCommands>
-              <excludedCommands>Change</excludedCommands>
-              <excludedCommands>CheckAll</excludedCommands>
-              <excludedCommands>Copy</excludedCommands>
-              <excludedCommands>CopyToClipboard</excludedCommands>
-              <excludedCommands>Delete</excludedCommands>
-              <excludedCommands>EndEdit</excludedCommands>
-              <excludedCommands>MoveDown</excludedCommands>
-              <excludedCommands>MoveUp</excludedCommands>
-              <excludedCommands>Pickup</excludedCommands>
-              <excludedCommands>SelectAll</excludedCommands>
-              <excludedCommands>SortListAsc</excludedCommands>
-              <excludedCommands>SortListDesc</excludedCommands>
-              <excludedCommands>UncheckAll</excludedCommands>
               <items xsi:type="form:FormField">
                 <name>СписокКачестваПометка</name>
                 <id>650</id>
@@ -7490,8 +7383,6 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Add</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
         <items xsi:type="form:FormField">
           <name>КорзинаНомерСтроки</name>
           <id>118</id>
@@ -8195,30 +8086,6 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
-              <choiceParameterLinks>
-                <name>Соглашение</name>
-                <datapath xsi:type="form:DataPath">
-                  <segments>Объект.Соглашение</segments>
-                </datapath>
-              </choiceParameterLinks>
-              <choiceParameterLinks>
-                <name>Партнер</name>
-                <datapath xsi:type="form:DataPath">
-                  <segments>Объект.Партнер</segments>
-                </datapath>
-              </choiceParameterLinks>
-              <choiceParameterLinks>
-                <name>Отбор.ЦенаВключаетНДС</name>
-                <datapath xsi:type="form:DataPath">
-                  <segments>Объект.ЦенаВключаетНДС</segments>
-                </datapath>
-              </choiceParameterLinks>
-              <choiceParameterLinks>
-                <name>ИспользоватиСоглашенияСКлиентами</name>
-                <datapath xsi:type="form:DataPath">
-                  <segments>ИспользоватьСоглашенияСКлиентами</segments>
-                </datapath>
-              </choiceParameterLinks>
               <choiceParameters>
                 <name>ВыводитьПроизвольныйВидЦен</name>
                 <value xsi:type="form:FormChoiceListDesTimeValue">
@@ -8624,7 +8491,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.Корзина.StandardCommand.SortListAsc</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8649,7 +8516,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.Корзина.StandardCommand.SortListDesc</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8674,7 +8541,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.Корзина.StandardCommand.Delete</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8702,7 +8569,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ЗаполнитьЦеныПоСоглашению</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -8728,7 +8595,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ЗаполнитьЦеныВыделенныхСтрокПоВидуЦен</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -8789,7 +8656,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.НазначитьРучнуюСкидку</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -8814,7 +8681,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.НазначитьРучнуюСкидкуВыделенныхСтрок</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -8839,7 +8706,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ОтменитьРучныеСкидки</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -8954,7 +8821,7 @@
         </extInfo>
       </extendedTooltip>
       <type>Hyperlink</type>
-      <commandName>Form.Command.СПодобраннойНоменклатуройСовместноПродается</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>

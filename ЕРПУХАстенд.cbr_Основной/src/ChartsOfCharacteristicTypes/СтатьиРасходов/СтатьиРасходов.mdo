@@ -17,24 +17,20 @@
     <codeAllowedLength>Checked</codeAllowedLength>
     <predefined>Checked</predefined>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <codeLength>9</codeLength>
   <predefined>
     <items id="30bb457d-f1ba-49e3-9e5b-e1a19bf46051">
       <name>cbr_26ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
-      <description></description>
       <code>000000001</code>
       <type/>
     </items>
     <items id="0c126395-7346-415f-83c4-6e3409927d4f">
       <name>cbr_44ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
-      <description></description>
       <code>000000003</code>
       <type/>
     </items>
     <items id="6dbf4bde-9c33-4720-845b-3a317d16e066">
       <name>cbr_ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
-      <description></description>
       <code>000000002</code>
       <type/>
     </items>
