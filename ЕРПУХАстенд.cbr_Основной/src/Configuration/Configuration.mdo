@@ -90,7 +90,6 @@
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
-  <commonModules>CommonModule.ЗаданиеНаПеревозкуЛокализация</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
@@ -112,6 +111,7 @@
   <documents>Document.КорректировкаРегистров</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.ПриходныйОрдерНаТовары</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.ТранспортнаяНакладная</documents>
   <enums>Enum.ВидыДоставки</enums>
