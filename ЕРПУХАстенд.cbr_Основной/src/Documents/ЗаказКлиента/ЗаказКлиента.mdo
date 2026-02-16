@@ -36,13 +36,14 @@
     <name>cbr_ТранспортныйТариф</name>
     <synonym>
       <key>ru</key>
-      <value>Транспортный тариф за 1 кг</value>
+      <value>Транспортный тариф за 1 кг, без НДС</value>
     </synonym>
     <type>
       <types>Number</types>
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -62,6 +63,7 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -81,6 +83,7 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
