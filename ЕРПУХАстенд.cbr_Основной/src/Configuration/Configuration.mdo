@@ -187,6 +187,7 @@
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
+  <catalogs>Catalog.cbr_ПредопределенныеЗначенияКонстант</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВидыЦен</catalogs>
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
@@ -195,6 +196,7 @@
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Лоты</catalogs>
   <catalogs>Catalog.МестаПоставки</catalogs>
+  <catalogs>Catalog.НаборыУпаковок</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.ОбластиХранения</catalogs>
@@ -233,6 +235,7 @@
   <documents>Document.РасходныйОрдерНаТовары</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
+  <documents>Document.УпаковочныйЛист</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.cbr_ВидыПалет</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
@@ -242,6 +245,7 @@
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
   <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
+  <enums>Enum.ВидыУпаковочныхЛистов</enums>
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ПорядокРасчетов</enums>
