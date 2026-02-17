@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="01ed8cc7-36e5-4e0d-bedd-a3ec83a10a10" extendedConfigurationObject="6a90e124-5af0-4a37-8ff7-14481b8cb2dd">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="01ed8cc7-36e5-4e0d-bedd-a3ec83a10a10" extendedConfigurationObject="6a90e124-5af0-4a37-8ff7-14481b8cb2dd">
   <producedTypes>
     <objectType typeId="60514244-38b4-4fb3-a289-a946466ddd21" valueTypeId="66816468-2a4d-45f5-8d1e-1d7172a5e9cb"/>
     <refType typeId="a5fccb70-38b1-4d0e-b5b4-3303b3277df4" valueTypeId="4068b6d0-60a2-4b17-8703-7c479d61ade0"/>
@@ -12,6 +12,23 @@
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
     <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="ceb92542-ca21-46bb-bb52-3b1f1a65b5f4">
+    <name>cbr_ЗаданиеНаПеревозку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задание на перевозку</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 13.02.2026 СКЛ.4</comment>
+    <type>
+      <types>DocumentRef.ЗаданиеНаПеревозку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Document>

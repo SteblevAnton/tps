@@ -435,6 +435,46 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
+          <name>ПоступлениеОтгрузкаЗаданиеНаПеревозку</name>
+          <id>288</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ПоступлениеОтгрузка.ЗаданиеНаПеревозку</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ПоступлениеОтгрузкаЗаданиеНаПеревозкуРасширеннаяПодсказка</name>
+            <id>290</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ПоступлениеОтгрузкаЗаданиеНаПеревозкуКонтекстноеМеню</name>
+            <id>289</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
           <name>ПоступлениеОтгрузкаРаспоряжение</name>
           <id>167</id>
           <visible>true</visible>
@@ -558,113 +598,20 @@
               <typeDomainEnabled>true</typeDomainEnabled>
             </extInfo>
           </items>
-          <items xsi:type="form:FormGroup">
-            <name>ГруппаВремя</name>
-            <id>226</id>
-            <items xsi:type="form:FormField">
-              <name>ПоступлениеОтгрузкаВремяС</name>
-              <id>176</id>
-              <title>
-                <key>ru</key>
-                <value>с</value>
-              </title>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПоступлениеОтгрузка.ВремяС</segments>
-              </dataPath>
-              <extendedTooltip>
-                <name>ПоступлениеОтгрузкаВремяСРасширеннаяПодсказка</name>
-                <id>178</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>ПоступлениеОтгрузкаВремяСКонтекстноеМеню</name>
-                <id>177</id>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>InputField</type>
-              <readOnly>true</readOnly>
-              <editMode>EnterOnInput</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:InputFieldExtInfo">
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <wrap>true</wrap>
-                <editFormat>
-                  <key>ru</key>
-                  <value>ДФ=HH:mm</value>
-                </editFormat>
-                <chooseType>true</chooseType>
-                <typeDomainEnabled>true</typeDomainEnabled>
-              </extInfo>
-            </items>
-            <items xsi:type="form:FormField">
-              <name>ПоступлениеОтгрузкаВремяПо</name>
-              <id>179</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПоступлениеОтгрузка.ВремяПо</segments>
-              </dataPath>
-              <extendedTooltip>
-                <name>ПоступлениеОтгрузкаВремяПоРасширеннаяПодсказка</name>
-                <id>181</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>ПоступлениеОтгрузкаВремяПоКонтекстноеМеню</name>
-                <id>180</id>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>InputField</type>
-              <readOnly>true</readOnly>
-              <editMode>EnterOnInput</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:InputFieldExtInfo">
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <wrap>true</wrap>
-                <editFormat>
-                  <key>ru</key>
-                  <value>ДФ=HH:mm</value>
-                </editFormat>
-                <chooseType>true</chooseType>
-                <typeDomainEnabled>true</typeDomainEnabled>
-              </extInfo>
-            </items>
+          <items xsi:type="form:FormField">
+            <name>ПоступлениеОтгрузкаВремяСПо</name>
+            <id>291</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
-            <title>
-              <key>ru</key>
-              <value>Время</value>
-            </title>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ПоступлениеОтгрузка.ВремяСПо</segments>
+            </dataPath>
             <extendedTooltip>
-              <name>ГруппаВремяРасширеннаяПодсказка</name>
-              <id>227</id>
+              <name>ПоступлениеОтгрузкаВремяСПоРасширеннаяПодсказка</name>
+              <id>293</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -672,10 +619,23 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <type>ColumnGroup</type>
-            <extInfo xsi:type="form:ColumnGroupExtInfo">
-              <showTitle>true</showTitle>
-              <showInHeader>true</showInHeader>
+            <contextMenu>
+              <name>ПоступлениеОтгрузкаВремяСПоКонтекстноеМеню</name>
+              <id>292</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -1204,6 +1164,45 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
+          <name>ПоступлениеОтгрузкаФИОКладовщика</name>
+          <id>285</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ПоступлениеОтгрузка.ФИОКладовщика</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ПоступлениеОтгрузкаФИОКладовщикаРасширеннаяПодсказка</name>
+            <id>287</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ПоступлениеОтгрузкаФИОКладовщикаКонтекстноеМеню</name>
+            <id>286</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
           <name>ПоступлениеОтгрузкаВес</name>
           <id>252</id>
           <visible>true</visible>
@@ -1352,18 +1351,19 @@
             <id>247</id>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
+          <type>LabelField</type>
           <editMode>EnterOnInput</editMode>
+          <cellHyperlink>true</cellHyperlink>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
+          <extInfo xsi:type="form:LabelFieldExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
+            <hyperlink>true</hyperlink>
+            <border xsi:type="core:BorderDef">
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <autoCommandBar>
@@ -1372,6 +1372,10 @@
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers>
+          <event>Selection</event>
+          <name>ПоступлениеОтгрузкаВыбор</name>
+        </handlers>
         <searchStringAddition>
           <name>ПоступлениеОтгрузкаСтрокаПоиска</name>
           <id>155</id>
@@ -2133,6 +2137,76 @@
         <numberQualifiers>
           <precision>10</precision>
         </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ФИОКладовщика</name>
+      <title>
+        <key>ru</key>
+        <value>ФИО кладовщика</value>
+      </title>
+      <id>46</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ЗаданиеНаПеревозку</name>
+      <title>
+        <key>ru</key>
+        <value>Задание на перевозку</value>
+      </title>
+      <id>47</id>
+      <valueType>
+        <types>DocumentRef.ЗаданиеНаПеревозку</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ВремяСПо</name>
+      <title>
+        <key>ru</key>
+        <value>Время с, по</value>
+      </title>
+      <id>48</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>РеализацияТоваровУслуг</name>
+      <title>
+        <key>ru</key>
+        <value>Реализация товаров услуг</value>
+      </title>
+      <id>49</id>
+      <valueType>
+        <types>ValueList</types>
       </valueType>
       <view>
         <common>true</common>

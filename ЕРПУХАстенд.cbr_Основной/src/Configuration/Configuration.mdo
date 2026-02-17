@@ -99,6 +99,7 @@
   <commandGroups>CommandGroup.Органайзер</commandGroups>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
   <catalogs>Catalog.СерииНоменклатуры</catalogs>
   <catalogs>Catalog.Склады</catalogs>
