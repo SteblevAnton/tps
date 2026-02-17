@@ -80,6 +80,32 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="9e0dd233-7b41-4090-9c5e-1e9e6d68b51c" extendedConfigurationObject="cc79d025-e4b3-4adf-ad53-eda1f76f3bfa">
+    <name>ОсновноеИзделиеНоменклатура</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Номенклатура</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="947f427e-860e-4802-96b3-809138d04a4a" extendedConfigurationObject="50617dd7-6ff4-4dc2-a0d1-1996bd1af55b">
+    <name>ОсновноеИзделиеХарактеристика</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ХарактеристикиНоменклатуры</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
   <tabularSections uuid="441d24dc-25d3-4feb-ba55-266d877825df">
     <producedTypes>
       <objectType typeId="438d3787-7fe6-41e9-bb35-320d33b48445" valueTypeId="d6b1d361-ed53-4153-b944-15eae49309d0"/>
