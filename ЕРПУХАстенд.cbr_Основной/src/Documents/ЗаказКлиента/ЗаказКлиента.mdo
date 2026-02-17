@@ -14,6 +14,7 @@
     <objectModule>Extended</objectModule>
     <managerModule>Extended</managerModule>
   </extension>
+  <registerRecords>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</registerRecords>
   <attributes uuid="31a008e1-daa5-4e28-8e14-9f6de4c33307">
     <name>cbr_Проект</name>
     <synonym>
@@ -313,6 +314,32 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb1c5153-5007-4ecf-896b-762f6cfddbfd" extendedConfigurationObject="3c728d38-3039-41f6-b288-2b92f32630c3">
+    <name>Соглашение</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.СоглашенияСКлиентами</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="9927dedf-db3c-4f0f-8b00-4fe41cd2e9d8" extendedConfigurationObject="a8d06692-73f7-469f-a6a7-388a13d421d2">
+    <name>Статус</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.СтатусыЗаказовКлиентов</type>
+        </types>
+      </typeExtension>
+    </extension>
   </attributes>
   <forms uuid="3b83bc6c-e487-4a00-94b1-476310514985" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
     <name>ФормаДокумента</name>

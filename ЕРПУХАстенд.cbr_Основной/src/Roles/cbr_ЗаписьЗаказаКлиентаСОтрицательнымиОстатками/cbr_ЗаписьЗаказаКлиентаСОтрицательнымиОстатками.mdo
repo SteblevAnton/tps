@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc06e1b7-7103-4961-8383-b0faf39e3b19">
+  <name>cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись заказа клиента с отрицательными остатками</value>
+  </synonym>
+</mdclass:Role>

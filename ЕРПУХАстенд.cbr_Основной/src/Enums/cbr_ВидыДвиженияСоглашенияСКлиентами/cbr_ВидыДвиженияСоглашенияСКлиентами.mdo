@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54238c9d-230b-4123-a977-aca93d30c469">
+  <producedTypes>
+    <refType typeId="a709baea-1239-4a38-aeb4-97a33d6d59cb" valueTypeId="c81cdbe0-2377-41d7-87c9-61b513d7f9f5"/>
+    <listType typeId="41173710-6838-490d-96be-269ad9acc098" valueTypeId="f7fa6fc6-b942-4650-b883-0ec9d2289152"/>
+    <managerType typeId="b593199f-727d-40ea-b68d-27b052dcec3c" valueTypeId="1ad049b1-cbeb-43f2-8002-b4ae7698a187"/>
+  </producedTypes>
+  <name>cbr_ВидыДвиженияСоглашенияСКлиентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды движения соглашения с клиентами</value>
+  </synonym>
+  <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4b59001a-be5e-4a5d-a591-fa3388d60f5b">
+    <name>Приход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+  </enumValues>
+  <enumValues uuid="6d7049a7-4390-433e-8dd7-36b482e016c8">
+    <name>Расход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+  </enumValues>
+</mdclass:Enum>

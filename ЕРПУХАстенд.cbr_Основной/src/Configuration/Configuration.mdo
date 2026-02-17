@@ -154,6 +154,7 @@
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
   <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
+  <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
@@ -163,6 +164,7 @@
   <commonModules>CommonModule.cbr_ОбработкаПодпискиПроведенияДокументовЛИМС</commonModules>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
+  <commonModules>CommonModule.cbr_РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
@@ -175,6 +177,7 @@
   <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
+  <scheduledJobs>ScheduledJob.cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</scheduledJobs>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
@@ -219,6 +222,7 @@
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
+  <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
   <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
@@ -234,6 +238,7 @@
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
+  <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыНазначенияСпецификации</enums>
@@ -242,6 +247,7 @@
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
   <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
+  <enums>Enum.ВидыДвиженияНакопления</enums>
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ПорядокРасчетов</enums>
@@ -249,6 +255,7 @@
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.СтатусыЗаказовКлиентов</enums>
   <enums>Enum.СтатусыЗаказовНаПроизводство2_2</enums>
   <enums>Enum.СтатусыРасходныхОрдеров</enums>
   <enums>Enum.СтатусыСпецификаций</enums>
@@ -270,5 +277,6 @@
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СтатьиРасходов</chartsOfCharacteristicTypes>
 </mdclass:Configuration>
