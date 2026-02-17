@@ -544,6 +544,32 @@
     </attributes>
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
+  <tabularSections uuid="396a723e-539d-4ac5-b40c-e46d58c1d9b9">
+    <producedTypes>
+      <objectType typeId="bf52e868-f004-42fe-a517-1d8bd116a2d2" valueTypeId="9d457457-8c4c-41ba-9473-b468e1379562"/>
+      <rowType typeId="c0736501-8539-4675-89f7-d08232217c41" valueTypeId="8ce2f264-c969-4e03-9e20-208947f77aad"/>
+    </producedTypes>
+    <name>cbr_РесурсныеСпецификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурсные спецификации</value>
+    </synonym>
+    <attributes uuid="755f0a50-ef11-4e28-ad3f-fc03858e582e">
+      <name>РесурснаяСпецификация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ресурсная спецификация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РесурсныеСпецификации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
   <forms uuid="38ab3791-df34-4dbe-bc9c-39b6a5c440ad" extendedConfigurationObject="3f101e93-3776-4bf7-b27a-5bfa29a31646">
     <name>ФормаЭлемента</name>
     <objectBelonging>Adopted</objectBelonging>
