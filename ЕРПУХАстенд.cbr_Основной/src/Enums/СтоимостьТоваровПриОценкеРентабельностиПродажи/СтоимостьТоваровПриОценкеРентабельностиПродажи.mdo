@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6b08788c-0b1f-4320-b512-5b448e8153e1" extendedConfigurationObject="5e43bc6a-998c-4078-9144-1d71ed27a936">
+  <producedTypes>
+    <refType typeId="41692458-24b1-4e45-a4fc-b74e45dae53c" valueTypeId="10743c65-d53b-422c-8a60-2c4ef737c1b3"/>
+    <listType typeId="32adee57-9baf-448c-a8d1-510dfaab68ca" valueTypeId="15ed6936-eab1-4ad7-b933-21c26623b227"/>
+    <managerType typeId="582ad293-09bf-4692-904b-d25f455d3d46" valueTypeId="35039b8a-e50c-4000-98e5-23b18be6189b"/>
+  </producedTypes>
+  <name>СтоимостьТоваровПриОценкеРентабельностиПродажи</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="ce693eec-1124-411e-b5ca-f90a577ec799" extendedConfigurationObject="8225937a-affd-4835-8ccb-2ef1b0f6b7db">
+    <name>ПоРасчетнойСебестоимости</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

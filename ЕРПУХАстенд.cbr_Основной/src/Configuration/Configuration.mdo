@@ -45,6 +45,7 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.Продажи</subsystems>
   <subsystems>Subsystem.Закупки</subsystems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет</styleItems>
@@ -169,7 +170,11 @@
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.П3_ЧтениеДокументаСпециальныеТребования</roles>
+  <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
+  <commonModules>CommonModule.ВариантыОтчетовУТПереопределяемый</commonModules>
+  <commonModules>CommonModule.ЗаказКлиентаЛокализация</commonModules>
+  <commonModules>CommonModule.КоммерческиеПредложенияДокументыУТ</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПодпискиПроведенияДокументовЛИМС</commonModules>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
@@ -188,6 +193,8 @@
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</scheduledJobs>
+  <definedTypes>DefinedType.КурсВалюты</definedTypes>
+  <definedTypes>DefinedType.ОбъектыДляСогласования</definedTypes>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
@@ -209,6 +216,7 @@
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
   <catalogs>Catalog.ДействияПроизводства</catalogs>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.ЗоныДоставки</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Лоты</catalogs>
   <catalogs>Catalog.МестаПоставки</catalogs>
@@ -236,6 +244,7 @@
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
+  <documents>Document.БазовыеУсловияАгентскогоВознагражения</documents>
   <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
   <documents>Document.ДвижениеПродукцииИМатериалов</documents>
@@ -255,6 +264,12 @@
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ТранспортнаяНакладная</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
+  <documents>Document.КоммерческоеПредложениеКлиенту</documents>
+  <documents>Document.ТранспортныеТарифы</documents>
+  <documents>Document.УсловияАгентскогоВознагражения</documents>
+  <enums>Enum.СостоянияСогласования</enums>
+  <enums>Enum.СтоимостьТоваровПриОценкеРентабельностиПродажи</enums>
+  <enums>Enum.ТипыНоменклатуры</enums>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
@@ -287,6 +302,7 @@
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
+  <reports>Report.ОценкаРентабельностиПродажСДополнением</reports>
   <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
@@ -294,6 +310,11 @@
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
+  <informationRegisters>InformationRegister.БазовыеУсловияАгентскогоВознаграждения</informationRegisters>
+  <informationRegisters>InformationRegister.ОтносительныеКурсыВалют</informationRegisters>
+  <informationRegisters>InformationRegister.РегистрСостоянийОбъектов</informationRegisters>
+  <informationRegisters>InformationRegister.ТранспортныеТарифы</informationRegisters>
+  <informationRegisters>InformationRegister.УсловияАгентскогоВознаграждения</informationRegisters>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
