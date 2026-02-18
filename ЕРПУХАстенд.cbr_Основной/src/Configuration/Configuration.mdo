@@ -205,6 +205,7 @@
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
+  <catalogs>Catalog.cbr_ПредопределенныеЗначенияКонстант</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВидыЦен</catalogs>
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
@@ -213,6 +214,7 @@
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Лоты</catalogs>
   <catalogs>Catalog.МестаПоставки</catalogs>
+  <catalogs>Catalog.НаборыУпаковок</catalogs>
   <catalogs>Catalog.Назначения</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.ОбластиХранения</catalogs>
