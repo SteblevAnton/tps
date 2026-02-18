@@ -178,6 +178,7 @@
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияУТСобытия</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
