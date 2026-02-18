@@ -60,6 +60,7 @@
   <styleItems>StyleItem.ФонУправляющегоПоля</styleItems>
   <styleItems>StyleItem.ЦветТекстаЗаголовокОтчетаВТакси</styleItems>
   <styleItems>StyleItem.ЦветТекстаЗапрошеноКоммерческиеПредложения</styleItems>
+  <styleItems>StyleItem.ЦветИтоговыхПоказателейДокументов</styleItems>
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
@@ -80,6 +81,8 @@
   <commonPictures>CommonPicture.ЗагрузкаИзФайлаКоммерческиеПредложения</commonPictures>
   <commonPictures>CommonPicture.ЗаказНаПроизводствоВыполнен</commonPictures>
   <commonPictures>CommonPicture.ЗакрытыеЗаказыНаПроизводство</commonPictures>
+  <commonPictures>CommonPicture.ДоставкаКолонкаДоставлено</commonPictures>
+  <commonPictures>CommonPicture.ЗаданиеВыполняетПеревозчик</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <commonPictures>CommonPicture.КартинкаСтрокиСпискаДокументов</commonPictures>
@@ -91,6 +94,7 @@
   <commonPictures>CommonPicture.КоллекцияПиктограммыТренда</commonPictures>
   <commonPictures>CommonPicture.КоллекцияРучноеРазмещениеВГрафике</commonPictures>
   <commonPictures>CommonPicture.Комментарий</commonPictures>
+  <commonPictures>CommonPicture.ИсполнителиДоставки</commonPictures>
   <commonPictures>CommonPicture.КоричневыйШар</commonPictures>
   <commonPictures>CommonPicture.КрасныйЖелтыйСерыйТреугольник</commonPictures>
   <commonPictures>CommonPicture.ЛоготипОсновнойСервисДоставки</commonPictures>
@@ -102,8 +106,10 @@
   <commonPictures>CommonPicture.НоменклатураПродаваемаяСовместно</commonPictures>
   <commonPictures>CommonPicture.ОбеспечениеЦеховыхКладовыхМатериалами</commonPictures>
   <commonPictures>CommonPicture.ОбновитьФайлИзФайлаНаДиске</commonPictures>
+  <commonPictures>CommonPicture.Органайзер</commonPictures>
   <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
   <commonPictures>CommonPicture.ОтгрузкаРазрешена</commonPictures>
+  <commonPictures>CommonPicture.ОткрытьКарточкуПартнера</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеВыпуска</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеЭтаповИГрафика</commonPictures>
@@ -127,6 +133,7 @@
   <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
   <commonPictures>CommonPicture.СоздатьЭлементСпискаЗаполненныйАвтоматически</commonPictures>
   <commonPictures>CommonPicture.СортироватьСтрокиПоУбыванию</commonPictures>
+  <commonPictures>CommonPicture.Состояние33Процента</commonPictures>
   <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СостояниеПроверкиКонтрагента</commonPictures>
   <commonPictures>CommonPicture.СостояниеСкидкиНаценки</commonPictures>
@@ -149,6 +156,7 @@
   <commonPictures>CommonPicture.ТребуетсяСформироватьЭтапы</commonPictures>
   <commonPictures>CommonPicture.УведомлениеСервиса</commonPictures>
   <commonPictures>CommonPicture.УдалитьИнформация</commonPictures>
+  <commonPictures>CommonPicture.ТранспортнаяНакладная</commonPictures>
   <commonPictures>CommonPicture.ФильтрПоСвойствам</commonPictures>
   <commonPictures>CommonPicture.ФормированиеЗаказовНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
@@ -178,15 +186,20 @@
   <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</scheduledJobs>
+  <definedTypes>DefinedType.РаспоряжениеНаДоставку</definedTypes>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
   <definedTypes>DefinedType.Цена</definedTypes>
+  <commonCommands>CommonCommand.Напомнить</commonCommands>
+  <commonCommands>CommonCommand.СоздатьЗаметкуПоПредмету</commonCommands>
   <commonCommands>CommonCommand.СостояниеОбеспеченияСпискаЗаказов</commonCommands>
   <commonCommands>CommonCommand.УправлениеОчередьюЗаказовНаПроизводство</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПлану</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
+  <commandGroups>CommandGroup.Органайзер</commandGroups>
   <constants>Constant.ОрганизацияТПС</constants>
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
@@ -231,14 +244,18 @@
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
   <documents>Document.ОтборРазмещениеТоваров</documents>
+  <documents>Document.КорректировкаРегистров</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.ПриобретениеУслугПрочихАктивов</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documents>Document.РасходныйОрдерНаТовары</documents>
+  <documents>Document.ПриходныйОрдерНаТовары</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
+  <documents>Document.ТранспортнаяНакладная</documents>
+  <enums>Enum.ВидыДоставки</enums>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
@@ -263,21 +280,27 @@
   <enums>Enum.СтатусыЭтаповПроизводства2_2</enums>
   <enums>Enum.ТипыДействий</enums>
   <enums>Enum.ТипыИзмеряемыхВеличин</enums>
+  <enums>Enum.СтатусыЗаданийНаПеревозку</enums>
+  <enums>Enum.ТипыИсполнителейЗаданийНаПеревозку</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
+  <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
+  <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
+  <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СтатьиРасходов</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

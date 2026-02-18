@@ -14,6 +14,28 @@
     <objectModule>Extended</objectModule>
     <managerModule>Extended</managerModule>
   </extension>
+  <registerRecords>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</registerRecords>
+  <attributes uuid="3c7c903c-4bfc-4705-9fd6-2202320547de">
+    <name>cbr_КоличествоПаллет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество паллет</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 09.02.2026 СКЛ.4</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="f809110c-fe16-4b9f-aa5d-b3b4eb9024ac">
     <name>cbr_НомерЗаявкиПоДаннымПеревозчика</name>
     <synonym>
@@ -70,4 +92,12 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="02ffe690-f0ac-40b1-bdb8-75bca0101892" extendedConfigurationObject="2d7bd583-5ecf-4d62-87ae-3cb6ac4ef969">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Document>

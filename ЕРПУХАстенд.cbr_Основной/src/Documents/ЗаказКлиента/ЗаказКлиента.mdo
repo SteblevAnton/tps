@@ -14,6 +14,7 @@
     <objectModule>Extended</objectModule>
     <managerModule>Extended</managerModule>
   </extension>
+  <registerRecords>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</registerRecords>
   <registerRecords>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</registerRecords>
   <attributes uuid="31a008e1-daa5-4e28-8e14-9f6de4c33307">
     <name>cbr_Проект</name>
