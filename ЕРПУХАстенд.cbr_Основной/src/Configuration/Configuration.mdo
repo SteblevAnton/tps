@@ -45,8 +45,8 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
-  <subsystems>Subsystem.Продажи</subsystems>
   <subsystems>Subsystem.Закупки</subsystems>
+  <subsystems>Subsystem.Продажи</subsystems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет82</styleItems>
@@ -167,19 +167,18 @@
   <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.П3_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.П3_ЧтениеДокументаСпециальныеТребования</roles>
-  <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
-  <commonModules>CommonModule.ВариантыОтчетовУТПереопределяемый</commonModules>
-  <commonModules>CommonModule.ЗаказКлиентаЛокализация</commonModules>
-  <commonModules>CommonModule.КоммерческиеПредложенияДокументыУТ</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПодпискиПроведенияДокументовЛИМС</commonModules>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.cbr_РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
+  <commonModules>CommonModule.ВариантыОтчетовУТПереопределяемый</commonModules>
+  <commonModules>CommonModule.КоммерческиеПредложенияДокументыУТ</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
@@ -193,11 +192,11 @@
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</scheduledJobs>
-  <definedTypes>DefinedType.КурсВалюты</definedTypes>
-  <definedTypes>DefinedType.ОбъектыДляСогласования</definedTypes>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
+  <definedTypes>DefinedType.КурсВалюты</definedTypes>
+  <definedTypes>DefinedType.ОбъектыДляСогласования</definedTypes>
   <definedTypes>DefinedType.РаспоряжениеНаДоставку</definedTypes>
   <definedTypes>DefinedType.Цена</definedTypes>
   <commonCommands>CommonCommand.Напомнить</commonCommands>
@@ -244,14 +243,15 @@
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
-  <documents>Document.БазовыеУсловияАгентскогоВознагражения</documents>
   <documents>Document.cbr_ОперацияСоглашения</documents>
+  <documents>Document.БазовыеУсловияАгентскогоВознагражения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
   <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.КоммерческоеПредложениеКлиенту</documents>
   <documents>Document.КорректировкаРегистров</documents>
   <documents>Document.ОтборРазмещениеТоваров</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
@@ -263,13 +263,9 @@
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ТранспортнаяНакладная</documents>
-  <documents>Document.ЭтапПроизводства2_2</documents>
-  <documents>Document.КоммерческоеПредложениеКлиенту</documents>
   <documents>Document.ТранспортныеТарифы</documents>
   <documents>Document.УсловияАгентскогоВознагражения</documents>
-  <enums>Enum.СостоянияСогласования</enums>
-  <enums>Enum.СтоимостьТоваровПриОценкеРентабельностиПродажи</enums>
-  <enums>Enum.ТипыНоменклатуры</enums>
+  <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
@@ -285,6 +281,7 @@
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ПорядокРасчетов</enums>
   <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
+  <enums>Enum.СостоянияСогласования</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
@@ -294,10 +291,12 @@
   <enums>Enum.СтатусыРасходныхОрдеров</enums>
   <enums>Enum.СтатусыСпецификаций</enums>
   <enums>Enum.СтатусыЭтаповПроизводства2_2</enums>
+  <enums>Enum.СтоимостьТоваровПриОценкеРентабельностиПродажи</enums>
   <enums>Enum.ТипыДействий</enums>
   <enums>Enum.ТипыИзмеряемыхВеличин</enums>
   <enums>Enum.ТипыИсполнителейЗаданийНаПеревозку</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
+  <enums>Enum.ТипыНоменклатуры</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
@@ -310,16 +309,16 @@
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
-  <informationRegisters>InformationRegister.БазовыеУсловияАгентскогоВознаграждения</informationRegisters>
-  <informationRegisters>InformationRegister.ОтносительныеКурсыВалют</informationRegisters>
-  <informationRegisters>InformationRegister.РегистрСостоянийОбъектов</informationRegisters>
-  <informationRegisters>InformationRegister.ТранспортныеТарифы</informationRegisters>
-  <informationRegisters>InformationRegister.УсловияАгентскогоВознаграждения</informationRegisters>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
+  <informationRegisters>InformationRegister.БазовыеУсловияАгентскогоВознаграждения</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
+  <informationRegisters>InformationRegister.ОтносительныеКурсыВалют</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
+  <informationRegisters>InformationRegister.РегистрСостоянийОбъектов</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
+  <informationRegisters>InformationRegister.ТранспортныеТарифы</informationRegisters>
+  <informationRegisters>InformationRegister.УсловияАгентскогоВознаграждения</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</accumulationRegisters>
