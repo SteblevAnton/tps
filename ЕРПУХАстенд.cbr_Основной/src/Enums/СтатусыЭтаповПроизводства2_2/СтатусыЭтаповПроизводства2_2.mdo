@@ -10,4 +10,11 @@
   <extension xsi:type="mdclassExtension:EnumExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
+  <enumValues uuid="e25d7468-6153-4e49-a767-f2630b36940f">
+    <name>cbr_НаКонтроле</name>
+    <synonym>
+      <key>ru</key>
+      <value>На контроле</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

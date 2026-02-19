@@ -37,6 +37,13 @@
         <value>000000001</value>
       </code>
     </items>
+    <items id="9123987a-4169-4b36-86e0-3c8e1ea8998f">
+      <name>ВыходнойКонтроль</name>
+      <description>Выходной контроль</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
@@ -50,6 +57,7 @@
       <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
       <types>CatalogRef.НаборыУпаковок</types>
       <types>String</types>
+      <types>CatalogRef</types>
       <stringQualifiers>
         <length>10</length>
       </stringQualifiers>
