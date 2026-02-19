@@ -9,6 +9,7 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:EnumExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <managerModule>Extended</managerModule>
   </extension>
   <enumValues uuid="e25d7468-6153-4e49-a767-f2630b36940f">
     <name>cbr_НаКонтроле</name>
