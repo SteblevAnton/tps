@@ -84,4 +84,46 @@
     </attributes>
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
+  <tabularSections uuid="da0c2f87-0059-41da-8155-b0a659feaae1" extendedConfigurationObject="f93cbc89-602b-4c37-a90c-1bceda80afe7">
+    <producedTypes>
+      <objectType typeId="ed4f146b-a447-4b6a-96cf-378c66c9368d" valueTypeId="df58d803-78bd-48bc-96a4-508c18e80eb9"/>
+      <rowType typeId="dcfa858c-8ab7-4fbd-a5bb-3be0ae806bc4" valueTypeId="2c80c074-8f68-4d76-8831-38526786fb3f"/>
+    </producedTypes>
+    <name>ТоварыПоРаспоряжениям</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="b1081fa9-565d-4c88-a106-77030a4b66cc" extendedConfigurationObject="cd7cf0b2-0078-4dfa-b137-5418e69d7024">
+      <name>Номенклатура</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>CatalogRef.Номенклатура</type>
+          </types>
+        </typeExtension>
+      </extension>
+    </attributes>
+    <attributes uuid="cf43c943-41a5-48cd-b19d-3447a3ec9777" extendedConfigurationObject="ae04c7e3-73f4-4a07-bef6-baf69fcb4dfc">
+      <name>Количество</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>Number</type>
+          </types>
+          <numberQualifiers>
+            <precision>15</precision>
+            <scale>3</scale>
+            <nonNegative>true</nonNegative>
+          </numberQualifiers>
+        </typeExtension>
+      </extension>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>

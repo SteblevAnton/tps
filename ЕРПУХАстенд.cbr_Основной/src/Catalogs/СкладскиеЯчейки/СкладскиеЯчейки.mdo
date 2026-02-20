@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b4104e6a-1ac0-4f04-bc8c-46b2c1bd56e5" extendedConfigurationObject="45fc64e2-aecd-481a-bcbe-307fcba05f97">
+  <producedTypes>
+    <objectType typeId="8daff91e-9ce2-4220-83dc-098006b59534" valueTypeId="5ac0a1fe-26cc-488e-bfdb-79a099ccbfae"/>
+    <refType typeId="5e12c8e5-5b04-4519-8491-e966b44d3f6c" valueTypeId="c1ac5496-b0dc-489c-9560-02fccaafb73b"/>
+    <selectionType typeId="609b8a44-be40-4940-92d8-7b67993c6324" valueTypeId="e5113ec2-a3d5-4114-bdda-48a30deab631"/>
+    <listType typeId="e7023ff7-588d-48c4-92c0-b251b0fb483c" valueTypeId="030ee91d-d8ab-4552-b865-1d67c09db7cd"/>
+    <managerType typeId="d08da71b-37d4-4e65-ac34-72f0c1209ab0" valueTypeId="d37c1170-b000-4f03-b017-cee827910813"/>
+  </producedTypes>
+  <name>СкладскиеЯчейки</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+  <attributes uuid="32e25a16-0b28-4ee2-b90e-e38b12986716">
+    <name>cbr_СборкаСухих</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка сухих</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
