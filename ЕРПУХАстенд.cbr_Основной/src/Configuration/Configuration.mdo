@@ -46,6 +46,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Закупки</subsystems>
+  <subsystems>Subsystem.Склад</subsystems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет82</styleItems>
