@@ -8,6 +8,5 @@
     <commandInterface>Extended</commandInterface>
   </extension>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>DataProcessor.cbr_АРМПоступлениеОтгрузка</content>
   <subsystems>ОрдерныйСклад</subsystems>
 </mdclass:Subsystem>
