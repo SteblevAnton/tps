@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aad320ee-86aa-4248-b2ec-efb6d63760be">
+  <name>cbr_УправлениеРегламентнымиЗаданиями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление реглментными заданиями</value>
+  </synonym>
+  <comment>//++АшаеваАН 13.02.26 СКЛ.3</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>
