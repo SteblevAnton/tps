@@ -12,7 +12,6 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="c51d7fde-c5b7-4e22-b1ca-38c47b22d017">
     <name>cbr_Проект</name>
     <synonym>
@@ -285,9 +284,272 @@
       <type>
         <types>Number</types>
         <numberQualifiers>
-          <precision>3</precision>
+          <precision>5</precision>
           <scale>2</scale>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <tabularSections uuid="bd1a30ba-2a82-4e4b-8290-ea46df05aaf2">
+    <producedTypes>
+      <objectType typeId="3631c01f-b103-4747-a59d-6256f9ce5e06" valueTypeId="f4f339d5-d0df-4586-a852-7aa4e1ed0135"/>
+      <rowType typeId="869eb003-902e-456c-a475-bbdda71cc100" valueTypeId="df4b9805-0868-478d-8b64-818a2873a0cd"/>
+    </producedTypes>
+    <name>cbr_ЦеныПоТоварам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цены по товарам</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <attributes uuid="b66619dc-466b-48a3-bc84-d68ffaf85b1d">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c993bdfe-c54d-4aa9-90b5-510890ac03e6">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Номенклатура</name>
+        <field>Catalog.СоглашенияСКлиентами.TabularSection.cbr_ЦеныПоТоварам.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ffaba1e8-9587-49d5-b6c4-74ba9c77cb4b">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Номенклатура</name>
+        <field>Catalog.СоглашенияСКлиентами.TabularSection.cbr_ЦеныПоТоварам.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c7ce69fb-7f40-495a-9208-63c17fd480ad">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="708ae0c2-b100-4ba4-a75e-2830428c5e30">
+      <name>ВидЦены</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид цены</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>CatalogRef.ВидыЦен</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4a5c7a97-fc86-4925-9751-bf9eeeb44c4c">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>DefinedType.Цена</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c6da0c7c-cfce-494a-be20-e5ea45978b34">
+      <name>ПрцентРучнаяСкидка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Прцент ручная скидка</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a5f70fac-fd39-4987-88ca-667fe6ebeaff">
+      <name>СуммаРучнаяСкидка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма ручная скидка</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаЛюбогоЗнака</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e079bb62-dc19-4767-b20f-97fc80a0756b">
+      <name>ЦенаСоСкидкой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена со скидкой</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>13</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="84531150-f4f0-4f36-9d22-90039e979dcc">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8067293e-3682-41a0-9930-ed190705ea22">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5fc89776-71a2-4bb0-a3e4-e75ae56bfe26">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5f28469b-8916-4b35-992a-8a561f8a8ed4">
+      <name>ХарактеристикиИспользуются</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристики используются</value>
+      </synonym>
+      <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <tabularSections uuid="396a723e-539d-4ac5-b40c-e46d58c1d9b9">
+    <producedTypes>
+      <objectType typeId="bf52e868-f004-42fe-a517-1d8bd116a2d2" valueTypeId="9d457457-8c4c-41ba-9473-b468e1379562"/>
+      <rowType typeId="c0736501-8539-4675-89f7-d08232217c41" valueTypeId="8ce2f264-c969-4e03-9e20-208947f77aad"/>
+    </producedTypes>
+    <name>cbr_РесурсныеСпецификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурсные спецификации</value>
+    </synonym>
+    <attributes uuid="755f0a50-ef11-4e28-ad3f-fc03858e582e">
+      <name>РесурснаяСпецификация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ресурсная спецификация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РесурсныеСпецификации</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

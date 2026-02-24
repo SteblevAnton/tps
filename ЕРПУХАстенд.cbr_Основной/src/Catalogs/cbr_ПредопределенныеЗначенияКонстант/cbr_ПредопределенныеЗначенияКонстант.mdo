@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8e705a5-4034-4846-bc9c-efdc984dfe76">
+  <producedTypes>
+    <objectType typeId="6d814d85-c4c4-4e13-b75e-104328bd1cda" valueTypeId="4ebcd6c3-4076-4335-a8d2-a94f88f6a78a"/>
+    <refType typeId="f127280e-631c-4022-83b1-840613b5a9f4" valueTypeId="17cc9734-daf1-4acb-bad6-53a7561f0ca3"/>
+    <selectionType typeId="5211dd5c-22c9-481e-82e2-79d8ef2646b6" valueTypeId="2dab4a03-0934-4fc7-af26-a2d526142b39"/>
+    <listType typeId="e3628444-70d5-492d-8bb5-d9f35cb55917" valueTypeId="da1df8d3-b963-4923-9cbd-5d865058eb82"/>
+    <managerType typeId="961c2f0f-347a-4e9b-a527-9a80cfc5c954" valueTypeId="c3a9e442-6246-4b52-9042-6a8301d1f83c"/>
+  </producedTypes>
+  <name>cbr_ПредопределенныеЗначенияКонстант</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предопределенные значения констант</value>
+  </synonym>
+  <comment>//cbr-larkovgeorg 15.02.2026 СКЛ.12(по указанию архитектора)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.cbr_ПредопределенныеЗначенияКонстант.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.cbr_ПредопределенныеЗначенияКонстант.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="fdb38583-74a1-4593-9107-1c1ede7e3a23">
+      <name>НаборУпаковокПаллеты</name>
+      <description>Набор упаковок паллеты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="9123987a-4169-4b36-86e0-3c8e1ea8998f">
+      <name>ВыходнойКонтроль</name>
+      <description>Выходной контроль</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="024bac0e-e9d7-4e11-83d5-ae125c959c29">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+      <types>CatalogRef.НаборыУпаковок</types>
+      <types>String</types>
+      <types>CatalogRef</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -16,7 +16,6 @@
     <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
     <writeMode>Checked</writeMode>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <resources uuid="44d1194e-15aa-465c-87b4-f91b633c43ce" extendedConfigurationObject="ae7b9a63-223b-438e-8479-1ffb5a709f01">
     <name>Приоритет</name>
     <objectBelonging>Adopted</objectBelonging>

@@ -12,8 +12,6 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
-  <checkUnique>true</checkUnique>
   <attributes uuid="475f737c-8c9f-412b-85e3-a576fa74aff3">
     <name>cbr_ЭтоТендер</name>
     <synonym>
@@ -55,7 +53,7 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>3</precision>
+        <precision>5</precision>
         <scale>2</scale>
       </numberQualifiers>
     </type>

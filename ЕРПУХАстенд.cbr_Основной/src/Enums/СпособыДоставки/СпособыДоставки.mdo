@@ -10,7 +10,6 @@
   <extension xsi:type="mdclassExtension:EnumExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <enumValues uuid="1e8bfd07-f152-4a8a-a39d-481dfc8ac1ff" extendedConfigurationObject="f442a653-b32b-4be9-9b5e-4a5abb206d85">
     <name>Самовывоз</name>
     <objectBelonging>Adopted</objectBelonging>

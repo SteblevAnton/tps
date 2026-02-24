@@ -1395,9 +1395,9 @@
       </title>
       <id>21</id>
       <valueType>
+        <types>CatalogRef.Партнеры</types>
         <types>CatalogRef.СтруктураПредприятия</types>
         <types>CatalogRef.Склады</types>
-        <types>CatalogRef.Партнеры</types>
         <types>String</types>
         <stringQualifiers/>
       </valueType>

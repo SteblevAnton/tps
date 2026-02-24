@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="254f7f4e-1147-4883-8fd3-ec64fa017c5b">
+  <name>cbr_ЧтениеРегистраНоменклатураВПалетах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение регистра номенклатура в палетах</value>
+  </synonym>
+  <comment>// Zhiend 09.02.2026 СКЛ17</comment>
+</mdclass:Role>

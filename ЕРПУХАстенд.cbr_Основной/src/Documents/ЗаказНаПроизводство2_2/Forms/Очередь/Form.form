@@ -1337,6 +1337,9 @@
             <userVisible>
               <common>true</common>
             </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Items.Список.CurrentData.Ссылка</segments>
+            </dataPath>
             <extendedTooltip>
               <name>СтруктураЗаказаРасширеннаяПодсказка</name>
               <id>94</id>
@@ -2416,6 +2419,9 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>Items.Список.CurrentData.Ссылка</segments>
+                </dataPath>
                 <extendedTooltip>
                   <name>КонтекстноеМенюСтруктураЗаказаРасширеннаяПодсказка</name>
                   <id>608</id>

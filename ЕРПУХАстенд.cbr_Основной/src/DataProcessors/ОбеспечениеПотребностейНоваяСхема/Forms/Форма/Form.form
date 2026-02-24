@@ -6231,6 +6231,40 @@
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
+                  <name>ЗаказыКОбеспечениюcbr_НеПоддерживаетсяОстаток</name>
+                  <id>5183</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.ЗаказыКОбеспечению.cbr_ПоддерживаетсяОстаток</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>ЗаказыКОбеспечениюcbr_НеПоддерживаетсяОстатокРасширеннаяПодсказка</name>
+                    <id>5185</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ЗаказыКОбеспечениюcbr_НеПоддерживаетсяОстатокКонтекстноеМеню</name>
+                    <id>5184</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>CheckBoxField</type>
+                  <readOnly>true</readOnly>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+                </items>
+                <items xsi:type="form:FormField">
                   <name>СпособОбеспеченияЗаказы</name>
                   <id>4354</id>
                   <visible>true</visible>
@@ -19594,9 +19628,9 @@ strategy</value>
         </title>
         <id>10</id>
         <valueType>
+          <types>CatalogRef.Партнеры</types>
           <types>CatalogRef.СтруктураПредприятия</types>
           <types>CatalogRef.Склады</types>
-          <types>CatalogRef.Партнеры</types>
           <types>String</types>
           <stringQualifiers>
             <length>50</length>
@@ -20484,9 +20518,9 @@ strategy</value>
         </title>
         <id>10</id>
         <valueType>
+          <types>CatalogRef.Партнеры</types>
           <types>CatalogRef.СтруктураПредприятия</types>
           <types>CatalogRef.Склады</types>
-          <types>CatalogRef.Партнеры</types>
           <types>String</types>
           <stringQualifiers>
             <length>20</length>
@@ -21228,9 +21262,9 @@ strategy</value>
       </title>
       <id>2</id>
       <valueType>
+        <types>CatalogRef.Партнеры</types>
         <types>CatalogRef.СтруктураПредприятия</types>
         <types>CatalogRef.Склады</types>
-        <types>CatalogRef.Партнеры</types>
       </valueType>
       <view>
         <common>true</common>
@@ -21541,9 +21575,9 @@ strategy</value>
     </title>
     <id>24</id>
     <valueType>
+      <types>CatalogRef.Партнеры</types>
       <types>CatalogRef.СтруктураПредприятия</types>
       <types>CatalogRef.Склады</types>
-      <types>CatalogRef.Партнеры</types>
     </valueType>
     <view>
       <common>true</common>
@@ -23244,9 +23278,9 @@ strategy</value>
       </title>
       <id>104</id>
       <valueType>
+        <types>CatalogRef.Партнеры</types>
         <types>CatalogRef.СтруктураПредприятия</types>
         <types>CatalogRef.Склады</types>
-        <types>CatalogRef.Партнеры</types>
         <types>String</types>
         <stringQualifiers>
           <length>20</length>

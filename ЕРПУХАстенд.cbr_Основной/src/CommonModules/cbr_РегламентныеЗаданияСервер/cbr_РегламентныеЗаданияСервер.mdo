@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd2a3429-93b2-425b-bc4b-63f5addda7bb">
+  <name>cbr_РегламентныеЗаданияСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентные задания сервер</value>
+  </synonym>
+  <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+  <server>true</server>
+</mdclass:CommonModule>

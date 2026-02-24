@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4af3382-6062-4db1-b6a9-68828cb7b904">
+  <name>cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление записей из регистра соглашения с клиентами</value>
+  </synonym>
+  <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+  <methodName>CommonModule.cbr_РегламентныеЗаданияСервер.ОбработататьРегЗаданиеУдалениеЗаписейИзРегистраСоглашенияСКлиентами</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

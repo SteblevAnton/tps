@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="778912d4-686f-4ec3-b408-e28c12ba4833" extendedConfigurationObject="e5b57481-c7d7-459c-8f38-003976928dcf">
+  <producedTypes>
+    <objectType typeId="6efdcc0c-3873-47ea-80d1-4de36f609308" valueTypeId="c5f620ab-332b-4ca5-a354-a018165ef976"/>
+    <refType typeId="9e542e05-5c1d-4b23-88c0-a57e54e44acc" valueTypeId="a6bf3e7e-74ca-4967-b828-667af988e213"/>
+    <selectionType typeId="4bed998a-259a-4f54-b929-554119171f06" valueTypeId="4681edc8-9796-4213-9413-05048400f250"/>
+    <listType typeId="f23b8a8d-3dac-44ee-8950-5ab9731b365e" valueTypeId="cd92b902-dedb-4108-aec1-31d4aa3a4a50"/>
+    <managerType typeId="28f0d9e2-879a-40b6-814f-b8e8376b18a3" valueTypeId="83307ecd-2a05-4695-ad2f-708813454a7f"/>
+  </producedTypes>
+  <name>РасходныйОрдерНаТовары</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
+  </extension>
+  <tabularSections uuid="bebb6ea9-a8c8-43f2-827e-7de0cc55d774">
+    <producedTypes>
+      <objectType typeId="cf55d3f7-0b07-4c4b-ae2d-04ebe705efc3" valueTypeId="54256bff-bc2b-44eb-b7e1-9314ed1ac8af"/>
+      <rowType typeId="9f38cdb1-dac4-4424-832f-cec77346cf2d" valueTypeId="ad2f8ccb-612a-423e-8bf4-fe65ba411418"/>
+    </producedTypes>
+    <name>cbr_ИсторияСтатусов</name>
+    <synonym>
+      <key>ru</key>
+      <value>История статусов</value>
+    </synonym>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <synonym>Extended</synonym>
+    </extension>
+    <attributes uuid="9e8e7ad8-14a8-4138-9ca9-ba89bbaff4e2">
+      <name>Статус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус</value>
+      </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
+      <type>
+        <types>EnumRef.СтатусыРасходныхОрдеров</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="35cab663-c1e4-4f3e-90ed-4ad207f0fdd3">
+      <name>ДатаИзменения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата изменения</value>
+      </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="377a8d6e-8d2e-4d38-9fef-e1cd9cfb9372">
+      <name>Ответственный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ответственный</value>
+      </synonym>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <tabularSections uuid="da0c2f87-0059-41da-8155-b0a659feaae1" extendedConfigurationObject="f93cbc89-602b-4c37-a90c-1bceda80afe7">
+    <producedTypes>
+      <objectType typeId="ed4f146b-a447-4b6a-96cf-378c66c9368d" valueTypeId="df58d803-78bd-48bc-96a4-508c18e80eb9"/>
+      <rowType typeId="dcfa858c-8ab7-4fbd-a5bb-3be0ae806bc4" valueTypeId="2c80c074-8f68-4d76-8831-38526786fb3f"/>
+    </producedTypes>
+    <name>ТоварыПоРаспоряжениям</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="b1081fa9-565d-4c88-a106-77030a4b66cc" extendedConfigurationObject="cd7cf0b2-0078-4dfa-b137-5418e69d7024">
+      <name>Номенклатура</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>CatalogRef.Номенклатура</type>
+          </types>
+        </typeExtension>
+      </extension>
+    </attributes>
+    <attributes uuid="cf43c943-41a5-48cd-b19d-3447a3ec9777" extendedConfigurationObject="ae04c7e3-73f4-4a07-bef6-baf69fcb4dfc">
+      <name>Количество</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>Number</type>
+          </types>
+          <numberQualifiers>
+            <precision>15</precision>
+            <scale>3</scale>
+            <nonNegative>true</nonNegative>
+          </numberQualifiers>
+        </typeExtension>
+      </extension>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

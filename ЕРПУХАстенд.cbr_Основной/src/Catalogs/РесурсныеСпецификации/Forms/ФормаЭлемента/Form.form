@@ -18032,12 +18032,12 @@ business unit</value>
   </handlers>
   <handlers xsi:type="form:EventHandlerExtension">
     <event>OnCreateAtServer</event>
-    <name>cbr_ПриСозданииНаСервереПосле</name>
-    <callType>After</callType>
+    <name>cbr_ПриСозданииНаСервереПеред</name>
   </handlers>
   <handlers xsi:type="form:EventHandlerExtension">
     <event>OnCreateAtServer</event>
-    <name>cbr_ПриСозданииНаСервереПеред</name>
+    <name>cbr_ПриСозданииНаСервереПосле</name>
+    <callType>After</callType>
   </handlers>
   <excludedCommands>Copy</excludedCommands>
   <excludedCommands>Write</excludedCommands>

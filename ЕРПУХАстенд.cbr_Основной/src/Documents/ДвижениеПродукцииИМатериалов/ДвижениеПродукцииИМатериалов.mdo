@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b4c53b4b-2d34-439b-89f7-df455d8ea591" extendedConfigurationObject="6b652820-7672-43f5-a265-2bed82a309a6">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f067c59b-35cb-449f-b38f-f9f9ade663f3" extendedConfigurationObject="6b652820-7672-43f5-a265-2bed82a309a6">
   <producedTypes>
-    <objectType typeId="fa00114d-eace-4e6e-b47d-6ef22fdc02b6" valueTypeId="103f0fc4-1e2b-45b3-b999-ce614af33cc5"/>
-    <refType typeId="342ba0f8-7503-4771-9d78-b310eb680b01" valueTypeId="bd0fc4ad-4ceb-4f3f-8c03-439a3067c25b"/>
-    <selectionType typeId="f7ce67a4-db2b-4c2b-b839-04c6b0f1f0cd" valueTypeId="8a1713c7-6b21-49fa-bae3-2a32349ca816"/>
-    <listType typeId="5c3b3c96-5eb8-4556-9151-e2311903cde2" valueTypeId="4e5cf60f-9ee0-4a17-8abc-76ed0570bd2d"/>
-    <managerType typeId="ac1f6184-5664-4a36-9b47-6fee60e18490" valueTypeId="bc85e816-cd1e-4bc5-b584-2701c2e99603"/>
+    <objectType typeId="1a26d2a5-e335-4b81-9d30-476e43babbcd" valueTypeId="29de5771-1921-4e3a-b393-11e5af052d74"/>
+    <refType typeId="6bf58e41-0a03-4945-a777-e8d6a02f3201" valueTypeId="6d68844c-454a-4035-86c2-fd83817c55af"/>
+    <selectionType typeId="95ad1ba0-efeb-459b-9f02-a192409571dd" valueTypeId="5849297a-c2db-48cb-954c-97d76d4da50d"/>
+    <listType typeId="a547badb-9bdc-4c99-bd23-e25e2582a1be" valueTypeId="40f29718-7a69-40a6-ad92-b581cb6d189e"/>
+    <managerType typeId="fdc2c6b5-c32d-4d4f-96fe-91d467899047" valueTypeId="cf791bad-9d73-4db2-b02e-72e2a0020453"/>
   </producedTypes>
   <name>ДвижениеПродукцииИМатериалов</name>
   <objectBelonging>Adopted</objectBelonging>
@@ -13,7 +13,6 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
     <objectModule>Extended</objectModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <tabularSections uuid="f30a9fe6-68b1-4780-a497-555ac364dc6a" extendedConfigurationObject="6cc3a6d7-54b4-4e21-af19-24297ed6494a">
     <producedTypes>
       <objectType typeId="07b3e213-9e7d-40c8-9769-807361060b18" valueTypeId="4c54e8ca-3f8a-404c-970d-4579900f314f"/>

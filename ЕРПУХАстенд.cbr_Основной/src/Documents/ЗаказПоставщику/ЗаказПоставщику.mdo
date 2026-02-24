@@ -12,5 +12,5 @@
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</registerRecords>
 </mdclass:Document>

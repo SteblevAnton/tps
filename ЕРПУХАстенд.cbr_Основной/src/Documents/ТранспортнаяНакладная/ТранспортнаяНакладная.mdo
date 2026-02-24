@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c4f28f49-dbdd-4f8d-99ff-094924e05502" extendedConfigurationObject="22163f5e-b24b-429b-a671-2b293a8a2f80">
+  <producedTypes>
+    <objectType typeId="05a99b85-0077-4ff3-9935-2d44a6e3502f" valueTypeId="1ff71c68-ef3b-4dd5-a59e-35b91a26b3d9"/>
+    <refType typeId="884ad567-14ee-48cf-8b2a-04dd7b5909fb" valueTypeId="7a0efe14-76e5-4347-bd1a-f07416a511bd"/>
+    <selectionType typeId="b7cdc29f-8aff-405f-a814-5384120949dd" valueTypeId="748f9d34-d295-4c1e-a42c-6fc339a75710"/>
+    <listType typeId="19bde189-cdef-4e28-bb60-b8339eb78619" valueTypeId="3d4138c1-1525-4d1e-bf59-ef0c2e77a81d"/>
+    <managerType typeId="fc932e8c-2f78-4f90-9fd5-bf0ca180fe0f" valueTypeId="f945e019-06dc-4abd-ae69-3324346fa79c"/>
+  </producedTypes>
+  <name>ТранспортнаяНакладная</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <commands uuid="5168d4f4-3236-40fd-bdc6-0509fa44d3c9" extendedConfigurationObject="8ae3193a-6a6d-4ebc-99e8-05c4d81e956f">
+    <name>ОформитьТранспортныеНакладныеПоЗаданиямНаПеревозку</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicCommandExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <group>Checked</group>
+      <commandParameterTypeExtension/>
+    </extension>
+    <group>FormCommandBarImportant</group>
+  </commands>
+</mdclass:Document>

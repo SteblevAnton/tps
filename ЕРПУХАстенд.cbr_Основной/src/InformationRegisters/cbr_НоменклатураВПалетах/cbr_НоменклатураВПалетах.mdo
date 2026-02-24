@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83f06dd9-3f3e-425f-8baf-4371e4d2529b">
+  <producedTypes>
+    <selectionType typeId="df7b4d92-eabe-4a29-ae39-9cafcb3c61cd" valueTypeId="c65f9231-0342-4029-b861-9c028bbe3c37"/>
+    <listType typeId="b880d554-63a7-47ef-9592-68f3072f076b" valueTypeId="b1bfaaeb-c9c6-4b6a-aafb-066e1385ff81"/>
+    <managerType typeId="3bf26689-f3cf-43ec-ac1e-05e96ede7c5f" valueTypeId="32c221bc-87b3-40d8-aa8e-a632d31c0811"/>
+    <recordSetType typeId="c763508f-1888-4962-b15e-a393583a06e5" valueTypeId="1f68fe68-2cd3-444e-aa14-dd670f297be3"/>
+    <recordKeyType typeId="5828ed5b-e7e0-4d9a-b4c6-350bc754eedf" valueTypeId="4e148199-0a08-4193-b047-ac0c24c1e2d2"/>
+    <recordType typeId="511a0dc6-f80d-4bfa-989c-8d915a58af19" valueTypeId="55fe432b-24c9-417a-8555-38d5729629f8"/>
+    <recordManagerType typeId="7c3f076e-599e-4deb-9338-4b2d34e33acc" valueTypeId="88d9820b-3777-48c2-827f-fc475b478b24"/>
+  </producedTypes>
+  <name>cbr_НоменклатураВПалетах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура в палетах</value>
+  </synonym>
+  <comment>// Zhiend 09.02.2026 СКЛ17</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="57cbac47-6674-45ee-96c4-731a532144ad">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="f14a6782-5478-487b-b951-a991e8b5042e">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="75c27f55-a432-4dd0-b5dd-c4a1119181a3">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="422f0d51-7ad1-4e05-9c92-131c2b9402da">
+    <name>Упаковка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Упаковка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="12b3230a-9d20-4f0e-bf12-04c138df728e">
+    <name>ВидПалеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид палеты</value>
+    </synonym>
+    <type>
+      <types>EnumRef.cbr_ВидыПалет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

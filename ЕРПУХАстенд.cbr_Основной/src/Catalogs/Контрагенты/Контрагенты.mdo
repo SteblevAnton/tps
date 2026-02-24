@@ -13,7 +13,6 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
     <objectModule>Extended</objectModule>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="e68c709d-86bb-4c57-8439-f617b638303d">
     <name>cbr_КодFO</name>
     <synonym>

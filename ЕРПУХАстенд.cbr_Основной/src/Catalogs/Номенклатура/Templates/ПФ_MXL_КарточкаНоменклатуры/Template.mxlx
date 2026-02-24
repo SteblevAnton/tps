@@ -12663,27 +12663,6 @@
 			<c>
 				<c>
 					<f>26</f>
-					<note>
-						<drawingType>Comment</drawingType>
-						<id>0</id>
-						<formatIndex>63</formatIndex>
-						<text>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content/>
-							</v8:item>
-						</text>
-						<beginRow>1</beginRow>
-						<beginRowOffset>-20</beginRowOffset>
-						<endRow>0</endRow>
-						<endRowOffset>50</endRowOffset>
-						<beginColumn>1</beginColumn>
-						<beginColumnOffset>20</beginColumnOffset>
-						<endColumn>0</endColumn>
-						<endColumnOffset>18</endColumnOffset>
-						<autoSize>true</autoSize>
-						<pictureSize>Stretch</pictureSize>
-					</note>
 				</c>
 			</c>
 			<c>
@@ -12729,7 +12708,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>63</f>
 					<parameter>ГиперссылкаПерейтиВариантыКомплектации</parameter>
 					<detailParameter>Расшифровка</detailParameter>
 				</c>
@@ -12842,7 +12821,7 @@
 			</c>
 			<c>
 				<c>
-					<f>65</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -12964,7 +12943,7 @@
 			</c>
 			<c>
 				<c>
-					<f>65</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -13081,12 +13060,12 @@
 			<formatIndex>6</formatIndex>
 			<c>
 				<c>
-					<f>66</f>
+					<f>65</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>67</f>
+					<f>66</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -13102,97 +13081,97 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>67</f>
 				</c>
 			</c>
 		</row>
@@ -13208,7 +13187,7 @@
 			</c>
 			<c>
 				<c>
-					<f>65</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -13405,7 +13384,7 @@
 			</c>
 			<c>
 				<c>
-					<f>69</f>
+					<f>68</f>
 				</c>
 			</c>
 			<c>
@@ -13685,7 +13664,7 @@
 			</c>
 			<c>
 				<c>
-					<f>70</f>
+					<f>69</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -13806,7 +13785,7 @@
 			</c>
 			<c>
 				<c>
-					<f>71</f>
+					<f>70</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -13927,7 +13906,7 @@
 			</c>
 			<c>
 				<c>
-					<f>72</f>
+					<f>71</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -14048,7 +14027,7 @@
 			</c>
 			<c>
 				<c>
-					<f>72</f>
+					<f>71</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -14244,7 +14223,7 @@
 			</c>
 			<c>
 				<c>
-					<f>69</f>
+					<f>68</f>
 				</c>
 			</c>
 			<c>
@@ -16178,7 +16157,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>73</defaultFormatIndex>
+	<defaultFormatIndex>72</defaultFormatIndex>
 	<height>103</height>
 	<vgRows>103</vgRows>
 	<merge>
@@ -18257,10 +18236,6 @@
 		<textPlacement>Cut</textPlacement>
 		<fillType>Parameter</fillType>
 		<picHorizontalAlignment>Center</picHorizontalAlignment>
-	</format>
-	<format>
-		<verticalAlignment>Top</verticalAlignment>
-		<backColor>#FFFAD9</backColor>
 	</format>
 	<format>
 		<font>0</font>

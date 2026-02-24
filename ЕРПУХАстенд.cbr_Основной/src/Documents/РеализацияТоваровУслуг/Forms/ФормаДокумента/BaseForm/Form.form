@@ -9289,7 +9289,7 @@ business</value>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <maxWidth>26</maxWidth>
+              <maxWidth>29</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <listChoiceMode>true</listChoiceMode>
@@ -9348,10 +9348,193 @@ business</value>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <maxWidth>26</maxWidth>
+              <maxWidth>29</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <openButton>false</openButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаДокументКомиссионера</name>
+            <id>1650</id>
+            <items xsi:type="form:FormField">
+              <name>НомерКомиссионера</name>
+              <id>1652</id>
+              <title>
+                <key>ru</key>
+                <value>Номер входящего документа</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Incoming document number</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <titleHeight>2</titleHeight>
+              <extendedTooltip>
+                <name>НомерКомиссионераРасширеннаяПодсказка</name>
+                <id>1654</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>НомерКомиссионераКонтекстноеМеню</name>
+                <id>1653</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>12</width>
+                <maxWidth>12</maxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ДатаКомиссионера</name>
+              <id>1655</id>
+              <title>
+                <key>ru</key>
+                <value>  от</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>  dated</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <toolTip>
+                <key>ru</key>
+                <value>Номер, дата и наименование документа, полученного от комиссионера в качестве уведомления о продаже</value>
+              </toolTip>
+              <toolTip>
+                <key>en</key>
+                <value>Number, date, and name of the document received from the consignee as a notice of sale</value>
+              </toolTip>
+              <toolTipRepresentation>Button</toolTipRepresentation>
+              <extendedTooltip>
+                <name>ДатаКомиссионераРасширеннаяПодсказка</name>
+                <id>1657</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДатаКомиссионераКонтекстноеМеню</name>
+                <id>1656</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>10</width>
+                <maxWidth>10</maxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Документ комиссионера</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Consignee document</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаДокументКомиссионераРасширеннаяПодсказка</name>
+              <id>1651</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>НаименованиеВходящегоДокумента</name>
+            <id>1658</id>
+            <title>
+              <key>ru</key>
+              <value>Наименование</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Description</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleHeight>2</titleHeight>
+            <extendedTooltip>
+              <name>НаименованиеВходящегоДокументаРасширеннаяПодсказка</name>
+              <id>1660</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>НаименованиеВходящегоДокументаКонтекстноеМеню</name>
+              <id>1659</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <maxWidth>29</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <dropListButton>true</dropListButton>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>

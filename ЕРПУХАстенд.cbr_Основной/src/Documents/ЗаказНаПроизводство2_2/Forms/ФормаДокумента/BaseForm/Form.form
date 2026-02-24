@@ -3319,6 +3319,31 @@
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
+            <items xsi:type="form:Button">
+              <name>ПродукцияЗагрузитьИзВнешнегоФайла</name>
+              <id>665</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ПродукцияЗагрузитьИзВнешнегоФайлаРасширеннаяПодсказка</name>
+                <id>666</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Command.ЗагрузитьИзВнешнегоФайла</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
             <items xsi:type="form:FormGroup">
               <name>ПродукцияПодменюСпецификация</name>
               <id>334</id>
@@ -4493,6 +4518,87 @@ to products</value>
     <name>Подвал</name>
     <id>52</id>
     <items xsi:type="form:FormGroup">
+      <name>ГруппаСостояниеЭДО</name>
+      <id>658</id>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияСостояниеЭДО</name>
+        <id>660</id>
+        <title>
+          <key>ru</key>
+          <value>Состояние ЭДО</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>EDI state</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <toolTip>
+          <key>ru</key>
+          <value>Состояние ЭДО</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>EDI state</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ДекорацияСостояниеЭДОРасширеннаяПодсказка</name>
+          <id>662</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияСостояниеЭДОКонтекстноеМеню</name>
+          <id>661</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <hyperlink>true</hyperlink>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Состояние ЭДО</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>EDI state</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаСостояниеЭДОРасширеннаяПодсказка</name>
+        <id>659</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>AlwaysHorizontal</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
       <name>ГруппаРедактированиеЭтапов</name>
       <id>498</id>
       <items xsi:type="form:Decoration">
@@ -4869,6 +4975,45 @@ to products</value>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
+      <name>ПодменюЭДО</name>
+      <id>656</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>ЭДО</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>EDI</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Команды электронного документооборота</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Data interchange commands</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ПодменюЭДОРасширеннаяПодсказка</name>
+        <id>657</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Popup</type>
+      <extInfo xsi:type="form:PopupGroupExtInfo">
+        <representation>Auto</representation>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
       <name>ПодменюПечать</name>
       <id>62</id>
       <visible>true</visible>
@@ -4987,6 +5132,32 @@ to products</value>
           </extInfo>
         </extendedTooltip>
         <commandName>Form.Command.ОчередьЗаказов</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ФормаДиспетчированиеЭтапов</name>
+        <id>663</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ФормаДиспетчированиеЭтаповРасширеннаяПодсказка</name>
+          <id>664</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.ДиспетчированиеЭтапов</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
