@@ -192,8 +192,8 @@
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияТоварыКПеремещению</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
-  <scheduledJobs>ScheduledJob.cbr_ФормированиеДокументовПеремещенияНаОснованииПТУ</scheduledJobs>
   <scheduledJobs>ScheduledJob.cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</scheduledJobs>
+  <scheduledJobs>ScheduledJob.cbr_ФормированиеДокументовПеремещенияНаОснованииПТУ</scheduledJobs>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
@@ -312,8 +312,8 @@
   <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ТоварыКПеремещению</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыВЯчейках</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.cbr_ТоварыКПеремещению</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СтатьиРасходов</chartsOfCharacteristicTypes>
 </mdclass:Configuration>
