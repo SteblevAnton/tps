@@ -45,4 +45,39 @@
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
+  <enumValues uuid="041137b0-bf66-41c6-b87a-c1f1a9a2e59e" extendedConfigurationObject="98432b29-54a0-461b-8949-90d8b093d361">
+    <name>СиламиПоставщикаДоНашегоСклада</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="de453859-97f2-4a36-8fc4-77f2069e6c4b" extendedConfigurationObject="280f7296-5e90-4427-8283-20b46e71e378">
+    <name>НашимиСиламиСАдресаОтправителя</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="3765541e-ff9a-4d37-9746-dc83e510a746" extendedConfigurationObject="f416de4c-0e65-4c7a-ac1b-6006787f8f96">
+    <name>СиламиПеревозчикаДоПунктаПередачи</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="74fc96ad-d08a-4dff-90ae-6b194923a2bf" extendedConfigurationObject="f9e83d06-ca35-4604-8a3b-7763e3d4f9e8">
+    <name>СиламиПеревозчикаДоНашегоСклада</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="4b0022a9-7939-492b-8252-0132955435f1" extendedConfigurationObject="f05a8baa-f36f-47cf-b83c-fdc47a0c74e5">
+    <name>ОтОтправителяОпределяетСлужбаДоставки</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
 </mdclass:Enum>

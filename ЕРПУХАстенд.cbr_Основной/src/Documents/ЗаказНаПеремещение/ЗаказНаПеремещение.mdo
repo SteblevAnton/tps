@@ -14,6 +14,14 @@
     <managerModule>Extended</managerModule>
   </extension>
   <useStandardCommands>true</useStandardCommands>
+  <forms uuid="bdf1a2ad-fa20-4873-bbac-796b368dde63" extendedConfigurationObject="1587975a-13e8-4f72-9298-96539ab57782">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
   <tabularSections uuid="ff8fc7b7-e10b-420d-a1d0-0d9326645439" extendedConfigurationObject="7b4da320-9332-4032-9c16-a05fabf9e623">
     <producedTypes>
       <objectType typeId="c315411e-56c5-4c37-972c-d73d5da2295f" valueTypeId="885550dd-63dc-4fce-94fe-ac7e9f335ad5"/>

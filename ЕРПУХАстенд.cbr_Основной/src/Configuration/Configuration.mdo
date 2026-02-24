@@ -169,14 +169,13 @@
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
-  <commonModules>CommonModule.ПриобретениеТоваровУслугЛокализация</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыКПеремещению</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияТоварыКПеремещению</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_ФормированиеДокументовПеремещенияНаОснованииПТУ</scheduledJobs>
   <definedTypes>DefinedType.Артикул</definedTypes>
@@ -255,6 +254,7 @@
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.СтатусыДоговоровКонтрагентов</enums>
   <enums>Enum.СтатусыЗаказовНаПроизводство2_2</enums>
   <enums>Enum.СтатусыРасходныхОрдеров</enums>
   <enums>Enum.СтатусыСпецификаций</enums>

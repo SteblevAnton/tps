@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2c6ec11-4f1b-4a2a-88e6-d1a614f2143a">
-  <name>cbr_ДобавитьДвиженияcbr_ТоварыКПеремещению</name>
+  <name>cbr_ДобавитьДвиженияТоварыКПеремещению</name>
   <synonym>
     <key>ru</key>
-    <value>(cbr) Добавить движения cbr оплата отгрузка по менеджерам</value>
+    <value>(cbr) Добавить движения &quot;Товары к перемещению&quot;</value>
   </synonym>
   <comment>//++АшаеваАН 13.02.26 СКЛ.3</comment>
   <source>
@@ -11,5 +11,5 @@
     <types>DocumentObject.ПриобретениеТоваровУслуг</types>
   </source>
   <event>Posting</event>
-  <handler>CommonModule.cbr_УправлениеПодписками.cbr_ДобавитьДвиженияcbr_ТоварыКПеремещениюОбработкаПроведения</handler>
+  <handler>CommonModule.cbr_УправлениеПодписками.cbr_ДобавитьДвиженияТоварыКПеремещениюОбработкаПроведения</handler>
 </mdclass:EventSubscription>

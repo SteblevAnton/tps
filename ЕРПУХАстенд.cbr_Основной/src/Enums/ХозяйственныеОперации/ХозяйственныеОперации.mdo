@@ -108,4 +108,32 @@
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
     </extension>
   </enumValues>
+  <enumValues uuid="3b626d13-d64e-49c5-8a0e-6d1766621a2f" extendedConfigurationObject="76156fda-6b2e-4da7-871d-49dfc4840df3">
+    <name>ПриемНаКомиссию</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="d512f09e-5b71-4710-ae43-f2e54917a438" extendedConfigurationObject="a52a5aca-aa86-429b-b461-dbd79e1dbe24">
+    <name>ЗакупкаУПоставщикаРеглУчет</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="f95a4442-6665-44ec-85fa-575a686e5965" extendedConfigurationObject="955ac7a2-906a-4d2b-9be1-a41ee11cec54">
+    <name>ЗакупкаПоИмпорту</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="c0d6ce43-42aa-477e-b6af-c2836fd82458" extendedConfigurationObject="26caefe6-3e76-4d73-9387-208213b91b67">
+    <name>ЗакупкаВСтранахЕАЭС</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
 </mdclass:Enum>
