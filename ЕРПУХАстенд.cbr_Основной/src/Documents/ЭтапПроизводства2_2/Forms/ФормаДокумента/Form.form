@@ -18460,6 +18460,16 @@ to products</value>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers xsi:type="form:EventHandlerExtension">
+      <event>AfterWrite</event>
+      <name>cbr_ПослеЗаписиПосле</name>
+      <callType>After</callType>
+    </handlers>
+    <handlers xsi:type="form:EventHandlerExtension">
+      <event>BeforeWrite</event>
+      <name>cbr_ПередЗаписьюПосле</name>
+      <callType>After</callType>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
