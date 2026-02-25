@@ -231,6 +231,7 @@
   <catalogs>Catalog.Приоритеты</catalogs>
   <catalogs>Catalog.РабочиеЦентры</catalogs>
   <catalogs>Catalog.РесурсныеСпецификации</catalogs>
+  <catalogs>Catalog.РолиИсполнителей</catalogs>
   <catalogs>Catalog.СерииНоменклатуры</catalogs>
   <catalogs>Catalog.СкладскиеГруппыНоменклатуры</catalogs>
   <catalogs>Catalog.СкладскиеПомещения</catalogs>

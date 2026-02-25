@@ -454,6 +454,36 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="6103b96c-69bb-45ea-bfef-590aab9d99e6">
+      <name>cbr_Актуальность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Актуальность</value>
+      </synonym>
+      <comment>// Мохов 20.02.2026 ПРЗ.30</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2c0bf924-e90e-46fe-bc4c-144b4cf15514">
+      <name>Спецификация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спецификация после акутализации</value>
+      </synonym>
+      <comment>// Мохов 20.02.2026 ПРЗ.30</comment>
+      <type>
+        <types>CatalogRef.РесурсныеСпецификации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="c4a4a276-af88-4415-877d-7f262176b85c">
     <producedTypes>
