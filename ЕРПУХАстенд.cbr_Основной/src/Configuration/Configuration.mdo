@@ -197,6 +197,7 @@
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
+  <definedTypes>DefinedType.ОбъектыДляСогласования</definedTypes>
   <definedTypes>DefinedType.РаспоряжениеНаДоставку</definedTypes>
   <definedTypes>DefinedType.Цена</definedTypes>
   <commonCommands>CommonCommand.Напомнить</commonCommands>
