@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b8f1a063-1507-45ed-a47e-dd854f834a8d" extendedConfigurationObject="a0254d97-793a-47e1-8640-7712761e87f0">
+  <producedTypes>
+    <objectType typeId="a005cb90-f019-490c-a679-108f7e1fd75c" valueTypeId="676fa401-650f-4e7f-a1b3-3e62288321b8"/>
+    <refType typeId="cf657a52-38e4-42f0-b2e7-823d30b0d279" valueTypeId="0819d5a7-a5df-4988-927e-94ca2ada6fb7"/>
+    <selectionType typeId="a62de44f-0086-4648-bcec-6dad7dcfc3d1" valueTypeId="ea2193f4-aa85-458e-be13-c270e5e607fb"/>
+    <listType typeId="c83bee1b-e66f-4c55-b5ca-67b373dd4ccb" valueTypeId="6742357a-d65b-44d8-863c-f3876445ee04"/>
+    <managerType typeId="2f42b69c-c1da-404f-97fe-b4d2b84b5815" valueTypeId="ab93d386-67b3-497e-bf99-0835184eace8"/>
+  </producedTypes>
+  <name>ЗаказНаПеремещение</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <managerModule>Extended</managerModule>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="bdf1a2ad-fa20-4873-bbac-796b368dde63" extendedConfigurationObject="1587975a-13e8-4f72-9298-96539ab57782">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="ff8fc7b7-e10b-420d-a1d0-0d9326645439" extendedConfigurationObject="7b4da320-9332-4032-9c16-a05fabf9e623">
+    <producedTypes>
+      <objectType typeId="c315411e-56c5-4c37-972c-d73d5da2295f" valueTypeId="885550dd-63dc-4fce-94fe-ac7e9f335ad5"/>
+      <rowType typeId="5c77003a-3d20-4720-a8e4-1d13ae8efdd2" valueTypeId="423731ec-bdb2-4da2-9d7c-2a8e979665d0"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="fcd27e75-b94d-47fa-a2d0-5c4515456ab8">
+      <name>cbr_ЗаказПоставщику</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ поставщику</value>
+      </synonym>
+      <comment>//++АшаеваАН 13.02.26 СКЛ.3</comment>
+      <type>
+        <types>DocumentRef.ЗаказПоставщику</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b4a10dff-7209-40e2-8d3c-4d71e1296f3d">
+      <name>cbr_ПТУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>ПТУ</value>
+      </synonym>
+      <comment>//++АшаеваАН 13.02.26 СКЛ.3</comment>
+      <type>
+        <types>DocumentRef.ПриобретениеТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

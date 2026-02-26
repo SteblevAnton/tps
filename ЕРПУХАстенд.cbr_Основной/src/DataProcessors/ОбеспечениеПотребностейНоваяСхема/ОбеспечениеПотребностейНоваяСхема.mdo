@@ -1395,10 +1395,10 @@
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="aa4ec87e-df58-458f-bb04-1a26120056b2">
-      <name>cbr_НеПоддерживаетсяОстаток</name>
+      <name>cbr_ПоддерживаетсяОстаток</name>
       <synonym>
         <key>ru</key>
-        <value>Не поддерживается остаток</value>
+        <value>Поддерживается остаток</value>
       </synonym>
       <comment>Шмелёв ЗКП 19</comment>
       <type>

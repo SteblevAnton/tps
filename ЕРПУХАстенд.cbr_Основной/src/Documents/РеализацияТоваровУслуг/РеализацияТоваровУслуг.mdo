@@ -79,4 +79,38 @@
     </attributes>
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
+  <tabularSections uuid="c2bace28-493a-4843-8884-ee36dd2fe13f" extendedConfigurationObject="8139626e-8ad5-43ef-8108-a207607b40b5">
+    <producedTypes>
+      <objectType typeId="aadb18c1-25df-4ad3-b6d0-652d4afc9fb6" valueTypeId="0340354a-68c6-45ed-8a5f-081a0ab5f7fc"/>
+      <rowType typeId="715898fc-307d-475e-9ea1-010de1759ff3" valueTypeId="1b1829f4-4163-4913-9dc6-f70136abea40"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="dbbe3875-10e1-4c3c-9c36-a2a1f73268bc">
+      <name>cbr_ЦенаСоСкидкой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена со скидкой</value>
+      </synonym>
+      <comment>//cbr-larkovgeorg 17.02.2026 ПРД24</comment>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <synonym>Extended</synonym>
+        <choiceForm>Extended</choiceForm>
+      </extension>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>

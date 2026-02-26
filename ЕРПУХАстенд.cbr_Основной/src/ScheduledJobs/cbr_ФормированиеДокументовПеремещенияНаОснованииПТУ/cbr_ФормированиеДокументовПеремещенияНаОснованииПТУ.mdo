@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d57509ab-4421-47d0-9f01-08b5a6d0e51d">
+  <name>cbr_ФормированиеДокументовПеремещенияНаОснованииПТУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>(cbr) Формирование документов перемещения на основании ПТУ</value>
+  </synonym>
+  <comment>//++АшаеваАН 13.02.26 СКЛ.3</comment>
+  <methodName>CommonModule.cbr_УправлениеРегламентнымиЗаданиями.cbr_ФормированиеДокументовПеремещенияНаОснованииПТУ</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

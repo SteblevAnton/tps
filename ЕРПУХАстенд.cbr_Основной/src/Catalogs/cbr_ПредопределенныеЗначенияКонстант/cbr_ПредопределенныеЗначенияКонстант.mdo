@@ -23,7 +23,7 @@
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
-  <descriptionLength>25</descriptionLength>
+  <descriptionLength>100</descriptionLength>
   <codeType>String</codeType>
   <codeAllowedLength>Variable</codeAllowedLength>
   <checkUnique>true</checkUnique>
@@ -32,9 +32,30 @@
   <predefined>
     <items id="fdb38583-74a1-4593-9107-1c1ede7e3a23">
       <name>НаборУпаковокПаллеты</name>
-      <description>Набор упаковок паллеты</description>
+      <description></description>
       <code xsi:type="core:StringValue">
         <value>000000001</value>
+      </code>
+    </items>
+    <items id="9123987a-4169-4b36-86e0-3c8e1ea8998f">
+      <name>ВыходнойКонтроль</name>
+      <description></description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="5d14b9b6-a048-4992-857c-5134ef40f394">
+      <name>СпецификацияДействует</name>
+      <description></description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="02100ae4-f3b2-45f9-aee2-43a661a8e805">
+      <name>РольОтветственныйЗаСпецификации</name>
+      <description></description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
       </code>
     </items>
     <items id="4054fede-7d2e-4eb8-a1cd-3682dcd4915a">
@@ -65,6 +86,9 @@
       <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
       <types>CatalogRef.НаборыУпаковок</types>
       <types>String</types>
+      <types>EnumRef.СтатусыСпецификаций</types>
+      <types>CatalogRef.РолиИсполнителей</types>
+      <types>CatalogRef</types>
       <stringQualifiers>
         <length>10</length>
       </stringQualifiers>

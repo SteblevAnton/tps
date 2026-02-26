@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d177898-7cf5-4fd3-a61e-f204cc18e95d">
+  <producedTypes>
+    <objectType typeId="7993011d-67eb-4530-b377-72964f8e7e98" valueTypeId="6bfe5d6d-ad36-4c54-9bbd-e1ffaa86fa02"/>
+    <managerType typeId="8c39518a-8c6d-4268-8e4c-1c06c82860c7" valueTypeId="ae08d88f-b17a-44df-a56f-2da67acc3102"/>
+  </producedTypes>
+  <name>cbr_АРМПоступлениеОтгрузка</name>
+  <synonym>
+    <key>ru</key>
+    <value>АРМ «Поступление/Отгрузка</value>
+  </synonym>
+  <comment>//++ БаженоваЕО 02.02.2026 СКЛ.4</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.cbr_АРМПоступлениеОтгрузка.Form.Форма</defaultForm>
+  <attributes uuid="311ece78-6029-46a0-afd4-680a0c107539">
+    <name>Торг12</name>
+    <synonym>
+      <key>ru</key>
+      <value>Торг - 12</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="76f93111-347f-4972-b31b-d0c0529c0864">
+    <name>ТранспортнаяНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="87d498e9-7b4b-4769-94a5-6beb6e40e69f">
+    <name>СчетФактурыВыданный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет-фактуры выданный </value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e6b2201d-016d-4caf-9a66-c5f63c4a0a1b">
+    <name>ОтборРазмещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор (размещение)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="93d43749-355d-4d91-8202-802c7cbfa4dd">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="d1ea6aa8-4a10-4b25-888b-cb951f37bf60">
+    <name>АРМПоступлениеОтгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>АРМ «Поступление/Отгрузка</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

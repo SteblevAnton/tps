@@ -45,6 +45,8 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.Закупки</subsystems>
+  <subsystems>Subsystem.Склад</subsystems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет82</styleItems>
@@ -57,6 +59,7 @@
   <styleItems>StyleItem.СобытиеОтказ</styleItems>
   <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
   <styleItems>StyleItem.ФонУправляющегоПоля</styleItems>
+  <styleItems>StyleItem.ЦветИтоговыхПоказателейДокументов</styleItems>
   <styleItems>StyleItem.ЦветТекстаЗаголовокОтчетаВТакси</styleItems>
   <styleItems>StyleItem.ЦветТекстаЗапрошеноКоммерческиеПредложения</styleItems>
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
@@ -76,11 +79,14 @@
   <commonPictures>CommonPicture.ДваФлажкаУТ</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация16</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
+  <commonPictures>CommonPicture.ДоставкаКолонкаДоставлено</commonPictures>
   <commonPictures>CommonPicture.ЗагрузкаИзФайлаКоммерческиеПредложения</commonPictures>
+  <commonPictures>CommonPicture.ЗаданиеВыполняетПеревозчик</commonPictures>
   <commonPictures>CommonPicture.ЗаказНаПроизводствоВыполнен</commonPictures>
   <commonPictures>CommonPicture.ЗакрытыеЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.ИсполнителиДоставки</commonPictures>
   <commonPictures>CommonPicture.КартинкаСтрокиСпискаДокументов</commonPictures>
   <commonPictures>CommonPicture.КоллекцияВажностьПроблемВеденияУчета</commonPictures>
   <commonPictures>CommonPicture.КоллекцияКритическийПуть</commonPictures>
@@ -101,8 +107,10 @@
   <commonPictures>CommonPicture.НоменклатураПродаваемаяСовместно</commonPictures>
   <commonPictures>CommonPicture.ОбеспечениеЦеховыхКладовыхМатериалами</commonPictures>
   <commonPictures>CommonPicture.ОбновитьФайлИзФайлаНаДиске</commonPictures>
+  <commonPictures>CommonPicture.Органайзер</commonPictures>
   <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
   <commonPictures>CommonPicture.ОтгрузкаРазрешена</commonPictures>
+  <commonPictures>CommonPicture.ОткрытьКарточкуПартнера</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеВыпуска</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеЭтаповИГрафика</commonPictures>
@@ -126,6 +134,7 @@
   <commonPictures>CommonPicture.СинхронизацияДанныхДлительнаяОперация</commonPictures>
   <commonPictures>CommonPicture.СоздатьЭлементСпискаЗаполненныйАвтоматически</commonPictures>
   <commonPictures>CommonPicture.СортироватьСтрокиПоУбыванию</commonPictures>
+  <commonPictures>CommonPicture.Состояние33Процента</commonPictures>
   <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
   <commonPictures>CommonPicture.СостояниеПроверкиКонтрагента</commonPictures>
   <commonPictures>CommonPicture.СостояниеСкидкиНаценки</commonPictures>
@@ -136,6 +145,7 @@
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
+  <commonPictures>CommonPicture.ТранспортнаяНакладная</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяЗаполнитьПоОперациям</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяНазначитьОперации</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяОбеспечение</commonPictures>
@@ -154,6 +164,7 @@
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
   <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
+  <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
@@ -163,26 +174,39 @@
   <commonModules>CommonModule.cbr_ОбработкаПодпискиПроведенияДокументовЛИМС</commonModules>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
+  <commonModules>CommonModule.cbr_РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
+  <commonModules>CommonModule.cbr_УправлениеРегламентнымиЗаданиями</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияУТСобытия</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
+  <commonModules>CommonModule.СкладыСервер</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
   <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияТоварыКПеремещению</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ПодпискаНаПроведенияДокументовДляОтловаЛИМС</eventSubscriptions>
+  <scheduledJobs>ScheduledJob.cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</scheduledJobs>
+  <scheduledJobs>ScheduledJob.cbr_ФормированиеДокументовПеремещенияНаОснованииПТУ</scheduledJobs>
   <definedTypes>DefinedType.Артикул</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаНеотрицательная</definedTypes>
+  <definedTypes>DefinedType.ОбъектыДляСогласования</definedTypes>
+  <definedTypes>DefinedType.РаспоряжениеНаДоставку</definedTypes>
   <definedTypes>DefinedType.Цена</definedTypes>
+  <commonCommands>CommonCommand.Напомнить</commonCommands>
+  <commonCommands>CommonCommand.СоздатьЗаметкуПоПредмету</commonCommands>
   <commonCommands>CommonCommand.СостояниеОбеспеченияСпискаЗаказов</commonCommands>
   <commonCommands>CommonCommand.УправлениеОчередьюЗаказовНаПроизводство</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПлану</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
+  <commandGroups>CommandGroup.Органайзер</commandGroups>
   <constants>Constant.ОрганизацияТПС</constants>
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
@@ -208,9 +232,11 @@
   <catalogs>Catalog.Приоритеты</catalogs>
   <catalogs>Catalog.РабочиеЦентры</catalogs>
   <catalogs>Catalog.РесурсныеСпецификации</catalogs>
+  <catalogs>Catalog.РолиИсполнителей</catalogs>
   <catalogs>Catalog.СерииНоменклатуры</catalogs>
   <catalogs>Catalog.СкладскиеГруппыНоменклатуры</catalogs>
   <catalogs>Catalog.СкладскиеПомещения</catalogs>
+  <catalogs>Catalog.СкладскиеЯчейки</catalogs>
   <catalogs>Catalog.Склады</catalogs>
   <catalogs>Catalog.СоглашенияСКлиентами</catalogs>
   <catalogs>Catalog.СоглашенияСПоставщиками</catalogs>
@@ -221,22 +247,29 @@
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
+  <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
   <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
   <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ЗаказНаПеремещение</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.КорректировкаРегистров</documents>
   <documents>Document.ОтборРазмещениеТоваров</documents>
+  <documents>Document.ПеремещениеТоваров</documents>
   <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.ПриобретениеУслугПрочихАктивов</documents>
   <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.ПриходныйОрдерНаТовары</documents>
   <documents>Document.РасходныйОрдерНаТовары</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
+  <documents>Document.ТранспортнаяНакладная</documents>
   <documents>Document.УпаковочныйЛист</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
+  <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыНазначенияСпецификации</enums>
@@ -245,7 +278,8 @@
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыПечатиМаршрутнойКартыНаПродукцию</enums>
   <enums>Enum.ВариантыПромежуточногоВыпуска</enums>
-  <enums>Enum.ВидыУпаковочныхЛистов</enums>
+  <enums>Enum.ВидыДвиженияНакопления</enums>
+  <enums>Enum.ВидыДоставки</enums>
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ПорядокРасчетов</enums>
@@ -253,26 +287,36 @@
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
+  <enums>Enum.СтатусыЗаданийНаПеревозку</enums>
+  <enums>Enum.СтатусыЗаказовКлиентов</enums>
   <enums>Enum.СтатусыЗаказовНаПроизводство2_2</enums>
   <enums>Enum.СтатусыРасходныхОрдеров</enums>
   <enums>Enum.СтатусыСпецификаций</enums>
   <enums>Enum.СтатусыЭтаповПроизводства2_2</enums>
   <enums>Enum.ТипыДействий</enums>
   <enums>Enum.ТипыИзмеряемыхВеличин</enums>
+  <enums>Enum.ТипыИсполнителейЗаданийНаПеревозку</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
+  <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
+  <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
+  <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ТоварыКПеремещению</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ТоварыВЯчейках</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СтатьиРасходов</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5afa31fc-4711-4a51-a2c8-66e486c0f8a4">
+  <producedTypes>
+    <selectionType typeId="69446c38-428b-4aff-b002-57184de7a17b" valueTypeId="a212f61d-e2f7-4499-ab38-79ce078a736f"/>
+    <listType typeId="91e83bfe-14f9-4ecb-a3aa-c7e1f6c8d5dd" valueTypeId="640efb65-2323-4419-a823-3bfb69b09b6e"/>
+    <managerType typeId="8b0995c5-c8ff-4c76-8add-c01dccee7b93" valueTypeId="5515e311-d69a-47cd-b827-54db96a7ed9c"/>
+    <recordSetType typeId="0b228c08-ee99-4cf5-a41b-8d2d13972cc7" valueTypeId="8f7f2ecf-6f91-4f5d-9215-5aa5b7594813"/>
+    <recordKeyType typeId="d0d9a1f2-af45-4233-b3f5-9d112142447a" valueTypeId="217fb8c1-4ad4-400b-8ec1-78738e3572f0"/>
+    <recordType typeId="8239ef19-a273-4d5c-bbbe-917ee7c55415" valueTypeId="0646a850-b3ee-4542-98f4-74b5d235525c"/>
+  </producedTypes>
+  <name>cbr_ОстаткиНоменклатурыПоСоглашению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки номенклатуры по соглашению</value>
+  </synonym>
+  <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="57eb07f6-2942-45be-b637-56e4db7caf6c">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="2b0562b9-944b-4533-b6b8-bca21504703d">
+    <name>Соглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соглашение</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>CatalogRef.СоглашенияСКлиентами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f863467c-2771-42ec-93da-9efa904cff3e">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="608e53a1-48c0-49e2-9374-41ba829e6f3b">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9aa99157-29b5-476d-87fe-84e07cf3af98">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

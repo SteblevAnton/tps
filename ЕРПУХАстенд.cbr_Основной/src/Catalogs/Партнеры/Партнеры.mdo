@@ -40,16 +40,24 @@
       </typeExtension>
     </extension>
   </attributes>
-  <forms uuid="98cf77b4-f568-44f4-8954-9ac92ae39ab5" extendedConfigurationObject="0a9b29ca-f68a-4d5c-8ba0-9a2fb079ab7c">
-    <name>ФормаЭлементаРеквизитыКонтрагента</name>
+  <forms uuid="57a28eb6-190f-4d14-8aa7-b4c3782b7d35" extendedConfigurationObject="b4002c68-cca5-4482-a584-50584971fb06">
+    <name>ПомощникНового</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:BasicFormExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
       <form>Extended</form>
     </extension>
   </forms>
-  <forms uuid="57a28eb6-190f-4d14-8aa7-b4c3782b7d35" extendedConfigurationObject="b4002c68-cca5-4482-a584-50584971fb06">
-    <name>ПомощникНового</name>
+  <forms uuid="a3643a0d-9219-4085-a889-c7458a6f1d84" extendedConfigurationObject="741e4c8a-4f04-4371-8559-507b5ad514c2">
+    <name>ФормаЭлемента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <forms uuid="98cf77b4-f568-44f4-8954-9ac92ae39ab5" extendedConfigurationObject="0a9b29ca-f68a-4d5c-8ba0-9a2fb079ab7c">
+    <name>ФормаЭлементаРеквизитыКонтрагента</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:BasicFormExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
