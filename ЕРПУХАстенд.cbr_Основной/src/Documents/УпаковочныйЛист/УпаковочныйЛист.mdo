@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="03475047-52f1-4aa9-9162-9213c448d008" extendedConfigurationObject="0b5dd848-f150-4ea5-a88e-a87ad708a9b9">
+  <producedTypes>
+    <objectType typeId="d75c45a9-99bf-4f51-98e9-de7f0355db6a" valueTypeId="8adf090b-30e5-48b9-aec9-74aa7af4ebec"/>
+    <refType typeId="ee3dfefb-9479-4240-9733-cdc509e02107" valueTypeId="2ef4353d-81d7-4951-933b-b67b320826af"/>
+    <selectionType typeId="dc342681-003e-4915-ad21-263f09f90098" valueTypeId="8eaa40f1-57c9-42b0-afdb-829b4f47be2a"/>
+    <listType typeId="6d554557-dc2f-41a9-b676-7ae271ca2beb" valueTypeId="35d4e040-55d0-44fc-94f5-aa8b9c82ee30"/>
+    <managerType typeId="40ba204c-fd6b-48d5-98ae-89c3c66bd7cf" valueTypeId="27328cc5-fe71-4726-bc77-c0362cbee020"/>
+  </producedTypes>
+  <name>УпаковочныйЛист</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="039ad6ea-241c-456c-9316-96a9fb87a9fe">
+    <name>cbr_КоличествоПаллет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество паллет</value>
+    </synonym>
+    <comment>//cbr-larkovgeorg 10.02.2026 СКЛ.12</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f59e1a26-fb73-4fdf-aed8-59648b018539">
+    <name>cbr_Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <comment>//cbr-larkovgeorg 25.02.2026 СКЛ.12 </comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="300f5b13-a3e5-4dd4-b002-4e3b8c9a0087" extendedConfigurationObject="2c5d3d37-c238-4dcb-8be9-1b2136f6f9b3">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="501e0813-bd2b-435b-b3cb-60624cac8b57" extendedConfigurationObject="137118f7-2a9a-4617-98b9-d1d8ca93edf4">
+    <producedTypes>
+      <objectType typeId="23711d87-90ad-4630-bee4-7aef83076b40" valueTypeId="feccbbfb-cd22-4085-a8f5-612a88501461"/>
+      <rowType typeId="152e70ab-5424-4eb7-8617-26e4a77a3ce8" valueTypeId="1ae1e405-306a-47d0-a8ff-6c2fae86dae0"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="1996d83b-4abb-4d38-bf13-c1e544f2983a">
+      <name>cbr_НомерПаллета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер паллета</value>
+      </synonym>
+      <comment>//cbr-larkovgeorg 10.02.2026 СКЛ.12</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="16f287b2-47a0-4431-8e7a-2f2b68182074">
+      <name>cbr_Уровень</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уровень</value>
+      </synonym>
+      <comment>//cbr-larkovgeorg 10.02.2026 СКЛ.12</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ed4cefe8-9b8d-489b-bdac-620442f16644">
+      <name>cbr_Паллет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Паллет</value>
+      </synonym>
+      <comment>//cbr-larkovgeorg 19.02.2026 СКЛ.12</comment>
+      <type>
+        <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

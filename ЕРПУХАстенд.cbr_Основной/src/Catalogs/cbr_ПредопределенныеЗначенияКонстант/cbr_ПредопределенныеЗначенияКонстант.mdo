@@ -58,9 +58,24 @@
         <value>000000004</value>
       </code>
     </items>
+    <items id="4054fede-7d2e-4eb8-a1cd-3682dcd4915a">
+      <name>ЕвроПаллет</name>
+      <description>Евро паллет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="7776a884-dcfe-409e-88ec-7469e1cafbed">
+      <name>АмерПаллет</name>
+      <description>Амер паллет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.cbr_ПредопределенныеЗначенияКонстант.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="024bac0e-e9d7-4e11-83d5-ae125c959c29">
     <name>Значение</name>
     <synonym>
@@ -84,4 +99,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="1621fd6a-736e-4712-a3d3-10d22a66b2a1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

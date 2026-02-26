@@ -267,6 +267,7 @@
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ТранспортнаяНакладная</documents>
+  <documents>Document.УпаковочныйЛист</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
