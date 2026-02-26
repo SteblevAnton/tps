@@ -11,6 +11,7 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:DocumentExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
   </extension>
   <useStandardCommands>true</useStandardCommands>
   <attributes uuid="039ad6ea-241c-456c-9316-96a9fb87a9fe">
