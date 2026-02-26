@@ -4275,6 +4275,11 @@ reg. plate</value>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers xsi:type="form:EventHandlerExtension">
+          <event>OnChange</event>
+          <name>cbr_МаршрутПриИзмененииПосле</name>
+          <callType>After</callType>
+        </handlers>
         <searchStringAddition>
           <name>МаршрутСтрокаПоиска</name>
           <id>1441</id>
