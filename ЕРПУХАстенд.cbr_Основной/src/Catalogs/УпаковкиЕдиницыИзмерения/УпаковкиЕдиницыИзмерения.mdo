@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="da8ccdc2-016f-4cdf-b021-afc5df4da5c8" extendedConfigurationObject="c9cda7a7-da6f-4830-800a-70e77e3f6e9d">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="da8ccdc2-016f-4cdf-b021-afc5df4da5c8" extendedConfigurationObject="c9cda7a7-da6f-4830-800a-70e77e3f6e9d">
   <producedTypes>
     <objectType typeId="803e531d-8a1e-4e2a-910f-1de6d89ed98e" valueTypeId="cacd3c57-615c-4c55-8d6c-d2761703b817"/>
     <refType typeId="82ed0514-bc27-4f56-9109-9440d17c3ab8" valueTypeId="0a9f9c84-ffcb-4e6c-89ab-84e80d2575e9"/>
@@ -12,6 +12,26 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
+  <attributes uuid="3bf3e479-ba95-4e81-b7e6-74b9edf43a8c">
+    <name>cbr_СвойствоУпаковки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство упаковки</value>
+    </synonym>
+    <comment>//++ cbr-larkovgeorg 10.02.26 СКЛ.12</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="59a6027b-89f5-4668-afe8-a77f93118d75" extendedConfigurationObject="8427345f-19e4-4b63-b05a-3ac7a3b477f0">
     <name>ФормаВыбораИзДокументов</name>
     <objectBelonging>Adopted</objectBelonging>

@@ -187,6 +187,7 @@
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.СкладыСервер</commonModules>
   <commonModules>CommonModule.СобытияФормЛокализация</commonModules>
+  <commonModules>CommonModule.УпаковочныеЛистыСервер</commonModules>
   <commonModules>CommonModule.ФормированиеЭтаповПроизводства</commonModules>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ОплатаОтгрузкаПоМенеджерам</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ДобавитьДвиженияcbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</eventSubscriptions>
