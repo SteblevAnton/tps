@@ -33,6 +33,22 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f59e1a26-fb73-4fdf-aed8-59648b018539">
+    <name>cbr_Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <comment>//cbr-larkovgeorg 25.02.2026 СКЛ.12 </comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="300f5b13-a3e5-4dd4-b002-4e3b8c9a0087" extendedConfigurationObject="2c5d3d37-c238-4dcb-8be9-1b2136f6f9b3">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -83,6 +99,21 @@
           <precision>1</precision>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ed4cefe8-9b8d-489b-bdac-620442f16644">
+      <name>cbr_Паллет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Паллет</value>
+      </synonym>
+      <comment>//cbr-larkovgeorg 19.02.2026 СКЛ.12</comment>
+      <type>
+        <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
