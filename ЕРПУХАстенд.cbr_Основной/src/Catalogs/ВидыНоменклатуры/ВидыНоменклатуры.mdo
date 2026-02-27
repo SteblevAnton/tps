@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6eb273f7-f893-48b0-91a9-86b68f8c83be" extendedConfigurationObject="f3b86010-6dc9-4bd6-9fda-850ce2f2ea58">
+  <producedTypes>
+    <objectType typeId="85047b44-b1bf-4f01-8cca-645bdd8a07b4" valueTypeId="865cf43e-b880-4385-94a7-887308063db2"/>
+    <refType typeId="1770e000-87dd-42a3-be16-8de227bd38b0" valueTypeId="9fbc614d-f18d-4648-84a0-b81e3d177df1"/>
+    <selectionType typeId="9575893a-4666-4ebf-9d10-19cd2177125c" valueTypeId="1c7eaf2a-b0db-4c3a-95ad-0a51bb5ba4f4"/>
+    <listType typeId="67fc4526-50c9-46fe-a54f-25701528577f" valueTypeId="042c28dd-e44d-49d0-b604-392ae393bbf0"/>
+    <managerType typeId="a4a20f67-749f-4494-85d9-8d8beadfb493" valueTypeId="360c0205-4db7-4d84-97d6-8f9a83ddcfbc"/>
+  </producedTypes>
+  <name>ВидыНоменклатуры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="3a534dde-55aa-41b0-a405-f0951decae40">
+    <name>ШаблонНаименованияСерий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон наименования серий</value>
+    </synonym>
+    <comment>//cbr-larkovgeorg 27.02.2026 ПРЗ.33(перенос функционала)</comment>
+    <type>
+      <types>EnumRef.ШаблоныНаименованийСерий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ШаблоныНаименованийСерий.EnumValue.Восьмисимвольный</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dca5d1e-d72c-44a8-a112-e280ffaaf05b">
+  <producedTypes>
+    <selectionType typeId="e7577460-c70e-49c9-966c-32b784f87a7c" valueTypeId="27851ce9-8825-4ce0-b5b9-fc72a3b1d9c0"/>
+    <listType typeId="b126b3cb-c5dc-4b69-a8b4-b4a468a6d0cc" valueTypeId="9031e0be-eafa-40a6-8fa2-f9e65409011d"/>
+    <managerType typeId="43a6fc5b-fe38-4f0f-b5c7-8f25d1c71030" valueTypeId="e3950b3f-f2c3-4ed2-9d05-a1a4a65adac2"/>
+    <recordSetType typeId="800667b1-e406-4ee8-9676-3d3fd4c6467c" valueTypeId="58daf615-6ad9-46a5-a6a9-04c2663b2d49"/>
+    <recordKeyType typeId="7ff823e3-bc29-4c8c-ae56-65f5a8d040ee" valueTypeId="4fcd0488-edef-4b49-9872-a1853f9903e2"/>
+    <recordType typeId="2712f3db-875c-478b-bf44-3cc7b6ae9fcd" valueTypeId="d1bb130e-682d-482e-a5e6-461b9e0aaa83"/>
+    <recordManagerType typeId="e5771395-2db8-428f-9a6c-d40586315844" valueTypeId="76919358-41c5-4f54-b6dd-79dba86f114b"/>
+  </producedTypes>
+  <name>НомераСерийПоВидам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номера серий по видам</value>
+  </synonym>
+  <comment>//cbr-larkovgeorg 27.02.2026 ПРЗ.33(перенос функционала)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f13de955-2474-4cf0-b93b-5024ccf75539">
+    <name>НомерСерии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер серии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7b60ac60-18f9-4d20-b507-de680578efe8">
+    <name>Серия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="85de9e49-35a6-43b8-aa96-4923d609cfd6">
+    <name>ТипШаблона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип шаблона наименований серий</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ШаблоныНаименованийСерий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
