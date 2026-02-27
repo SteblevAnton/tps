@@ -7536,5 +7536,11 @@
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
-  <extInfo xsi:type="form:CatalogFormExtInfo"/>
+  <extInfo xsi:type="form:CatalogFormExtInfo">
+    <handlers xsi:type="form:EventHandlerExtension">
+      <event>BeforeWriteAtServer</event>
+      <name>cbr_ПередЗаписьюНаСервереПосле</name>
+      <callType>After</callType>
+    </handlers>
+  </extInfo>
 </form:Form>
