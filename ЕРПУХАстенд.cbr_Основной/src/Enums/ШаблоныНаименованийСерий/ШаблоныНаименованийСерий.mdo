@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6ab5ad3-434c-429e-aab7-c07d4fedb23c">
+  <producedTypes>
+    <refType typeId="79405261-f6ce-444a-bdd1-8e3ddb819239" valueTypeId="ad8ed9f1-a23d-4410-93a4-97dd66e2b93d"/>
+    <listType typeId="32b3ed1b-19d9-4201-8f5f-98abefd8cb48" valueTypeId="6021584b-a587-4c4c-9711-620b0e08a958"/>
+    <managerType typeId="c7bce92e-364b-4dc1-9e71-9625f015bf11" valueTypeId="58cbee77-32b6-4a9a-857f-ed774a5b5c9a"/>
+  </producedTypes>
+  <name>ШаблоныНаименованийСерий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны наименований серий</value>
+  </synonym>
+  <comment>//cbr-larkovgeorg 27.02.2025 ПРЗ.33(перенос функционала Нумерация серий в ЕРП)</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="15a7448f-8aff-4064-a519-d55fb9eaa1aa">
+    <name>Трехсимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трехсимвольный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="084257f0-1f1b-4b38-8211-870359295eba">
+    <name>Четырехсимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Четырехсимвольный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dfcd1409-d8b2-44ee-b94f-3e0ca77bf534">
+    <name>Пятисимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пятисимвольный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5090fcfb-55db-4f44-8a9b-e036f7ab891f">
+    <name>Шестисимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шестисимвольный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f3ff9e10-bbcf-4b40-a058-ca849d4a2968">
+    <name>Семисимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Семисимвольный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="269eda86-f427-4eca-9139-d2582cded5f2">
+    <name>Восьмисимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Восьмисимвольный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="da43469e-f112-4161-af42-b40f9b4347df">
+    <name>Девятисимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Девятисимвольный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1c825b57-1a74-490c-98b9-0da5549e301d">
+    <name>Десятисимвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Десятисимвольный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

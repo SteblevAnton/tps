@@ -214,6 +214,7 @@
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.cbr_ПредопределенныеЗначенияКонстант</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
+  <catalogs>Catalog.ВидыНоменклатуры</catalogs>
   <catalogs>Catalog.ВидыЦен</catalogs>
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
   <catalogs>Catalog.ДействияПроизводства</catalogs>
@@ -301,6 +302,7 @@
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
+  <enums>Enum.ШаблоныНаименованийСерий</enums>
   <enums>Enum.ЮрФизЛицо</enums>
   <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
@@ -310,6 +312,7 @@
   <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
+  <informationRegisters>InformationRegister.НомераСерийПоВидам</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
