@@ -824,6 +824,24 @@
         </typeExtension>
       </extension>
     </attributes>
+    <attributes uuid="23cc929f-47ef-4fc3-99bd-5fa3a48a6aa5">
+      <name>cbr_НомерСтроки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер строки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="4d7c3f44-6658-46f6-a3b3-88beb679a582" extendedConfigurationObject="96e6c801-bf9a-48f0-9e19-1f68a05fe6eb">
     <producedTypes>
@@ -915,6 +933,24 @@
       </extension>
       <type>
         <types>CatalogRef.Назначения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="af6f3d85-99a8-41c5-9080-ee6c2be6285e">
+      <name>cbr_НомерСтроки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер строки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
