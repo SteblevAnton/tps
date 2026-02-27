@@ -342,6 +342,90 @@
       </typeExtension>
     </extension>
   </attributes>
+  <attributes uuid="e474f492-66ae-442f-b7f8-96e20ad4d848">
+    <name>cbr_МаксимальнаяРучнаяСкидка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальная ручная скидка</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 27.02.2026 ПРД.21</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df62cef0-3269-47b8-ad4c-7818233963b5">
+    <name>cbr_ПроцентТУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент ТУ</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 27.02.2026 ПРД.21</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a80a4007-58fc-4347-96f5-bad3bfb88a2f">
+    <name>cbr_МаксимальнаяРучная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальная ручная</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 27.02.2026 ПРД.21</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9e931b2-9559-4427-9de1-9f0c074f6e16">
+    <name>cbr_ПроцентАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент АВ</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 27.02.2026 ПРД.21</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="3b83bc6c-e487-4a00-94b1-476310514985" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>

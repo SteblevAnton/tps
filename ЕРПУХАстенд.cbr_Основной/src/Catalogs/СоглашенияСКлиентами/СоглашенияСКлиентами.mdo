@@ -11,6 +11,8 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
   </extension>
   <attributes uuid="c51d7fde-c5b7-4e22-b1ca-38c47b22d017">
     <name>cbr_Проект</name>
