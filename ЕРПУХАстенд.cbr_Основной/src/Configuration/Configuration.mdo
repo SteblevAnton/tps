@@ -178,7 +178,6 @@
   <commonModules>CommonModule.cbr_РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
   <commonModules>CommonModule.ВариантыОтчетовУТПереопределяемый</commonModules>
-  <commonModules>CommonModule.КоммерческиеПредложенияДокументыУТ</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
