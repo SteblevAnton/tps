@@ -10,7 +10,6 @@
     <key>ru</key>
     <value>Организация ТПС</value>
   </synonym>
-  <comment>// Османов Н.М. 11.09.2024</comment>
   <type>
     <types>CatalogRef.Организации</types>
   </type>

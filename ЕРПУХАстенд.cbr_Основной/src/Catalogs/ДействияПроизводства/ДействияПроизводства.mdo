@@ -12,7 +12,6 @@
     <key>ru</key>
     <value>Действия</value>
   </synonym>
-  <comment>// Османов Н.М. 21.11.2023 ЧТЗ №Действия в производстве</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.ДействияПроизводства.StandardAttribute.Description</inputByString>
   <inputByString>Catalog.ДействияПроизводства.StandardAttribute.Code</inputByString>

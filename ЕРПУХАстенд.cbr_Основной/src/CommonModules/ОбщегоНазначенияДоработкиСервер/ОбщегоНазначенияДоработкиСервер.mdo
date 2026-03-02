@@ -5,6 +5,5 @@
     <key>ru</key>
     <value>Общего назначения доработки сервер</value>
   </synonym>
-  <comment>// Османов Н.М. 24.04.2025</comment>
   <server>true</server>
 </mdclass:CommonModule>

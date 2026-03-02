@@ -10,7 +10,6 @@
     <key>ru</key>
     <value>Статья расхода &quot;Потери от брака&quot;</value>
   </synonym>
-  <comment>// Османов Н.М. 24.04.2025</comment>
   <type>
     <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
   </type>

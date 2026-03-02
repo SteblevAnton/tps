@@ -67,6 +67,7 @@
       <key>ru</key>
       <value>Активная</value>
     </synonym>
+    <comment>//++ ШмелевР</comment>
     <extension xsi:type="mdclassExtension:BasicFeatureExtension">
       <synonym>Extended</synonym>
       <choiceForm>Extended</choiceForm>
@@ -90,7 +91,6 @@
       <key>ru</key>
       <value>Действия</value>
     </synonym>
-    <comment>// Османов Н.М. 21.11.2023 ЧТЗ №Действия в производстве</comment>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <synonym>Extended</synonym>
     </extension>
@@ -408,7 +408,6 @@
       <key>ru</key>
       <value>Выбор номенклатуры</value>
     </synonym>
-    <comment>// Османов Н.М. 25.12.2023 Действия в производстве</comment>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

@@ -5453,7 +5453,7 @@ to products</value>
   </autoCommandBar>
   <handlers xsi:type="form:EventHandlerExtension">
     <event>OnCreateAtServer</event>
-    <name>П3_ПриСозданииНаСервереПосле</name>
+    <name>cbr_ПриСозданииНаСервереПосле</name>
     <callType>After</callType>
   </handlers>
   <excludedCommands>Post</excludedCommands>

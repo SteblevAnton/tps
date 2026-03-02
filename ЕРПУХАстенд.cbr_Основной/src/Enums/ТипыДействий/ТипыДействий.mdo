@@ -10,7 +10,6 @@
     <key>ru</key>
     <value>Типы действий</value>
   </synonym>
-  <comment>// Османов Н.М. 21.11.2023 ЧТЗ №Действия в производстве</comment>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Order</name>

@@ -5,6 +5,5 @@
     <key>ru</key>
     <value>Работа с формами сервер</value>
   </synonym>
-  <comment>// Османов Н.М. 21.11.2023 ЧТЗ №Действия в производстве</comment>
   <server>true</server>
 </mdclass:CommonModule>

@@ -23,7 +23,6 @@
       <key>ru</key>
       <value>Актуализация спецификаций</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <synonym>Extended</synonym>
     </extension>
@@ -34,7 +33,6 @@
       <key>ru</key>
       <value>Согласование спецтребований</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <synonym>Extended</synonym>
     </extension>
@@ -45,7 +43,6 @@
       <key>ru</key>
       <value>Разработка</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <synonym>Extended</synonym>
     </extension>
@@ -63,7 +60,6 @@
       <key>ru</key>
       <value>В работе</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <synonym>Extended</synonym>
     </extension>
@@ -74,7 +70,6 @@
       <key>ru</key>
       <value>Передача на склад</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <synonym>Extended</synonym>
     </extension>

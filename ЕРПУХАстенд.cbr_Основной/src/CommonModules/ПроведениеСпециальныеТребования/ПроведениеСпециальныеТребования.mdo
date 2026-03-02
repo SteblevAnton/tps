@@ -5,6 +5,5 @@
     <key>ru</key>
     <value>Проведение специальные требования</value>
   </synonym>
-  <comment>// Османов Н.М. 19.01.2025</comment>
   <server>true</server>
 </mdclass:CommonModule>

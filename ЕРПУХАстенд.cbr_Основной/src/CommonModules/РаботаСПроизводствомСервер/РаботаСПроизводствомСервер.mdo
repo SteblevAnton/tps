@@ -5,6 +5,5 @@
     <key>ru</key>
     <value>Работа с производством сервер</value>
   </synonym>
-  <comment>// Османов Н.М. 19.12.2024</comment>
   <server>true</server>
 </mdclass:CommonModule>

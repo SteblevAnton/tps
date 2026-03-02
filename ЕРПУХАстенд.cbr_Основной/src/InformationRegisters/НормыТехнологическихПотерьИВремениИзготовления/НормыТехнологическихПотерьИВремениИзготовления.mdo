@@ -14,7 +14,6 @@
     <key>ru</key>
     <value>Нормы технологических потерь и времени изготовления</value>
   </synonym>
-  <comment>// Османов Н.М. 14.12.2023 Задача ЕРП Учёт технологических потерь</comment>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <standardAttributes>

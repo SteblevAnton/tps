@@ -12,7 +12,6 @@
     <key>ru</key>
     <value>Специальные требования</value>
   </synonym>
-  <comment>// Османов Н.М. 19.01.2025</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.СпециальныеТребования.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
