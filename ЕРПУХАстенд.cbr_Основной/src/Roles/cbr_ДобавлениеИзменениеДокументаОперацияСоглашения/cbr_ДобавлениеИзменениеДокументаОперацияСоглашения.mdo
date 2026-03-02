@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e82e79b-dc6a-4107-9e64-6b8f12598cb0">
+  <name>cbr_ДобавлениеИзменениеДокументаОперацияСоглашения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение документа специальные требования</value>
+  </synonym>
+</mdclass:Role>
