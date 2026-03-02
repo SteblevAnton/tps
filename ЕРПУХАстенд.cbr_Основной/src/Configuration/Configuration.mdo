@@ -163,13 +163,13 @@
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
+  <roles>Role.cbr_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
-  <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
-  <roles>Role.cbr_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
   <roles>Role.cbr_ЧтениеДокументаСпециальныеТребования</roles>
+  <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
