@@ -178,6 +178,7 @@
   <roles>Role.cbr_РедактированиеОплатаОтгрузкаПоМенеджерам</roles>
   <roles>Role.cbr_РедактированиеОстаткиНоменклатурыПоСоглашению</roles>
   <roles>Role.cbr_РедактированиеТоварыКПеремещению</roles>
+  <roles>Role.cbr_РедактированиеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
   <roles>Role.cbr_ЧтениеДействияПроизводства</roles>
   <roles>Role.cbr_ЧтениеДокументаОперацияСоглашения</roles>
   <roles>Role.cbr_ЧтениеДокументаСпециальныеТребования</roles>
@@ -189,7 +190,6 @@
   <roles>Role.cbr_ЧтениеСтадииЗагрузки</roles>
   <roles>Role.cbr_ЧтениеТоварыКПеремещению</roles>
   <roles>Role.cbr_ЧтениеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
-  <roles>Role.cbr_РедактированиеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
