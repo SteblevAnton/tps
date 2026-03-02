@@ -669,14 +669,6 @@
 			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Валюта</dataPath>
-			<field>Валюта</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>БазоваяВалюта</dataPath>
-			<field>БазоваяВалюта</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Стоимость</dataPath>
 			<field>Стоимость</field>
 			<title xsi:type="v8:LocalStringType">
@@ -1816,14 +1808,6 @@
 					<v8:content>Sequence</v8:content>
 				</v8:item>
 			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Валюта</dataPath>
-			<field>Валюта</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>БазоваяВалюта</dataPath>
-			<field>БазоваяВалюта</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
