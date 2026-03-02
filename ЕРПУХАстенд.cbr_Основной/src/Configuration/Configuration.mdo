@@ -163,14 +163,34 @@
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
+  <roles>Role.cbr_ДобавлениеИзменениеДействияПроизводства</roles>
+  <roles>Role.cbr_ДобавлениеИзменениеДокументаОперацияСоглашения</roles>
   <roles>Role.cbr_ДобавлениеИзменениеДокументаСпециальныеТребования</roles>
+  <roles>Role.cbr_ДобавлениеИзменениеОтраслиКонтрагентов</roles>
+  <roles>Role.cbr_ДобавлениеИзменениеПредопределенныеЗначенияКонстант</roles>
   <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
+  <roles>Role.cbr_ДобавлениеИзменениеСтадииЗагрузки</roles>
   <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
+  <roles>Role.cbr_ИспользованиеАРМПоступлениеОтгрузка</roles>
+  <roles>Role.cbr_ИспользованиеОбеспечениеПотребностейНоваяСхема</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
+  <roles>Role.cbr_РедактированиеОплатаОтгрузкаПоМенеджерам</roles>
+  <roles>Role.cbr_РедактированиеОстаткиНоменклатурыПоСоглашению</roles>
+  <roles>Role.cbr_РедактированиеТоварыКПеремещению</roles>
+  <roles>Role.cbr_РедактированиеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
+  <roles>Role.cbr_ЧтениеДействияПроизводства</roles>
+  <roles>Role.cbr_ЧтениеДокументаОперацияСоглашения</roles>
   <roles>Role.cbr_ЧтениеДокументаСпециальныеТребования</roles>
+  <roles>Role.cbr_ЧтениеОплатаОтгрузкаПоМенеджерам</roles>
+  <roles>Role.cbr_ЧтениеОстаткиНоменклатурыПоСоглашению</roles>
+  <roles>Role.cbr_ЧтениеОтраслиКонтрагентов</roles>
+  <roles>Role.cbr_ЧтениеПредопределенныеЗначенияКонстант</roles>
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
+  <roles>Role.cbr_ЧтениеСтадииЗагрузки</roles>
+  <roles>Role.cbr_ЧтениеТоварыКПеремещению</roles>
+  <roles>Role.cbr_ЧтениеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
