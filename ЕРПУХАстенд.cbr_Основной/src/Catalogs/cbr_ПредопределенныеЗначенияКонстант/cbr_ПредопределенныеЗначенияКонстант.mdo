@@ -72,6 +72,34 @@
         <value>000000003</value>
       </code>
     </items>
+    <items id="05b552aa-1bdd-478e-9877-e3a0091f4747">
+      <name>ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании26</name>
+      <description>26 Транспортные услуги доставка покупателю транспортной компании</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="274d2a66-aee5-414d-87e3-6eceb4fe8a44">
+      <name>ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
+      <description>Транспортные услуги доставка покупателю транспортной компании</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="8fadc69a-052d-487b-8173-4e8c8026a56e">
+      <name>ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании44</name>
+      <description>44 Транспортные услуги доставка покупателю транспортной компании</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="1b1b5847-f802-4b77-b9ac-a2e01ea117e6">
+      <name>ТПСОтделЛогистикиИВЭД</name>
+      <description>ТПСОтдел логистики ИВЭД</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
