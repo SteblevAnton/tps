@@ -257,6 +257,7 @@
   <documents>Document.ЗаказНаПеремещение</documents>
   <documents>Document.ЗаказНаПроизводство2_2</documents>
   <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.КоммерческоеПредложениеКлиенту</documents>
   <documents>Document.КорректировкаРегистров</documents>
   <documents>Document.ОтборРазмещениеТоваров</documents>
   <documents>Document.ПеремещениеТоваров</documents>
