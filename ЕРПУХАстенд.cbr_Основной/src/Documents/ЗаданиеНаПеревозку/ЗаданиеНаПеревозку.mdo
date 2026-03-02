@@ -100,4 +100,15 @@
       <form>Extended</form>
     </extension>
   </forms>
+  <tabularSections uuid="bfbcd11b-ca76-4c3a-a8ce-a33b2ce6812a" extendedConfigurationObject="15b3905e-1f40-4d8c-9f31-cde2f3907a9e">
+    <producedTypes>
+      <objectType typeId="710306d2-e1a3-4c14-9c2e-21faf475634c" valueTypeId="a6644d8d-d5cf-4baf-9235-3f1b6f7fc355"/>
+      <rowType typeId="37e0a30a-9906-4905-8760-4db97a20d947" valueTypeId="075a64e3-3d7a-45c6-92f2-0cdd6f0f1035"/>
+    </producedTypes>
+    <name>Маршрут</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </tabularSections>
 </mdclass:Document>
