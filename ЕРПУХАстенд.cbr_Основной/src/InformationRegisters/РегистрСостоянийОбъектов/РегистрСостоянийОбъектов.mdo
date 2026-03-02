@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="7b63055d-71e6-4653-b0c2-dfa227c20f7d" extendedConfigurationObject="05b70226-3766-4e4b-80e9-e3e40c5c1144">
+  <producedTypes>
+    <selectionType typeId="e75cba61-a37b-4a06-b715-48f999aaf34c" valueTypeId="636b041d-5cc9-4f80-8ed5-9a22951cd2a8"/>
+    <listType typeId="325b8999-2368-4b10-b633-028b9cdd4324" valueTypeId="8d6b1ae1-2cb9-4990-abeb-2f8e83abd8b6"/>
+    <managerType typeId="ea0acf00-de48-4052-9742-43e5dd8b4cca" valueTypeId="8588d83a-c6bd-4b17-ac8f-8c61266fea89"/>
+    <recordSetType typeId="cd3c718d-aaac-48b1-a169-b568676e73bf" valueTypeId="7b851519-bff4-49c1-9580-41f454402b2c"/>
+    <recordKeyType typeId="48825b1a-a5d4-4a32-9810-6f03230c78aa" valueTypeId="1db98a85-0eb6-4099-9c3d-ea832df3dd03"/>
+    <recordType typeId="c8d3618d-c07c-4726-a926-e016036b34c1" valueTypeId="41f306d1-950a-47e3-bbde-733ec955672b"/>
+    <recordManagerType typeId="05a3e3be-f4fa-4175-9837-39e727cd1433" valueTypeId="28e69116-7cbf-4779-a12f-c21d55ffe12b"/>
+  </producedTypes>
+  <name>РегистрСостоянийОбъектов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <resources uuid="846c4df0-d504-4b97-91d4-fc2bb04749a9" extendedConfigurationObject="640ceb54-6a80-4c39-9658-fec0e5d7d1bc">
+    <name>СостояниеОбъекта</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>AnyRef</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </resources>
+  <dimensions uuid="f5101869-2e33-494a-a1e5-ea0bd4535f44" extendedConfigurationObject="6fd3f61f-f417-4b79-b1c9-0b7ff698294f">
+    <name>Объект</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>DefinedType.ОбъектыДляСогласования</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </dimensions>
+</mdclass:InformationRegister>

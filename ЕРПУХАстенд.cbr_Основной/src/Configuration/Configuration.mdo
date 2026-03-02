@@ -219,6 +219,7 @@
   <catalogs>Catalog.ВидыЦенПоставщиков</catalogs>
   <catalogs>Catalog.ДействияПроизводства</catalogs>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.ЗоныДоставки</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Лоты</catalogs>
   <catalogs>Catalog.МестаПоставки</catalogs>
@@ -287,6 +288,7 @@
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ПорядокРасчетов</enums>
   <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
+  <enums>Enum.СостоянияСогласования</enums>
   <enums>Enum.СпособыДоставки</enums>
   <enums>Enum.СпособыФормированияСегментов</enums>
   <enums>Enum.СтатусыДействияВидовЦен</enums>
@@ -296,10 +298,12 @@
   <enums>Enum.СтатусыРасходныхОрдеров</enums>
   <enums>Enum.СтатусыСпецификаций</enums>
   <enums>Enum.СтатусыЭтаповПроизводства2_2</enums>
+  <enums>Enum.СтоимостьТоваровПриОценкеРентабельностиПродажи</enums>
   <enums>Enum.ТипыДействий</enums>
   <enums>Enum.ТипыИзмеряемыхВеличин</enums>
   <enums>Enum.ТипыИсполнителейЗаданийНаПеревозку</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
+  <enums>Enum.ТипыНоменклатуры</enums>
   <enums>Enum.ТипыОбеспечения</enums>
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
@@ -316,7 +320,9 @@
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
   <informationRegisters>InformationRegister.НомераСерийПоВидам</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
+  <informationRegisters>InformationRegister.ОтносительныеКурсыВалют</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
+  <informationRegisters>InformationRegister.РегистрСостоянийОбъектов</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
