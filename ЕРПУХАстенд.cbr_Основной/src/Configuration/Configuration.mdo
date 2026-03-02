@@ -330,7 +330,7 @@
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ШаблоныНаименованийСерий</enums>
   <enums>Enum.ЮрФизЛицо</enums>
-  <reports>Report.ОценкаРентабельностиПродажСДополнением</reports>
+  <reports>Report.cbr_ОценкаРентабельностиПродажСДополнением</reports>
   <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>

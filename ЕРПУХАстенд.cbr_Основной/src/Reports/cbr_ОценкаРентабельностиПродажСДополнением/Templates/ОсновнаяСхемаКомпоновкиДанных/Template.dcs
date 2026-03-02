@@ -11,90 +11,120 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>ДанныеДокумента</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СтавкаАВ</dataPath>
-			<field>СтавкаАВ</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаАВ</dataPath>
-			<field>СуммаАВ</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Номенклатура</dataPath>
 			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Характеристика</dataPath>
 			<field>Характеристика</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Упаковка</dataPath>
-			<field>Упаковка</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидЦеныДокумента</dataPath>
-			<field>ВидЦеныДокумента</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ЦенаДокумента</dataPath>
-			<field>ЦенаДокумента</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НормативныйВидЦены</dataPath>
-			<field>НормативныйВидЦены</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ЦенаНормативныйВидЦены</dataPath>
-			<field>ЦенаНормативныйВидЦены</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрансфернаяЦенаБезНДС</dataPath>
-			<field>ТрансфернаяЦенаБезНДС</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Трансферная цена без НДС</v8:content>
+					<v8:content>Характеристика</v8:content>
 				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Маржа1БезУчетаСкидокБезНДС</dataPath>
-			<field>Маржа1БезУчетаСкидокБезНДС</field>
-			<title xsi:type="v8:LocalStringType">
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Маржа1 без учета скидок без НДС</v8:content>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variant</v8:content>
 				</v8:item>
 			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Маржа1БезУчетаСкидокПроцент</dataPath>
-			<field>Маржа1БезУчетаСкидокПроцент</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Маржа1 без учета скидок процент</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидЦеныПродажи</dataPath>
-			<field>ВидЦеныПродажи</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ЦенаПоВидуЦенПродажи</dataPath>
-			<field>ЦенаПоВидуЦенПродажи</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидЦены</dataPath>
-			<field>ВидЦены</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ЦенаПродажиБезУчетаСкидокБезНДС</dataPath>
-			<field>ЦенаПродажиБезУчетаСкидокБезНДС</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Количество</dataPath>
 			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Quantity</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаАвтоматическойСкидки</dataPath>
+			<field>СуммаАвтоматическойСкидки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма авт. скидок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profit</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРучнойСкидки</dataPath>
+			<field>СуммаРучнойСкидки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма руч. скидок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profit</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПредоставленныхСкидок</dataPath>
+			<field>СуммаПредоставленныхСкидок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма скидок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profit</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>№ строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>#</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВыручкаБезУчетаСкидок</dataPath>
@@ -104,7 +134,533 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Выручка без учета скидок</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profit</v8:content>
+				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыручкаСУчетомСкидок</dataPath>
+			<field>ВыручкаСУчетомСкидок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выручка с учетом скидок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Revenue with discounts </v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Стоимость</dataPath>
+			<field>Стоимость</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cost</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Price</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МаржинальнаяПрибыль</dataPath>
+			<field>МаржинальнаяПрибыль</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржинальная прибыль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profit</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Рентабельность</dataPath>
+			<field>Рентабельность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рентабельность, %</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profitability, %</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТорговаяНаценка</dataPath>
+			<field>ТорговаяНаценка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Торговая наценка, %</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Trade markup, %</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентСкидок</dataPath>
+			<field>ПроцентСкидок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>% скидок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profit</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДС</dataPath>
+			<field>СуммаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма НДС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>VAT amount</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2; ЧН=-</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыручкаСУчетомСкидокИНалогов</dataPath>
+			<field>ВыручкаСУчетомСкидокИНалогов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выручка с учетом скидок и налогов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Revenue with discounts and taxes taken into account</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентАвтоматическойСкидки</dataPath>
+			<field>ПроцентАвтоматическойСкидки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>% авт.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>% of discount/markup</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентРучнойСкидки</dataPath>
+			<field>ПроцентРучнойСкидки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент ручной скидки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Discount adjustment percentage</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормативныйВидЦены</dataPath>
+			<field>НормативныйВидЦены</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормативный вид цены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Standard price type</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаНормативныйВидЦены</dataPath>
+			<field>ЦенаНормативныйВидЦены</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена нормативный вид цены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Price standard price type</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦеныПродажи</dataPath>
+			<field>ВидЦеныПродажи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид цены продажи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Selling price type</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦены</dataPath>
+			<field>ВидЦены</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид цены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Price type</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Упаковка</dataPath>
+			<field>Упаковка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упаковка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Packaging unit</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаПоВидуЦенПродажи</dataPath>
+			<field>ЦенаПоВидуЦенПродажи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена по виду цен продажи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Price by selling price type</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦеныДокумента</dataPath>
+			<field>ВидЦеныДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид цены документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Document price type</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаДокумента</dataPath>
+			<field>ЦенаДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Document price</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыручкаСУчетомСкидокБезНалогов</dataPath>
+			<field>ВыручкаСУчетомСкидокБезНалогов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выручка без НДС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Revenue excluding VAT</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьТовараДопРасходы</dataPath>
+			<field>СтоимостьТовараДопРасходы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость товара доп расходы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Goods cost add. expenses</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьТовара</dataPath>
+			<field>СтоимостьТовара</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость товара</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Goods cost</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка НДС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>VAT rate</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Amount</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаАВ</dataPath>
+			<field>СуммаАВ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма АВ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентАВ</dataPath>
+			<field>ПроцентАВ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент АВ</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='15'; ЧДЦ='2'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТранспортнаяДоставка</dataPath>
+			<field>ТранспортнаяДоставка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспортная доставка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вес</dataPath>
+			<field>Вес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтоУслуга</dataPath>
+			<field>ЭтоУслуга</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это услуга</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентТУ</dataPath>
+			<field>ПроцентТУ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент ТУ</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='15'; ЧДЦ='2'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаПродажиБезУчетаСкидокБезНДС</dataPath>
+			<field>ЦенаПродажиБезУчетаСкидокБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена продажи без учета скидок без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Маржа2Процент</dataPath>
+			<field>Маржа2Процент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 1 с учетом скидки, %</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыручкаСУчетомСкидокБезНДС</dataPath>
+			<field>ВыручкаСУчетомСкидокБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выручка с учетом скидок без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВыручкаБезУчетаСкидокБезНДС</dataPath>
@@ -115,14 +671,108 @@
 					<v8:content>Выручка без учета скидок без НДС</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ПроцентАвтоматическойСкидки</dataPath>
-			<field>ПроцентАвтоматическойСкидки</field>
+			<dataPath>Маржа1БезУчетаСкидокБезНДС</dataPath>
+			<field>Маржа1БезУчетаСкидокБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 1 без учета скидок без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ПроцентРучнойСкидки</dataPath>
-			<field>ПроцентРучнойСкидки</field>
+			<dataPath>Маржа1БезУчетаСкидокПроцент</dataPath>
+			<field>Маржа1БезУчетаСкидокПроцент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 1 без учета скидок, %</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТранспортнаяДоставкаБезНДС</dataPath>
+			<field>ТранспортнаяДоставкаБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспортная доставка без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Маржа3Процент</dataPath>
+			<field>Маржа3Процент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 3 процент, %</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТрансфернаяЦенаБезНДС</dataPath>
+			<field>ТрансфернаяЦенаБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трансферная цена без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРучнойСкидкиБезНДС</dataPath>
+			<field>СуммаРучнойСкидкиБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма ручной скидки без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВыручкаСУчетомСкидокБезНДС1</dataPath>
@@ -140,123 +790,31 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Маржа2 без НДС</v8:content>
+					<v8:content>Маржа 1 с учетом скидки без НДС</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Маржа2Процент</dataPath>
-			<field>Маржа2Процент</field>
+			<dataPath>Маржа3БезНДС</dataPath>
+			<field>Маржа3БезНДС</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Маржа2 процент</v8:content>
+					<v8:content>Маржа 3 без НДС</v8:content>
 				</v8:item>
 			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ПроцентСкидок</dataPath>
-			<field>ПроцентСкидок</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПредоставленныхСкидок</dataPath>
-			<field>СуммаПредоставленныхСкидок</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаРучнойСкидки</dataPath>
-			<field>СуммаРучнойСкидки</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаРучнойСкидкиБезНДС</dataPath>
-			<field>СуммаРучнойСкидкиБезНДС</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма ручной скидки без НДС</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаАвтоматическойСкидки</dataPath>
-			<field>СуммаАвтоматическойСкидки</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВыручкаСУчетомСкидок</dataPath>
-			<field>ВыручкаСУчетомСкидок</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выручка с учетом скидок</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВыручкаСУчетомСкидокБезНДС</dataPath>
-			<field>ВыручкаСУчетомСкидокБезНДС</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выручка с учетом скидок без НДС</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаНДС</dataPath>
-			<field>СуммаНДС</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВыручкаСУчетомСкидокИНалогов</dataPath>
-			<field>ВыручкаСУчетомСкидокИНалогов</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выручка с учетом скидок и налогов</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВыручкаСУчетомСкидокБезНалогов</dataPath>
-			<field>ВыручкаСУчетомСкидокБезНалогов</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выручка с учетом скидок без налогов</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ПроцентАВ</dataPath>
-			<field>ПроцентАВ</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Процент АВ</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаАВБезНДС</dataPath>
-			<field>СуммаАВБезНДС</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма АВБез НДС</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТорговаяНаценка</dataPath>
-			<field>ТорговаяНаценка</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Торговая наценка</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Вес</dataPath>
-			<field>Вес</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаТУБезНДС</dataPath>
@@ -264,79 +822,47 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма ТУБез НДС</v8:content>
+					<v8:content>Сумма ТУ без НДС</v8:content>
 				</v8:item>
 			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ПроцентТУ</dataPath>
-			<field>ПроцентТУ</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Процент ТУ</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НомерСтроки</dataPath>
-			<field>НомерСтроки</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Сумма</dataPath>
-			<field>Сумма</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ЭтоУслуга</dataPath>
-			<field>ЭтоУслуга</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Стоимость</dataPath>
-			<field>Стоимость</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Стоимость</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Цена</dataPath>
-			<field>Цена</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Цена</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СтавкаНДС</dataPath>
-			<field>СтавкаНДС</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СтоимостьДоставкиБезНДС</dataPath>
 			<field>СтоимостьДоставкиБезНДС</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СтоимостьТовара</dataPath>
-			<field>СтоимостьТовара</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Стоимость товара</v8:content>
+					<v8:content>Стоимость доставки без НДС</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СтоимостьТовараДопРасходы</dataPath>
-			<field>СтоимостьТовараДопРасходы</field>
+			<dataPath>СуммаАВБезНДС</dataPath>
+			<field>СуммаАВБезНДС</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Стоимость товара доп расходы</v8:content>
+					<v8:content>Сумма АВ без НДС</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
@@ -385,11 +911,14 @@
 	ЗаказКлиентаТовары.СуммаАвтоматическойСкидки КАК СуммаАвтоматическойСкидки,
 	ЗаказКлиентаТовары.СуммаРучнойСкидки КАК СуммаРучнойСкидки,
 	ЗаказКлиентаТовары.СтавкаНДС КАК СтавкаНДС,
-	ЗаказКлиентаТовары.СуммаНДС КАК СуммаНДС
+	ЗаказКлиентаТовары.СуммаНДС КАК СуммаНДС,
+	ЗаказКлиентаcbr_АгентскиеВознаграждения.СтавкаАВ КАК ПроцентАВ
 ПОМЕСТИТЬ ТоварыДокумента
 ИЗ
 	Документ.ЗаказКлиента.Товары КАК ЗаказКлиентаТовары
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента КАК ТаблицаДокументов
+			ПРАВОЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента.cbr_АгентскиеВознаграждения КАК ЗаказКлиентаcbr_АгентскиеВознаграждения
+			ПО ЗаказКлиентаcbr_АгентскиеВознаграждения.Ссылка = ТаблицаДокументов.Ссылка
 		ПО ТаблицаДокументов.Ссылка = &amp;Документ
 		И ЗаказКлиентаТовары.Ссылка = ТаблицаДокументов.Ссылка
 		И НЕ ЗаказКлиентаТовары.Отменено
@@ -428,7 +957,8 @@
 	КоммерческоеПредложениеКлиентуТовары.СуммаАвтоматическойСкидки,
 	КоммерческоеПредложениеКлиентуТовары.СуммаРучнойСкидки,
 	КоммерческоеПредложениеКлиентуТовары.СтавкаНДС,
-	КоммерческоеПредложениеКлиентуТовары.СуммаНДС
+	КоммерческоеПредложениеКлиентуТовары.СуммаНДС,
+	NULL
 ИЗ
 	Документ.КоммерческоеПредложениеКлиенту.Товары КАК КоммерческоеПредложениеКлиентуТовары
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КоммерческоеПредложениеКлиенту КАК ТаблицаДокументов
@@ -436,21 +966,6 @@
 		И КоммерческоеПредложениеКлиентуТовары.Ссылка = ТаблицаДокументов.Ссылка
 ГДЕ
 	ТИПЗНАЧЕНИЯ(&amp;Документ) = ТИП(Документ.КоммерческоеПредложениеКлиенту)
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
-	ТоварыДокумента.Номенклатура КАК Номенклатура,
-	ТоварыДокумента.Характеристика КАК Характеристика
-ПОМЕСТИТЬ ВТ_СтавкиБезНоменклатуры
-{ВЫБРАТЬ
-	Номенклатура.*,
-	Характеристика.*}
-ИЗ
-	ТоварыДокумента КАК ТоварыДокумента
-СГРУППИРОВАТЬ ПО
-	ТоварыДокумента.Номенклатура,
-	ТоварыДокумента.Характеристика
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -728,6 +1243,16 @@
 		ИНАЧЕ (ЭтапРасчетаВыручкиПрибыли.ВыручкаБезУчетаСкидок - ЭтапРасчетаВыручкиПрибыли.СуммаРучнойСкидки -
 			ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС) / ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидок * 100
 	КОНЕЦ КАК Маржа2Процент,
+	СУММА(ЭтапРасчетаВыручкиПрибыли.ВыручкаБезУчетаСкидок - ЭтапРасчетаВыручкиПрибыли.СуммаРучнойСкидки -
+		ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС - ЭтапРасчетаВыручкиПрибыли.СуммаАВБезНДС -
+		ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставкаБезНДС) КАК Маржа3БезНДС,
+	ВЫБОР
+		КОГДА ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидок = 0
+			ТОГДА 0
+		ИНАЧЕ (ЭтапРасчетаВыручкиПрибыли.ВыручкаБезУчетаСкидок - ЭтапРасчетаВыручкиПрибыли.СуммаРучнойСкидки -
+			ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС - ЭтапРасчетаВыручкиПрибыли.СуммаАВБезНДС -
+			ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставкаБезНДС) / ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидок * 100
+	КОНЕЦ КАК Маржа3Процент,
 	ЭтапРасчетаВыручкиПрибыли.ПроцентСкидок КАК ПроцентСкидок,
 	СУММА(ЭтапРасчетаВыручкиПрибыли.СуммаПредоставленныхСкидок) КАК СуммаПредоставленныхСкидок,
 	СУММА(ЭтапРасчетаВыручкиПрибыли.СуммаРучнойСкидки) КАК СуммаРучнойСкидки,
@@ -741,6 +1266,28 @@
 	ЭтапРасчетаВыручкиПрибыли.ПроцентАВ КАК ПроцентАВ,
 	СУММА(ЭтапРасчетаВыручкиПрибыли.СуммаАВ) КАК СуммаАВ,
 	СУММА(ЭтапРасчетаВыручкиПрибыли.СуммаАВ) КАК СуммаАВБезНДС,
+	СУММА(ВЫБОР
+		КОГДА &amp;ДанныеОтчета = 1
+			ТОГДА ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокИНалогов - ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС -
+				ЭтапРасчетаВыручкиПрибыли.СуммаАВ - ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставка
+		ИНАЧЕ ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокБезНалогов - ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС -
+			ЭтапРасчетаВыручкиПрибыли.СуммаАВ - ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставка
+	КОНЕЦ) КАК МаржинальнаяПрибыль,
+	СУММА(100 * ВЫБОР
+		КОГДА &amp;ДанныеОтчета = 1
+		И ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокИНалогов = 0
+			ТОГДА 0
+		КОГДА &amp;ДанныеОтчета = 1
+			ТОГДА (ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокИНалогов - ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС -
+				ЭтапРасчетаВыручкиПрибыли.СуммаАВ - ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставка) /
+				ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокИНалогов
+		КОГДА &amp;ДанныеОтчета &lt;&gt; 1
+		И ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокБезНалогов = 0
+			ТОГДА 0
+		ИНАЧЕ (ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокБезНалогов - ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС -
+			ЭтапРасчетаВыручкиПрибыли.СуммаАВ - ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставка) /
+			ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидокБезНалогов
+	КОНЕЦ) КАК Рентабельность,
 	СУММА(100 * ВЫБОР
 		КОГДА ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС = 0
 			ТОГДА 0
@@ -751,6 +1298,7 @@
 			ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС
 	КОНЕЦ) КАК ТорговаяНаценка,
 	СУММА(ЭтапРасчетаВыручкиПрибыли.Вес) КАК Вес,
+	СУММА(ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставка) КАК ТранспортнаяДоставка,
 	СУММА(ЭтапРасчетаВыручкиПрибыли.СуммаТУБезНДС) КАК СуммаТУБезНДС,
 	СУММА(ВЫБОР
 		КОГДА ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидок = 0
@@ -819,6 +1367,7 @@
 				ТОГДА ЭтапРасчетаЦенСтоимостиСкидок.СуммаНДС
 			ИНАЧЕ 0
 		КОНЕЦ КАК ЧИСЛО(31, 2)) КАК ВыручкаСУчетомСкидокБезНалогов,
+		ВТ_ПроцентАВ.ПроцентАВ КАК ПроцентАВ,
 		ВЫРАЗИТЬ(ЭтапРасчетаЦенСтоимостиСкидок.ВыручкаБезУчетаСкидок -
 			(ЭтапРасчетаЦенСтоимостиСкидок.СуммаАвтоматическойСкидки + ЭтапРасчетаЦенСтоимостиСкидок.СуммаРучнойСкидки) - ВЫБОР
 			КОГДА &amp;ЦенаВключаетНДС
@@ -834,12 +1383,20 @@
 		КОНЕЦ КАК ЧИСЛО(31, 2)) КАК СуммаАВБезНДС,
 		ЭтапРасчетаЦенСтоимостиСкидок.Вес КАК Вес,
 		ВЫБОР
+			КОГДА ЭтапРасчетаЦенСтоимостиСкидок.ЭтоУслуга
+				ТОГДА 0
+			ИНАЧЕ ВТ_ТранспортныйТариф.ТранспортныйТариф * ЭтапРасчетаЦенСтоимостиСкидок.Вес
+		КОНЕЦ КАК ТранспортнаяДоставка,
+		ВЫБОР
+			КОГДА ЭтапРасчетаЦенСтоимостиСкидок.ЭтоУслуга
+				ТОГДА 0
+			ИНАЧЕ ВТ_ТранспортныйТариф.ТранспортныйТариф / 1.22 * ЭтапРасчетаЦенСтоимостиСкидок.Вес
+		КОНЕЦ КАК ТранспортнаяДоставкаБезНДС,
+		ВЫБОР
 			КОГДА &amp;ЦенаВключаетНДС
 				ТОГДА ВТ_ТранспортныйТариф.ТранспортныйТариф * ЭтапРасчетаЦенСтоимостиСкидок.Вес / 1.22
 			ИНАЧЕ ВТ_ТранспортныйТариф.ТранспортныйТариф * ЭтапРасчетаЦенСтоимостиСкидок.Вес
-		КОНЕЦ КАК СуммаТУБезНДС,
-		NULL КАК СтавкаАВ,
-		ЭтапРасчетаЦенСтоимостиСкидок.ПроцентАВ КАК ПроцентАВ
+		КОНЕЦ КАК СуммаТУБезНДС
 	{ВЫБРАТЬ
 		СуммаАВ}
 	ИЗ
@@ -938,7 +1495,7 @@
 				ТоварыДокумента.СуммаНДС КАК СуммаНДС,
 				ТоварыДокумента.Вес КАК Вес,
 				ТоварыДокумента.СтоимостьДоставкиБезНДС КАК СтоимостьДоставкиБезНДС,
-				ВТ_ПроцентАВ.ПроцентАВ КАК ПроцентАВ
+				ТоварыДокумента.ПроцентАВ КАК ПроцентАВ
 			ИЗ
 				ТоварыДокумента КАК ТоварыДокумента
 					ЛЕВОЕ СОЕДИНЕНИЕ ЦеныПродаж КАК ЦеныПродаж
@@ -958,10 +1515,10 @@
 					ПО ТоварыДокумента.ВалютаДокумента = КурсыВалютыЦены.Валюта
 					ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОтносительныеКурсыВалют.СрезПоследних(&amp;ДатаДокумента, Валюта = &amp;Валюта
 					И БазоваяВалюта = &amp;БазоваяВалюта) КАК КурсыВалюты
-					ПО ИСТИНА,
-				ВТ_ПроцентАВ КАК ВТ_ПроцентАВ) КАК ЭтапРасчетаВидовЦенИСкидок) КАК ЭтапРасчетаЦенСтоимостиСкидок
+					ПО ИСТИНА) КАК ЭтапРасчетаВидовЦенИСкидок) КАК ЭтапРасчетаЦенСтоимостиСкидок
 			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ТранспортныйТариф КАК ВТ_ТранспортныйТариф
-			ПО ИСТИНА) КАК ЭтапРасчетаВыручкиПрибыли
+			ПО ИСТИНА,
+		ВТ_ПроцентАВ КАК ВТ_ПроцентАВ) КАК ЭтапРасчетаВыручкиПрибыли
 СГРУППИРОВАТЬ ПО
 	ЭтапРасчетаВыручкиПрибыли.Номенклатура,
 	ЭтапРасчетаВыручкиПрибыли.Характеристика,
@@ -987,6 +1544,13 @@
 			ТОГДА 0
 		ИНАЧЕ (ЭтапРасчетаВыручкиПрибыли.ВыручкаБезУчетаСкидок - ЭтапРасчетаВыручкиПрибыли.СуммаРучнойСкидки -
 			ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС) / ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидок * 100
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидок = 0
+			ТОГДА 0
+		ИНАЧЕ (ЭтапРасчетаВыручкиПрибыли.ВыручкаБезУчетаСкидок - ЭтапРасчетаВыручкиПрибыли.СуммаРучнойСкидки -
+			ЭтапРасчетаВыручкиПрибыли.ТрансфернаяЦенаБезНДС - ЭтапРасчетаВыручкиПрибыли.СуммаАВБезНДС -
+			ЭтапРасчетаВыручкиПрибыли.ТранспортнаяДоставкаБезНДС) / ЭтапРасчетаВыручкиПрибыли.ВыручкаСУчетомСкидок * 100
 	КОНЕЦ,
 	ЭтапРасчетаВыручкиПрибыли.ПроцентСкидок,
 	ЭтапРасчетаВыручкиПрибыли.ЦенаПоВидуЦенПродажи,
@@ -1445,34 +2009,6 @@
 		И КоммерческоеПредложениеКлиентуТовары.Ссылка = ТаблицаДокументов.Ссылка
 ГДЕ
 	ТИПЗНАЧЕНИЯ(&amp;Документ) = ТИП(Документ.КоммерческоеПредложениеКлиенту)
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
-	ТоварыДокумента.Номенклатура КАК Номенклатура,
-	ТоварыДокумента.Характеристика КАК Характеристика
-ПОМЕСТИТЬ ВТ_СтавкиБезНоменклатуры
-{ВЫБРАТЬ
-	Номенклатура.*,
-	Характеристика.*}
-ИЗ
-	ТоварыДокумента КАК ТоварыДокумента
-ГДЕ
-	НЕ (ТоварыДокумента.Номенклатура, ТоварыДокумента.Характеристика) В
-		(ВЫБРАТЬ
-			Т.Номенклатура,
-			Т.Характеристика
-		ИЗ
-			ВТ_СтавкиПоНоменклатуре КАК Т)
-	И НЕ ТоварыДокумента.ЭтоУслуга
-	И 0 В
-		(ВЫБРАТЬ
-			КОЛИЧЕСТВО(Т.Номенклатура)
-		ИЗ
-			ВТ_СтавкиПоНоменклатуре КАК Т)
-СГРУППИРОВАТЬ ПО
-	ТоварыДокумента.Номенклатура,
-	ТоварыДокумента.Характеристика
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -2480,8 +3016,163 @@
 		<useQueryGroupIfPossible>false</useQueryGroupIfPossible>
 	</dataSet>
 	<totalField>
+		<dataPath>СуммаАвтоматическойСкидки</dataPath>
+		<expression>Сумма(СуммаАвтоматическойСкидки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПредоставленныхСкидок</dataPath>
+		<expression>Сумма(СуммаПредоставленныхСкидок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаРучнойСкидки</dataPath>
+		<expression>Сумма(СуммаРучнойСкидки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Рентабельность</dataPath>
+		<expression>100 * Выбор 
+		Когда &amp;ДанныеОтчета = 1 И Сумма(ВыручкаСУчетомСкидокИНалогов) = 0 
+			Тогда 0
+		Когда &amp;ДанныеОтчета = 1
+			Тогда Сумма(МаржинальнаяПрибыль)/Сумма(ВыручкаСУчетомСкидокИНалогов)
+		Когда &amp;ДанныеОтчета &lt;&gt; 1 И Сумма(ВыручкаСУчетомСкидокБезНалогов) = 0
+			Тогда 0
+		Иначе Сумма(МаржинальнаяПрибыль)/Сумма(ВыручкаСУчетомСкидокБезНалогов) 
+	Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ТорговаяНаценка</dataPath>
+		<expression>100 * Выбор Когда Сумма(Стоимость) = 0 Тогда 0 Иначе
+Сумма(МаржинальнаяПрибыль)/Сумма(Стоимость) Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаБезУчетаСкидок</dataPath>
+		<expression>Сумма(ВыручкаБезУчетаСкидок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаСУчетомСкидок</dataPath>
+		<expression>Сумма(ВыручкаСУчетомСкидок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МаржинальнаяПрибыль</dataPath>
+		<expression>Сумма(МаржинальнаяПрибыль)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентСкидок</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаБезУчетаСкидок) = 0 Тогда 0 Иначе
+(Сумма(СуммаАвтоматическойСкидки) + Сумма(СуммаРучнойСкидки)) / Сумма(ВыручкаБезУчетаСкидок) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
 		<dataPath>ЗначениеПоказателяДокумент</dataPath>
 		<expression>Сумма(ЗначениеПоказателяДокумент)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаНДС</dataPath>
+		<expression>Сумма(СуммаНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаСУчетомСкидокИНалогов</dataPath>
+		<expression>Сумма(ВыручкаСУчетомСкидокИНалогов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентРучнойСкидки</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаБезУчетаСкидок) = 0 Тогда 0 Иначе
+Сумма(СуммаРучнойСкидки) / Сумма(ВыручкаБезУчетаСкидок) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентАвтоматическойСкидки</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаБезУчетаСкидок) = 0 Тогда 0 Иначе
+Сумма(СуммаАвтоматическойСкидки) / Сумма(ВыручкаБезУчетаСкидок) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаСУчетомСкидокБезНалогов</dataPath>
+		<expression>Сумма(ВыручкаСУчетомСкидокБезНалогов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаАВ</dataPath>
+		<expression>Сумма(СуммаАВ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ТранспортнаяДоставка</dataPath>
+		<expression>Сумма(ТранспортнаяДоставка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентТУ</dataPath>
+		<expression>ВЫБОР
+			КОГДА Сумма(ВыручкаСУчетомСкидок) = 0
+				ТОГДА 0
+			ИНАЧЕ Сумма(СуммаТУБезНДС) / Сумма(ВыручкаСУчетомСкидок) * 100
+		КОНЕЦ)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>Вес</dataPath>
+		<expression>Сумма(Вес)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаБезУчетаСкидокБезНДС</dataPath>
+		<expression>Сумма(ВыручкаБезУчетаСкидокБезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа1БезУчетаСкидокБезНДС</dataPath>
+		<expression>Сумма(Маржа1БезУчетаСкидокБезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа2БезНДС</dataPath>
+		<expression>Сумма(Маржа2БезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа3БезНДС</dataPath>
+		<expression>Сумма(Маржа3БезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаСУчетомСкидокБезНДС</dataPath>
+		<expression>Сумма(ВыручкаСУчетомСкидокБезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаАВБезНДС</dataPath>
+		<expression>Сумма(СуммаАВБезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаТУБезНДС</dataPath>
+		<expression>Сумма(СуммаТУБезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа1БезУчетаСкидокПроцент</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаБезУчетаСкидокБезНДС) = 0 Тогда 0 Иначе
+(Сумма(Маржа1БезУчетаСкидокБезНДС) ) / Сумма(ВыручкаБезУчетаСкидокБезНДС) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа2Процент</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаСУчетомСкидокБезНДС) = 0 Тогда 0 Иначе
+(Сумма(Маржа2БезНДС) ) / Сумма(ВыручкаСУчетомСкидокБезНДС) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа3Процент</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаСУчетомСкидокБезНДС) = 0 Тогда 0 Иначе
+(Сумма(Маржа3БезНДС) ) / Сумма(ВыручкаСУчетомСкидокБезНДС) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаРучнойСкидкиБезНДС</dataPath>
+		<expression>Сумма(СуммаРучнойСкидкиБезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентАВ</dataPath>
+		<expression>Минимум(ПроцентАВ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ТрансфернаяЦенаБезНДС</dataPath>
+		<expression>Сумма(ТрансфернаяЦенаБезНДС)</expression>
+		<group>ОбщийИтог</group>
 	</totalField>
 	<parameter>
 		<name>ДатаДокумента</name>
@@ -2610,9 +3301,6 @@
 				<v8:content>(Auxiliary) Company</v8:content>
 			</v8:item>
 		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
-		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
@@ -2630,9 +3318,6 @@
 				<v8:content>(Auxiliary) Manager</v8:content>
 			</v8:item>
 		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
-		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
@@ -2701,9 +3386,6 @@
 				<v8:content>(Auxiliary) Sales order</v8:content>
 			</v8:item>
 		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗаказКлиента</v8:Type>
-		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
@@ -2861,9 +3543,6 @@
 				<v8:content>Document</v8:content>
 			</v8:item>
 		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗаказКлиента</v8:Type>
-		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
 		<use>Always</use>
@@ -4450,7 +5129,7 @@
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:use>false</dcscor:use>
 								<dcscor:parameter>ЦветФона</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">style:ОшибочныеДанные</dcscor:value>
+								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>ЦветТекста</dcscor:parameter>
@@ -4595,7 +5274,7 @@
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:use>false</dcscor:use>
 								<dcscor:parameter>ЦветФона</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">style:ОшибочныеДанные</dcscor:value>
+								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>ЦветТекста</dcscor:parameter>
