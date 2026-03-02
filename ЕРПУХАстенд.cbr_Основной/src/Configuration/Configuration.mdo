@@ -168,6 +168,7 @@
   <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
   <roles>Role.cbr_ЧтениеДокументаСпециальныеТребования</roles>
   <roles>Role.cbr_ЧтениеРегистраНоменклатураВПалетах</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
@@ -175,6 +176,7 @@
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
   <commonModules>CommonModule.cbr_УправлениеПодписками</commonModules>
   <commonModules>CommonModule.cbr_УправлениеРегламентнымиЗаданиями</commonModules>
+  <commonModules>CommonModule.ВариантыОтчетовУТПереопределяемый</commonModules>
   <commonModules>CommonModule.НоменклатураСервер</commonModules>
   <commonModules>CommonModule.ОбеспечениеСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияДоработкиСервер</commonModules>
@@ -302,6 +304,7 @@
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ШаблоныНаименованийСерий</enums>
   <enums>Enum.ЮрФизЛицо</enums>
+  <reports>Report.ОценкаРентабельностиПродажСДополнением</reports>
   <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
