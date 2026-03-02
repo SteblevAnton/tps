@@ -32,28 +32,28 @@
   <predefined>
     <items id="fdb38583-74a1-4593-9107-1c1ede7e3a23">
       <name>НаборУпаковокПаллеты</name>
-      <description></description>
+      <description>Набор упаковок паллеты</description>
       <code xsi:type="core:StringValue">
         <value>000000001</value>
       </code>
     </items>
     <items id="9123987a-4169-4b36-86e0-3c8e1ea8998f">
       <name>ВыходнойКонтроль</name>
-      <description></description>
+      <description>Выходной контроль</description>
       <code xsi:type="core:StringValue">
         <value>000000002</value>
       </code>
     </items>
     <items id="5d14b9b6-a048-4992-857c-5134ef40f394">
       <name>СпецификацияДействует</name>
-      <description></description>
+      <description>Спецификация действует</description>
       <code xsi:type="core:StringValue">
-        <value>000000003</value>
+        <value>000000006</value>
       </code>
     </items>
     <items id="02100ae4-f3b2-45f9-aee2-43a661a8e805">
       <name>РольОтветственныйЗаСпецификации</name>
-      <description></description>
+      <description>Роль ответственный за спецификации</description>
       <code xsi:type="core:StringValue">
         <value>000000004</value>
       </code>
@@ -62,7 +62,7 @@
       <name>ЕвроПаллет</name>
       <description>Евро паллет</description>
       <code xsi:type="core:StringValue">
-        <value>000000002</value>
+        <value>000000005</value>
       </code>
     </items>
     <items id="7776a884-dcfe-409e-88ec-7469e1cafbed">

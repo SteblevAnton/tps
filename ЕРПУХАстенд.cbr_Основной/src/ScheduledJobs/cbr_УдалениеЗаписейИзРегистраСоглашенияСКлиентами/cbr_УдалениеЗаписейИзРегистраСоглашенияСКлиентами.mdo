@@ -6,7 +6,7 @@
     <value>Удаление записей из регистра соглашения с клиентами</value>
   </synonym>
   <comment>//AlopinAS 28.01.2026 ПРД.20</comment>
-  <methodName>CommonModule.cbr_РегламентныеЗаданияСервер.ОбработататьРегЗаданиеУдалениеЗаписейИзРегистраСоглашенияСКлиентами</methodName>
+  <methodName>CommonModule.cbr_УправлениеРегламентнымиЗаданиями.cbr_УдалениеЗаписейИзРегистраСоглашенияСКлиентами</methodName>
   <use>true</use>
   <predefined>true</predefined>
   <restartCountOnFailure>3</restartCountOnFailure>
