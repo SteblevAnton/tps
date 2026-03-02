@@ -243,7 +243,6 @@
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
   <documents>Document.cbr_ОперацияСоглашения</documents>
-  <documents>Document.БазовыеУсловияАгентскогоВознагражения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
   <documents>Document.ДвижениеПродукцииИМатериалов</documents>
   <documents>Document.ЗаданиеНаПеревозку</documents>
@@ -262,8 +261,6 @@
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.СпециальныеТребования</documents>
   <documents>Document.ТранспортнаяНакладная</documents>
-  <documents>Document.ТранспортныеТарифы</documents>
-  <documents>Document.УсловияАгентскогоВознагражения</documents>
   <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
@@ -309,15 +306,12 @@
   <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
-  <informationRegisters>InformationRegister.БазовыеУсловияАгентскогоВознаграждения</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.ОтносительныеКурсыВалют</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РегистрСостоянийОбъектов</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
   <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
-  <informationRegisters>InformationRegister.ТранспортныеТарифы</informationRegisters>
-  <informationRegisters>InformationRegister.УсловияАгентскогоВознаграждения</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ТоварыПоступлениеОтгрузкаБезУчастияВДоставке</accumulationRegisters>
