@@ -20,7 +20,6 @@
       <key>ru</key>
       <value>Гос заказ</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:BasicFeatureExtension">
       <synonym>Extended</synonym>
       <choiceForm>Extended</choiceForm>
@@ -40,7 +39,6 @@
       <key>ru</key>
       <value>Специальные требования</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:BasicFeatureExtension">
       <synonym>Extended</synonym>
       <choiceForm>Extended</choiceForm>

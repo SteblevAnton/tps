@@ -90,7 +90,6 @@
       <key>ru</key>
       <value>Очередь</value>
     </synonym>
-    <comment>// Османов Н.М. 28.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:BasicFeatureExtension">
       <synonym>Extended</synonym>
       <choiceForm>Extended</choiceForm>
@@ -140,7 +139,6 @@
       <key>ru</key>
       <value>Рабочий центр</value>
     </synonym>
-    <comment>// Османов Н.М. 27.11.2023 ЧТЗ №2 Управление производством</comment>
     <extension xsi:type="mdclassExtension:BasicFeatureExtension">
       <synonym>Extended</synonym>
       <choiceForm>Extended</choiceForm>
@@ -372,7 +370,6 @@
       <key>ru</key>
       <value>Действия</value>
     </synonym>
-    <comment>// Османов Н.М. 21.11.2023 ЧТЗ №Действия в производстве</comment>
     <extension xsi:type="mdclassExtension:MdObjectExtension">
       <synonym>Extended</synonym>
     </extension>
@@ -928,6 +925,5 @@
       <key>ru</key>
       <value>Технологическая карта</value>
     </synonym>
-    <comment>// Османов Н.М. 20.12.2023 ПФ Технологической карты</comment>
   </templates>
 </mdclass:Document>
