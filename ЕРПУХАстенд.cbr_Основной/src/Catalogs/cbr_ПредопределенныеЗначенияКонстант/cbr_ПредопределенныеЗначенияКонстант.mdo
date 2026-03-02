@@ -44,13 +44,6 @@
         <value>000000002</value>
       </code>
     </items>
-    <items id="5d14b9b6-a048-4992-857c-5134ef40f394">
-      <name>СпецификацияДействует</name>
-      <description>Спецификация действует</description>
-      <code xsi:type="core:StringValue">
-        <value>000000006</value>
-      </code>
-    </items>
     <items id="02100ae4-f3b2-45f9-aee2-43a661a8e805">
       <name>РольОтветственныйЗаСпецификации</name>
       <description>Роль ответственный за спецификации</description>
@@ -115,6 +108,7 @@
       <types>CatalogRef.НаборыУпаковок</types>
       <types>String</types>
       <types>EnumRef.СтатусыСпецификаций</types>
+      <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
       <types>CatalogRef.РолиИсполнителей</types>
       <types>CatalogRef</types>
       <stringQualifiers>
