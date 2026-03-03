@@ -93,6 +93,13 @@
         <value>000000010</value>
       </code>
     </items>
+    <items id="ad8dcfb9-e142-4be9-9db4-5102da9ac6bc">
+      <name>ОрганизацияЗП</name>
+      <description>Организация ЗП</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>

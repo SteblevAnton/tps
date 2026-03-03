@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42c2e63b-2327-43d2-a3d3-efe9a1285160">
+  <name>cbr_РедактироватьВыпускЭтапа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактировать выпуск этапа</value>
+  </synonym>
+</mdclass:Role>
