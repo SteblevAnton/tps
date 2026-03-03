@@ -334,8 +334,8 @@
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ШаблоныНаименованийСерий</enums>
   <enums>Enum.ЮрФизЛицо</enums>
-  <reports>Report.cbr_ПрайсРеестраПродажТД</reports>
   <reports>Report.cbr_ОценкаРентабельностиПродажСДополнением</reports>
+  <reports>Report.cbr_ПрайсРеестраПродажТД</reports>
   <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РеестрТМЦ</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
