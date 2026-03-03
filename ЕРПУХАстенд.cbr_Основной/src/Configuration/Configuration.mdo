@@ -233,6 +233,7 @@
   <constants>Constant.ОрганизацияТПС</constants>
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.cbr_ПредопределенныеЗначенияКонстант</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
@@ -271,6 +272,7 @@
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатурыДляЦенообразования</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
   <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
@@ -297,6 +299,7 @@
   <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
+  <enums>Enum.cbr_Статусы</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыНазначенияСпецификации</enums>
   <enums>Enum.ВариантыОбеспечения</enums>
@@ -331,14 +334,17 @@
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ШаблоныНаименованийСерий</enums>
   <enums>Enum.ЮрФизЛицо</enums>
+  <reports>Report.cbr_ПрайсРеестраПродажТД</reports>
   <reports>Report.cbr_ОценкаРентабельностиПродажСДополнением</reports>
   <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_РеестрТМЦ</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
+  <informationRegisters>InformationRegister.cbr_ABCСведения</informationRegisters>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
   <informationRegisters>InformationRegister.НомераСерийПоВидам</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
