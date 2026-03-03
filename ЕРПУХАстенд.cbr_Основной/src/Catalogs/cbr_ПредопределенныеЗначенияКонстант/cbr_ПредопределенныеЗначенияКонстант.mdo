@@ -30,11 +30,11 @@
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
   <predefined>
-    <items id="fdb38583-74a1-4593-9107-1c1ede7e3a23">
-      <name>НаборУпаковокПаллеты</name>
-      <description>Набор упаковок паллеты</description>
+    <items id="5cb34434-7d69-4165-b4df-6304908c940d">
+      <name>ВалютаРубль</name>
+      <description>Валюта рубль</description>
       <code xsi:type="core:StringValue">
-        <value>000000001</value>
+        <value>000000003</value>
       </code>
     </items>
     <items id="9123987a-4169-4b36-86e0-3c8e1ea8998f">
@@ -42,6 +42,13 @@
       <description>Выходной контроль</description>
       <code xsi:type="core:StringValue">
         <value>000000002</value>
+      </code>
+    </items>
+    <items id="fdb38583-74a1-4593-9107-1c1ede7e3a23">
+      <name>НаборУпаковокПаллеты</name>
+      <description>Набор упаковок паллеты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
       </code>
     </items>
   </predefined>

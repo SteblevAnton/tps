@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0dbb847b-0c48-4dba-9e3c-feb18a430b19">
+  <producedTypes>
+    <objectType typeId="51a85049-03b8-441b-8847-966c990ddfb3" valueTypeId="d65ee315-04fe-49eb-9ec9-8d9abb08a8e2"/>
+    <managerType typeId="c90eac5a-a943-4617-bcee-b82e2855b78c" valueTypeId="2373bf5f-4844-4fd4-b182-cf31cf533183"/>
+  </producedTypes>
+  <name>cbr_ПрайсРеестраПродажТД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прайс реестра продаж ТД</value>
+  </synonym>
+  <comment>//++ ШмелёвР 03.03.2026 ЗКП.16</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.cbr_ПрайсРеестраПродажТД.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="20f50735-7335-4746-b47e-f04df986d6aa">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

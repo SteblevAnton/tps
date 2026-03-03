@@ -64,6 +64,7 @@
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <commonPictures>CommonPicture.RFID</commonPictures>
   <commonPictures>CommonPicture.RFIDКоллекция</commonPictures>
   <commonPictures>CommonPicture.ВидыНавигацииПоВзаимодействиямОтДопРеквизитовСведений</commonPictures>
@@ -162,6 +163,11 @@
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
+  <commonPictures>CommonPicture.СохранитьКак</commonPictures>
+  <commonPictures>CommonPicture.ВыбратьВариантОтчета</commonPictures>
+  <commonPictures>CommonPicture.ОтменитьДействие</commonPictures>
+  <commonPictures>CommonPicture.ПовторитьДействие</commonPictures>
+  <commonPictures>CommonPicture.Сумма</commonPictures>
   <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
@@ -205,6 +211,7 @@
   <constants>Constant.ОрганизацияТПС</constants>
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.cbr_ОтраслиКонтрагентов</catalogs>
   <catalogs>Catalog.cbr_ПредопределенныеЗначенияКонстант</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
@@ -240,6 +247,7 @@
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатурыДляЦенообразования</catalogs>
   <catalogs>Catalog.ЭтапыПроизводства</catalogs>
   <documents>Document.cbr_ОперацияСоглашения</documents>
   <documents>Document.ВерсияСоглашенияКоммерческийДоговор</documents>
@@ -262,6 +270,7 @@
   <documents>Document.ЭтапПроизводства2_2</documents>
   <enums>Enum.cbr_ВидыДвиженияСоглашенияСКлиентами</enums>
   <enums>Enum.cbr_ВидыПалет</enums>
+  <enums>Enum.cbr_Статусы</enums>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыНазначенияСпецификации</enums>
   <enums>Enum.ВариантыОбеспечения</enums>
@@ -292,13 +301,16 @@
   <enums>Enum.ТипыПроизводственныхПроцессов</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ЮрФизЛицо</enums>
+  <reports>Report.cbr_ПрайсРеестраПродажТД</reports>
   <dataProcessors>DataProcessor.cbr_АРМПоступлениеОтгрузка</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_РеестрТМЦ</dataProcessors>
   <dataProcessors>DataProcessor.ЗапросКоличестваИСерий</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностей</dataProcessors>
   <dataProcessors>DataProcessor.ОбеспечениеПотребностейНоваяСхема</dataProcessors>
   <dataProcessors>DataProcessor.ПодборТоваровВДокументПродажи</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоМенеджераПоДоставке</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
+  <informationRegisters>InformationRegister.cbr_ABCСведения</informationRegisters>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
