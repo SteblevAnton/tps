@@ -46,6 +46,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Закупки</subsystems>
+  <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет82</styleItems>
@@ -64,7 +65,6 @@
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
-  <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <commonPictures>CommonPicture.RFID</commonPictures>
   <commonPictures>CommonPicture.RFIDКоллекция</commonPictures>
   <commonPictures>CommonPicture.ВидыНавигацииПоВзаимодействиямОтДопРеквизитовСведений</commonPictures>
@@ -74,6 +74,7 @@
   <commonPictures>CommonPicture.ВниманиеСерый</commonPictures>
   <commonPictures>CommonPicture.ВосклицательныйЗнакКрасный</commonPictures>
   <commonPictures>CommonPicture.ВУпаковочныйЛист</commonPictures>
+  <commonPictures>CommonPicture.ВыбратьВариантОтчета</commonPictures>
   <commonPictures>CommonPicture.ВыполненоСОшибками</commonPictures>
   <commonPictures>CommonPicture.ВыполненоУспешно</commonPictures>
   <commonPictures>CommonPicture.ДваФлажкаУТ</commonPictures>
@@ -111,11 +112,13 @@
   <commonPictures>CommonPicture.ОтгрузкаЗапрещена</commonPictures>
   <commonPictures>CommonPicture.ОтгрузкаРазрешена</commonPictures>
   <commonPictures>CommonPicture.ОткрытьКарточкуПартнера</commonPictures>
+  <commonPictures>CommonPicture.ОтменитьДействие</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеВыпуска</commonPictures>
   <commonPictures>CommonPicture.ОчередьЗаказовСостояниеЭтаповИГрафика</commonPictures>
   <commonPictures>CommonPicture.ПерейтиВправо</commonPictures>
   <commonPictures>CommonPicture.ПиктограммыЭлементов</commonPictures>
+  <commonPictures>CommonPicture.ПовторитьДействие</commonPictures>
   <commonPictures>CommonPicture.ПодписанЗашифрованЗаголовок</commonPictures>
   <commonPictures>CommonPicture.ПодписанЗашифрованСостояния</commonPictures>
   <commonPictures>CommonPicture.ПревышениеЗаказа</commonPictures>
@@ -140,11 +143,13 @@
   <commonPictures>CommonPicture.СостояниеСкидкиНаценки</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
   <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
+  <commonPictures>CommonPicture.СохранитьКак</commonPictures>
   <commonPictures>CommonPicture.СрочноКЗаказу</commonPictures>
   <commonPictures>CommonPicture.СтатусВыполненияБолее33Процентов</commonPictures>
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
+  <commonPictures>CommonPicture.Сумма</commonPictures>
   <commonPictures>CommonPicture.ТранспортнаяНакладная</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяЗаполнитьПоОперациям</commonPictures>
   <commonPictures>CommonPicture.ТребуетсяНазначитьОперации</commonPictures>
@@ -163,11 +168,6 @@
   <commonPictures>CommonPicture.ФормирующиесяЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЭтапЗадерживаетЗаказ</commonPictures>
   <commonPictures>CommonPicture.ЭтапНаКритическомПути</commonPictures>
-  <commonPictures>CommonPicture.СохранитьКак</commonPictures>
-  <commonPictures>CommonPicture.ВыбратьВариантОтчета</commonPictures>
-  <commonPictures>CommonPicture.ОтменитьДействие</commonPictures>
-  <commonPictures>CommonPicture.ПовторитьДействие</commonPictures>
-  <commonPictures>CommonPicture.Сумма</commonPictures>
   <roles>Role.cbr_ДобавлениеИзменениеРегистраНоменклатураВПалетах</roles>
   <roles>Role.cbr_ЗаписьЗаказаКлиентаСОтрицательнымиОстатками</roles>
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
