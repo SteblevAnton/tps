@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="450ebe6a-fed8-4b0c-ba17-49e23a1eb297">
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87541f7b-a566-4176-98d0-642b224503eb">
   <producedTypes>
-    <objectType typeId="b3a5b1b1-1ff3-4981-9817-efdea91e8451" valueTypeId="08d1c3ce-a65b-4270-9724-dbf9ed8b717d"/>
-    <managerType typeId="9fcd3954-9922-4b8d-ad80-427ee1b7ac5e" valueTypeId="bcb44534-53f9-4c51-8da5-859a5ccaa854"/>
+    <objectType typeId="2bf7b7a0-24c7-429a-91b3-78cfdf959432" valueTypeId="a3a759d7-b2ff-4882-a7ac-3f47d0c52f30"/>
+    <managerType typeId="9ffe4d0d-c40a-425b-87db-e0e4a0731343" valueTypeId="e1b44660-3fc8-41de-acb4-898640395d85"/>
   </producedTypes>
   <name>cbr_ОценкаРентабельностиПродажСДополнением</name>
   <synonym>
@@ -21,7 +21,7 @@
       <lang>ru</lang>
     </pages>
   </help>
-  <templates uuid="df1eb1f3-6e0f-4aac-9af1-9b1bee162d92">
+  <templates uuid="ad18687b-2f40-4451-9a95-13f1d292b9fe">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>
