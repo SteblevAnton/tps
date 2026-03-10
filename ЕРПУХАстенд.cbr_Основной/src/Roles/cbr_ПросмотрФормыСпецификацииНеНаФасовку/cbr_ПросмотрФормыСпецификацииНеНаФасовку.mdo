@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35ad61b9-9a69-4369-a2b9-096a38c2c543">
+  <name>cbr_ПросмотрФормыСпецификацииНеНаФасовку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр формы спецификации не на фасовку </value>
+  </synonym>
+  <comment>// Шмелев Р.</comment>
+</mdclass:Role>

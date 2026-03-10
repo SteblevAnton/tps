@@ -198,7 +198,7 @@
   <roles>Role.cbr_ЧтениеСтадииЗагрузки</roles>
   <roles>Role.cbr_ЧтениеТоварыКПеремещению</roles>
   <roles>Role.cbr_ЧтениеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
-  <roles>Role.П3_ПросмотрФормыСпецификацииНеНаФасовку</roles>
+  <roles>Role.cbr_ПросмотрФормыСпецификацииНеНаФасовку</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
