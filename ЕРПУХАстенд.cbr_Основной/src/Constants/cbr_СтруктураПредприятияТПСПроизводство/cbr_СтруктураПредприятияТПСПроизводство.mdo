@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ecea5fa8-1143-4898-93a3-b4c6ed657d42">
+  <producedTypes>
+    <managerType typeId="0ffc36ed-572d-46a2-8ea1-a09b12f5d988" valueTypeId="fcd452a6-e088-420e-adcd-43532054ea4f"/>
+    <valueManagerType typeId="f5808b0b-e786-47b5-83ef-88b93e25f116" valueTypeId="9092af9f-0807-4715-91c5-9c98be444d45"/>
+    <valueKeyType typeId="60f7979a-5f74-44cb-ae27-f6d317438fd9" valueTypeId="5c98db86-69b7-4d18-ac27-d8464e758f09"/>
+  </producedTypes>
+  <name>cbr_СтруктураПредприятияТПСПроизводство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура предприятия &quot;ТПС Производство&quot;</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.СтруктураПредприятия</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

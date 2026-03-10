@@ -198,6 +198,7 @@
   <roles>Role.cbr_ЧтениеСтадииЗагрузки</roles>
   <roles>Role.cbr_ЧтениеТоварыКПеремещению</roles>
   <roles>Role.cbr_ЧтениеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
+  <roles>Role.П3_ПросмотрФормыСпецификацииНеНаФасовку</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
@@ -236,6 +237,7 @@
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПлану</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
+  <constants>Constant.cbr_СтруктураПредприятияТПСПроизводство</constants>
   <constants>Constant.ОрганизацияТПС</constants>
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
@@ -262,6 +264,7 @@
   <catalogs>Catalog.Периоды</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.ПричиныОтменыПроизводства</catalogs>
   <catalogs>Catalog.РабочиеЦентры</catalogs>
   <catalogs>Catalog.РесурсныеСпецификации</catalogs>
   <catalogs>Catalog.РолиИсполнителей</catalogs>

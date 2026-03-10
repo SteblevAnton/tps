@@ -334,6 +334,54 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="6445cdad-8e99-4cc2-a77e-fa8c47399d5f">
+    <name>cbr_ТехПотери</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тех. потери</value>
+    </synonym>
+    <comment>//++ ШмелевР 04.03.2026 ПРЗ.3</comment>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <synonym>Extended</synonym>
+      <choiceForm>Extended</choiceForm>
+    </extension>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d4632ffd-b4eb-4cc1-8908-a30ce7b2b7a8">
+    <name>cbr_Брак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Брак</value>
+    </synonym>
+    <comment>//++ ШмелевР 04.03.2026 ПРЗ.3</comment>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <synonym>Extended</synonym>
+      <choiceForm>Extended</choiceForm>
+    </extension>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="93c6411c-8fe7-43c6-91dd-4f2d26dc976a" extendedConfigurationObject="e695ca3f-99a4-4bf5-b023-d59954427845">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>
