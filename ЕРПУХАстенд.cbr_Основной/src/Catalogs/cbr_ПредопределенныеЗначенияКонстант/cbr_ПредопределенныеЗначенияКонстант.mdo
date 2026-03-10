@@ -30,53 +30,11 @@
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
   <predefined>
-    <items id="fdb38583-74a1-4593-9107-1c1ede7e3a23">
-      <name>Паллет</name>
-      <description>Паллет</description>
-      <code xsi:type="core:StringValue">
-        <value>000000001</value>
-      </code>
-    </items>
-    <items id="9123987a-4169-4b36-86e0-3c8e1ea8998f">
-      <name>ВыходнойКонтроль</name>
-      <description>Выходной контроль</description>
-      <code xsi:type="core:StringValue">
-        <value>000000002</value>
-      </code>
-    </items>
-    <items id="02100ae4-f3b2-45f9-aee2-43a661a8e805">
-      <name>РольОтветственныйЗаСпецификации</name>
-      <description>Роль ответственный за спецификации</description>
-      <code xsi:type="core:StringValue">
-        <value>000000004</value>
-      </code>
-    </items>
-    <items id="4054fede-7d2e-4eb8-a1cd-3682dcd4915a">
-      <name>ЕвроПаллет</name>
-      <description>Евро паллет</description>
-      <code xsi:type="core:StringValue">
-        <value>000000005</value>
-      </code>
-    </items>
-    <items id="7776a884-dcfe-409e-88ec-7469e1cafbed">
-      <name>АмерПаллет</name>
-      <description>Амер паллет</description>
-      <code xsi:type="core:StringValue">
-        <value>000000003</value>
-      </code>
-    </items>
     <items id="05b552aa-1bdd-478e-9877-e3a0091f4747">
       <name>ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании26</name>
       <description>26 Транспортные услуги доставка покупателю транспортной компании</description>
       <code xsi:type="core:StringValue">
         <value>000000007</value>
-      </code>
-    </items>
-    <items id="274d2a66-aee5-414d-87e3-6eceb4fe8a44">
-      <name>ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
-      <description>Транспортные услуги доставка покупателю транспортной компании</description>
-      <code xsi:type="core:StringValue">
-        <value>000000008</value>
       </code>
     </items>
     <items id="8fadc69a-052d-487b-8173-4e8c8026a56e">
@@ -86,11 +44,74 @@
         <value>000000009</value>
       </code>
     </items>
+    <items id="7776a884-dcfe-409e-88ec-7469e1cafbed">
+      <name>АмерПаллет</name>
+      <description>Амер паллет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="61658aef-c48b-4d26-a863-2fe80316e372">
+      <name>ОчередьАРМ_БракНаСкладе</name>
+      <description>Брак на складе</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="a9f92335-287e-4cc8-9d57-3d5e766f98aa">
+      <name>ОчередьАРМ_ВидПроверки</name>
+      <description>Вид проверки</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="9123987a-4169-4b36-86e0-3c8e1ea8998f">
+      <name>ВыходнойКонтроль</name>
+      <description>Выходной контроль</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="4054fede-7d2e-4eb8-a1cd-3682dcd4915a">
+      <name>ЕвроПаллет</name>
+      <description>Евро паллет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="fdb38583-74a1-4593-9107-1c1ede7e3a23">
+      <name>Паллет</name>
+      <description>Паллет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="6b63451d-9927-4c07-a7b3-0f9479c1e254">
+      <name>ПричинаОтменыПроизводстваПоУмолчанию</name>
+      <description>Причина отмены производства(По умолчанию)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="02100ae4-f3b2-45f9-aee2-43a661a8e805">
+      <name>РольОтветственныйЗаСпецификации</name>
+      <description>Роль ответственный за спецификации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
     <items id="1b1b5847-f802-4b77-b9ac-a2e01ea117e6">
       <name>ТПСОтделЛогистикиИВЭД</name>
       <description>ТПСОтдел логистики ИВЭД</description>
       <code xsi:type="core:StringValue">
         <value>000000010</value>
+      </code>
+    </items>
+    <items id="274d2a66-aee5-414d-87e3-6eceb4fe8a44">
+      <name>ТранспортныеУслугиДоставкаПокупателюТранспортнойКомпании</name>
+      <description>Транспортные услуги доставка покупателю транспортной компании</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
       </code>
     </items>
   </predefined>

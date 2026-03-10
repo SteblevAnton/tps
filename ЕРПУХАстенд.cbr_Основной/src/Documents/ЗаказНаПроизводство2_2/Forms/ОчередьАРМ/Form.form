@@ -2089,6 +2089,72 @@
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
+            <name>Брак</name>
+            <id>780</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Список.Брак</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>БракРасширеннаяПодсказка</name>
+              <id>782</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>БракКонтекстноеМеню</name>
+              <id>781</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>БракНаСкладе</name>
+            <id>783</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Список.БракНаСкладе</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>БракНаСкладеРасширеннаяПодсказка</name>
+              <id>785</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>БракНаСкладеКонтекстноеМеню</name>
+              <id>784</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormField">
             <name>НаличиеЭтапов</name>
             <id>765</id>
             <visible>true</visible>
@@ -6215,53 +6281,44 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	
 	Таблица.Ссылка КАК Ссылка,
 	Таблица.Номер КАК Номер,
 	Таблица.Дата КАК Дата,
-	
 	Таблица.Статус КАК Статус,
 	ЛОЖЬ КАК НаличиеЭтапов,
-
 	Таблица.Приоритет КАК Приоритет,
 	Таблица.Подразделение КАК Подразделение,
-
 	Таблица.НачатьНеРанее КАК НачалоПроизводства,
 	Таблица.ДатаПотребности КАК ДатаПотребности,
-	
 	Таблица.ДинамическаяСтруктура КАК ДинамическаяСтруктура,
-	
-	ДАТАВРЕМЯ(1,1,1) КАК ДатаСобытия,
+	ДАТАВРЕМЯ(1, 1, 1) КАК ДатаСобытия,
 	ЛОЖЬ КАК Просрочен,
-	
 	ЛОЖЬ КАК СостояниеОбеспечения,
 	-1 КАК СостояниеЭтаповИГрафикаПроизводства,
 	-1 КАК СостояниеВыпускаПродукции,
-	
 	-1 КАК ПриоритетОчередь,
 	-1 КАК ПодразделениеОчередь,
 	-1 КАК Очередь,
-
 	Таблица.Ответственный КАК Ответственный,
-	Таблица.Комментарий   КАК Комментарий, 
+	Таблица.Комментарий КАК Комментарий,
 	ЭтапПроизводства.Ссылка КАК ЭтапПроизводства,
 	ЭтапПроизводства.КоличествоУпаковокПлан КАК КоличествоУпаковокПлан,
 	ЭтапПроизводства.КоличествоУпаковокФакт КАК Выполнено,
 	0 КАК СвободныйОстаток,
-	0 КАК Техпотери,  
-	ЭтапПроизводства.КоличествоУпаковокПлан - ЭтапПроизводства.КоличествоУпаковокФакт КАК ОстатокКИсполнению
-
+	0 КАК Техпотери,
+	ЭтапПроизводства.КоличествоУпаковокПлан - ЭтапПроизводства.КоличествоУпаковокФакт КАК ОстатокКИсполнению,
+	ЕСТЬNULL(ЭтапПроизводства.cbr_Брак, 0) > 0 КАК Брак,
+	ЛОЖЬ КАК БракНаСкладе
 ИЗ
 	Документ.ЗаказНаПроизводство2_2 КАК Таблица
-
 		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЗаказовНаПроизводство КАК СостоянияЗаказовНаПроизводство
-		ПО Таблица.Ссылка = СостоянияЗаказовНаПроизводство.Заказ 
+		ПО Таблица.Ссылка = СостоянияЗаказовНаПроизводство.Заказ
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЭтапПроизводства2_2 КАК ЭтапПроизводства
 		ПО Таблица.Ссылка = ЭтапПроизводства.Распоряжение}
-			 
-ГДЕ 
+ГДЕ
 	Таблица.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыЗаказовНаПроизводство2_2.КПроизводству)
-	И Таблица.Проведен</queryText>
+	И Таблица.Проведен
+	И ЭтапПроизводства.Проведен</queryText>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
@@ -6478,6 +6535,30 @@
             <content>
               <key>ru</key>
               <value>Свободный остаток</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Брак</dataPath>
+        <field>Брак</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Брак</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>БракНаСкладе</dataPath>
+        <field>БракНаСкладе</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Брак на складе</value>
             </content>
           </localValue>
         </title>
