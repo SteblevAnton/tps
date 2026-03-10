@@ -182,6 +182,7 @@
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
+  <roles>Role.cbr_ПросмотрФормыСпецификацииНеНаФасовку</roles>
   <roles>Role.cbr_РедактированиеОплатаОтгрузкаПоМенеджерам</roles>
   <roles>Role.cbr_РедактированиеОстаткиНоменклатурыПоСоглашению</roles>
   <roles>Role.cbr_РедактированиеТоварыКПеремещению</roles>
@@ -198,7 +199,6 @@
   <roles>Role.cbr_ЧтениеСтадииЗагрузки</roles>
   <roles>Role.cbr_ЧтениеТоварыКПеремещению</roles>
   <roles>Role.cbr_ЧтениеТоварыПоступлениеОтгрузкаБезУчастияВДоставке</roles>
-  <roles>Role.cbr_ПросмотрФормыСпецификацииНеНаФасовку</roles>
   <filterCriteria>FilterCriterion.cbr_СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.cbr_ОбщегоНазначенияСобытияФормСервер</commonModules>
   <commonModules>CommonModule.cbr_РаботаСФормами</commonModules>
