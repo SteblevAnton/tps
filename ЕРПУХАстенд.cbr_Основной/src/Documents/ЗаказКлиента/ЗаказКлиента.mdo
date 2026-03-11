@@ -409,7 +409,7 @@
     <name>cbr_МаксимальнаяРучная</name>
     <synonym>
       <key>ru</key>
-      <value>Максимальная ручная</value>
+      <value>Максимальная ручная + ТУ</value>
     </synonym>
     <comment>//++ БаженоваЕО 27.02.2026 ПРД.21</comment>
     <type>
@@ -453,6 +453,22 @@
       <key>ru</key>
       <value>Можно редактировать транспортные условия</value>
     </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3abe8540-43ed-4426-b77b-19bf905e21b4">
+    <name>cbr_СовпадениеСуммПроцентаАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Совпадение сумм процента АВ</value>
+    </synonym>
+    <comment>//++ БаженоваЕО 10.03.2026 ПРД.21</comment>
     <type>
       <types>Boolean</types>
     </type>
@@ -610,6 +626,21 @@
         <key>ru</key>
         <value>Это ПФ</value>
       </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="90942d8a-50cd-4154-8beb-8053c2344777">
+      <name>cbr_ПоСоглашению</name>
+      <synonym>
+        <key>ru</key>
+        <value>По соглашению</value>
+      </synonym>
+      <comment>//++ БаженоваЕО 10.03.2026 ПРД.21</comment>
       <type>
         <types>Boolean</types>
       </type>
