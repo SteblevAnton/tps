@@ -772,6 +772,11 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
+                <handlers xsi:type="form:EventHandlerExtension">
+                  <event>OnChange</event>
+                  <name>cbr_СоглашениеПриИзмененииПосле</name>
+                  <callType>After</callType>
+                </handlers>
                 <extendedTooltip>
                   <name>СоглашениеРасширеннаяПодсказка</name>
                   <id>1120</id>
@@ -2298,6 +2303,11 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
+              <handlers xsi:type="form:EventHandlerExtension">
+                <event>OnChange</event>
+                <name>cbr_ТоварыНоменклатураПриИзмененииПосле</name>
+                <callType>After</callType>
+              </handlers>
               <extendedTooltip>
                 <name>ТоварыНоменклатураРасширеннаяПодсказка</name>
                 <id>1195</id>
@@ -2335,6 +2345,11 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
+              <handlers xsi:type="form:EventHandlerExtension">
+                <event>OnChange</event>
+                <name>cbr_ТоварыХарактеристикаПриИзмененииПосле</name>
+                <callType>After</callType>
+              </handlers>
               <extendedTooltip>
                 <name>ТоварыХарактеристикаРасширеннаяПодсказка</name>
                 <id>1196</id>
@@ -2878,6 +2893,11 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
+              <handlers xsi:type="form:EventHandlerExtension">
+                <event>OnChange</event>
+                <name>cbr_ТоварыВидЦеныПриИзмененииПосле</name>
+                <callType>After</callType>
+              </handlers>
               <extendedTooltip>
                 <name>ТоварыВидЦеныРасширеннаяПодсказка</name>
                 <id>1206</id>
