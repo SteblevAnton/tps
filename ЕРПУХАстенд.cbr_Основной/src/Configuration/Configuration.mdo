@@ -88,6 +88,7 @@
   <commonPictures>CommonPicture.ЗакрытыеЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.ИнформацияПоНедоступнымПолям</commonPictures>
   <commonPictures>CommonPicture.ИсполнителиДоставки</commonPictures>
   <commonPictures>CommonPicture.КартинкаСтрокиСпискаДокументов</commonPictures>
   <commonPictures>CommonPicture.КоллекцияВажностьПроблемВеденияУчета</commonPictures>
@@ -211,6 +212,7 @@
   <commonModules>CommonModule.ОбщегоНазначенияУТСобытия</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
+  <commonModules>CommonModule.ПродажиКлиент</commonModules>
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.СкладыСервер</commonModules>

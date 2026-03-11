@@ -663,4 +663,12 @@
       <form>Extended</form>
     </extension>
   </forms>
+  <forms uuid="7f8bed7e-8a0f-42bc-a0ee-ac44789b84a3" extendedConfigurationObject="e0078209-565e-49e0-9dae-291350978abe">
+    <name>ФормаВыбора</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Catalog>
