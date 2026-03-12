@@ -88,6 +88,7 @@
   <commonPictures>CommonPicture.ЗакрытыеЗаказыНаПроизводство</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.ИнформацияПоНедоступнымПолям</commonPictures>
   <commonPictures>CommonPicture.ИсполнителиДоставки</commonPictures>
   <commonPictures>CommonPicture.КартинкаСтрокиСпискаДокументов</commonPictures>
   <commonPictures>CommonPicture.КоллекцияВажностьПроблемВеденияУчета</commonPictures>
@@ -182,6 +183,7 @@
   <roles>Role.cbr_ОкруглятьНоменклатуру</roles>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <roles>Role.cbr_ПросмотрОтчетаОценкаРентабельностиПродажСДополнением</roles>
+  <roles>Role.cbr_ПросмотрФормыСпецификацииНеНаФасовку</roles>
   <roles>Role.cbr_РедактированиеОплатаОтгрузкаПоМенеджерам</roles>
   <roles>Role.cbr_РедактированиеОстаткиНоменклатурыПоСоглашению</roles>
   <roles>Role.cbr_РедактированиеТоварыКПеремещению</roles>
@@ -210,6 +212,7 @@
   <commonModules>CommonModule.ОбщегоНазначенияУТСобытия</commonModules>
   <commonModules>CommonModule.ОтборыСписковКлиентСервер</commonModules>
   <commonModules>CommonModule.ПроведениеСпециальныеТребования</commonModules>
+  <commonModules>CommonModule.ПродажиКлиент</commonModules>
   <commonModules>CommonModule.РаботаСПроизводствомСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.СкладыСервер</commonModules>
@@ -236,6 +239,7 @@
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПлану</commonCommands>
   <commonCommands>CommonCommand.ФормированиеЗаказовНаПроизводствоПоПотребностям</commonCommands>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
+  <constants>Constant.cbr_СтруктураПредприятияТПСПроизводство</constants>
   <constants>Constant.ОрганизацияТПС</constants>
   <constants>Constant.СтатьяРасходаПотериОтБрака</constants>
   <commonForms>CommonForm.СвязанныеДокументы</commonForms>
@@ -262,6 +266,7 @@
   <catalogs>Catalog.Периоды</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.ПричиныОтменыПроизводства</catalogs>
   <catalogs>Catalog.РабочиеЦентры</catalogs>
   <catalogs>Catalog.РесурсныеСпецификации</catalogs>
   <catalogs>Catalog.РолиИсполнителей</catalogs>

@@ -864,6 +864,14 @@
 				</dcscor:item>
 			</appearance>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БазоваяВалюта</dataPath>
+			<field>БазоваяВалюта</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	КурсВалюты.Валюта КАК Валюта,
@@ -917,11 +925,11 @@
 ИЗ
 	Документ.ЗаказКлиента.Товары КАК ЗаказКлиентаТовары
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента КАК ТаблицаДокументов
-			ПРАВОЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента.cbr_АгентскиеВознаграждения КАК ЗаказКлиентаcbr_АгентскиеВознаграждения
-			ПО ЗаказКлиентаcbr_АгентскиеВознаграждения.Ссылка = ТаблицаДокументов.Ссылка
 		ПО ТаблицаДокументов.Ссылка = &amp;Документ
 		И ЗаказКлиентаТовары.Ссылка = ТаблицаДокументов.Ссылка
 		И НЕ ЗаказКлиентаТовары.Отменено
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента.cbr_АгентскиеВознаграждения КАК ЗаказКлиентаcbr_АгентскиеВознаграждения
+		ПО ЗаказКлиентаТовары.Ссылка = ЗаказКлиентаcbr_АгентскиеВознаграждения.Ссылка
 ГДЕ
 	ТИПЗНАЧЕНИЯ(&amp;Документ) = ТИП(Документ.ЗаказКлиента)
 
@@ -1517,8 +1525,9 @@
 					И БазоваяВалюта = &amp;БазоваяВалюта) КАК КурсыВалюты
 					ПО ИСТИНА) КАК ЭтапРасчетаВидовЦенИСкидок) КАК ЭтапРасчетаЦенСтоимостиСкидок
 			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ТранспортныйТариф КАК ВТ_ТранспортныйТариф
-			ПО ИСТИНА,
-		ВТ_ПроцентАВ КАК ВТ_ПроцентАВ) КАК ЭтапРасчетаВыручкиПрибыли
+			ПО ИСТИНА
+			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ПроцентАВ КАК ВТ_ПроцентАВ
+			ПО ИСТИНА) КАК ЭтапРасчетаВыручкиПрибыли
 СГРУППИРОВАТЬ ПО
 	ЭтапРасчетаВыручкиПрибыли.Номенклатура,
 	ЭтапРасчетаВыручкиПрибыли.Характеристика,
@@ -1869,6 +1878,14 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БазоваяВалюта</dataPath>
+			<field>БазоваяВалюта</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	КурсыВалют.Валюта КАК Валюта,
@@ -1960,11 +1977,11 @@
 ИЗ
 	Документ.ЗаказКлиента.Товары КАК ЗаказКлиентаТовары
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента КАК ТаблицаДокументов
-			ПРАВОЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента.cbr_АгентскиеВознаграждения КАК ЗаказКлиентаcbr_АгентскиеВознаграждения
-			ПО ЗаказКлиентаcbr_АгентскиеВознаграждения.Ссылка = ТаблицаДокументов.Ссылка
 		ПО ТаблицаДокументов.Ссылка = &amp;Документ
 		И ЗаказКлиентаТовары.Ссылка = ТаблицаДокументов.Ссылка
 		И НЕ ЗаказКлиентаТовары.Отменено
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента.cbr_АгентскиеВознаграждения КАК ЗаказКлиентаcbr_АгентскиеВознаграждения
+		ПО ЗаказКлиентаТовары.Ссылка = ЗаказКлиентаcbr_АгентскиеВознаграждения.Ссылка
 ГДЕ
 	ТИПЗНАЧЕНИЯ(&amp;Документ) = ТИП(Документ.ЗаказКлиента)
 
@@ -3015,6 +3032,798 @@
 	И СоглашенияСКлиентамиcbr_АгентскиеВознаграждения.Ссылка = &amp;Документ</query>
 		<useQueryGroupIfPossible>false</useQueryGroupIfPossible>
 	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ДанныеДокументаДляСоглашения</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоСоглашения</dataPath>
+			<field>КоличествоСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыручкаБезСкидокБезНДССоглашения</dataPath>
+			<field>ВыручкаБезСкидокБезНДССоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выручка без учета скидок без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Маржа1БезСкидокБезНДССоглашения</dataPath>
+			<field>Маржа1БезСкидокБезНДССоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 1 без учета скидок без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыручкаСУчетомСкидокБезНДССоглашения</dataPath>
+			<field>ВыручкаСУчетомСкидокБезНДССоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выручка с учетом скидок без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Маржа1СУчетомСкидкиБезНДССоглашения</dataPath>
+			<field>Маржа1СУчетомСкидкиБезНДССоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 1 с учетом скидки без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</dataPath>
+			<field>Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 1 с учетом скидки, %</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаАВБезНДССоглашения</dataPath>
+			<field>СуммаАВБезНДССоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма АВ без НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Маржа1БезСкидокБезНДСПроцентСоглашения</dataPath>
+			<field>Маржа1БезСкидокБезНДСПроцентСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маржа 1 без учета скидок, %</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентРучнаяСкидкаСоглашения</dataPath>
+			<field>ПроцентРучнаяСкидкаСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент ручной скидки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРучнаяСкидкаСоглашения</dataPath>
+			<field>СуммаРучнаяСкидкаСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма ручной скидки без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентАВСоглашения</dataPath>
+			<field>ПроцентАВСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент АВ</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ='15'; ЧДЦ='2'</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТрансфернаяЦенаСоглашения</dataPath>
+			<field>ТрансфернаяЦенаСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трансферная цена без НДС</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтрокиСоглашения</dataPath>
+			<field>НомерСтрокиСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер строки соглашения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураСоглашения</dataPath>
+			<field>НоменклатураСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура соглашения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаСоглашения</dataPath>
+			<field>ХарактеристикаСоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика соглашения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаПродажиБезСкидокБезНДССоглашения</dataPath>
+			<field>ЦенаПродажиБезСкидокБезНДССоглашения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена продажи без скидок без НДССоглашения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.НомерСтроки КАК НомерСтроки,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура КАК Номенклатура,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Характеристика КАК Характеристика,
+	ВЫБОР
+		КОГДА СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель /
+			СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЗнаменатель
+	КОНЕЦ * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество КАК КоличествоСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена КАК ЦенаПродажиБезСкидокБезНДС,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество КАК
+		ВыручкаБезСкидокБезНДССоглашения,
+	ЕСТЬNULL(ЦеныНоменклатуры25СрезПоследних.Цена, 0) КАК ТрансфернаяЦенаСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ПрцентРучнаяСкидка КАК ПроцентРучнаяСкидкаСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.СуммаРучнаяСкидка КАК СуммаРучнаяСкидкаСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ВидЦены КАК ВидЦены,
+	СУММА(СоглашенияСКлиентамиcbr_АгентскиеВознаграждения.СтавкаАВ) КАК ПроцентАВСоглашения
+ПОМЕСТИТЬ ВТ_ДанныеСоглашения
+ИЗ
+	Справочник.СоглашенияСКлиентами.cbr_ЦеныПоТоварам КАК СоглашенияСКлиентамиcbr_ЦеныПоТоварам
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры25.СрезПоследних КАК ЦеныНоменклатуры25СрезПоследних
+		ПО СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура = ЦеныНоменклатуры25СрезПоследних.Номенклатура
+		И СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ВидЦены = ЦеныНоменклатуры25СрезПоследних.ВидЦены
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СоглашенияСКлиентами.cbr_АгентскиеВознаграждения КАК
+			СоглашенияСКлиентамиcbr_АгентскиеВознаграждения
+		ПО СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Ссылка = СоглашенияСКлиентамиcbr_АгентскиеВознаграждения.Ссылка
+ГДЕ
+	ТИПЗНАЧЕНИЯ(&amp;Документ) = ТИП(Справочник.СоглашенияСКлиентами)
+	И СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Ссылка = &amp;Документ
+СГРУППИРОВАТЬ ПО
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.НомерСтроки,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Характеристика,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена,
+	ЦеныНоменклатуры25СрезПоследних.Цена,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ПрцентРучнаяСкидка,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.СуммаРучнаяСкидка,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ВидЦены,
+	ВЫБОР
+		КОГДА СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель /
+			СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЗнаменатель
+	КОНЕЦ * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество,
+	ЕСТЬNULL(ЦеныНоменклатуры25СрезПоследних.Цена, 0)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.ТрансфернаяЦенаСоглашения КАК
+		Маржа1БезСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.ПроцентРучнаяСкидкаСоглашения КАК
+		ВыручкаСУчетомСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.ПроцентРучнаяСкидкаСоглашения КАК
+		СуммаАВБезНДССоглашения,
+	ВТ_ДанныеСоглашения.Номенклатура КАК Номенклатура,
+	ВТ_ДанныеСоглашения.Характеристика КАК Характеристика
+ПОМЕСТИТЬ ВТ_ДополнительныеРасчеты
+ИЗ
+	ВТ_ДанныеСоглашения КАК ВТ_ДанныеСоглашения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДанныеСоглашения.НомерСтроки КАК НомерСтрокиСоглашения,
+	ВТ_ДанныеСоглашения.Номенклатура КАК НоменклатураСоглашения,
+	ВТ_ДанныеСоглашения.Характеристика КАК ХарактеристикаСоглашения,
+	ВТ_ДанныеСоглашения.КоличествоСоглашения КАК КоличествоСоглашения,
+	ВТ_ДанныеСоглашения.ЦенаПродажиБезСкидокБезНДС КАК ЦенаПродажиБезСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения КАК ВыручкаБезСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ТрансфернаяЦенаСоглашения КАК ТрансфернаяЦенаСоглашения,
+	ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения КАК Маржа1БезСкидокБезНДССоглашения,
+	ВЫБОР
+		КОГДА ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения = 0
+			ТОГДА ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения / 1
+		ИНАЧЕ ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения /
+			ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения
+	КОНЕЦ * 100 КАК Маржа1БезСкидокБезНДСПроцентСоглашения,
+	ВТ_ДанныеСоглашения.ПроцентРучнаяСкидкаСоглашения КАК ПроцентРучнаяСкидкаСоглашения,
+	ВТ_ДанныеСоглашения.СуммаРучнаяСкидкаСоглашения КАК СуммаРучнаяСкидкаСоглашения,
+	ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения КАК ВыручкаСУчетомСкидокБезНДССоглашения,
+	ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.СуммаРучнаяСкидкаСоглашения КАК
+		Маржа1СУчетомСкидкиБезНДССоглашения,
+	ВЫБОР
+		КОГДА ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения = 0
+			ТОГДА 0
+		ИНАЧЕ (ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.СуммаРучнаяСкидкаСоглашения) /
+			ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения * 100
+	КОНЕЦ КАК Маржа1СУчетомСкидкиБезНДСПроцентСоглашения,
+	ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения КАК СуммаАВБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ПроцентАВСоглашения КАК ПроцентАВСоглашения
+ИЗ
+	ВТ_ДополнительныеРасчеты КАК ВТ_ДополнительныеРасчеты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДанныеСоглашения КАК ВТ_ДанныеСоглашения
+		ПО ВТ_ДанныеСоглашения.Номенклатура = ВТ_ДополнительныеРасчеты.Номенклатура
+		И ВТ_ДанныеСоглашения.Характеристика = ВТ_ДополнительныеРасчеты.Характеристика</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>СводныйРасчетСоглашения</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательСоглашение</dataPath>
+			<field>ПоказательСоглашение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель</v8:content>
+				</v8:item>
+			</title>
+			<orderExpression>
+				<dcscom:expression>ПорядокСоглашение</dcscom:expression>
+				<dcscom:orderType>Asc</dcscom:orderType>
+				<dcscom:autoOrder>false</dcscom:autoOrder>
+			</orderExpression>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+			<availableValue>
+				<value xsi:type="xs:string">ВыручкаБезСкидокБезНДССоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выручка без учета скидок без НДС, руб.</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">ТранфернаяЦенаСоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Трансферная цена без НДС, руб.</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">Маржа1БезСкидокБезНДССоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Маржа 1 без учета скидки без НДС, руб.</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">Маржа1БезСкидокБезНДСПроцентСоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Маржа 1 без учета скидки, %</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">СуммаРучнаяСкидкаСоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма ручных скидок без НДС, руб.</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">ПроцентРучнаяСкидкаСоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>% руч. скидки</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">ВыручкаСУчетомСкидокБезНДССоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выручка с учетом скидок без НДС, руб.</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">Маржа1СУчетомСкидкиБезНДССоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Маржа 1 с учетом скидки без НДС, руб.</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Маржа 1 без учета скидки, %</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">СуммаАВБезНДССоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма АВ без НДС, руб.</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">ПроцентАВСоглашения</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>%АВ</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">ПроцентПрочихПлановыхЗатрат</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Процент прочих плановых затрат, %</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокСоглашение</dataPath>
+			<field>ПорядокСоглашение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателяДокументСоглашение</dataPath>
+			<field>ЗначениеПоказателяДокументСоглашение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По документу</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2; ЧН=-</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателяНарастающим</dataPath>
+			<field>ЗначениеПоказателяНарастающим</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>За месяц без учета продажи</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2; ЧН=-</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.НомерСтроки КАК НомерСтроки,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура КАК Номенклатура,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Характеристика КАК Характеристика,
+	ВЫБОР
+		КОГДА СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель /
+			СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЗнаменатель
+	КОНЕЦ * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество КАК КоличествоСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена КАК ЦенаПродажиБезСкидокБезНДС,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество КАК
+		ВыручкаБезСкидокБезНДССоглашения,
+	ЕСТЬNULL(ЦеныНоменклатуры25СрезПоследних.Цена, 0) КАК ТрансфернаяЦенаСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ПрцентРучнаяСкидка КАК ПроцентРучнаяСкидкаСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.СуммаРучнаяСкидка КАК СуммаРучнаяСкидкаСоглашения,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ВидЦены КАК ВидЦены,
+	СУММА(СоглашенияСКлиентамиcbr_АгентскиеВознаграждения.СтавкаАВ) КАК ПроцентАВСоглашения
+ПОМЕСТИТЬ ВТ_ДанныеСоглашения
+ИЗ
+	Справочник.СоглашенияСКлиентами.cbr_ЦеныПоТоварам КАК СоглашенияСКлиентамиcbr_ЦеныПоТоварам
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры25.СрезПоследних КАК ЦеныНоменклатуры25СрезПоследних
+		ПО СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура = ЦеныНоменклатуры25СрезПоследних.Номенклатура
+		И СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ВидЦены = ЦеныНоменклатуры25СрезПоследних.ВидЦены
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СоглашенияСКлиентами.cbr_АгентскиеВознаграждения КАК
+			СоглашенияСКлиентамиcbr_АгентскиеВознаграждения
+		ПО СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Ссылка = СоглашенияСКлиентамиcbr_АгентскиеВознаграждения.Ссылка
+ГДЕ
+	ТИПЗНАЧЕНИЯ(&amp;Документ) = ТИП(Справочник.СоглашенияСКлиентами)
+	И СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Ссылка = &amp;Документ
+СГРУППИРОВАТЬ ПО
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.НомерСтроки,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Характеристика,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена,
+	ЦеныНоменклатуры25СрезПоследних.Цена,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ПрцентРучнаяСкидка,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.СуммаРучнаяСкидка,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.ВидЦены,
+	ВЫБОР
+		КОГДА СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЧислитель /
+			СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Номенклатура.ВесЗнаменатель
+	КОНЕЦ * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество,
+	СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Цена * СоглашенияСКлиентамиcbr_ЦеныПоТоварам.Количество,
+	ЕСТЬNULL(ЦеныНоменклатуры25СрезПоследних.Цена, 0)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.ТрансфернаяЦенаСоглашения КАК
+		Маржа1БезСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.ПроцентРучнаяСкидкаСоглашения КАК
+		ВыручкаСУчетомСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.ПроцентРучнаяСкидкаСоглашения КАК
+		СуммаАВБезНДССоглашения,
+	ВТ_ДанныеСоглашения.Номенклатура КАК Номенклатура,
+	ВТ_ДанныеСоглашения.Характеристика КАК Характеристика
+ПОМЕСТИТЬ ВТ_ДополнительныеРасчеты
+ИЗ
+	ВТ_ДанныеСоглашения КАК ВТ_ДанныеСоглашения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДанныеСоглашения.НомерСтроки КАК НомерСтрокиСоглашения,
+	ВТ_ДанныеСоглашения.Номенклатура КАК НоменклатураСоглашения,
+	ВТ_ДанныеСоглашения.Характеристика КАК ХарактеристикаСоглашения,
+	ВТ_ДанныеСоглашения.КоличествоСоглашения КАК КоличествоСоглашения,
+	ВТ_ДанныеСоглашения.ЦенаПродажиБезСкидокБезНДС КАК ЦенаПродажиБезСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения КАК ВыручкаБезСкидокБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ТрансфернаяЦенаСоглашения КАК ТрансфернаяЦенаСоглашения,
+	ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения КАК Маржа1БезСкидокБезНДССоглашения,
+	ВЫБОР
+		КОГДА ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения = 0
+			ТОГДА ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения / 1
+		ИНАЧЕ ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения /
+			ВТ_ДанныеСоглашения.ВыручкаБезСкидокБезНДССоглашения
+	КОНЕЦ * 100 КАК Маржа1БезСкидокБезНДСПроцентСоглашения,
+	ВТ_ДанныеСоглашения.ПроцентРучнаяСкидкаСоглашения КАК ПроцентРучнаяСкидкаСоглашения,
+	ВТ_ДанныеСоглашения.СуммаРучнаяСкидкаСоглашения КАК СуммаРучнаяСкидкаСоглашения,
+	ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения КАК ВыручкаСУчетомСкидокБезНДССоглашения,
+	ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.СуммаРучнаяСкидкаСоглашения КАК
+		Маржа1СУчетомСкидкиБезНДССоглашения,
+	ВЫБОР
+		КОГДА ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения = 0
+			ТОГДА 0
+		ИНАЧЕ (ВТ_ДополнительныеРасчеты.Маржа1БезСкидокБезНДССоглашения - ВТ_ДанныеСоглашения.СуммаРучнаяСкидкаСоглашения) /
+			ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения * 100
+	КОНЕЦ КАК Маржа1СУчетомСкидкиБезНДСПроцентСоглашения,
+	ВТ_ДополнительныеРасчеты.ВыручкаСУчетомСкидокБезНДССоглашения КАК СуммаАВБезНДССоглашения,
+	ВТ_ДанныеСоглашения.ПроцентАВСоглашения КАК ПроцентАВСоглашения
+ПОМЕСТИТЬ РассчитанныеПоказатели
+ИЗ
+	ВТ_ДополнительныеРасчеты КАК ВТ_ДополнительныеРасчеты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДанныеСоглашения КАК ВТ_ДанныеСоглашения
+		ПО ВТ_ДанныеСоглашения.Номенклатура = ВТ_ДополнительныеРасчеты.Номенклатура
+		И ВТ_ДанныеСоглашения.Характеристика = ВТ_ДополнительныеРасчеты.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РаздельныйРасчетПоказателей.ПоказательСоглашение КАК ПоказательСоглашение,
+	РаздельныйРасчетПоказателей.ПорядокСоглашение КАК ПорядокСоглашение,
+	СУММА(РаздельныйРасчетПоказателей.ЗначениеПоказателяДокументСоглашение) КАК ЗначениеПоказателяДокументСоглашение
+ИЗ
+	(ВЫБРАТЬ
+		"ВыручкаБезСкидокБезНДССоглашения" КАК ПоказательСоглашение,
+		1 КАК ПорядокСоглашение,
+		СУММА(РассчитанныеПоказатели.ВыручкаБезСкидокБезНДССоглашения) КАК ЗначениеПоказателяДокументСоглашение,
+		0 КАК ЗначениеПоказателяНарастающим
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"ТрансфернаяЦенаСоглашения",
+		4,
+		СУММА(РассчитанныеПоказатели.ТрансфернаяЦенаСоглашения),
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"Маржа1БезСкидокБезНДССоглашения",
+		5,
+		СУММА(РассчитанныеПоказатели.Маржа1БезСкидокБезНДССоглашения),
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"Маржа1БезСкидокБезНДСПроцентСоглашения",
+		6,
+		100 * ВЫБОР
+			КОГДА СУММА(РассчитанныеПоказатели.ВыручкаБезСкидокБезНДССоглашения) = 0
+				ТОГДА 0
+			ИНАЧЕ СУММА(РассчитанныеПоказатели.Маржа1БезСкидокБезНДСПроцентСоглашения) /
+				СУММА(РассчитанныеПоказатели.ВыручкаБезСкидокБезНДССоглашения)
+		КОНЕЦ,
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"СуммаРучнаяСкидкаСоглашения",
+		7,
+		СУММА(РассчитанныеПоказатели.СуммаРучнаяСкидкаСоглашения),
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"ПроцентРучнаяСкидкаСоглашения",
+		8,
+		ВЫБОР
+			КОГДА СУММА(РассчитанныеПоказатели.ВыручкаБезСкидокБезНДССоглашения) = 0
+				ТОГДА 0
+			ИНАЧЕ ВЫРАЗИТЬ(100 * СУММА(РассчитанныеПоказатели.СуммаРучнаяСкидкаСоглашения) /
+				СУММА(РассчитанныеПоказатели.ВыручкаБезСкидокБезНДССоглашения) КАК ЧИСЛО(31, 2))
+		КОНЕЦ,
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"ВыручкаСУчетомСкидокБезНДССоглашения",
+		9,
+		СУММА(РассчитанныеПоказатели.ВыручкаСУчетомСкидокБезНДССоглашения),
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"Маржа1СУчетомСкидкиБезНДССоглашения",
+		10,
+		СУММА(РассчитанныеПоказатели.Маржа1СУчетомСкидкиБезНДССоглашения),
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"Маржа1СУчетомСкидкиБезНДСПроцентСоглашения",
+		11,
+		100 * ВЫБОР
+			КОГДА СУММА(РассчитанныеПоказатели.ВыручкаСУчетомСкидокБезНДССоглашения) = 0
+				ТОГДА 0
+			ИНАЧЕ СУММА(РассчитанныеПоказатели.Маржа1СУчетомСкидкиБезНДССоглашения) /
+				СУММА(РассчитанныеПоказатели.ВыручкаСУчетомСкидокБезНДССоглашения)
+		КОНЕЦ,
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"СуммаАВБезНДССоглашения",
+		12,
+		СУММА(РассчитанныеПоказатели.СуммаАВБезНДССоглашения),
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"ПроцентАВСоглашения",
+		13,
+		РассчитанныеПоказатели.ПроцентАВСоглашения,
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели
+
+	ОБЪЕДИНИТЬ
+
+	ВЫБРАТЬ
+		"ПроцентПрочихПлановыхЗатрат",
+		16,
+		СУММА(0),
+		0
+	ИЗ
+		РассчитанныеПоказатели КАК РассчитанныеПоказатели) КАК РаздельныйРасчетПоказателей
+СГРУППИРОВАТЬ ПО
+	РаздельныйРасчетПоказателей.ПоказательСоглашение,
+	РаздельныйРасчетПоказателей.ПорядокСоглашение
+
+УПОРЯДОЧИТЬ ПО
+	РаздельныйРасчетПоказателей.ПорядокСоглашение</query>
+	</dataSet>
 	<totalField>
 		<dataPath>СуммаАвтоматическойСкидки</dataPath>
 		<expression>Сумма(СуммаАвтоматическойСкидки)</expression>
@@ -3172,6 +3981,65 @@
 	<totalField>
 		<dataPath>ТрансфернаяЦенаБезНДС</dataPath>
 		<expression>Сумма(ТрансфернаяЦенаБезНДС)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСоглашения</dataPath>
+		<expression>Сумма(КоличествоСоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаБезСкидокБезНДССоглашения</dataPath>
+		<expression>Сумма(ВыручкаБезСкидокБезНДССоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа1БезСкидокБезНДССоглашения</dataPath>
+		<expression>Сумма(Маржа1БезСкидокБезНДССоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа1БезСкидокБезНДСПроцентСоглашения</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаБезСкидокБезНДССоглашения) = 0 Тогда 0 Иначе
+(Сумма(Маржа1БезСкидокБезНДССоглашения) ) / Сумма(ВыручкаБезСкидокБезНДССоглашения) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентРучнаяСкидкаСоглашения</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаБезСкидокБезНДССоглашения) = 0 Тогда 0 Иначе
+Сумма(СуммаРучнаяСкидкаСоглашения) / Сумма(ВыручкаБезСкидокБезНДССоглашения) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаРучнаяСкидкаСоглашения</dataPath>
+		<expression>Сумма(СуммаРучнаяСкидкаСоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыручкаСУчетомСкидокБезНДССоглашения</dataPath>
+		<expression>Сумма(ВыручкаСУчетомСкидокБезНДССоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа1СУчетомСкидкиБезНДССоглашения</dataPath>
+		<expression>Сумма(Маржа1СУчетомСкидкиБезНДССоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</dataPath>
+		<expression>100 * Выбор Когда Сумма(ВыручкаСУчетомСкидокБезНДССоглашения) = 0 Тогда 0 Иначе
+(Сумма(Маржа1СУчетомСкидкиБезНДССоглашения) ) / Сумма(ВыручкаСУчетомСкидокБезНДССоглашения) Конец</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаАВБезНДССоглашения</dataPath>
+		<expression>Сумма(СуммаАВБезНДССоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентАВСоглашения</dataPath>
+		<expression>Минимум(ПроцентАВСоглашения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗначениеПоказателяДокументСоглашение</dataPath>
+		<expression>Сумма(ЗначениеПоказателяДокументСоглашение)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ТрансфернаяЦенаСоглашения</dataPath>
+		<expression>Сумма(ТрансфернаяЦенаСоглашения)</expression>
 		<group>ОбщийИтог</group>
 	</totalField>
 	<parameter>
@@ -4485,829 +5353,6 @@
 		</dcsset:settings>
 	</settingsVariant>
 	<settingsVariant>
-		<dcsset:name>ОценкаРентабельностиПродажиТолькоРучныеСкидкиКонтекст</dcsset:name>
-		<dcsset:presentation xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Оценка рентабельности продажи</v8:content>
-			</v8:item>
-			<v8:item>
-				<v8:lang>en</v8:lang>
-				<v8:content>Sales profitability assessment</v8:content>
-			</v8:item>
-		</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ЦеныПродажи</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
-					<dcsset:userSettingID>d5a8b4b7-6076-4161-8776-5b77e63d972b</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>КонецПериода</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string"/>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>Документ</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">00000000-0000-0000-0000-000000000000</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ДанныеОтчета</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>1073b8aa-b6dc-4d3d-b1a7-b15d314771c4</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>НормативнаяРентабельность</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>dd46cdab-6042-4c40-acba-fe3936e01d14</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>БудущиеПродажи</dcscor:parameter>
-					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>f06449a9-c282-483f-acc0-ff6b15434d0a</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ВидЦены</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>578e858d-69d2-4b50-b57d-a6f3c39d1f91</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ИзменениеЦенПродажи</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-					<dcsset:userSettingID>e0cd8767-0915-413c-b99a-e3c1d8f30a80</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ИзменениеОбъемаРучныхСкидок</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-					<dcsset:userSettingID>0be1ddd9-82e1-4592-a2eb-77de8001c1ef</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ИзменениеСтоимостиТоваров</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>cdbd1843-3301-457a-9a8d-7a961befb964</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ИзменениеСтоимостиТарифаДоставки</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
-					<dcsset:userSettingID>ae8aabf3-4633-4c9d-ba99-92d18cf04d0a</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВключатьРасчетДоставки</dcscor:parameter>
-					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-					<dcsset:userSettingID>964c85ee-1ef6-4554-905a-26035e44f0fa</dcsset:userSettingID>
-				</dcscor:item>
-			</dcsset:dataParameters>
-			<dcsset:order>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:field>Рентабельность</dcsset:field>
-					<dcsset:orderType>Desc</dcsset:orderType>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:field>МаржинальнаяПрибыль</dcsset:field>
-					<dcsset:orderType>Desc</dcsset:orderType>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:field>ТорговаяНаценка</dcsset:field>
-					<dcsset:orderType>Desc</dcsset:orderType>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:field>НомерСтроки</dcsset:field>
-					<dcsset:orderType>Asc</dcsset:orderType>
-				</dcsset:item>
-				<dcsset:viewMode>Normal</dcsset:viewMode>
-				<dcsset:userSettingID>f5d90a56-41a8-4f38-aeac-7369f664f4e3</dcsset:userSettingID>
-			</dcsset:order>
-			<dcsset:conditionalAppearance>
-				<dcsset:item>
-					<dcsset:selection>
-						<dcsset:item>
-							<dcsset:field>Рентабельность</dcsset:field>
-						</dcsset:item>
-					</dcsset:selection>
-					<dcsset:filter>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Рентабельность</dcsset:left>
-							<dcsset:comparisonType>Less</dcsset:comparisonType>
-							<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-						</dcsset:item>
-					</dcsset:filter>
-					<dcsset:appearance>
-						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
-						</dcscor:item>
-					</dcsset:appearance>
-				</dcsset:item>
-				<dcsset:item>
-					<dcsset:selection>
-						<dcsset:item>
-							<dcsset:field>Рентабельность</dcsset:field>
-						</dcsset:item>
-					</dcsset:selection>
-					<dcsset:filter>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Рентабельность</dcsset:left>
-							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
-							<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-						</dcsset:item>
-					</dcsset:filter>
-					<dcsset:appearance>
-						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
-						</dcscor:item>
-					</dcsset:appearance>
-				</dcsset:item>
-				<dcsset:item>
-					<dcsset:selection>
-						<dcsset:item>
-							<dcsset:field>ПараметрыДанных.НормативнаяРентабельность</dcsset:field>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:field>ПараметрыДанных.ИзменениеЦенПродажи</dcsset:field>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:field>ПараметрыДанных.ИзменениеОбъемаРучныхСкидок</dcsset:field>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:field>ПараметрыДанных.ИзменениеСтоимостиТоваров</dcsset:field>
-						</dcsset:item>
-					</dcsset:selection>
-					<dcsset:filter/>
-					<dcsset:appearance>
-						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>Формат</dcscor:parameter>
-							<dcscor:value xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Л=ru; ЧН=-</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>L=en; NZ=-</v8:content>
-								</v8:item>
-							</dcscor:value>
-						</dcscor:item>
-					</dcsset:appearance>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оформление незаданных числовых параметров</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Complete indefinite number parameters</v8:content>
-						</v8:item>
-					</dcsset:presentation>
-				</dcsset:item>
-			</dcsset:conditionalAppearance>
-			<dcsset:outputParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Заголовок</dcscor:parameter>
-					<dcscor:value xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оценка рентабельности продажи</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Sales profitability assessment</v8:content>
-						</v8:item>
-					</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
-				</dcscor:item>
-			</dcsset:outputParameters>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:groupItems>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Показатель</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-					</dcsset:item>
-				</dcsset:groupItems>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-						<dcsset:comparisonType>NotInList</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:string">ПроцентАвтоматическойСкидки</dcsset:right>
-						<dcsset:right xsi:type="xs:string">СуммаАвтоматическойСкидки</dcsset:right>
-						<dcsset:right xsi:type="xs:string">ПроцентСкидок</dcsset:right>
-						<dcsset:right xsi:type="xs:string">СуммаПредоставленныхСкидок</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ЗначениеПоказателяДокумент</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:conditionalAppearance>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ЗначениеПоказателяДокумент</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяДокумент</dcsset:left>
-								<dcsset:comparisonType>Less</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ЗначениеПоказателяНарастающим</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающим</dcsset:left>
-								<dcsset:comparisonType>Less</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ЗначениеПоказателяНарастающимСДокументом</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающимСДокументом</dcsset:left>
-								<dcsset:comparisonType>Less</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ЗначениеПоказателяДокумент</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяДокумент</dcsset:left>
-								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ЗначениеПоказателяНарастающим</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающим</dcsset:left>
-								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ЗначениеПоказателяНарастающимСДокументом</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающимСДокументом</dcsset:left>
-								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ИзменениеПоказателя</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>InList</dcsset:comparisonType>
-								<dcsset:right xsi:nil="true"/>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ИзменениеПоказателя</dcsset:left>
-								<dcsset:comparisonType>Less</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-						<dcsset:presentation xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Уменьшение рентабельности - негативное событие</v8:content>
-							</v8:item>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Profitability decline - negative event</v8:content>
-							</v8:item>
-						</dcsset:presentation>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ИзменениеПоказателя</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>InList</dcsset:comparisonType>
-								<dcsset:right xsi:nil="true"/>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ИзменениеПоказателя</dcsset:left>
-								<dcsset:comparisonType>Greater</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-						<dcsset:presentation xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Увеличение рентабельности - позитивное событие</v8:content>
-							</v8:item>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Profitability rise - positive event</v8:content>
-							</v8:item>
-						</dcsset:presentation>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">ВыручкаБезУчетаСкидокБезНДС</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Шрифт</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">ВыручкаСУчетомСкидокБезНДС</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Шрифт</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">Маржа2Процент</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Шрифт</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">ПроцентАВ</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Шрифт</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:string">ПроцентТУ</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Шрифт</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-				</dcsset:conditionalAppearance>
-				<dcsset:outputParameters>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:use>false</dcscor:use>
-						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
-						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
-						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
-						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
-					</dcscor:item>
-				</dcsset:outputParameters>
-				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-			</dcsset:item>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Номенклатура</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Характеристика</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Количество</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ЦенаПродажиБезУчетаСкидокБезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ВыручкаБезУчетаСкидокБезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ТрансфернаяЦенаБезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Маржа1БезУчетаСкидокБезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Маржа1БезУчетаСкидокПроцент</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ПроцентРучнойСкидки</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СуммаРучнойСкидкиБезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ВыручкаСУчетомСкидокБезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Маржа2БезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Маржа2Процент</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СуммаАВ</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Сумма АВ без НДС</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ПроцентАВ</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СуммаТУБезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ПроцентТУ</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:use>false</dcsset:use>
-						<dcsset:field>Маржа3БезНДС</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:use>false</dcsset:use>
-						<dcsset:field>Маржа3Процент</dcsset:field>
-					</dcsset:item>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-				</dcsset:selection>
-				<dcsset:conditionalAppearance>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаБезНДС</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:use>false</dcscor:use>
-								<dcscor:parameter>ЦветФона</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ВыручкаБезУчетаСкидокБезНДС</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ВыручкаСУчетомСкидокБезНДС</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>Маржа2Процент</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ПроцентАВ</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ПроцентТУ</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter/>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Шрифт</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-							</dcscor:item>
-						</dcsset:appearance>
-						<dcsset:useInGroup>DontUse</dcsset:useInGroup>
-						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
-						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
-						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
-						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
-						<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
-						<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ВыручкаБезУчетаСкидокБезНДС</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ВыручкаСУчетомСкидокБезНДС</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>Маржа2Процент</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ПроцентАВ</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ПроцентТУ</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter/>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Шрифт</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-							</dcscor:item>
-						</dcsset:appearance>
-						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
-						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
-						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
-						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
-						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
-						<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
-					</dcsset:item>
-				</dcsset:conditionalAppearance>
-				<dcsset:outputParameters>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Заголовок</dcscor:parameter>
-						<dcscor:value xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Детально по номенклатуре</v8:content>
-							</v8:item>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>In details on items</v8:content>
-							</v8:item>
-						</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
-						<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
-					</dcscor:item>
-				</dcsset:outputParameters>
-				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-			</dcsset:item>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>УсловияАВ</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Агент</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СтавкаАВ</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-			</dcsset:item>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаБезНДС</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Номенклатура</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Характеристика</dcsset:field>
-					</dcsset:item>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-				</dcsset:selection>
-				<dcsset:conditionalAppearance>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаБезНДС</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:use>false</dcscor:use>
-								<dcscor:parameter>ЦветФона</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-				</dcsset:conditionalAppearance>
-				<dcsset:outputParameters>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Заголовок</dcscor:parameter>
-						<dcscor:value xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Номенклатура без трансферной цены</v8:content>
-							</v8:item>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>In details on items</v8:content>
-							</v8:item>
-						</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
-						<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
-					</dcscor:item>
-				</dcsset:outputParameters>
-				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-			</dcsset:item>
-			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-		</dcsset:settings>
-	</settingsVariant>
-	<settingsVariant>
 		<dcsset:name>ОценкаРентабельностиПродажиТолькоАвтоСкидкиКонтекст</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
@@ -6567,6 +6612,1245 @@
 							<v8:item>
 								<v8:lang>ru</v8:lang>
 								<v8:content>Детально по номенклатуре</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>In details on items</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ОценкаРентабельностиПродажиТолькоРучныеСкидкиКонтекст</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Оценка рентабельности продажи</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Sales profitability assessment</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ЦеныПродажи</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+					<dcsset:userSettingID>d5a8b4b7-6076-4161-8776-5b77e63d972b</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Документ</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">00000000-0000-0000-0000-000000000000</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДанныеОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>1073b8aa-b6dc-4d3d-b1a7-b15d314771c4</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НормативнаяРентабельность</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>dd46cdab-6042-4c40-acba-fe3936e01d14</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>БудущиеПродажи</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>f06449a9-c282-483f-acc0-ff6b15434d0a</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидЦены</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>578e858d-69d2-4b50-b57d-a6f3c39d1f91</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеЦенПродажи</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>e0cd8767-0915-413c-b99a-e3c1d8f30a80</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеОбъемаРучныхСкидок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>0be1ddd9-82e1-4592-a2eb-77de8001c1ef</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеСтоимостиТоваров</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>cdbd1843-3301-457a-9a8d-7a961befb964</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеСтоимостиТарифаДоставки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>ae8aabf3-4633-4c9d-ba99-92d18cf04d0a</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВключатьРасчетДоставки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:userSettingID>964c85ee-1ef6-4554-905a-26035e44f0fa</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Рентабельность</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>МаржинальнаяПрибыль</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ТорговаяНаценка</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>НомерСтроки</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>f5d90a56-41a8-4f38-aeac-7369f664f4e3</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Рентабельность</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Рентабельность</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Рентабельность</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Рентабельность</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыДанных.НормативнаяРентабельность</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПараметрыДанных.ИзменениеЦенПродажи</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПараметрыДанных.ИзменениеОбъемаРучныхСкидок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПараметрыДанных.ИзменениеСтоимостиТоваров</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Л=ru; ЧН=-</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>L=en; NZ=-</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оформление незаданных числовых параметров</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Complete indefinite number parameters</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оценка рентабельности продажи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sales profitability assessment</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Показатель</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+						<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">ПроцентАвтоматическойСкидки</dcsset:right>
+						<dcsset:right xsi:type="xs:string">СуммаАвтоматическойСкидки</dcsset:right>
+						<dcsset:right xsi:type="xs:string">ПроцентСкидок</dcsset:right>
+						<dcsset:right xsi:type="xs:string">СуммаПредоставленныхСкидок</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеПоказателяДокумент</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЗначениеПоказателяДокумент</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяДокумент</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЗначениеПоказателяНарастающим</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающим</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЗначениеПоказателяНарастающимСДокументом</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающимСДокументом</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЗначениеПоказателяДокумент</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяДокумент</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЗначениеПоказателяНарастающим</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающим</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЗначениеПоказателяНарастающимСДокументом</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Рентабельность</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЗначениеПоказателяНарастающимСДокументом</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.НормативнаяРентабельность</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ИзменениеПоказателя</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>InList</dcsset:comparisonType>
+								<dcsset:right xsi:nil="true"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ИзменениеПоказателя</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#B22222</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:presentation xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Уменьшение рентабельности - негативное событие</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Profitability decline - negative event</v8:content>
+							</v8:item>
+						</dcsset:presentation>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ИзменениеПоказателя</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>InList</dcsset:comparisonType>
+								<dcsset:right xsi:nil="true"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ИзменениеПоказателя</dcsset:left>
+								<dcsset:comparisonType>Greater</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:presentation xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Увеличение рентабельности - позитивное событие</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Profitability rise - positive event</v8:content>
+							</v8:item>
+						</dcsset:presentation>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ВыручкаБезУчетаСкидокБезНДС</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ВыручкаСУчетомСкидокБезНДС</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Маржа2Процент</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ПроцентАВ</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Показатель</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ПроцентТУ</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Характеристика</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЦенаПродажиБезУчетаСкидокБезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВыручкаБезУчетаСкидокБезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТрансфернаяЦенаБезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа1БезУчетаСкидокБезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа1БезУчетаСкидокПроцент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентРучнойСкидки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаРучнойСкидкиБезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВыручкаСУчетомСкидокБезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа2БезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа2Процент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаАВ</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма АВ без НДС</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентАВ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаТУБезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентТУ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>Маржа3БезНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>Маржа3Процент</dcsset:field>
+					</dcsset:item>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаБезНДС</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ВыручкаБезУчетаСкидокБезНДС</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ВыручкаСУчетомСкидокБезНДС</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>Маржа2Процент</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ПроцентАВ</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ПроцентТУ</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInGroup>DontUse</dcsset:useInGroup>
+						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
+						<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ВыручкаБезУчетаСкидокБезНДС</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ВыручкаСУчетомСкидокБезНДС</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>Маржа2Процент</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ПроцентАВ</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ПроцентТУ</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+						<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Детально по номенклатуре</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>In details on items</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УсловияАВ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Агент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СтавкаАВ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаБезНДС</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Характеристика</dcsset:field>
+					</dcsset:item>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаБезНДС</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номенклатура без трансферной цены</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>In details on items</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ОценкаРентабельностиПродажиТолькоРучныеСкидкиКонтекстСоглашение</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Оценка рентабельности продажи</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ЦеныПродажи</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+					<dcsset:userSettingID>d5a8b4b7-6076-4161-8776-5b77e63d972b</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Документ</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">00000000-0000-0000-0000-000000000000</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДанныеОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>1073b8aa-b6dc-4d3d-b1a7-b15d314771c4</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НормативнаяРентабельность</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>dd46cdab-6042-4c40-acba-fe3936e01d14</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>БудущиеПродажи</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>f06449a9-c282-483f-acc0-ff6b15434d0a</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидЦены</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>578e858d-69d2-4b50-b57d-a6f3c39d1f91</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеЦенПродажи</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>e0cd8767-0915-413c-b99a-e3c1d8f30a80</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеОбъемаРучныхСкидок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>0be1ddd9-82e1-4592-a2eb-77de8001c1ef</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеСтоимостиТоваров</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>cdbd1843-3301-457a-9a8d-7a961befb964</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИзменениеСтоимостиТарифаДоставки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>ae8aabf3-4633-4c9d-ba99-92d18cf04d0a</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВключатьРасчетДоставки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:userSettingID>964c85ee-1ef6-4554-905a-26035e44f0fa</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НомерСтрокиСоглашения</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>f5d90a56-41a8-4f38-aeac-7369f664f4e3</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оценка рентабельности продажи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sales profitability assessment</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ПоказательСоглашение</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеПоказателяДокументСоглашение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПоказательСоглашение</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПоказательСоглашение</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПроцентАВСоглашения</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НоменклатураСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ХарактеристикаСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЦенаПродажиБезСкидокБезНДССоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВыручкаБезСкидокБезНДССоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТрансфернаяЦенаСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа1БезСкидокБезНДССоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа1БезСкидокБезНДСПроцентСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентРучнаяСкидкаСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаРучнаяСкидкаСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВыручкаСУчетомСкидокБезНДССоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа1СУчетомСкидкиБезНДССоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаАВБезНДССоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентАВСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаСоглашения</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ВыручкаБезСкидокБезНДССоглашения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ВыручкаСУчетомСкидокБезНДССоглашения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ПроцентАВСоглашения</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInGroup>DontUse</dcsset:useInGroup>
+						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
+						<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ВыручкаБезСкидокБезНДССоглашения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ВыручкаСУчетомСкидокБезНДССоглашения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>Маржа1СУчетомСкидкиБезНДСПроцентСоглашения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>ПроцентАВСоглашения</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+						<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Детально по номенклатуре</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>In details on items</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УсловияАВ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Агент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СтавкаАВ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаСоглашения</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НоменклатураСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ХарактеристикаСоглашения</dcsset:field>
+					</dcsset:item>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТрансфернаяЦенаСоглашения</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номенклатура без трансферной цены</v8:content>
 							</v8:item>
 							<v8:item>
 								<v8:lang>en</v8:lang>
