@@ -386,16 +386,14 @@
         <value>Драйвер цены</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>10</length>
-        </stringQualifiers>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:StringValue">
-        <value></value>
-      </fillValue>
+      <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="87284018-b7b0-4adc-9c71-3617b6a9b940">
       <name>ТранспортВЦенеЧистаЦена</name>
