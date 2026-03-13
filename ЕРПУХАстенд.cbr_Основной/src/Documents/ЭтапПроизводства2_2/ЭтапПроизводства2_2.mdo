@@ -286,13 +286,13 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="a7ce3e67-210f-47ce-b1d1-a5717d505cb0">
-    <name>cbr_СтатусДоКонтроля</name>
+    <name>cbr_СтатусКонтроля</name>
     <synonym>
       <key>ru</key>
       <value>Статус до контроля</value>
     </synonym>
     <type>
-      <types>EnumRef.СтатусыЭтаповПроизводства2_2</types>
+      <types>EnumRef.cbr_СтаутсыКонтроляЭтаповПроизводства</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -301,10 +301,26 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="4ead8ebe-2bf1-471f-81eb-60b2fe884e60">
-    <name>cbr_ДатаДокументКотнроля</name>
+    <name>cbr_ДатаНачалоКонтроля</name>
     <synonym>
       <key>ru</key>
       <value>Дата документ котнроля</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="84b3233d-1b5e-4647-81f8-421fc097ec30">
+    <name>cbr_ДатаОкончаниеКонтроля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончание контроля</value>
     </synonym>
     <type>
       <types>Date</types>

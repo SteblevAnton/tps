@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c63870e6-5644-4f38-af99-e2327b22c21c">
+  <producedTypes>
+    <refType typeId="65183905-f74e-4054-b083-52275699755e" valueTypeId="dc0c46e6-215d-42cc-b6e0-8ed2d003230a"/>
+    <listType typeId="e0586905-054c-442c-ad13-5ef79ce918a7" valueTypeId="1dc0bd04-9422-42c1-ab47-cc8eff4164da"/>
+    <managerType typeId="8275a87c-6f49-4795-83d0-680d97385dd3" valueTypeId="02c8240c-a549-437a-9f5a-982e2d74b275"/>
+  </producedTypes>
+  <name>cbr_СтаутсыКонтроляЭтаповПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стаутсы контроля этапов производства</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="749b2f0b-482a-46cb-9719-a6ec7746e586">
+    <name>КонтрольНеВводился</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль не вводился</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2d0016f9-8d37-4e92-9422-d4f3d8395409">
+    <name>КонтрольНачат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль начат</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="11577331-0d81-4240-935e-21022c8c3f1a">
+    <name>КонтрольОкончен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль окончен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

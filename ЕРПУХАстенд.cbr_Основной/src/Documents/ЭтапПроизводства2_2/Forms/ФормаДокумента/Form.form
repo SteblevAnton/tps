@@ -172,6 +172,10 @@
           <common>true</common>
         </userVisible>
         <titleLocation>Left</titleLocation>
+        <handlers xsi:type="form:EventHandlerExtension">
+          <event>OnChange</event>
+          <name>cbr_СтатусПриИзмененииПеред</name>
+        </handlers>
         <extendedTooltip>
           <name>СтатусРасширеннаяПодсказка</name>
           <id>12</id>
@@ -18460,6 +18464,11 @@ to products</value>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers xsi:type="form:EventHandlerExtension">
+      <event>AfterWrite</event>
+      <name>cbr_ПослеЗаписиПосле</name>
+      <callType>After</callType>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
