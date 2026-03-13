@@ -323,6 +323,7 @@
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
   <enums>Enum.ПорядокРасчетов</enums>
+  <enums>Enum.СостоянияЗаказовНаПроизводствоВОчереди</enums>
   <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>
   <enums>Enum.СостоянияСогласования</enums>
   <enums>Enum.СпособыДоставки</enums>
@@ -364,6 +365,7 @@
   <informationRegisters>InformationRegister.ПравилаРазмещенияТоваровВЯчейках</informationRegisters>
   <informationRegisters>InformationRegister.РегистрСостоянийОбъектов</informationRegisters>
   <informationRegisters>InformationRegister.РеестрСпециальныхТребований</informationRegisters>
+  <informationRegisters>InformationRegister.СостоянияЗаказовНаПроизводство</informationRegisters>
   <informationRegisters>InformationRegister.ТоварыКДоставке</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОплатаОтгрузкаПоМенеджерам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ОстаткиНоменклатурыПоСоглашению</accumulationRegisters>
