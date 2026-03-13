@@ -11759,6 +11759,11 @@ notes</value>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers xsi:type="form:EventHandlerExtension">
+      <event>BeforeWriteAtServer</event>
+      <name>cbr_ПередЗаписьюНаСервереПосле</name>
+      <callType>After</callType>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>

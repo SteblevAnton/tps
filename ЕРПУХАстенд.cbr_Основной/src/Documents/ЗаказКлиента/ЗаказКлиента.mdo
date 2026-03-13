@@ -478,6 +478,23 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="d4eb3325-c822-40aa-8d1c-c10bf7ade27d">
+    <name>cbr_ДатаПостановкиВПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата постановки в план</value>
+    </synonym>
+    <comment>//++ СкребковЮМ 11.03.26</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="3b83bc6c-e487-4a00-94b1-476310514985" extendedConfigurationObject="be5457cf-0707-477b-bd1d-257c85cd70d5">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>
