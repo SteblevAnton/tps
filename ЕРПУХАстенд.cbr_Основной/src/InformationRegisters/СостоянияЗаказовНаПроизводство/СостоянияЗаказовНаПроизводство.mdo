@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="14396db5-fc26-46fc-a22a-8b21e10ffa5b" extendedConfigurationObject="af3fe76d-a706-4782-ba4f-9c8aef976f10">
+  <producedTypes>
+    <selectionType typeId="6d07b255-1f91-4a80-8111-c16fc74d5d88" valueTypeId="68a4f0f8-06e2-41a1-a9e0-bcedddaac1d8"/>
+    <listType typeId="75176f69-401c-474b-91b8-43f2725f7b0b" valueTypeId="2f01f188-9284-4275-9077-4c1ca4052f46"/>
+    <managerType typeId="612100b0-6341-4154-be37-5e322624ef58" valueTypeId="1c9d0f0b-d681-4fa7-a57d-a68a2c9f0482"/>
+    <recordSetType typeId="4cbd35e2-0166-449b-91f7-f87f8bd04e6a" valueTypeId="490c1814-1acb-4756-8932-5207124eee4c"/>
+    <recordKeyType typeId="6bde830d-5ef5-40e2-8ba2-5bbe9374d9c2" valueTypeId="02e501fc-d263-405a-b5fc-4883c13b8379"/>
+    <recordType typeId="976eb739-7def-45d6-a380-6dd405daee20" valueTypeId="272e53e1-db1d-4c54-baff-b95171790970"/>
+    <recordManagerType typeId="ce98fd98-2379-4b6f-8448-f098a34e23aa" valueTypeId="ac97a003-1720-4dc8-8698-befab8e3d3d2"/>
+  </producedTypes>
+  <name>СостоянияЗаказовНаПроизводство</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <resources uuid="237e27c2-24ab-48c8-b2f1-bd7fe3843bb3" extendedConfigurationObject="eb79bc70-00f9-410b-9910-8d3ae89545ac">
+    <name>СостояниеЭтапов</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.СостоянияЗаказовНаПроизводствоВОчереди</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </resources>
+  <resources uuid="54ed9aa9-4388-4890-91f6-8cc4f5fa1a1a" extendedConfigurationObject="8e34fd9d-0edf-4358-82c6-20f15dba8fb9">
+    <name>СостояниеОбеспечения</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.СостоянияЗаказовНаПроизводствоВОчереди</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </resources>
+  <resources uuid="5a2811ad-468f-4cbd-9c49-1df7ba252246" extendedConfigurationObject="a5933e0d-3c87-4070-98d0-f15c6d7a169e">
+    <name>СостояниеВыпуска</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.СостоянияЗаказовНаПроизводствоВОчереди</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </resources>
+  <resources uuid="eeaf2dda-9ea6-448f-9a67-06c6357cf5dd" extendedConfigurationObject="1d6ca309-56d3-4126-b09a-c83072b8e568">
+    <name>ДатаСобытия</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers/>
+      </typeExtension>
+    </extension>
+  </resources>
+  <dimensions uuid="4cfe4e0b-1318-40f0-9111-c598d21f61aa" extendedConfigurationObject="6845edb4-9bb4-4023-a09e-af2481c056e9">
+    <name>Заказ</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>DocumentRef.ЗаказНаПроизводство2_2</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </dimensions>
+</mdclass:InformationRegister>

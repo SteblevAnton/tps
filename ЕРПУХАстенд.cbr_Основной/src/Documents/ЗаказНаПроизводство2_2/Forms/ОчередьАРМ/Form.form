@@ -6308,7 +6308,9 @@
 	0 КАК Техпотери,
 	ЭтапПроизводства.КоличествоУпаковокПлан - ЭтапПроизводства.КоличествоУпаковокФакт КАК ОстатокКИсполнению,
 	ЕСТЬNULL(ЭтапПроизводства.cbr_Брак, 0) > 0 КАК Брак,
-	ЛОЖЬ КАК БракНаСкладе
+	ЛОЖЬ КАК БракНаСкладе,
+	ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка) КАК Номенклатура,
+	&quot;&quot; КАК НомерСтроки
 ИЗ
 	Документ.ЗаказНаПроизводство2_2 КАК Таблица
 		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЗаказовНаПроизводство КАК СостоянияЗаказовНаПроизводство
@@ -6563,6 +6565,33 @@
           </localValue>
         </title>
       </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Номенклатура</dataPath>
+        <field>Номенклатура</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Номенклатура</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерСтроки</dataPath>
+        <field>НомерСтроки</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Номер строки</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <keyField>Ссылка</keyField>
+      <keyField>Номенклатура</keyField>
+      <keyField>НомерСтроки</keyField>
     </extInfo>
   </attributes>
   <attributes>
