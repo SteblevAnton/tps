@@ -280,6 +280,7 @@
   <catalogs>Catalog.СпособыОбеспеченияПотребностей</catalogs>
   <catalogs>Catalog.СтадииЗагрузки</catalogs>
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
+  <catalogs>Catalog.СхемыОбеспечения</catalogs>
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
@@ -359,6 +360,7 @@
   <dataProcessors>DataProcessor.СостояниеОбеспеченияЗаказов</dataProcessors>
   <dataProcessors>DataProcessor.ФормированиеЭтаповПроизводства</dataProcessors>
   <informationRegisters>InformationRegister.cbr_ABCСведения</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_АтуальныеСхемыОбеспеченияНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.cbr_НоменклатураВПалетах</informationRegisters>
   <informationRegisters>InformationRegister.НомераСерийПоВидам</informationRegisters>
   <informationRegisters>InformationRegister.НормыТехнологическихПотерьИВремениИзготовления</informationRegisters>
