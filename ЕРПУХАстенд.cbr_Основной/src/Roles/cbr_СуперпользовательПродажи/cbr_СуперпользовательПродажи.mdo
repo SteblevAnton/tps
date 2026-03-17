@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad2f1249-35c7-4b59-a5c0-ad552f271f7c">
+  <name>cbr_СуперпользовательПродажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Суперпользователь продажи</value>
+  </synonym>
+  <comment>//++ БаженоваЕО 16.03.2026 ПРД.21</comment>
+</mdclass:Role>

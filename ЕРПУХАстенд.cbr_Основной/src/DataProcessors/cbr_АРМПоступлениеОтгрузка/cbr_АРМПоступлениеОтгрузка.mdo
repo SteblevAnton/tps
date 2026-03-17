@@ -7,7 +7,7 @@
   <name>cbr_АРМПоступлениеОтгрузка</name>
   <synonym>
     <key>ru</key>
-    <value>АРМ «Поступление/Отгрузка</value>
+    <value>АРМ «Поступление/Отгрузка»</value>
   </synonym>
   <comment>//++ БаженоваЕО 02.02.2026 СКЛ.4</comment>
   <useStandardCommands>true</useStandardCommands>
