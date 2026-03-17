@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4b799fd-5030-4bca-b5ff-39959f0036bb">
+  <producedTypes>
+    <selectionType typeId="75a8d48d-6125-4423-9977-6a4a0e5988e4" valueTypeId="49dcbe86-a48b-4766-a3f8-61f8f59e319a"/>
+    <listType typeId="26f0f82a-6bef-4879-9a57-6a046089699e" valueTypeId="c89c1db3-3327-4dd4-97b1-9b697715609c"/>
+    <managerType typeId="846c723a-40fe-4db3-8d23-9f3198726101" valueTypeId="ea5e983b-51d0-40ab-bc10-d7857f7b281e"/>
+    <recordSetType typeId="3ed07fd4-3f9a-44bd-9dbd-5fc1f7e08f18" valueTypeId="caa07d42-b1fc-491f-b703-94f02c111dee"/>
+    <recordKeyType typeId="d3b6c1f0-012a-4f3b-9cf6-ef27b25f5771" valueTypeId="7640b52d-91d5-4e8e-b44d-e40a447a1eb0"/>
+    <recordType typeId="2bb6cae9-eff3-4a54-ac80-d9c76af7bd08" valueTypeId="e2d25533-954a-4465-8a8e-88dd4d2d8ee4"/>
+    <recordManagerType typeId="c04d10ae-0f70-4893-bc11-9369be407658" valueTypeId="9de65b98-57ee-41ba-a696-d54650b450cf"/>
+  </producedTypes>
+  <name>cbr_АтуальныеСхемыОбеспеченияНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Атуальные схемы обеспечения номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a6d973a5-ba72-4678-b1cc-795a017ff63d">
+    <name>СхемаОбеспечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема обеспечения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СхемыОбеспечения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>
