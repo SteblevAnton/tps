@@ -21,7 +21,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.ЗаписатьИЗакрыть</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <defaultButton>true</defaultButton>
       <autoMaxWidth>true</autoMaxWidth>
@@ -47,7 +47,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.Записать</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -75,7 +75,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.StandardCommand.Close</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -136,6 +136,9 @@
     </contextMenu>
     <type>Label</type>
     <autoMaxHeight>true</autoMaxHeight>
+    <font xsi:type="core:FontRef">
+      <font>Style.ШрифтВажнойНадписи</font>
+    </font>
     <extInfo xsi:type="form:LabelDecorationExtInfo">
       <horizontalAlign>Left</horizontalAlign>
     </extInfo>
@@ -154,14 +157,7 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>ПереключательСпособа</segments>
-      </dataPath>
       <titleLocation>None</titleLocation>
-      <handlers>
-        <event>OnChange</event>
-        <name>ПереключательСпособаУнаследованныйПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ПереключательСпособаУнаследованныйРасширеннаяПодсказка</name>
         <id>449</id>
@@ -213,14 +209,7 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>ПереключательСпособа</segments>
-        </dataPath>
         <titleLocation>None</titleLocation>
-        <handlers>
-          <event>OnChange</event>
-          <name>ПереключательСпособаИндивидуальныйПриИзменении</name>
-        </handlers>
         <extendedTooltip>
           <name>ПереключательСпособаИндивидуальныйРасширеннаяПодсказка</name>
           <id>451</id>
@@ -272,9 +261,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>СпособОбеспеченияПустой</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>СпособИндивидуальныйНеИспользуетсяРасширеннаяПодсказка</name>
@@ -346,14 +332,7 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>СпособИндивидуальный</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
-            <handlers>
-              <event>OnChange</event>
-              <name>СпособИндивидуальныйПриИзменении</name>
-            </handlers>
             <extendedTooltip>
               <name>СпособИндивидуальныйРасширеннаяПодсказка</name>
               <id>456</id>
@@ -483,9 +462,6 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>СпособОбеспеченияСтрокой</segments>
-      </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
         <name>СпособОбеспеченияСтрокойРасширеннаяПодсказка</name>
@@ -638,14 +614,7 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>ПереключательЗаказПодЗаказ</segments>
-      </dataPath>
       <titleLocation>None</titleLocation>
-      <handlers>
-        <event>OnChange</event>
-        <name>ПереключательЗаказПодЗаказПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ПереключательЗаказПодЗаказРасширеннаяПодсказка</name>
         <id>459</id>
@@ -731,14 +700,7 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>ПереключательМинМакс</segments>
-      </dataPath>
       <titleLocation>None</titleLocation>
-      <handlers>
-        <event>OnChange</event>
-        <name>ПереключательМинМаксПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ПереключательМинМаксРасширеннаяПодсказка</name>
         <id>461</id>
@@ -824,14 +786,7 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>ПереключательНаСрокПоНорме</segments>
-      </dataPath>
       <titleLocation>None</titleLocation>
-      <handlers>
-        <event>OnChange</event>
-        <name>ПереключательНаСрокПоНормеПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ПереключательНаСрокПоНормеРасширеннаяПодсказка</name>
         <id>463</id>
@@ -919,14 +874,7 @@ Goods consumption rate is calculated according to the specified daily consumptio
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>ПереключательНаСрокПоСтатистике</segments>
-      </dataPath>
       <titleLocation>None</titleLocation>
-      <handlers>
-        <event>OnChange</event>
-        <name>ПереключательНаСрокПоСтатистикеПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ПереключательНаСрокПоСтатистикеРасширеннаяПодсказка</name>
         <id>465</id>
@@ -1198,9 +1146,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПолеНеИспользуется</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>НормаПотребленияНедоступнаРасширеннаяПодсказка</name>
@@ -1310,14 +1255,7 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>НормаПотребления</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
-              <handlers>
-                <event>OnChange</event>
-                <name>НормаПотребленияПриИзменении</name>
-              </handlers>
               <extendedTooltip>
                 <name>НормаПотребленияРасширеннаяПодсказка</name>
                 <id>485</id>
@@ -1363,9 +1301,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ЕдиницаИзмерения</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>ЕдиницаИзмеренияРасширеннаяПодсказка</name>
@@ -1432,9 +1367,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>СреднедневноеПотреблениеСтрокой</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>СреднедневноеПотреблениеСтрокойРасширеннаяПодсказка</name>
@@ -1605,9 +1537,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПолеНеИспользуется</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>МинимальныйЗапасНедоступенРасширеннаяПодсказка</name>
@@ -1725,9 +1654,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>МинимальныйЗапас</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>МинимальныйЗапасРасширеннаяПодсказка</name>
@@ -1774,9 +1700,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ЕдиницаИзмерения</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>ЕдиницаИзмеренияМинРасширеннаяПодсказка</name>
@@ -1843,9 +1766,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>МинимальныйЗапасСтрокой</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>МинимальныйЗапасСтрокойРасширеннаяПодсказка</name>
@@ -2016,9 +1936,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПолеНеИспользуется</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>МаксимальныйЗапасНедоступенРасширеннаяПодсказка</name>
@@ -2136,9 +2053,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>МаксимальныйЗапас</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>МаксимальныйЗапасРасширеннаяПодсказка</name>
@@ -2185,9 +2099,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ЕдиницаИзмерения</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>ЕдиницаИзмеренияМаксРасширеннаяПодсказка</name>
@@ -2254,9 +2165,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>МаксимальныйЗапасСтрокой</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>МаксимальныйЗапасСтрокойРасширеннаяПодсказка</name>
@@ -2427,9 +2335,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПолеНеИспользуется</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>СтраховойЗапасНедоступенРасширеннаяПодсказка</name>
@@ -2547,9 +2452,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>СтраховойЗапас</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>СтраховойЗапасРасширеннаяПодсказка</name>
@@ -2596,9 +2498,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ЕдиницаИзмерения</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>ЕдиницаИзмеренияСтрахРасширеннаяПодсказка</name>
@@ -2769,9 +2668,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>УпаковкаЗаказа</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>УпаковкаЗаказаРасширеннаяПодсказка</name>
@@ -2805,7 +2701,7 @@ Goods consumption rate is calculated according to the consumption statistics.</v
                   <name>Номенклатура</name>
                   <changeMode>DontChange</changeMode>
                   <datapath xsi:type="form:DataPath">
-                    <segments>Номенклатура</segments>
+                    <segments>7</segments>
                   </datapath>
                 </choiceParameterLinks>
                 <choiceParameters>
@@ -2856,9 +2752,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>УпаковкаНедоступна</segments>
-              </dataPath>
               <titleLocation>None</titleLocation>
               <extendedTooltip>
                 <name>УпаковкаНедоступнаРасширеннаяПодсказка</name>
@@ -3140,9 +3033,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ОбеспечениеЗаказовПриПоддержанииЗапаса</segments>
-          </dataPath>
           <titleLocation>Left</titleLocation>
           <extendedTooltip>
             <name>ОбеспечениеЗаказовРасширеннаяПодсказка</name>
@@ -3175,7 +3065,9 @@ Goods consumption rate is calculated according to the consumption statistics.</v
                 <key>en</key>
                 <value>Supply from stock</value>
               </presentation>
-              <value xsi:type="core:ReferenceValue"/>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ОбеспечениеЗаказовПриПоддержанииЗапаса.EnumValue.ЗаСчетЗапасов</value>
+              </value>
             </choiceList>
             <choiceList>
               <presentation>
@@ -3186,7 +3078,9 @@ Goods consumption rate is calculated according to the consumption statistics.</v
                 <key>en</key>
                 <value>Supply regardless of inventory level control</value>
               </presentation>
-              <value xsi:type="core:ReferenceValue"/>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ОбеспечениеЗаказовПриПоддержанииЗапаса.EnumValue.НезависимоОтЗапасов</value>
+              </value>
             </choiceList>
           </extInfo>
         </items>
@@ -3322,7 +3216,7 @@ Goods consumption rate is calculated according to the consumption statistics.</v
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.Ок</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -3347,7 +3241,7 @@ Goods consumption rate is calculated according to the consumption statistics.</v
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.StandardCommand.Cancel</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -3372,7 +3266,7 @@ Goods consumption rate is calculated according to the consumption statistics.</v
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.StandardCommand.Help</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -3414,14 +3308,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
-  <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
-  </handlers>
-  <handlers>
-    <event>OnCreateAtServer</event>
-    <name>ПриСозданииНаСервере</name>
-  </handlers>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
@@ -3431,913 +3317,6 @@ Goods consumption rate is calculated according to the consumption statistics.</v
   <enabled>true</enabled>
   <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>
-  <attributes>
-    <name>СпособУнаследованный</name>
-    <id>2</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ИсточникНаследования</name>
-    <title>
-      <key>ru</key>
-      <value>Источник наследования</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Inheritance source</value>
-    </title>
-    <id>3</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers>
-        <length>11</length>
-      </stringQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СпособИндивидуальный</name>
-    <id>4</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <fillChecking>ShowError</fillChecking>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ЕдиницаИзмерения</name>
-    <title>
-      <key>ru</key>
-      <value>Единица измерения</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Unit of measure</value>
-    </title>
-    <id>11</id>
-    <valueType>
-      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СреднедневноеПотребление</name>
-    <title>
-      <key>ru</key>
-      <value>Среднедневное потребление</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Average daily consumption</value>
-    </title>
-    <id>15</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>МинимальныйЗапасРасчетный</name>
-    <title>
-      <key>ru</key>
-      <value>Минимальный запас расчетный</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Minimum inventory calculated</value>
-    </title>
-    <id>20</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>МаксимальныйЗапасРасчетный</name>
-    <title>
-      <key>ru</key>
-      <value>Максимальный запас расчетный</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Maximum inventory calculated</value>
-    </title>
-    <id>21</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СпособИндивидуальныйСтарый</name>
-    <title>
-      <key>ru</key>
-      <value>Способ индивидуальный старый</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Method individual old</value>
-    </title>
-    <id>24</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ПереключательЗаказПодЗаказ</name>
-    <id>32</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ПереключательМинМакс</name>
-    <id>33</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ПереключательНаСрокПоНорме</name>
-    <id>34</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ПереключательНаСрокПоСтатистике</name>
-    <id>35</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>НормаПотребления</name>
-    <title>
-      <key>ru</key>
-      <value>Норма потребления</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Consumption rate</value>
-    </title>
-    <id>36</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>МинимальныйЗапасСтрокой</name>
-    <id>37</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>МаксимальныйЗапасСтрокой</name>
-    <id>38</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СреднедневноеПотреблениеСтрокой</name>
-    <id>39</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>МетодОбеспечения</name>
-    <title>
-      <key>ru</key>
-      <value>Метод обеспечения</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Replenishment method</value>
-    </title>
-    <id>40</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СреднееОтклонение</name>
-    <title>
-      <key>ru</key>
-      <value>Среднее отклонение</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Average variance</value>
-    </title>
-    <id>42</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>МинимальныйЗапас</name>
-    <title>
-      <key>ru</key>
-      <value>Минимальный запас</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Minimum inventory</value>
-    </title>
-    <id>45</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>МаксимальныйЗапас</name>
-    <title>
-      <key>ru</key>
-      <value>Максимальный запас</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Maximum inventory</value>
-    </title>
-    <id>46</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>СтраховойЗапас</name>
-    <title>
-      <key>ru</key>
-      <value>Страховой запас</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Safety stock</value>
-    </title>
-    <id>47</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ПереключательСпособа</name>
-    <title>
-      <key>ru</key>
-      <value>Способ обеспечения</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Procurement strategy</value>
-    </title>
-    <id>50</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>СпособОбеспеченияПустой</name>
-    <title>
-      <key>ru</key>
-      <value>Способ обеспечения пустой</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Empty procurement strategy</value>
-    </title>
-    <id>51</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СпособОбеспеченияСтрокой</name>
-    <id>52</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ПараметрыЦиклаПоставкиПоГрафикуРаботыИндивидуальные</name>
-    <id>1</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ПараметрыЦиклаПоставкиПоГрафикуРаботыУнаследованные</name>
-    <id>5</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>УпаковкаЗаказа</name>
-    <title>
-      <key>ru</key>
-      <value>Упаковка заказа</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Order packaging unit</value>
-    </title>
-    <id>6</id>
-    <valueType>
-      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>Номенклатура</name>
-    <title>
-      <key>ru</key>
-      <value>Номенклатура</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Items</value>
-    </title>
-    <id>7</id>
-    <valueType>
-      <types>CatalogRef.Номенклатура</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ПолеНеИспользуется</name>
-    <title>
-      <key>ru</key>
-      <value>Поле не используется</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Field is not used</value>
-    </title>
-    <id>8</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>УпаковкаНедоступна</name>
-    <title>
-      <key>ru</key>
-      <value>Упаковка недоступна</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Packaging unit is not available</value>
-    </title>
-    <id>9</id>
-    <valueType>
-      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ЦветПоясняющейНадписи</name>
-    <title>
-      <key>ru</key>
-      <value>Цвет поясняющей надписи</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Help text color</value>
-    </title>
-    <id>10</id>
-    <valueType>
-      <types>Color</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ЦветОшибки</name>
-    <title>
-      <key>ru</key>
-      <value>Цвет ошибки</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Error color</value>
-    </title>
-    <id>12</id>
-    <valueType>
-      <types>Color</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ЦветИзСтиля</name>
-    <title>
-      <key>ru</key>
-      <value>Цвет из стиля</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Color from style</value>
-    </title>
-    <id>13</id>
-    <valueType>
-      <types>Color</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ОбеспечениеЗаказовПриПоддержанииЗапаса</name>
-    <title>
-      <key>ru</key>
-      <value>Обеспечение заказов при поддержании запаса</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Order fulfillment when controlling inventory level</value>
-    </title>
-    <id>16</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ДанныеЗаписаны</name>
-    <title>
-      <key>ru</key>
-      <value>Данные записаны</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Data recorded</value>
-    </title>
-    <id>14</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СпособУказанияНастройки</name>
-    <title>
-      <key>ru</key>
-      <value>Способ указания настройки</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Setting specification method</value>
-    </title>
-    <id>53</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ДанныеЗаПериод</name>
-    <title>
-      <key>ru</key>
-      <value>Данные за период</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Data over period</value>
-    </title>
-    <id>54</id>
-    <valueType>
-      <types>StandardPeriod</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ДлительнаяОперация</name>
-    <title>
-      <key>ru</key>
-      <value>Длительная операция</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Long-running operation</value>
-    </title>
-    <id>55</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <formCommands>
-    <name>ЗаписатьИЗакрыть</name>
-    <title>
-      <key>ru</key>
-      <value>Записать и закрыть</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Save and close</value>
-    </title>
-    <id>1</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Записать и закрыть</value>
-    </toolTip>
-    <toolTip>
-      <key>en</key>
-      <value>Save and close</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ЗаписатьИЗакрыть</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>Записать</name>
-    <title>
-      <key>ru</key>
-      <value>Записать</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>Save</value>
-    </title>
-    <id>2</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Записать</value>
-    </toolTip>
-    <toolTip>
-      <key>en</key>
-      <value>Save</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>Записать</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>Ок</name>
-    <title>
-      <key>ru</key>
-      <value>ОК</value>
-    </title>
-    <title>
-      <key>en</key>
-      <value>OK</value>
-    </title>
-    <id>3</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Ок</value>
-    </toolTip>
-    <toolTip>
-      <key>en</key>
-      <value>OK</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>Ок</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <parameters>
-    <name>КлючПотребности</name>
-    <valueType/>
-    <keyParameter>true</keyParameter>
-  </parameters>
-  <parameters>
-    <name>РежимОткрытия</name>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <keyParameter>true</keyParameter>
-  </parameters>
-  <parameters>
-    <name>СтатистикаПотребления</name>
-    <valueType/>
-  </parameters>
-  <parameters>
-    <name>РежимСохранения</name>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <keyParameter>true</keyParameter>
-  </parameters>
-  <parameters>
-    <name>РассчитыватьСтатистику</name>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <keyParameter>true</keyParameter>
-  </parameters>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
