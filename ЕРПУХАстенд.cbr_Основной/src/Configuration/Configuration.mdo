@@ -66,6 +66,7 @@
   <styleItems>StyleItem.ЦветТекстаПроблема</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
   <styleItems>StyleItem.ЦветФонаУдачнойОтправки</styleItems>
+  <styleItems>StyleItem.ШрифтВажнойНадписи</styleItems>
   <commonPictures>CommonPicture.RFID</commonPictures>
   <commonPictures>CommonPicture.RFIDКоллекция</commonPictures>
   <commonPictures>CommonPicture.ВидыНавигацииПоВзаимодействиямОтДопРеквизитовСведений</commonPictures>
@@ -325,6 +326,7 @@
   <enums>Enum.ВидыДоставки</enums>
   <enums>Enum.ЕдиницыИзмеренияВремени</enums>
   <enums>Enum.МетодыОбеспеченияПотребностей</enums>
+  <enums>Enum.ОбеспечениеЗаказовПриПоддержанииЗапаса</enums>
   <enums>Enum.ПорядокРасчетов</enums>
   <enums>Enum.СостоянияЗаказовНаПроизводствоВОчереди</enums>
   <enums>Enum.СостоянияОбеспеченияЭтапаПроизводства</enums>

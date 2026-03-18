@@ -44,4 +44,12 @@
       <form>Extended</form>
     </extension>
   </forms>
+  <forms uuid="576ba8a0-f7a2-4adc-bd62-af741599c646" extendedConfigurationObject="20971c0c-be9c-47aa-a000-95b43fed4bf8">
+    <name>ФормаРедактированияПараметровОбеспечения</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:DataProcessor>

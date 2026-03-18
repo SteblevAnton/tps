@@ -874,6 +874,38 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
+    <attributes uuid="2dbeb5e1-ff86-46c1-ad39-3cb5c5e4ca48">
+      <name>НачалоИсторииПотребления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало истории потребления</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7bd3af74-a605-409f-bcd9-a0452fda1372">
+      <name>ОкончаниеИсторииПотребления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание истории потребления</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="1e8c2555-132e-4830-98f3-096b47a1c1db">
     <producedTypes>

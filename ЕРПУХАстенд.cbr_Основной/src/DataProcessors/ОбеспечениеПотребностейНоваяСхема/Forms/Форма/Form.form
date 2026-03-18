@@ -23820,6 +23820,46 @@ strategy</value>
       </edit>
     </columns>
   </attributes>
+  <attributes>
+    <name>НачалоИсторииПотребления</name>
+    <title>
+      <key>ru</key>
+      <value>Начало истории потребления</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОкончаниеИсторииПотребления</name>
+    <title>
+      <key>ru</key>
+      <value>Окончание истории потребления</value>
+    </title>
+    <id>27</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ПродолжитьСДругимиОтборами</name>
     <title>
